@@ -14,7 +14,7 @@ The following were **not** copied from the original workspace:
 - `ogrendiem-app/node_modules/` npm dependencies
   (regenerated with `npm install`)
 - `ogrendiem-app/.expo/` Expo's local cache (regenerated on first run)
-- `**/__pycache__/`, `**/*.pyc`, `**/*.pyo` — Python bytecode caches
+- `**/__pycache__/`, `**/*.pyc`, `**/*.pyo` Python bytecode caches
 - `**/bin/`, `**/obj/`, `**/dist/`, `**/build/`, `**/.next/`,
   `**/.turbo/` any build output directories
 - `.git/` version control history (not part of the deliverable)
