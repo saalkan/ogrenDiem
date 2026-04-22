@@ -18,7 +18,6 @@ The following were **not** copied from the original workspace:
 - `**/bin/`, `**/obj/`, `**/dist/`, `**/build/`, `**/.next/`,
   `**/.turbo/` any build output directories
 - `.git/` version control history (not part of the deliverable)
-- `toplumsal-katki.rar` redundant archive of the source itself
 
 Everything else (source code, bundled JSON assets, documentation,
 LaTeX reports, PDFs, scripts, the `precalc_db` graph database) is
@@ -32,7 +31,7 @@ included verbatim.
   `uv` (downloads Python 3.12 on demand; no pre-installed Python needed).
 - `ogrendiem/setup_venv.ps1` / `setup_venv.sh` classic `venv` setup
   (requires Python 3.12 pre-installed).
-- `README_EXPORT.md` this file.
+- `README.md` this file.
 
 ## How to restore the Python venv
 
@@ -66,8 +65,6 @@ cd ogrendiem
 cd ogrendiem
 bash setup_uv.sh      # macOS / Linux
 ```
-
-Total time: ~20 seconds to a minute.
 
 ### Path B: standard `venv` (requires Python 3.12 pre-installed)
 
