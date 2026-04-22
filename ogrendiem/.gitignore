@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+data/raw/*.json
+data/processed/*.json
+data/processed/*.html
+precalc_db/
+*.log
+.DS_Store

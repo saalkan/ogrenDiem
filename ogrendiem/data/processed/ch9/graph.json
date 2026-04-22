@@ -1,0 +1,427 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "title": "Ellipses Centered at the Origin",
+      "description": "From the definition above we can find an equation\nfor an ellipse. We will find it for a ellipse\ncentered at the origin \\(C\\left( {0,0} \\right)\\)\nwith foci at \\({F_1}\\left( {c,0} \\right)\\) and\n\\({F_2}\\left( { - c,0} \\right)\\) where \\(c > 0\\).",
+      "parent_section": "Ellipses",
+      "parent_section_num": "1",
+      "position_in_section": 0,
+      "difficulty_level": 2,
+      "difficulty_tier": "easy",
+      "concepts": [
+        "equation",
+        "left right",
+        "nonumber",
+        "right left",
+        "right nonumber",
+        "right sqrt",
+        "sqrt left"
+      ],
+      "defined_terms": [
+        "equation"
+      ],
+      "sample_content": "From the definition above we can find an equation for an ellipse. We will find it for a ellipse centered at the origin \\(C\\left( {0,0} \\right)\\) with foci at \\({F_1}\\left( {c,0} \\right)\\) and \\({F_2}\\left( { - c,0} \\right)\\) where \\(c > 0\\). Suppose\\(\\;Q\\left( {x,y} \\right)\\) is some point on the ellipse. The distance from \\(F_1\\) to \\(Q\\) is \\[d\\left( Q,{F_1} \\right) = \\sqrt {{{\\left( {x - c} \\right)}^2} + {{\\left( {y - 0} \\right)}^2}\\;} = \\sqrt {{{\\left( {x - c} \\right)}^2} + {y^2}\\;} \\nonumber\\] Likewise, the distance from \\(F_2\\) to \\(Q\\) is \\[d\\left( {Q,{F_2}} \\right) = \\sqrt {{\\left( {x - \\left( { - c} \\right)} \\right)}^2 + {\\left( {y - 0} \\right)}^2} = \\sqrt {{{\\left( {x + c} \\right)}^2} + {y^2}\\;} \\nonumber\\] From the definition of the ellipse, the sum of these distances should be constant: \\[d\\left( {Q,{F_1}} \\right) + d\\left( {Q,{F_2}} \\right) = k\\nonumber\\]so that \\[\\sqrt {\\left( {x - c} \\right)^2} + y^2; + \\sqrt {{{\\left( {x + c} \\right)}^2} + {y^2}\\;} = k\\nonumber\\] If we label one of the vertices \\(\\left( a,0 \\right)\\), it should satisfy the equation above since it is a point on the ellipse. This allows us to write \\(k\\) in terms of \\(a\\). \\[\\sqrt {\\left( a - c \\right)^2 +0^2} + \\sqrt {\\left( a + c \\right)^2 + 0^2} = k\\nonumber\\] \\[\\left| {a - c} \\right| + \\left| {a + c} \\right| = k\\nonumber\\] Since \\(a > c\\), these will be positive \\[(a - c) + (a + c) = k\\nonumber\\] \\[2a = k\\nonumber\\] Substituting that into our equation, we will now try to rewrite the equation in a friendlier form. \\[\\sqrt {\\left( x - c \\right)^2 + y^2} + \\sqrt {\\left( x + c \\right)^2 + y^2} = 2a\\nonumber\\]Move one radical \\[\\sqrt {\\left( x - c \\right)^2 + y^2} = 2a - \\sqrt {\\left( x + c \\right)^2 + y^2} \\nonumber\\]Square both sides \\[\\left( \\sqrt {\\left( x - c \\right)^2 + y^2 } \\right)^2 = \\left( 2a - \\sqrt {\\left( x + c \\right)^2 + y^2} \\right)^2\\nonumber\\]Expand \\[\\left( x - c \\right)^2 + y^2= 4a^2 - 4a\\sqrt {\\left( x + c \\right)^2 + y^2} + \\left( x + c \\right)^2 + y^2\\nonumber\\]E",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/09%3A_Conics/9.01%3A_Ellipses",
+      "depth": 0,
+      "id": "ch9_s1_t1"
+    },
+    {
+      "title": "Ellipses Not Centered at the Origin",
+      "description": "Not all ellipses are centered at the origin. The\ngraph of such an ellipse is a shift of the graph\ncentered at the origin, so the standard equation\nfor one centered at (\\(h\\), \\(k\\)) is slightly\ndifferent.",
+      "parent_section": "Ellipses",
+      "parent_section_num": "1",
+      "position_in_section": 1,
+      "difficulty_level": 1,
+      "difficulty_tier": "easy",
+      "concepts": [
+        "axis",
+        "axis endpoints",
+        "endpoints",
+        "equation",
+        "minor",
+        "minor axis",
+        "vertices minor"
+      ],
+      "defined_terms": [
+        "equation"
+      ],
+      "sample_content": "Not all ellipses are centered at the origin. The graph of such an ellipse is a shift of the graph centered at the origin, so the standard equation for one centered at (\\(h\\), \\(k\\)) is slightly different. We can shift the graph right \\(h\\) units and up \\(k\\) units by replacing \\(x\\) with \\(x – h\\) and \\(y\\) with \\(y – k\\), similar to what we did when we learned transformations. Major Axis Horizontal Vertical Standard Equation \\(\\dfrac{(x - h)^2}{a^2} + \\dfrac{(y - k)^2}{b^2} = 1\\) \\(\\dfrac{(x - h)^2}{b^2} + \\dfrac{(y - k)^2}{a^2} = 1\\) Vertices \\((h \\pm a, k)\\) \\((h, k \\pm a)\\) Minor Axis Endpoints \\((h, k \\pm b)\\) \\((h \\pm b, k)\\) Foci \\((h \\pm c, k)\\) where \\(b^2 = a^2 - c^2\\) \\((h, k \\pm c)\\) where \\(b^2 = a^2 - c^2\\) Graph Exercise \\(\\PageIndex{2}\\) Find the center, vertices, minor axis endpoints, length of the major axis, and length of the minor axis for the ellipse \\(\\left( x - 4 \\right)^2 + \\dfrac{\\left( y + 2 \\right)^2}{4} = 1\\). Center (4, -2). Vertical ellipse with \\(a = 2\\), \\(b = 1\\). Vertices at (4, -2 \\(\\pm\\) 2) = (4, 0) and (4, -4), minor axis endpoints at (4 \\(\\pm\\) 1, -2) = (3,-2) and (5,-2), major axis length 4, minor axis length 2",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/09%3A_Conics/9.01%3A_Ellipses",
+      "depth": 1,
+      "id": "ch9_s1_t2"
+    },
+    {
+      "title": "Bridges with Semielliptical Arches",
+      "description": "Arches have been used to build bridges for\ncenturies, like in the Skerton Bridge in England\nwhich uses five semielliptical arches for support.\nSemielliptical arches can have engineering\nbenefits such as allowing for longer spans between\nsupports.",
+      "parent_section": "Ellipses",
+      "parent_section_num": "1",
+      "position_in_section": 2,
+      "difficulty_level": 1,
+      "difficulty_tier": "easy",
+      "concepts": [
+        "arches",
+        "england",
+        "semielliptical",
+        "semielliptical arches",
+        "skerton",
+        "skerton bridge"
+      ],
+      "defined_terms": [],
+      "sample_content": "Arches have been used to build bridges for centuries, like in the Skerton Bridge in England which uses five semielliptical arches for support. Semielliptical arches can have engineering benefits such as allowing for longer spans between supports. (Maxine Armstrong (commons.wikimedia.org/wiki/F...r,_England.JPG), “Skerton Bridge, Lancaster, England”, CC BY-SA)",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/09%3A_Conics/9.01%3A_Ellipses",
+      "depth": 2,
+      "id": "ch9_s1_t3"
+    },
+    {
+      "title": "Ellipse Foci",
+      "description": "The location of the foci can play a key role in\nellipse application problems. Standing on a focus\nin a whispering gallery allows you to hear someone\nwhispering at the other focus.",
+      "parent_section": "Ellipses",
+      "parent_section_num": "1",
+      "position_in_section": 3,
+      "difficulty_level": 1,
+      "difficulty_tier": "easy",
+      "concepts": [
+        "center",
+        "focus",
+        "nonumber",
+        "vertex",
+        "vertex center",
+        "whispering"
+      ],
+      "defined_terms": [],
+      "sample_content": "The location of the foci can play a key role in ellipse application problems. Standing on a focus in a whispering gallery allows you to hear someone whispering at the other focus. To find the foci, we need to find the length from the center to the foci, \\(c\\), using the equation \\({b^2} = {a^2} - {c^2}\\). It looks similar to, but is not the same as, the Pythagorean Theorem. Exercise \\(\\PageIndex{3}\\) Find the standard form of the equation for an ellipse with focus (2,4), vertex (2,6), and center (2,1). Vertex, center, and focus have the same \\(x\\)-value, so it’s a vertical ellipse. Using the vertex and center, \\[a = 6 – 1 = 5\\nonumber\\] Using the center and focus, \\[c = 4 – 1 = 3\\nonumber\\] \\[b^2 = 5^2 - 3^2\\quad b = 4\\nonumber\\] \\[\\dfrac{\\left( x - 2 \\right)^2}{16} + \\dfrac{\\left( y - 1 \\right)^2}{25} = 1\\nonumber\\]",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/09%3A_Conics/9.01%3A_Ellipses",
+      "depth": 3,
+      "id": "ch9_s1_t4"
+    },
+    {
+      "title": "Planetary Orbits",
+      "description": "It was long thought that planetary orbits around\nthe sun were circular. Around 1600, Johannes\nKepler discovered they were really elliptical\n(Technically, they’re approximately elliptical.",
+      "parent_section": "Ellipses",
+      "parent_section_num": "1",
+      "position_in_section": 4,
+      "difficulty_level": 1,
+      "difficulty_tier": "easy",
+      "concepts": [
+        "distance sun",
+        "elliptical",
+        "orbits",
+        "planetary",
+        "planets",
+        "sun"
+      ],
+      "defined_terms": [],
+      "sample_content": "It was long thought that planetary orbits around the sun were circular. Around 1600, Johannes Kepler discovered they were really elliptical (Technically, they’re approximately elliptical. The orbits of the planets are not exactly elliptical because of interactions with each other and other celestial bodies.). His first law of planetary motion says that planets travel around the sun in an elliptical orbit with the sun as one of the foci. The length of the major axis can be found by measuring the planet’s aphelion, its greatest distance from the sun, and perihelion, its shortest distance from the sun, and summing them together.",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/09%3A_Conics/9.01%3A_Ellipses",
+      "depth": 4,
+      "id": "ch9_s1_t5"
+    },
+    {
+      "title": "Hyperbolas Centered at the Origin",
+      "description": "From the definition above we can find an equation\nof a hyperbola. We will find it for a hyperbola\ncentered at the origin \\(C\\left( 0,0 \\right)\\)\nopening horizontally with foci at \\[F_1\\left( c,0\n\\right)\\text{ and }F_2\\left( - c,0 \\right)\\text{\nwhere }c > 0\\nonumber\\] Suppose \\(Q\\",
+      "parent_section": "Hyperbolas",
+      "parent_section_num": "2",
+      "position_in_section": 0,
+      "difficulty_level": 3,
+      "difficulty_tier": "medium",
+      "concepts": [
+        "dfrac",
+        "left right",
+        "nonumber",
+        "right nonumber",
+        "right sqrt",
+        "sqrt left"
+      ],
+      "defined_terms": [],
+      "sample_content": "From the definition above we can find an equation of a hyperbola. We will find it for a hyperbola centered at the origin \\(C\\left( 0,0 \\right)\\) opening horizontally with foci at \\[F_1\\left( c,0 \\right)\\text{ and }F_2\\left( - c,0 \\right)\\text{ where }c > 0\\nonumber\\] Suppose \\(Q\\left( x,y \\right)\\) is a point on the hyperbola. The distances from \\(Q\\) to \\(F_1\\) and \\(Q\\) to \\(F_2\\) are: \\[d\\left( Q, F_1 \\right) = \\sqrt {\\left( x - c \\right)^2 + \\left( y - 0 \\right)^2} = \\sqrt {\\left( x - c \\right)^2 + y^2} \\nonumber\\] \\[d\\left( Q,F_2 \\right) = \\sqrt {\\left( x - \\left( - c \\right) \\right)^2 + \\left( y - 0 \\right)^2} = \\sqrt {\\left( x + c \\right)^2 + y^2} \\nonumber\\] From the definition, the absolute value of the difference should be constant: \\[\\left| d\\left( Q, F_1 \\right) - d\\left(Q, F_2 \\right) \\right| = \\left| \\sqrt {\\left( x - c \\right)^2 + y^2} - \\sqrt {\\left( x + c \\right)^2 + y^2 } \\right| = k\\nonumber\\] Substituting in one of the vertices \\(\\left( a,0 \\right)\\), we can determine \\(k\\) in terms of \\(a\\): \\[\\left| \\sqrt {\\left( a - c \\right)^2 + 0^2} - \\sqrt {\\left( a + c \\right)^2 + 0^2 } \\right| = k\\nonumber\\] \\[\\left| \\left| a - c \\right| - \\left| a + c \\right| \\right| = k\\nonumber\\] Since \\(c > a\\), \\(\\left| a - c \\right| = c - a\\) \\[\\left| (c - a) - (a + c) \\right| = k\\nonumber\\] \\[k = \\left| - 2a \\right| = \\left| 2a \\right|\\nonumber\\] Using \\(k = 2a\\) and removing the absolute values, \\[\\sqrt {\\left( x - c \\right)^2 + y^2} - \\sqrt {\\left( x + c \\right)^2+ y^2} = \\pm 2a\\nonumber\\]Move one radical \\[\\sqrt {\\left( x - c \\right)^2 + y^2} = \\pm 2a + \\sqrt {\\left( x + c \\right)^2 + y^2} \\nonumber\\]Square both sides \\[\\left( x - c \\right)^2 + y^2 = 4a^2 \\pm 4a\\sqrt {\\left( x + c \\right)^2 + y^2} + \\left( x + c \\right)^2 + y^2\\nonumber\\]Expand \\[x^2 - 2xc + c^2 + y^2 = 4a^2 \\pm 4a\\sqrt {\\left( x + c \\right)^2 + y^2} + x^2 + 2xc + c^2 + y^2\\nonumber\\] Combining like terms leaves \\[ - 4xc = 4a^2 \\pm 4a\\sqrt {\\left( x + c \\right)^2 + y^2} \\nonumber\\]Divide by 4 \\[",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/09%3A_Conics/9.02%3A_Hyperbolas",
+      "depth": 5,
+      "id": "ch9_s2_t1"
+    },
+    {
+      "title": "Hyperbolas Not Centered at the Origin",
+      "description": "Not all hyperbolas are centered at the origin. The\nstandard equation for one centered at (\\(h\\),\n\\(k\\)) is slightly different.",
+      "parent_section": "Hyperbolas",
+      "parent_section_num": "2",
+      "position_in_section": 1,
+      "difficulty_level": 2,
+      "difficulty_tier": "easy",
+      "concepts": [
+        "asymptotes",
+        "dfrac",
+        "dfrac dfrac",
+        "standard",
+        "transverse axis",
+        "vertices"
+      ],
+      "defined_terms": [],
+      "sample_content": "Not all hyperbolas are centered at the origin. The standard equation for one centered at (\\(h\\), \\(k\\)) is slightly different. IN STANDARD FORM The standard form of an equation of a hyperbola centered at \\(C\\left( h,k \\right)\\) depends on whether it opens horizontally or vertically. The table below gives the standard equation, vertices, foci, asymptotes, construction rectangle vertices, and graph for each. Opens Horizontally Vertically Standard Equation \\(\\dfrac{(x - h)^2}{a^2} - \\dfrac{(y - k)^2}{b^2} = 1\\) \\(\\dfrac{(y - k)^2}{a^2} - \\dfrac{(x - h)^2}{b^2} = 1\\) Vertices \\((h \\pm a, k)\\) \\((h, k \\pm a)\\) Foci \\((h \\pm c, k)\\) where \\(b^2 = c^2 - a^2\\) \\((h, k \\pm c)\\) where \\(b^2 = c^2 - a^2\\) Asymptotes \\(y - k = \\pm \\dfrac{b}{a} (x - h)\\) \\(y - k = \\pm \\dfrac{a}{b} (x - h)\\) Construction Rectangle Vertices \\((h \\pm a, k \\pm b)\\) \\((h \\pm b, k \\pm a)\\) Graph Exercise \\(\\PageIndex{2}\\) Find the center, vertices, length of the transverse axis, and equations of the asymptotes for the hyperbola \\(\\dfrac{\\left( x + 5 \\right)^2}{9} - \\dfrac{\\left( y - 2 \\right)^2}{36} = 1\\). Center (-5, 2). This is a horizontal hyperbola. \\(a = 3\\). \\(b = 6\\). transverse axis length 6, Vertices will be at (-5 \\(\\pm\\) 3,2) = (-2, 2) and (-8, 2), Asymptote slope will be \\(\\dfrac{6}{3} = 2\\). Asymptotes: \\(y - 2 = \\pm 2\\left( x + 5 \\right)\\)",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/09%3A_Conics/9.02%3A_Hyperbolas",
+      "depth": 6,
+      "id": "ch9_s2_t2"
+    },
+    {
+      "title": "Hyperbola Foci",
+      "description": "The location of the foci can play a key role in\nhyperbola application problems. To find them, we\nneed to find the length from the center to the\nfoci, \\(c\\), using the equation \\(b^2 = c^2 -\na^2\\).",
+      "parent_section": "Hyperbolas",
+      "parent_section_num": "2",
+      "position_in_section": 2,
+      "difficulty_level": 2,
+      "difficulty_tier": "easy",
+      "concepts": [
+        "center",
+        "foci",
+        "hyperbola",
+        "inside",
+        "minus",
+        "vertex center"
+      ],
+      "defined_terms": [],
+      "sample_content": "The location of the foci can play a key role in hyperbola application problems. To find them, we need to find the length from the center to the foci, \\(c\\), using the equation \\(b^2 = c^2 - a^2\\). It looks similar to, but is not the same as, the Pythagorean Theorem. Compare this with the equation to find length \\(c\\) for ellipses, which is \\(b^2 = a^2 - c^2\\). If you remember that for the foci to be inside the ellipse they have to come before the vertices \\((c < a)\\), it’s clear why we would calculate \\(a^2\\) minus \\(c^2\\). To be inside a hyperbola, the foci have to go beyond the vertices \\((c > a)\\), so we can see for hyperbolas we need \\(c^2\\) minus \\(a^2\\), the opposite. Exercise \\(\\PageIndex{3}\\) Find the standard form of the equation for a hyperbola with focus (1, 9), vertex (1, 8), center (1, 4). Focus, vertex, and center have the same \\(x\\) value so this is a vertical hyperbola. Using the vertex and center, \\[a = 9 – 4 = 5\\nonumber\\] Using the focus and center, \\[c = 8 – 4 = 4\\nonumber\\] \\[b^2 =5^2 - 4^2\\quad b = 3\\nonumber\\] \\[\\dfrac{\\left( y - 4 \\right)^2}{16} - \\dfrac{\\left( x - 1 \\right)^2}{9} = 1\\nonumber\\]",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/09%3A_Conics/9.02%3A_Hyperbolas",
+      "depth": 7,
+      "id": "ch9_s2_t3"
+    },
+    {
+      "title": "LORAN",
+      "description": "Before GPS, the Long Range Navigation (LORAN)\nsystem was used to determine a ship’s location.\nTwo radio stations A and B simultaneously sent out\na signal to a ship.",
+      "parent_section": "Hyperbolas",
+      "parent_section_num": "2",
+      "position_in_section": 3,
+      "difficulty_level": 2,
+      "difficulty_tier": "easy",
+      "concepts": [
+        "location",
+        "radio",
+        "radio stations",
+        "sent",
+        "ship",
+        "stations"
+      ],
+      "defined_terms": [],
+      "sample_content": "Before GPS, the Long Range Navigation (LORAN) system was used to determine a ship’s location. Two radio stations A and B simultaneously sent out a signal to a ship. The difference in time it took to receive the signal was computed as a distance locating the ship on the hyperbola with the A and B radio stations as the foci. A second pair of radio stations C and D sent simultaneous signals to the ship and computed its location on the hyperbola with C and D as the foci. The point P where the two hyperbolas intersected gave the location of the ship. To determine the position of a ship using LORAN, we would need an equation for the second hyperbola and would solve for the intersection. We will explore how to do that in the next section.",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/09%3A_Conics/9.02%3A_Hyperbolas",
+      "depth": 8,
+      "id": "ch9_s2_t4"
+    },
+    {
+      "title": "Equations for Parabolas with Vertex at the Origin",
+      "description": "From the definition above we can find an equation\nof a parabola. We will find it for a parabola with\nvertex at the origin, \\(C\\left( 0,0 \\right)\\),\nopening upward with focus at \\(F\\left( 0,p\n\\right)\\) and directrix at \\(y = - p\\).",
+      "parent_section": "Parabolas and Non-Linear Systems",
+      "parent_section_num": "3",
+      "position_in_section": 0,
+      "difficulty_level": 4,
+      "difficulty_tier": "hard",
+      "concepts": [
+        "equation parabola",
+        "focus",
+        "left right",
+        "parabola",
+        "parabola vertex",
+        "vertex"
+      ],
+      "defined_terms": [],
+      "sample_content": "From the definition above we can find an equation of a parabola. We will find it for a parabola with vertex at the origin, \\(C\\left( 0,0 \\right)\\), opening upward with focus at \\(F\\left( 0,p \\right)\\) and directrix at \\(y = - p\\). Suppose\\(Q\\left( x,y \\right)\\) is some point on the parabola. The distance from \\(Q\\) to the focus is \\[d(Q,F)=\\sqrt{(x-0)^{2}+(y-p)^{2}}=\\sqrt{x^{2}+(y-p)^{2}}\\nonumber\\] The distance from the point \\(Q\\) to the directrix is the difference of the \\(y\\)-values: \\[d = y - ( - p) = y + p\\nonumber\\] From the definition of the parabola, these distances should be equal: \\[\\sqrt {x^2 + \\left( y - p \\right)^2} = y + p\\nonumber\\]Square both sides \\[x^2 + \\left( y - p \\right)^2 = \\left( y + p \\right)^2\\nonumber\\]Expand \\[x^2 + y^2 - 2py + p^2 = y^2 + 2py +p^2\\nonumber\\]Combine like terms \\[x^2 = 4py\\nonumber\\] This is the standard conic form of a parabola that opens up or down (vertical axis of symmetry), centered at the origin. Note that if we divided by \\(4p\\), we would get a more familiar equation for the parabola, \\(y = \\dfrac{x^2}{4p}\\). We can recognize this as a transformation of the parabola \\(y = x^2\\), vertically compressed or stretched by \\(\\dfrac{1}{4p}\\). Using a similar process, we could find an equation of a parabola with vertex at the origin opening left or right. The focus will be at (\\(p\\),0) and the graph will have a horizontal axis of symmetry and a vertical directrix. The standard conic form of its equation will be \\(y^2 = 4px\\), which we could also write as \\(x = \\dfrac{y^2}{4p}\\). EQUATION OF A PARABOLA WITH VERTEX AT \\(h,k\\) IN STANDARD CONIC FORM The standard conic form of an equation of a parabola with vertex at the point \\(\\left( h,k \\right)\\) depends on whether the axis of symmetry is horizontal or vertical. The table below gives the standard equation, vertex, axis of symmetry, directrix, focus, and graph for each. Horizontal Vertical Standard Equation \\((y - k)^2 = 4p(x - h)\\) \\((x - h)^2 = 4p(y - k)\\) Vertex \\((h, k)\\)",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/09%3A_Conics/9.03%3A_Parabolas_and_Non-Linear_Systems",
+      "depth": 9,
+      "id": "ch9_s3_t1"
+    },
+    {
+      "title": "Applications of Parabolas",
+      "description": "In an earlier section, we learned that ellipses\nhave a special property that a ray emanating from\none focus will be reflected back to the other\nfocus, the property that enables the whispering\nchamber to work. Parabolas also have a special\nproperty, that any ray emanating from the",
+      "parent_section": "Parabolas and Non-Linear Systems",
+      "parent_section_num": "3",
+      "position_in_section": 1,
+      "difficulty_level": 3,
+      "difficulty_tier": "medium",
+      "concepts": [
+        "focus",
+        "meters",
+        "parallel",
+        "placed",
+        "property",
+        "property ray"
+      ],
+      "defined_terms": [],
+      "sample_content": "In an earlier section, we learned that ellipses have a special property that a ray emanating from one focus will be reflected back to the other focus, the property that enables the whispering chamber to work. Parabolas also have a special property, that any ray emanating from the focus will be reflected parallel to the axis of symmetry. Reflectors in flashlights take advantage of this property to focus the light from the bulb into a collimated beam. The same property can be used in reverse, taking parallel rays of sunlight or radio signals and directing them all to the focus. Exercise \\(\\PageIndex{2}\\) A radio telescope is 100 meters in diameter and 20 meters deep. Where should the receiver be placed? The standard conic form of the equation is \\[x^2 = 4py\\nonumber\\] Using (50,20), we can find that \\(50^2 = 4p(20)\\), so \\(p = 31.25\\) meters. The receiver should be placed 31.25 meters above the vertex.",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/09%3A_Conics/9.03%3A_Parabolas_and_Non-Linear_Systems",
+      "depth": 10,
+      "id": "ch9_s3_t2"
+    },
+    {
+      "title": "Non-Linear Systems of Equations",
+      "description": "In many applications, it is necessary to solve for\nthe intersection of two curves. Many of the\ntechniques you may have used before to solve\nsystems of linear equations will work for\nnon-linear equations as well, particularly\nsubstitution.",
+      "parent_section": "Parabolas and Non-Linear Systems",
+      "parent_section_num": "3",
+      "position_in_section": 2,
+      "difficulty_level": 3,
+      "difficulty_tier": "medium",
+      "concepts": [
+        "add",
+        "dfrac",
+        "intersection",
+        "line",
+        "nonumber",
+        "signal"
+      ],
+      "defined_terms": [],
+      "sample_content": "In many applications, it is necessary to solve for the intersection of two curves. Many of the techniques you may have used before to solve systems of linear equations will work for non-linear equations as well, particularly substitution. You have already solved some examples of non-linear systems when you found the intersection of a parabola and line while studying quadratics, and when you found the intersection of a circle and line while studying circles. It’s worth noting there is a second technique we could have used in the previous example, called elimination. If we multiplied the circle equation by -4 to get \\( - 4x^2 - 4y^2 = - 36\\), we can then add it to the ellipse equation, eliminating the variable \\(y\\). \\[25x^2 + 4y^2 = 100\\nonumber\\] \\[ - 4x^2 - 4y^2 = - 36\\nonumber\\]Add the left sides, and add the right sides \\[21x^2 = 64\\nonumber\\]Solve for \\(x\\) \\[x = \\pm \\sqrt {\\dfrac{64}{21}} = \\pm \\dfrac{8}{\\sqrt {21} }\\nonumber\\] Exercise \\(\\PageIndex{3}\\) Find the points where the line \\(y = 4x\\) intersect the ellipse \\(\\dfrac{y^2}{4} - \\dfrac{x^2}{16} = 1\\) Substituting \\(y = 4x\\) gives \\(\\dfrac{\\left( 4x \\right)^2}{4} - \\dfrac{x^2}{16} = 1\\). Simplify \\[\\dfrac{16x^2}{4} - \\dfrac{x^2}{16} = 1\\nonumber\\]Multiply by 16 to get \\[64x^2 - x^2 = 16\\nonumber\\] \\[x = \\pm \\sqrt {\\dfrac{16}{63}} = \\pm 0.504\\nonumber\\] Substituting those into \\(y = 4x\\) gives the corresponding \\(y\\) values. The curves intersect at (0.504, 2.016) and (-0.504, -2.016). Solving for the intersection of two hyperbolas allows us to utilize the LORAN navigation approach descr ibed in the last section. In our example, stations A and B are 150 kilometers apart and send a simultaneous radio signal to the ship. The signal from B arrives 0.0003 seconds before the signal from A. We found the equation of the hyperbola in standard form would be \\[\\dfrac{x^2}{2025} - \\dfrac{y^2}{3600} = 1\\nonumber\\]",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/09%3A_Conics/9.03%3A_Parabolas_and_Non-Linear_Systems",
+      "depth": 11,
+      "id": "ch9_s3_t3"
+    },
+    {
+      "title": "Conics in Polar Coordinates",
+      "description": "In the preceding sections, we defined each conic\nin a different way, but each involved the distance\nbetween a point on the curve and the focus. In the\nprevious section, the parabola was defined using\nthe focus and a line called the directrix .",
+      "parent_section": "Conics in Polar Coordinates",
+      "parent_section_num": "4",
+      "position_in_section": 0,
+      "difficulty_level": 5,
+      "difficulty_tier": "hard",
+      "concepts": [
+        "cos",
+        "dfrac",
+        "directrix",
+        "polar",
+        "sin",
+        "theta"
+      ],
+      "defined_terms": [],
+      "sample_content": "In the preceding sections, we defined each conic in a different way, but each involved the distance between a point on the curve and the focus. In the previous section, the parabola was defined using the focus and a line called the directrix . It turns out that all conic sections (circles, ellipses, hyperbolas, and parabolas) can be defined using a single relationship. The Polar Form of a Conic To create a general equation for a conic section using the definition above, we will use polar coordinates. Represent \\(Q\\left( x,y \\right)\\) in polar coordinates so \\(\\left( x,y \\right) = \\left( r\\cos (\\theta ), r\\sin (\\theta ) \\right)\\). For now, we’ll focus on the case of a horizontal directrix at \\(y = - p\\), as in the picture above on the left. The distance from the focus to the point \\(Q\\) in polar is just \\(r\\). The distance from the point \\(Q\\) to the directrix \\(y = - p\\) is\\(r\\sin (\\theta ) - ( - p) = p + r\\sin (\\theta )\\) The ratio of these should be the constant eccentricity e, so \\[\\dfrac{d\\left( Q,F \\right)}{d(Q,L)} = e\\nonumber\\]Substituting in the expressions for the distances, \\[\\dfrac{r}{p + r\\sin (\\theta )} = e\\nonumber\\] To have a standard polar equation, we need to solve for r. Start by clearing the fraction. \\[r = e\\left( {p + r\\sin (\\theta )} \\right)\\nonumber\\]Distribute \\[r = ep + er\\sin (\\theta )\\nonumber\\]Move terms with \\(r\\) to the left \\[r - er\\sin (\\theta ) = ep\\nonumber\\]Factor the \\(r\\) \\[r\\left( 1 - e\\sin (\\theta ) \\right) = ep\\nonumber\\]Divide \\[r = \\dfrac{ep}{1 - e\\sin (\\theta )}\\nonumber\\] We could repeat the same approach for a directrix at \\(y = p\\) and for vertical directrices to obtain the polar equations below. POLAR EQUATION FOR A CONIC SECTION A conic section with a focus at the origin, eccentricity \\(e\\), and directrix at \\(x = \\pm p\\) or \\(y = \\pm p\\) will have polar equation: \\[r = \\dfrac{ep}{1 \\pm e\\sin (\\theta )}\\text{ when the directrix is }y = \\pm p\\] \\[r = \\dfrac{ep}{1 \\pm e\\cos (\\theta )}\\text{ when the directrix is }x = \\pm",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/09%3A_Conics/9.04%3A_Conics_in_Polar_Coordinates",
+      "depth": 12,
+      "id": "ch9_s4_t1"
+    }
+  ],
+  "edges": [
+    {
+      "strength": 4,
+      "source": "ch9_s1_t1",
+      "evidence": "equation",
+      "target": "ch9_s1_t2"
+    },
+    {
+      "strength": 4,
+      "source": "ch9_s1_t1",
+      "evidence": "equation",
+      "target": "ch9_s1_t4"
+    },
+    {
+      "strength": 4,
+      "source": "ch9_s1_t1",
+      "evidence": "equation",
+      "target": "ch9_s2_t1"
+    },
+    {
+      "strength": 4,
+      "source": "ch9_s1_t1",
+      "evidence": "equation",
+      "target": "ch9_s2_t2"
+    },
+    {
+      "strength": 4,
+      "source": "ch9_s1_t1",
+      "evidence": "equation",
+      "target": "ch9_s2_t3"
+    },
+    {
+      "strength": 4,
+      "source": "ch9_s1_t1",
+      "evidence": "equation",
+      "target": "ch9_s2_t4"
+    },
+    {
+      "strength": 4,
+      "source": "ch9_s1_t1",
+      "evidence": "equation",
+      "target": "ch9_s3_t1"
+    },
+    {
+      "strength": 4,
+      "source": "ch9_s1_t1",
+      "evidence": "equation",
+      "target": "ch9_s3_t2"
+    },
+    {
+      "strength": 4,
+      "source": "ch9_s1_t1",
+      "evidence": "equation",
+      "target": "ch9_s3_t3"
+    },
+    {
+      "strength": 4,
+      "source": "ch9_s1_t1",
+      "evidence": "equation",
+      "target": "ch9_s4_t1"
+    },
+    {
+      "strength": 2,
+      "source": "ch9_s1_t2",
+      "evidence": "adjacent in section 9.1",
+      "target": "ch9_s1_t3"
+    },
+    {
+      "strength": 2,
+      "source": "ch9_s1_t3",
+      "evidence": "adjacent in section 9.1",
+      "target": "ch9_s1_t4"
+    },
+    {
+      "strength": 2,
+      "source": "ch9_s1_t4",
+      "evidence": "adjacent in section 9.1",
+      "target": "ch9_s1_t5"
+    },
+    {
+      "strength": 1,
+      "source": "ch9_s1_t5",
+      "evidence": "section 9.1 → 9.2",
+      "target": "ch9_s2_t1"
+    },
+    {
+      "strength": 2,
+      "source": "ch9_s2_t1",
+      "evidence": "adjacent in section 9.2",
+      "target": "ch9_s2_t2"
+    },
+    {
+      "strength": 2,
+      "source": "ch9_s2_t2",
+      "evidence": "adjacent in section 9.2",
+      "target": "ch9_s2_t3"
+    },
+    {
+      "strength": 2,
+      "source": "ch9_s2_t3",
+      "evidence": "adjacent in section 9.2",
+      "target": "ch9_s2_t4"
+    },
+    {
+      "strength": 1,
+      "source": "ch9_s2_t4",
+      "evidence": "section 9.2 → 9.3",
+      "target": "ch9_s3_t1"
+    },
+    {
+      "strength": 2,
+      "source": "ch9_s3_t1",
+      "evidence": "adjacent in section 9.3",
+      "target": "ch9_s3_t2"
+    },
+    {
+      "strength": 2,
+      "source": "ch9_s3_t2",
+      "evidence": "adjacent in section 9.3",
+      "target": "ch9_s3_t3"
+    },
+    {
+      "strength": 1,
+      "source": "ch9_s3_t3",
+      "evidence": "section 9.3 → 9.4",
+      "target": "ch9_s4_t1"
+    }
+  ]
+}

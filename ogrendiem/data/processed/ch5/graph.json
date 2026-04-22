@@ -1,0 +1,209 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "title": "Circles",
+      "description": "If we wanted to find an equation to represent a\ncircle with a radius of \\(r\\) centered at a point\n(\\(h\\), \\(k\\)), we notice that the distance\nbetween any point (\\(x\\), \\(y\\)) on the circle and\nthe center point is always the same: \\(r\\). Noting\nthis, we can use our distance formul",
+      "parent_section": "Circles",
+      "parent_section_num": "1",
+      "position_in_section": 0,
+      "difficulty_level": 1,
+      "difficulty_tier": "easy",
+      "concepts": [
+        "centered",
+        "circle centered",
+        "equation",
+        "equation circle",
+        "point",
+        "radius"
+      ],
+      "defined_terms": [],
+      "sample_content": "If we wanted to find an equation to represent a circle with a radius of \\(r\\) centered at a point (\\(h\\), \\(k\\)), we notice that the distance between any point (\\(x\\), \\(y\\)) on the circle and the center point is always the same: \\(r\\). Noting this, we can use our distance formula to write an equation for the radius: \\[r=\\sqrt{(x-h)^{2} +(y-k)^{2} }\\] Squaring both sides of the equation gives us the standard equation for a circle. Definition: equation of a circle The equation of a circle centered at the point (\\(h\\), \\(k\\)) with radius \\(r\\) can be written as \\[(x-h)^{2} +(y-k)^{2} =r^{2}\\] Notice that a circle does not pass the vertical line test - it is not a function and it is not possible to write \\(y\\) as a function of \\(x\\) or vice versa. Exercise \\(\\PageIndex{2}\\) Write an equation for a circle centered at (4, -2) with radius 6. \\[(x-4)^{2} +(y+2)^{2} =36\\nonumber\\] Notice that, relative to a circle centered at the origin, horizontal and vertical shifts of the circle are revealed in the values of \\(h\\) and \\(k\\), which are the coordinates for the center of the circle.",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/05%3A_Trigonometric_Functions_of_Angles/5.01%3A_Circles",
+      "depth": 0,
+      "id": "ch5_s1_t1"
+    },
+    {
+      "title": "Points on a Circle",
+      "description": "As noted earlier, an equation for a circle cannot\nbe written so that \\(y\\) is a function of \\(x\\) or\nvice versa. To find coordinates on the circle\ngiven only the \\(x\\) or \\(y\\) value, we must solve\nalgebraically for the unknown values.",
+      "parent_section": "Circles",
+      "parent_section_num": "1",
+      "position_in_section": 1,
+      "difficulty_level": 1,
+      "difficulty_tier": "easy",
+      "concepts": [
+        "city",
+        "drive",
+        "intersects",
+        "line",
+        "miles",
+        "transmitter"
+      ],
+      "defined_terms": [],
+      "sample_content": "As noted earlier, an equation for a circle cannot be written so that \\(y\\) is a function of \\(x\\) or vice versa. To find coordinates on the circle given only the \\(x\\) or \\(y\\) value, we must solve algebraically for the unknown values. In addition to finding where a vertical or horizontal line intersects the circle, we can also find where an arbitrary line intersects a circle. Exercise \\(\\PageIndex{3}\\) A small radio transmitter broadcasts in a 50 mile radius. If you drive along a straight line from a city 60 miles north of the transmitter to a second city 70 miles east of the transmitter, during how much of the drive will you pick up a signal from the transmitter? The circle can be represented by \\(x^{2} +y^{2} =50^{2}\\). Finding a line from (0,60) to (70,0) gives \\(y=60-\\dfrac{60}{70} x\\). Substituting the line equation into the circle gives \\(x^{2} +\\left(60-\\dfrac{60}{70} x\\right)^{2} =50^{2}\\). Solving this equation, we find \\(x = 14\\) or \\(x = 45.29\\), corresponding to points (14, 48) and (45.29, 21.18). The distance between these points is 41.21 miles.",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/05%3A_Trigonometric_Functions_of_Angles/5.01%3A_Circles",
+      "depth": 1,
+      "id": "ch5_s1_t2"
+    },
+    {
+      "title": "Angles",
+      "description": "Because many applications involving circles also\ninvolve a rotation of the circle, it is natural to\nintroduce a measure for the rotation, or angle,\nbetween two rays (line segments) emanating from\nthe center of a circle. The angle measurement you\nare most likely familiar with is d",
+      "parent_section": "Angles",
+      "parent_section_num": "2",
+      "position_in_section": 0,
+      "difficulty_level": 3,
+      "difficulty_tier": "medium",
+      "concepts": [
+        "angle",
+        "angular",
+        "arclength",
+        "area",
+        "circ",
+        "degrees",
+        "dfrac",
+        "measure",
+        "radians",
+        "standard"
+      ],
+      "defined_terms": [
+        "degrees",
+        "standard",
+        "arclength",
+        "area",
+        "angular",
+        "measure"
+      ],
+      "sample_content": "Because many applications involving circles also involve a rotation of the circle, it is natural to introduce a measure for the rotation, or angle, between two rays (line segments) emanating from the center of a circle. The angle measurement you are most likely familiar with is degrees, so we’ll begin there. Definition: measure of an angle The measure of an angle is a measurement between two intersecting lines, line segments or rays, starting at the initial side and ending at the terminal side . It is a rotational measure, not a linear measure. Measuring Angles Going Greek When representing angles using variables, it is traditional to use Greek letters. Here is a list of commonly encountered Greek letters. \\(\\theta\\) \\(varphi\\) or \\(\\phi\\) \\(\\alpha\\) \\(\\beta\\) \\(\\gamma\\) theta phi alpha beta gamma Working with Angles in Degrees Notice that since there are 360 degrees in one rotation, an angle greater than 360 degrees would indicate more than 1 full rotation. Shown on a circle, the resulting direction in which this angle’s terminal side points would be the same as for another angle between 0 and 360 degrees. These angles would be called coterminal . coterminal angles After completing their full rotation based on the given angle, two angles are coterminal if they terminate in the same position, so their terminal sides coincide (point in the same direction). Exercise \\(\\PageIndex{1}\\) Find an angle \\(\\alpha\\) that is coterminal with \\(870^{\\circ}\\), where \\(0^{\\circ} \\le \\alpha <360^{\\circ}\\). Answer \\[\\alpha =870-360-360=150^{\\circ}\\nonumber\\] On a number line a positive number is measured to the right and a negative number is measured in the opposite direction (to the left). Similarly a positive angle is measured counterclockwise and a negative angle is measured in the opposite direction (clockwise). Exercise \\(\\PageIndex{2}\\) Find an angle\\(\\beta\\) coterminal with \\(-300^{\\circ}\\) where \\(0^{\\circ} \\le \\beta <360^{\\circ}\\). Answer \\[\\beta =-300+360=60^{\\circ}\\nonumb",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/05%3A_Trigonometric_Functions_of_Angles/5.02%3A_Angles",
+      "depth": 2,
+      "id": "ch5_s2_t1"
+    },
+    {
+      "title": "Points on Circles Using Sine and Cosine",
+      "description": "While it is convenient to describe the location of\na point on a circle using an angle or a distance\nalong the circle, relating this information to the\nx and y coordinates and the circle equation we\nexplored in Section 5.1 is an important\napplication of trigonometry. A distress si",
+      "parent_section": "Points on Circles Using Sine and Cosine",
+      "parent_section_num": "3",
+      "position_in_section": 0,
+      "difficulty_level": 3,
+      "difficulty_tier": "medium",
+      "concepts": [
+        "angle",
+        "cos",
+        "cosine",
+        "dfrac",
+        "reference",
+        "sine",
+        "theta"
+      ],
+      "defined_terms": [
+        "reference"
+      ],
+      "sample_content": "While it is convenient to describe the location of a point on a circle using an angle or a distance along the circle, relating this information to the x and y coordinates and the circle equation we explored in Section 5.1 is an important application of trigonometry. A distress signal is sent from a sailboat during a storm, but the transmission is unclear and the rescue boat sitting at the marina cannot determine the sailboat’s location. Using high powered radar, they determine the distress signal is coming from a distance of 20 miles at an angle of 225 degrees from the marina. How many miles east/west and north/south of the rescue boat is the stranded sailboat? In a general sense, to investigate this, we begin by drawing a circle centered at the origin with radius \\(r\\) , and marking the point on the circle indicated by some angle \\(\\theta\\). This point has coordinates (\\(x\\), \\(y\\)). If we drop a line segment vertically down from this point to the x axis, we would form a right triangle inside of the circle. No matter which quadrant our angle \\(\\theta\\) puts us in we can draw a triangle by dropping a perpendicular line segment to the \\(x\\) axis, keeping in mind that the values of \\(x\\) and \\(y\\) may be positive or negative, depending on the quadrant. Additionally, if the angle \\(\\theta\\) puts us on an axis, we simply measure the radius as the \\(x\\) or \\(y\\) with the other value being 0, again ensuring we have appropriate signs on the coordinates based on the quadrant. Triangles obtained from different radii will all be similar triangles, meaning corresponding sides scale proportionally. While the lengths of the sides may change, as we saw in the last section, the ratios of the side lengths will always remain constant for any given angle. \\(\\dfrac{y_{1} }{r_{1} } =\\dfrac{y_{2} }{r_{2} }\\) \\(\\dfrac{x_{1} }{r_{1} } =\\dfrac{x_{2} }{r_{2} }\\) To be able to refer to these ratios more easily, we will give them names. Since the ratios depend on the angle, we will write them",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/05%3A_Trigonometric_Functions_of_Angles/5.03%3A_Points_on_Circles_Using_Sine_and_Cosine",
+      "depth": 3,
+      "id": "ch5_s3_t1"
+    },
+    {
+      "title": "The Other Trigonometric Functions",
+      "description": "In the previous section, we defined the sine and\ncosine functions as ratios of the sides of a right\ntriangle in a circle. Since the triangle has 3\nsides there are 6 possible combinations of ratios.",
+      "parent_section": "The Other Trigonometric Functions",
+      "parent_section_num": "4",
+      "position_in_section": 0,
+      "difficulty_level": 4,
+      "difficulty_tier": "hard",
+      "concepts": [
+        "cos",
+        "dfrac",
+        "identities",
+        "identity",
+        "sin",
+        "theta"
+      ],
+      "defined_terms": [],
+      "sample_content": "In the previous section, we defined the sine and cosine functions as ratios of the sides of a right triangle in a circle. Since the triangle has 3 sides there are 6 possible combinations of ratios. While the sine and cosine are the two prominent ratios that can be formed, there are four others, and together they define the 6 trigonometric functions. Geometrically, notice that the definition of tangent corresponds with the slope of the line segment between the origin (0, 0) and the point (\\(x\\), \\(y\\)). This relationship can be very helpful in thinking about tangent values. You may also notice that the ratios defining the secant, cosecant, and cotangent are the reciprocals of the ratios defining the cosine, sine, and tangent functions, respectively. Additionally, notice that using our results from the last section, \\[\\tan (\\theta )=\\dfrac{y}{x} =\\dfrac{r\\sin (\\theta )}{r\\cos (\\theta )} =\\dfrac{\\sin (\\theta )}{\\cos (\\theta )}\\] Applying this concept to the other trig functions we can state the reciprocal identities. Identities The other four trigonometric functions can be related back to the sine and cosine functions using these basic relationships: \\[\\tan (\\theta )=\\dfrac{\\sin (\\theta )}{\\cos (\\theta )}\\] \\[\\sec (\\theta )=\\dfrac{1}{\\cos (\\theta )}\\] \\[\\csc (\\theta )=\\dfrac{1}{\\sin (\\theta )}\\] \\[\\cot (\\theta )=\\dfrac{1}{\\tan (\\theta )} =\\dfrac{\\cos (\\theta )}{\\sin (\\theta )}\\] These relationships are called identities . Identities are statements that are true for all values of the input on which they are defined. Identities are usually something that can be derived from definitions and relationships we already know, similar to how the identities above were derived from the circle relationships of the six trig functions. The Pythagorean Identity we learned earlier was derived from the Pythagorean Theorem and the definitions of sine and cosine. We will discuss the role of identities more after an example. Exercise \\(\\PageIndex{1}\\) Evaluate \\(\\csc \\left(\\dfrac{7\\pi }{6",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/05%3A_Trigonometric_Functions_of_Angles/5.04%3A_The_Other_Trigonometric_Functions",
+      "depth": 4,
+      "id": "ch5_s4_t1"
+    },
+    {
+      "title": "Right Triangle Trigonometry",
+      "description": "In Section 5.3 we were introduced to the sine and\ncosine function as ratios of the sides of a\ntriangle drawn inside a circle, and spent the rest\nof that section discussing the role of those\nfunctions in finding points on the circle. In this\nsection, we return to the triangle, and",
+      "parent_section": "Right Triangle Trigonometry",
+      "parent_section_num": "5",
+      "position_in_section": 0,
+      "difficulty_level": 5,
+      "difficulty_tier": "hard",
+      "concepts": [
+        "alpha",
+        "cos",
+        "dfrac",
+        "sin",
+        "text cos",
+        "triangle"
+      ],
+      "defined_terms": [],
+      "sample_content": "In Section 5.3 we were introduced to the sine and cosine function as ratios of the sides of a triangle drawn inside a circle, and spent the rest of that section discussing the role of those functions in finding points on the circle. In this section, we return to the triangle, and explore the applications of the trigonometric functions to right triangles where circles may not be involved. Recall that we defined sine and cosine as \\[\\sin (\\theta ) = \\dfrac{y}{r}\\nonumber\\] \\[\\cos(\\theta ) = \\dfrac{x}{r}\\nonumber\\] Separating the triangle from the circle, we can make equivalent but more general definitions of the sine, cosine, and tangent on a right triangle. On the right triangle, we will label the hypotenuse as well as the side opposite the angle and the side adjacent (next to) the angle. RIGHT TRIANGLE RELATIONSHIPS Given a right triangle with an angle of \\(\\theta\\) \\[\\text{sin} (\\theta) = \\dfrac{\\text{opposite}}{\\text{hypotenuse}}\\] \\[\\text{cos} (\\theta) = \\dfrac{\\text{adjacent}}{\\text{hypotenuse}}\\] \\[\\text{tan} (\\theta) = \\dfrac{\\text{opposite}}{\\text{adjacent}}\\] A common mnemonic for remembering these relationships is SohCahToa, formed from the first letters of “ S ine is o pposite over h ypotenuse, C osine is a djacent over h ypotenuse, T angent is o pposite over a djacent.” When working with general right triangles, the same rules apply regardless of the orientation of the triangle. In fact, we can evaluate the sine and cosine of either of the two acute angles in the triangle. Exercise \\(\\PageIndex{1}\\) A right triangle is drawn with angle \\(\\alpha\\) opposite a side with length 33, angle \\(\\beta\\) opposite a side with length 56, and hypotenuse 65. Find the sine and cosine of \\(\\alpha\\) and \\(\\beta\\) Answer \\[\\text{sin} (\\alpha) = \\frac{33}{65}\\nonumber\\] \\[\\text{cos} (\\alpha) = \\frac{56}{65}\\nonumber\\] \\[\\text{sin} (\\beta) = \\frac{56}{65}\\nonumber\\] \\[\\text{cos} (\\beta) = \\frac{33}{65}\\nonumber\\] You may have noticed that in the above example that \\(\\cos (\\al",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/05%3A_Trigonometric_Functions_of_Angles/5.05%3A_Right_Triangle_Trigonometry",
+      "depth": 5,
+      "id": "ch5_s5_t1"
+    }
+  ],
+  "edges": [
+    {
+      "strength": 3,
+      "source": "ch5_s1_t1",
+      "evidence": "Section 5.1",
+      "target": "ch5_s3_t1"
+    },
+    {
+      "strength": 2,
+      "source": "ch5_s1_t1",
+      "evidence": "adjacent in section 5.1",
+      "target": "ch5_s1_t2"
+    },
+    {
+      "strength": 3,
+      "source": "ch5_s1_t2",
+      "evidence": "Section 5.1",
+      "target": "ch5_s3_t1"
+    },
+    {
+      "strength": 1,
+      "source": "ch5_s1_t2",
+      "evidence": "section 5.1 → 5.2",
+      "target": "ch5_s2_t1"
+    },
+    {
+      "strength": 4,
+      "source": "ch5_s2_t1",
+      "evidence": "degrees",
+      "target": "ch5_s3_t1"
+    },
+    {
+      "strength": 4,
+      "source": "ch5_s2_t1",
+      "evidence": "degrees",
+      "target": "ch5_s5_t1"
+    },
+    {
+      "strength": 3,
+      "source": "ch5_s3_t1",
+      "evidence": "Section 5.3",
+      "target": "ch5_s5_t1"
+    },
+    {
+      "strength": 1,
+      "source": "ch5_s3_t1",
+      "evidence": "section 5.3 → 5.4",
+      "target": "ch5_s4_t1"
+    },
+    {
+      "strength": 1,
+      "source": "ch5_s4_t1",
+      "evidence": "section 5.4 → 5.5",
+      "target": "ch5_s5_t1"
+    }
+  ]
+}

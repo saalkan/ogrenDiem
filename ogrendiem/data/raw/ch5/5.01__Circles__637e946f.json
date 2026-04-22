@@ -1,0 +1,107 @@
+{
+  "url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/05%3A_Trigonometric_Functions_of_Angles/5.01%3A_Circles",
+  "title": "5.1: Circles",
+  "chapter": "5",
+  "section": "1",
+  "body_text": "To begin, we need to find distances. Starting with the Pythagorean Theorem, which relates the sides of a right triangle, we can find the distance between two points. We can use the Pythagorean Theorem to find the distance between two points on a graph. Notice that the width of the triangle was calculated using the difference between the \\(x\\) (input) values of the two points, and the height of the triangle was found using the difference between the \\(y\\) (output) values of the two points. Generalizing this process gives us the distance formula. Definition: distance formula The distance between two points \\((x_{1} ,y_{1} )\\) and \\((x_{2} ,y_{2} )\\) can be calculated as \\[dist=\\sqrt{(x_{2} -x_{1} )^{2} +(y_{2} -y_{1} )^{2} } \\label{deq}\\] Exercise \\(\\PageIndex{1}\\) Find the distance between the points (1, 6) and (3, -5). Answer \\(5\\sqrt{5}\\) Circles If we wanted to find an equation to represent a circle with a radius of \\(r\\) centered at a point (\\(h\\), \\(k\\)), we notice that the distance between any point (\\(x\\), \\(y\\)) on the circle and the center point is always the same: \\(r\\). Noting this, we can use our distance formula to write an equation for the radius: \\[r=\\sqrt{(x-h)^{2} +(y-k)^{2} }\\] Squaring both sides of the equation gives us the standard equation for a circle. Definition: equation of a circle The equation of a circle centered at the point (\\(h\\), \\(k\\)) with radius \\(r\\) can be written as \\[(x-h)^{2} +(y-k)^{2} =r^{2}\\] Notice that a circle does not pass the vertical line test - it is not a function and it is not possible to write \\(y\\) as a function of \\(x\\) or vice versa. Exercise \\(\\PageIndex{2}\\) Write an equation for a circle centered at (4, -2) with radius 6. Answer \\[(x-4)^{2} +(y+2)^{2} =36\\nonumber\\] Notice that, relative to a circle centered at the origin, horizontal and vertical shifts of the circle are revealed in the values of \\(h\\) and \\(k\\), which are the coordinates for the center of the circle. Points on a Circle As noted earlier, an equation for a circle cannot be written so that \\(y\\) is a function of \\(x\\) or vice versa. To find coordinates on the circle given only the \\(x\\) or \\(y\\) value, we must solve algebraically for the unknown values. In addition to finding where a vertical or horizontal line intersects the circle, we can also find where an arbitrary line intersects a circle. Exercise \\(\\PageIndex{3}\\) A small radio transmitter broadcasts in a 50 mile radius. If you drive along a straight line from a city 60 miles north of the transmitter to a second city 70 miles east of the transmitter, during how much of the drive will you pick up a signal from the transmitter? Answer The circle can be represented by \\(x^{2} +y^{2} =50^{2}\\). Finding a line from (0,60) to (70,0) gives \\(y=60-\\dfrac{60}{70} x\\). Substituting the line equation into the circle gives \\(x^{2} +\\left(60-\\dfrac{60}{70} x\\right)^{2} =50^{2}\\). Solving this equation, we find \\(x = 14\\) or \\(x = 45.29\\), corresponding to points (14, 48) and (45.29, 21.18). The distance between these points is 41.21 miles. Important Topics of This Section Distance formula Equation of a Circle Finding the \\(x\\) coordinate of a point on the circle given the \\(y\\) coordinate or vice versa Finding the intersection of a circle and a line \\(\\) http://commons.wikimedia.org/wiki/Fi..._otech_002.JPG CC-BY-SA↩ \\(\\) http://en.Wikipedia.org/wiki/File:R%...m%C3%BChle.svg CC-BY↩",
+  "definitions": [
+    {
+      "kind": "boxed",
+      "text": "Definition: Pythagorean Theorem The Pythagorean Theorem states that the sum of the squares of the legs of a right triangle will equal the square of the hypotenuse of the triangle. In graphical form, given the triangle shown, \\[a^{2} +b^{2} =c^{2}. \\label{ptheorem}\\]"
+    },
+    {
+      "kind": "inline",
+      "text": "Definition: Pythagorean Theorem"
+    },
+    {
+      "kind": "inline",
+      "text": "Definition: distance formula"
+    },
+    {
+      "kind": "inline",
+      "text": "Definition: equation of a circle"
+    }
+  ],
+  "examples": [
+    {
+      "text": "Example \\(\\PageIndex{1}\\) Find the distance between the points (-3, 2) and (2, 5). Solution By plotting these points on the plane, we can then draw a right triangle with these points at each end of the hypotenuse. We can calculate the horizontal width of the triangle to be 5 and the vertical height to be 3. From these we can find the distance between the points using the Pythagorean Theorem (Equation \\ref{ptheorem}): \\[\\begin{array}{l} {dist^{2} =5^{2} +3^{2} =34} \\\\ {dist=\\sqrt{34} } \\end{array} \\nonumber\\]"
+    },
+    {
+      "text": "Example \\(\\PageIndex{2}\\) Write an equation for a circle centered at the point (-3, 2) with radius 4. Solution Using the equation from above, \\(h = -3\\), \\(k = 2\\), and the radius \\(r = 4\\). Using these in our formula, \\[(x-(-3))^{2} +(y-2)^{2} =4^{2} \\nonumber\\] simplified, this gives \\[(x+3)^{2} +(y-2)^{2} =16 \\nonumber\\]"
+    },
+    {
+      "text": "Example \\(\\PageIndex{3}\\) Write an equation for the circle graphed here. Solution This circle is centered at the origin, the point (0, 0). By measuring horizontally or vertically from the center out to the circle, we can see the radius is 3. Using this information in our formula gives: \\[(x-0)^{2} +(y-0)^{2} =3^{2} \\nonumber\\] simplified, this gives \\[x^{2} +y^{2} =9 \\nonumber \\]"
+    },
+    {
+      "text": "Example \\(\\PageIndex{4}\\) Find the points on a circle of radius 5 centered at the origin with an \\(x\\) value of 3. Solution We begin by writing an equation for the circle centered at the origin with a radius of 5. \\[x^{2} +y^{2} =25\\nonumber\\] Substituting in the desired \\(x\\) value of 3 gives an equation we can solve for \\(y\\). \\[\\begin{array}{l} {3^{2} +y^{2} =25} \\\\ {y^{2} =25-9=16} \\\\ {y=\\pm \\sqrt{16} =\\pm 4} \\end{array}\\nonumber\\] There are two points on the circle with an \\(x\\) value of 3: (3, 4) and (3, -4)."
+    },
+    {
+      "text": "Example \\(\\PageIndex{5}\\) Find the \\(x\\) intercepts of a circle with radius 6 centered at the point (2, 4). Solution We can start by writing an equation for the circle. \\[(x-2)^{2} +(y-4)^{2} =36\\nonumber \\] To find the \\(x\\) intercepts, we need to find the points where y = 0. Substituting in zero for \\(y\\), we can solve for \\(x\\). \\[(x-2)^{2} +(0-4)^{2} =36\\nonumber\\] \\[(x-2)^{2} +16=36\\nonumber\\] \\[(x-2)^{2} =20\\nonumber\\] \\[x-2=\\pm \\sqrt{20}\\nonumber\\] \\[x=2\\pm \\sqrt{20} =2\\pm 2\\sqrt{5}\\nonumber\\] The \\(x\\) intercepts of the circle are \\(\\left(2+2\\sqrt{5} ,0\\right)\\) and \\(\\left(2-2\\sqrt{5} ,0\\right)\\)"
+    },
+    {
+      "text": "Example \\(\\PageIndex{6}\\) In a town, Main Street runs east to west, and Meridian Road runs north to south. A pizza store is located on Meridian 2 miles south of the intersection of Main and Meridian. If the store advertises that it delivers within a 3-mile radius, how much of Main Street do they deliver to? Solution This type of question is one in which introducing a coordinate system and drawing a picture can help us solve the problem. We could either place the origin at the intersection of the two streets, or place the origin at the pizza store itself. It is often easier to work with circles centered at the origin, so we’ll place the origin at the pizza store, though either approach would work fine. Placing the origin at the pizza store, the delivery area with radius 3 miles can be described as the region inside the circle described by \\(x^{2} +y^{2} =9\\). Main Street, located 2 miles north of the pizza store and running east to west, can be described by the equation \\(y = 2\\). To find the portion of Main Street the store will deliver to, we first find the boundary of their delivery region by looking for where the delivery circle intersects Main Street. To find the intersection, we look for the points on the circle where \\(y = 2\\). Substituting \\(y = 2\\) into the circle equation lets us solve for the corresponding \\(x\\) values. \\[\\begin{array}{l} {x^{2} +2^{2} =9} \\\\ {x^{2} =9-4=5} \\\\ {x=\\pm \\sqrt{5} \\approx \\pm 2.236} \\end{array}\\nonumber \\] This means the pizza store will deliver 2.236 miles down Main Street east of Meridian and 2.236 miles down Main Street west of Meridian. We can conclude that the pizza store delivers to a 4.472 mile long segment of Main St."
+    },
+    {
+      "text": "Example \\(\\PageIndex{7}\\) Find where the line \\(f(x)=4x\\) intersects the circle \\((x-2)^{2} +y^{2} =16\\). Solution Normally, to find an intersection of two functions \\(f(x)\\) and \\(g(x)\\) we would solve for the \\(x\\) value that would make the functions equal by solving the equation \\(f(x) = g(x)\\). In the case of a circle, it isn’t possible to represent the equation as a function, but we can utilize the same idea. The output value of the line determines the \\(y\\) value: \\(y=f(x)=4x\\). We want the \\(y\\) value of the circle to equal the \\(y\\) value of the line, which is the output value of the function. To do this, we can substitute the expression for \\(y\\) from the line into the circle equation. \\[(x-2)^{2} +y^{2} =16\\nonumber\\] replace \\(y\\) with the line formula: \\(y=4x\\) \\[(x-2)^{2} +(4x)^{2} =16\\nonumber\\] expand \\[x^{2} -4x+4+16x^{2} =16\\nonumber\\] simplify \\[17x^{2} -4x+4=16\\nonumber\\] since this equation is quadratic, we arrange one side to be 0 \\[17x^{2} -4x-12=0\\nonumber\\] Since this quadratic doesn’t appear to be easily factorable, we can use the quadratic formula to solve for \\(x\\): \\[x=\\dfrac{-(-4)\\pm \\sqrt{(-4)^{2} -4(17)(-12)} }{2(17)} =\\dfrac{4\\pm \\sqrt{832} }{34}\\nonumber\\]or approximately \\(x \\approx 0.966\\) or \\(-0.731\\) From these x values we can use either equation to find the corresponding \\(y\\) values. Since the line equation is easier to evaluate, we might choose to use it: \\[\\begin{array}{l} {y=f(0.966)=4(0.966)=3.864} \\\\ {y=f(-0.731)=4(-0.731)=-2.923} \\end{array}\\nonumber\\] The line intersects the circle at the points (0.966, 3.864) and (-0.731, -2.923)."
+    }
+  ],
+  "internal_links": [
+    {
+      "text": "Precalculus & Trigonometry",
+      "url": "https://math.libretexts.org/Bookshelves/Precalculus"
+    },
+    {
+      "text": "Precalculus - An Investigation of Functions (Lippman and Rasmussen)",
+      "url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)"
+    },
+    {
+      "text": "5: Trigonometric Functions of Angles",
+      "url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/05%3A_Trigonometric_Functions_of_Angles"
+    },
+    {
+      "text": "5.1: Circles",
+      "url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/05%3A_Trigonometric_Functions_of_Angles/5.01%3A_Circles"
+    },
+    {
+      "text": "5.1E: Circles (Exercises)",
+      "url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/05%3A_Trigonometric_Functions_of_Angles/5.01%3A_Circles/5.1E%3A_Circles_(Exercises)"
+    }
+  ],
+  "subsections": [
+    {
+      "heading": "Circles",
+      "level": "h2",
+      "body_text": "If we wanted to find an equation to represent a circle with a radius of \\(r\\) centered at a point (\\(h\\), \\(k\\)), we notice that the distance between any point (\\(x\\), \\(y\\)) on the circle and the center point is always the same: \\(r\\). Noting this, we can use our distance formula to write an equation for the radius: \\[r=\\sqrt{(x-h)^{2} +(y-k)^{2} }\\] Squaring both sides of the equation gives us the standard equation for a circle. Definition: equation of a circle The equation of a circle centered at the point (\\(h\\), \\(k\\)) with radius \\(r\\) can be written as \\[(x-h)^{2} +(y-k)^{2} =r^{2}\\] Notice that a circle does not pass the vertical line test - it is not a function and it is not possible to write \\(y\\) as a function of \\(x\\) or vice versa. Exercise \\(\\PageIndex{2}\\) Write an equation for a circle centered at (4, -2) with radius 6. \\[(x-4)^{2} +(y+2)^{2} =36\\nonumber\\] Notice that, relative to a circle centered at the origin, horizontal and vertical shifts of the circle are revealed in the values of \\(h\\) and \\(k\\), which are the coordinates for the center of the circle.",
+      "definitions": [],
+      "examples": [
+        {
+          "text": "Example \\(\\PageIndex{2}\\) Write an equation for a circle centered at the point (-3, 2) with radius 4. Solution Using the equation from above, \\(h = -3\\), \\(k = 2\\), and the radius \\(r = 4\\). Using these in our formula, \\[(x-(-3))^{2} +(y-2)^{2} =4^{2} \\nonumber\\] simplified, this gives \\[(x+3)^{2} +(y-2)^{2} =16 \\nonumber\\]"
+        },
+        {
+          "text": "Example \\(\\PageIndex{3}\\) Write an equation for the circle graphed here. Solution This circle is centered at the origin, the point (0, 0). By measuring horizontally or vertically from the center out to the circle, we can see the radius is 3. Using this information in our formula gives: \\[(x-0)^{2} +(y-0)^{2} =3^{2} \\nonumber\\] simplified, this gives \\[x^{2} +y^{2} =9 \\nonumber \\]"
+        }
+      ]
+    },
+    {
+      "heading": "Points on a Circle",
+      "level": "h2",
+      "body_text": "As noted earlier, an equation for a circle cannot be written so that \\(y\\) is a function of \\(x\\) or vice versa. To find coordinates on the circle given only the \\(x\\) or \\(y\\) value, we must solve algebraically for the unknown values. In addition to finding where a vertical or horizontal line intersects the circle, we can also find where an arbitrary line intersects a circle. Exercise \\(\\PageIndex{3}\\) A small radio transmitter broadcasts in a 50 mile radius. If you drive along a straight line from a city 60 miles north of the transmitter to a second city 70 miles east of the transmitter, during how much of the drive will you pick up a signal from the transmitter? The circle can be represented by \\(x^{2} +y^{2} =50^{2}\\). Finding a line from (0,60) to (70,0) gives \\(y=60-\\dfrac{60}{70} x\\). Substituting the line equation into the circle gives \\(x^{2} +\\left(60-\\dfrac{60}{70} x\\right)^{2} =50^{2}\\). Solving this equation, we find \\(x = 14\\) or \\(x = 45.29\\), corresponding to points (14, 48) and (45.29, 21.18). The distance between these points is 41.21 miles.",
+      "definitions": [],
+      "examples": [
+        {
+          "text": "Example \\(\\PageIndex{4}\\) Find the points on a circle of radius 5 centered at the origin with an \\(x\\) value of 3. Solution We begin by writing an equation for the circle centered at the origin with a radius of 5. \\[x^{2} +y^{2} =25\\nonumber\\] Substituting in the desired \\(x\\) value of 3 gives an equation we can solve for \\(y\\). \\[\\begin{array}{l} {3^{2} +y^{2} =25} \\\\ {y^{2} =25-9=16} \\\\ {y=\\pm \\sqrt{16} =\\pm 4} \\end{array}\\nonumber\\] There are two points on the circle with an \\(x\\) value of 3: (3, 4) and (3, -4)."
+        },
+        {
+          "text": "Example \\(\\PageIndex{5}\\) Find the \\(x\\) intercepts of a circle with radius 6 centered at the point (2, 4). Solution We can start by writing an equation for the circle. \\[(x-2)^{2} +(y-4)^{2} =36\\nonumber \\] To find the \\(x\\) intercepts, we need to find the points where y = 0. Substituting in zero for \\(y\\), we can solve for \\(x\\). \\[(x-2)^{2} +(0-4)^{2} =36\\nonumber\\] \\[(x-2)^{2} +16=36\\nonumber\\] \\[(x-2)^{2} =20\\nonumber\\] \\[x-2=\\pm \\sqrt{20}\\nonumber\\] \\[x=2\\pm \\sqrt{20} =2\\pm 2\\sqrt{5}\\nonumber\\] The \\(x\\) intercepts of the circle are \\(\\left(2+2\\sqrt{5} ,0\\right)\\) and \\(\\left(2-2\\sqrt{5} ,0\\right)\\)"
+        },
+        {
+          "text": "Example \\(\\PageIndex{6}\\) In a town, Main Street runs east to west, and Meridian Road runs north to south. A pizza store is located on Meridian 2 miles south of the intersection of Main and Meridian. If the store advertises that it delivers within a 3-mile radius, how much of Main Street do they deliver to? Solution This type of question is one in which introducing a coordinate system and drawing a picture can help us solve the problem. We could either place the origin at the intersection of the two streets, or place the origin at the pizza store itself. It is often easier to work with circles centered at the origin, so we’ll place the origin at the pizza store, though either approach would work fine. Placing the origin at the pizza store, the delivery area with radius 3 miles can be described as the region inside the circle described by \\(x^{2} +y^{2} =9\\). Main Street, located 2 miles north of the pizza store and running east to west, can be described by the equation \\(y = 2\\). To find the portion of Main Street the store will deliver to, we first find the boundary of their delivery region by looking for where the delivery circle intersects Main Street. To find the intersection, we look for the points on the circle where \\(y = 2\\). Substituting \\(y = 2\\) into the circle equation lets us solve for the corresponding \\(x\\) values. \\[\\begin{array}{l} {x^{2} +2^{2} =9} \\\\ {x^{2} =9-4=5} \\\\ {x=\\pm \\sqrt{5} \\approx \\pm 2.236} \\end{array}\\nonumber \\] This means the pizza store will deliver 2.236 miles down Main Street east of Meridian and 2.236 miles down Main Street west of Meridian. We can conclude that the pizza store delivers to a 4.472 mile long segment of Main St."
+        },
+        {
+          "text": "Example \\(\\PageIndex{7}\\) Find where the line \\(f(x)=4x\\) intersects the circle \\((x-2)^{2} +y^{2} =16\\). Solution Normally, to find an intersection of two functions \\(f(x)\\) and \\(g(x)\\) we would solve for the \\(x\\) value that would make the functions equal by solving the equation \\(f(x) = g(x)\\). In the case of a circle, it isn’t possible to represent the equation as a function, but we can utilize the same idea. The output value of the line determines the \\(y\\) value: \\(y=f(x)=4x\\). We want the \\(y\\) value of the circle to equal the \\(y\\) value of the line, which is the output value of the function. To do this, we can substitute the expression for \\(y\\) from the line into the circle equation. \\[(x-2)^{2} +y^{2} =16\\nonumber\\] replace \\(y\\) with the line formula: \\(y=4x\\) \\[(x-2)^{2} +(4x)^{2} =16\\nonumber\\] expand \\[x^{2} -4x+4+16x^{2} =16\\nonumber\\] simplify \\[17x^{2} -4x+4=16\\nonumber\\] since this equation is quadratic, we arrange one side to be 0 \\[17x^{2} -4x-12=0\\nonumber\\] Since this quadratic doesn’t appear to be easily factorable, we can use the quadratic formula to solve for \\(x\\): \\[x=\\dfrac{-(-4)\\pm \\sqrt{(-4)^{2} -4(17)(-12)} }{2(17)} =\\dfrac{4\\pm \\sqrt{832} }{34}\\nonumber\\]or approximately \\(x \\approx 0.966\\) or \\(-0.731\\) From these x values we can use either equation to find the corresponding \\(y\\) values. Since the line equation is easier to evaluate, we might choose to use it: \\[\\begin{array}{l} {y=f(0.966)=4(0.966)=3.864} \\\\ {y=f(-0.731)=4(-0.731)=-2.923} \\end{array}\\nonumber\\] The line intersects the circle at the points (0.966, 3.864) and (-0.731, -2.923)."
+        }
+      ]
+    }
+  ],
+  "char_count": 3409
+}

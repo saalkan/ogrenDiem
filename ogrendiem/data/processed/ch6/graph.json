@@ -1,0 +1,210 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "title": "Sinusoidal Graphs",
+      "description": "The London Eye (London Eye photo by authors, 2010,\nCC-BY) is a huge Ferris wheel 135 meters (394\nfeet) tall in London, Eng land, which completes\none rotation every 30 minutes. When we look at the\nbehavior of this Ferris wheel it is clear that it\ncompletes 1 cycle, or 1 revolution",
+      "parent_section": "Sinusoidal Graphs",
+      "parent_section_num": "1",
+      "position_in_section": 0,
+      "difficulty_level": 2,
+      "difficulty_tier": "easy",
+      "concepts": [
+        "cos",
+        "horizontal",
+        "midline",
+        "period",
+        "periodic",
+        "shift",
+        "theta",
+        "time"
+      ],
+      "defined_terms": [
+        "periodic",
+        "midline"
+      ],
+      "sample_content": "The London Eye (London Eye photo by authors, 2010, CC-BY) is a huge Ferris wheel 135 meters (394 feet) tall in London, Eng land, which completes one rotation every 30 minutes. When we look at the behavior of this Ferris wheel it is clear that it completes 1 cycle, or 1 revolution, and then repeats this revolution over and over again. This is an example of a periodic function, because the Ferris wheel repeats its revolution or one cycle every 30 minutes, and so we say it has a period of 30 minutes. In this section, we will work to sketch a graph of a rider’s height above the ground over time and express this height as a function of time. You might immediately guess that there is a connection here to finding points on a circle, since the height above ground would correspond to the \\(y\\) value of a point on the circle. We can determine the \\(y\\) value by using the sine function. To get a better sense of this function’s behavior, we can create a table of values we know, and use them to sketch a graph of the sine and cosine functions. Listing some of the values for sine and cosine on a unit circle, \\(\\theta\\) 0 \\(\\dfrac{\\pi }{6}\\) \\(\\dfrac{\\pi }{4}\\) \\(\\dfrac{\\pi }{3}\\) \\(\\dfrac{\\pi }{2}\\) \\(\\dfrac{2\\pi }{3}\\) \\(\\dfrac{3\\pi }{4}\\) \\(\\dfrac{5\\pi }{6}\\) \\(\\pi\\) cos 1 \\(\\dfrac{\\sqrt{3} }{2}\\) \\(\\dfrac{\\sqrt{2} }{2}\\) \\(\\dfrac{1}{2}\\) 0 \\(-\\dfrac{1}{2}\\) \\(-\\dfrac{\\sqrt{2} }{2}\\) \\(-\\dfrac{\\sqrt{3} }{2}\\) -1 sin 0 \\(\\dfrac{1}{2}\\) \\(\\dfrac{\\sqrt{2} }{2}\\) \\(\\dfrac{\\sqrt{3} }{2}\\) 1 \\(\\dfrac{\\sqrt{3} }{2}\\) \\(\\dfrac{\\sqrt{2} }{2}\\) \\(\\dfrac{1}{2}\\) 0 Here you can see how for each angle, we use the \\(y\\) value of the point on the circle to determine the output value of the sine function. Plotting more points gives the full shape of the sine and cosine functions. Notice how the sine values are positive between 0 and \\(\\pi \\), which correspond to the values of sine in quadrants 1 and 2 on the unit circle, and the sine values are negative between \\(\\pi \\) and 2\\(\\pi \\), correspon",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/06%3A_Periodic_Functions/6.01%3A_Sinusoidal_Graphs",
+      "depth": 0,
+      "id": "ch6_s1_t1"
+    },
+    {
+      "title": "Graphs of the Other Trig Functions",
+      "description": "In this section, we will explore the graphs of the\nother four trigonometric functions. We’ll begin\nwith the tangent function.",
+      "parent_section": "Graphs of the Other Trig Functions",
+      "parent_section_num": "2",
+      "position_in_section": 0,
+      "difficulty_level": 2,
+      "difficulty_tier": "easy",
+      "concepts": [
+        "cosecant",
+        "graph",
+        "secant",
+        "tangent",
+        "theta",
+        "theta right"
+      ],
+      "defined_terms": [],
+      "sample_content": "In this section, we will explore the graphs of the other four trigonometric functions. We’ll begin with the tangent function. Recall that in Chapter 5 we defined tangent as \\(y\\)/\\(x\\) or sine/cosine, so you can think of the tangent as the slope of a line through the origin making the given angle with the positive \\(x\\) axis. At an angle of 0, the line would be horizontal with a slope of zero. As the angle increases towards \\(\\pi \\)/2, the slo pe increases more and more. At an angle of \\(\\pi \\)/2, the line would be vertical and the slope would be undefined. Immediately past \\(\\pi \\)/2, the line would have a steep negative slope, giving a large negative tangent value. There is a break in the function at \\(\\pi \\)/2, where the tangent value jumps from large positive to large negative. We can use these ideas along with the definition of tangent to sketch a graph. Since tangent is defined as sine/cosine, we can determine that tangent will be zero when sine is zero: at -\\(\\pi \\), 0, \\(\\pi \\), and so on. Likewise, tangent will be undefined when cosine is zero: at -\\(\\pi \\)/2, \\(\\pi \\)/2, and so on. The tangent is positive from 0 to \\(\\pi \\)/2 and \\(\\pi \\) to 3\\(\\pi \\)/2, corresponding to quadrants 1 and 3 of the unit circle. Using technology, we can obtain a graph of tangent on a standard grid. Notice that the graph appears to repeat itself. For any angle on the circle, there is a second angle with the same slope and tangent value halfway around the circle, so the graph repeats itself with a period of \\(\\pi \\); we can see one continuous cycle from - \\(\\pi \\)/2 to \\(\\pi \\)/2, before it jumps and repeats itself. The graph has vertical asymptotes and the tangent is undefined wherever a line at that angle would be vertical: at \\(\\pi \\)/2, 3\\(\\pi \\)/2, and so on. While the domain of the function is limited in this way, the range of the function is all real numbers. FEATURES OF THE GRAPH OF TANGENT The graph of the tangent function \\(m(\\theta )=\\tan (\\theta )\\) The period of the",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/06%3A_Periodic_Functions/6.02%3A_Graphs_of_the_Other_Trig_Functions",
+      "depth": 1,
+      "id": "ch6_s2_t1"
+    },
+    {
+      "title": "Inverse Trigonometric Functions",
+      "description": "In previous sections, we have evaluated the\ntrigonometric functions at various angles, but at\ntimes we need to know what angle would yield a\nspecific sine, cosine, or tangent value. For this,\nwe need inverse functions.",
+      "parent_section": "Inverse Trigonometric Functions",
+      "parent_section_num": "3",
+      "position_in_section": 0,
+      "difficulty_level": 3,
+      "difficulty_tier": "medium",
+      "concepts": [
+        "cos",
+        "cos left",
+        "inverse",
+        "left right",
+        "sin",
+        "theta"
+      ],
+      "defined_terms": [],
+      "sample_content": "In previous sections, we have evaluated the trigonometric functions at various angles, but at times we need to know what angle would yield a specific sine, cosine, or tangent value. For this, we need inverse functions. Recall that for a one-to-one function, if \\(f(a)=b\\), then an inverse function would satisfy \\(f^{-1} (b)=a\\). You probably are already recognizing an issue – that the sine, cosine, and tangent functions are not one-to-one functions. To define an inverse of these functions, we will need to restrict the domain of these functions to yield a new function that is one-to-one. We choose a domain for each function that includes the angle zero. On these restricted domains, we can define the inverse sine, inverse cosine, and inverse tangent functions. INVERSE SINE, COSINE, AND TANGENT FUNCTIONS and their inverses For angles in the interval \\(\\left[-\\dfrac{\\pi }{2} ,\\dfrac{\\pi }{2} \\right]\\), if \\(\\sin \\left(\\theta \\right)=a\\), then \\(\\sin ^{-1} \\left(a\\right)=\\theta\\) \\(\\sin ^{-1} \\left(x\\right)\\) has domain [-1, 1] and range \\(\\left[-\\dfrac{\\pi }{2} ,\\dfrac{\\pi }{2} \\right]\\) The \\(\\sin ^{-1} \\left(x\\right)\\) is sometimes called the arcsine function, and notated \\(\\arcsin \\left(a\\right)\\). For angles in the interval \\(\\left[0,\\pi \\right]\\), if \\(\\cos \\left(\\theta \\right)=a\\), then \\(\\cos ^{-1} \\left(a\\right)=\\theta\\) \\(\\cos ^{-1} \\left(x\\right)\\) has domain [-1, 1] and range \\(\\left[0,\\pi \\right]\\) The \\(\\cos ^{-1} \\left(x\\right)\\) is sometimes called the arccosine function, and notated \\(\\arccos \\left(a\\right)\\). For angles in the interval \\(\\left(-\\dfrac{\\pi }{2} ,\\dfrac{\\pi }{2} \\right)\\), if \\(\\tan \\left(\\theta \\right)=a\\), then \\(\\tan ^{-1} \\left(a\\right)=\\theta\\) \\(\\tan ^{-1} \\left(x\\right)\\) has domain of all real numbers and range \\(\\left(-\\dfrac{\\pi }{2} ,\\dfrac{\\pi }{2} \\right)\\) The \\(\\tan ^{-1} \\left(x\\right)\\) is sometimes called the arctangent function, and notated \\(\\arctan \\left(a\\right)\\). The graphs of the inverse functions are shown here: N",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/06%3A_Periodic_Functions/6.03%3A_Inverse_Trigonometric_Functions",
+      "depth": 2,
+      "id": "ch6_s3_t1"
+    },
+    {
+      "title": "Solving using Known Values",
+      "description": "In the last chapter, we learned sine and cosine\nvalues at commonly encountered angles. We can use\nthese to solve sine and cosine equations involving\nthese common angles.",
+      "parent_section": "Solving Trigonometric Equations",
+      "parent_section_num": "4",
+      "position_in_section": 0,
+      "difficulty_level": 4,
+      "difficulty_tier": "hard",
+      "concepts": [
+        "adding multiples",
+        "dfrac dfrac",
+        "dfrac nonumber",
+        "period",
+        "sin",
+        "solutions"
+      ],
+      "defined_terms": [],
+      "sample_content": "In the last chapter, we learned sine and cosine values at commonly encountered angles. We can use these to solve sine and cosine equations involving these common angles. Exercise \\(\\PageIndex{1}\\) Solve \\(\\tan \\left(t\\right)=1\\) for all possible values of \\(t\\). From our special angles, we know one answer is \\(t=\\dfrac{\\pi }{4}\\). Tangent equations only have one unique solution per cycle or period, so additional solutions can be found by adding multiples of a full period, \\(\\pi \\). \\[t=\\dfrac{\\pi }{4} +\\pi k\\nonumber\\] In the previous example, looking back at the original simplified equation \\(\\sin \\left(\\dfrac{\\pi }{12} t\\right)=\\dfrac{1}{2}\\), we can use the ratio of the “normal period” to the stretch factor to find the period: \\(\\dfrac{2\\pi }{\\left(\\dfrac{\\pi }{12} \\right)} =2\\pi \\left(\\dfrac{12}{\\pi } \\right)=24\\). Notice that the sine function has a period of 24, which is reflected in the solutions: there were two unique solutions on one full cycle of the sine function, and additional solutions were found by adding multiples of a full period. Exercise \\(\\PageIndex{2}\\) Solve \\(4\\sin (5t)-1=1\\) for all possible values of \\(t\\). \\[4\\sin (5t)-1=1\\nonumber\\] \\[\\sin (5t)=\\dfrac{1}{2}\\nonumber\\] Let \\(u=5t\\) so this becomes \\(\\sin (u)=\\dfrac{1}{2}\\), which has solutions \\[u=\\dfrac{\\pi }{6} +2\\pi k,\\dfrac{5\\pi }{6} +2\\pi k\\nonumber\\]Solving \\[5t=u=\\dfrac{\\pi }{6} +2\\pi k,\\dfrac{5\\pi }{6} +2\\pi k\\nonumber\\] gives the solutions \\[t=\\dfrac{\\pi }{30} +\\dfrac{2\\pi }{5} k\\qquad t=\\dfrac{\\pi }{6} +\\dfrac{2\\pi }{5} k\\nonumber\\]",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/06%3A_Periodic_Functions/6.04%3A_Solving_Trigonometric_Equations",
+      "depth": 3,
+      "id": "ch6_s4_t1"
+    },
+    {
+      "title": "Solving using the Inverse Trig Functions",
+      "description": "Not all equations involve the “special” values of\nthe trig functions to we have learned. To find the\nsolutions to these equations, we need to use the\ninverse trig functions.",
+      "parent_section": "Solving Trigonometric Equations",
+      "parent_section_num": "4",
+      "position_in_section": 1,
+      "difficulty_level": 4,
+      "difficulty_tier": "hard",
+      "concepts": [
+        "circ",
+        "sin",
+        "solution",
+        "solutions",
+        "trig",
+        "trig function"
+      ],
+      "defined_terms": [],
+      "sample_content": "Not all equations involve the “special” values of the trig functions to we have learned. To find the solutions to these equations, we need to use the inverse trig functions. If you are working with a composed trig function and you are not solving for an angle, you will want to ensure that you are working in radians. In calculus, we will almost always want to work with radians since they are unit-less. Notice that the inverse trig functions do exactly what you would expect of any function – for each input they give exactly one output. While this is necessary for these to be a function, it means that to find all the solutions to an equation like \\(\\sin \\left(\\theta \\right)=0.8\\), we need to do more than just evaluate the inverse function. To find additional solutions, it is good to remember four things: The sine is the \\(y\\)-value of a point on the unit circle The cosine is the \\(x\\)-value of a point on the unit circle The tangent is the slope of a line at a given angle Other angles with the same \\(\\sin\\)/\\(\\cos\\)/\\(\\tan\\) will have the same reference angle The sine is the \\(y\\)-value of a point on the unit circle The cosine is the \\(x\\)-value of a point on the unit circle The tangent is the slope of a line at a given angle Other angles with the same \\(\\sin\\)/\\(\\cos\\)/\\(\\tan\\) will have the same reference angle Exercise \\(\\PageIndex{3}\\) Find all solutions to \\(\\tan \\left(x\\right)=0.7\\) on \\(0{}^\\circ \\le x<360{}^\\circ\\). The first solution is \\(x=\\tan ^{-1} (0.7) \\approx 34.992{}^\\circ\\). For a standard tangent, the second solution can be found by adding a full period, \\(180\\mathrm{{}^\\circ}\\), giving \\[x=180{}^\\circ +34.99{}^\\circ =214.992{}^\\circ\\nonumber\\] Exercise \\(\\PageIndex{4}\\) Solve \\(5\\sin \\left(\\dfrac{\\pi }{2} t\\right)+3=0\\) for all solutions on one cycle, \\(0 \\le t < 4\\). \\[\\sin \\left(\\dfrac{\\pi }{2} t\\right)=-\\dfrac{3}{5}\\nonumber\\]Let \\(u=\\dfrac{\\pi }{2} t\\), so this becomes \\[\\sin \\left(u\\right)=-\\dfrac{3}{5}\\nonumber\\] Using the inverse, \\(u=\\sin ^{-1",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/06%3A_Periodic_Functions/6.04%3A_Solving_Trigonometric_Equations",
+      "depth": 4,
+      "id": "ch6_s4_t2"
+    },
+    {
+      "title": "Solving right triangles for angles",
+      "description": "In Section 5.5, we used trigonometry on a right\ntriangle to solve for the sides of a triangle\ngiven one side and an additional angle. Using the\ninverse trig functions, we can solve for the\nangles of a right triangle given two sides.",
+      "parent_section": "Modeling with Trigonometric Functions",
+      "parent_section_num": "5",
+      "position_in_section": 0,
+      "difficulty_level": 4,
+      "difficulty_tier": "hard",
+      "concepts": [
+        "cable",
+        "center",
+        "ferris",
+        "ferris wheel",
+        "ground",
+        "wheel"
+      ],
+      "defined_terms": [],
+      "sample_content": "In Section 5.5, we used trigonometry on a right triangle to solve for the sides of a triangle given one side and an additional angle. Using the inverse trig functions, we can solve for the angles of a right triangle given two sides. Exercise \\(\\PageIndex{1}\\) A cable that anchors the center of the London Eye Ferris wheel to the ground must be replaced. The center of the Ferris wheel is 70 meters above the ground and the second anchor on the ground is 23 meters from the base of the wheel. What is the angle from the ground up to the center of the Ferris wheel and how long is the cable? Angle of elevation for the cable is 71.81 degrees and the cable is 73.68 m long",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/06%3A_Periodic_Functions/6.05%3A_Modeling_with_Trigonometric_Functions",
+      "depth": 5,
+      "id": "ch6_s5_t1"
+    },
+    {
+      "title": "Modeling with sinusoidal functions",
+      "description": "Many modeling situations involve functions that\nare periodic. Previously we learned that\nsinusoidal functions are a special type of\nperiodic function.",
+      "parent_section": "Modeling with Trigonometric Functions",
+      "parent_section_num": "5",
+      "position_in_section": 1,
+      "difficulty_level": 4,
+      "difficulty_tier": "hard",
+      "concepts": [
+        "involve",
+        "model",
+        "periodic",
+        "problems",
+        "sinusoidal",
+        "use"
+      ],
+      "defined_terms": [],
+      "sample_content": "Many modeling situations involve functions that are periodic. Previously we learned that sinusoidal functions are a special type of periodic function. Problems that involve quantities that oscillate can often be modeled by a sine or cosine function and once we create a suitable model for the problem we can use that model to answer various questions. Exercise \\(\\PageIndex{2}\\) The author’s monthly gas usage (in therms) is shown here. Find a function to model the data. Approximately \\[G(t)=66\\cos \\left(\\dfrac{\\pi }{6} (t-1)\\right)+87\\nonumber\\] In some problems, we can use trigonometric functions to model behaviors more complicated than the basic sinusoidal function.",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/06%3A_Periodic_Functions/6.05%3A_Modeling_with_Trigonometric_Functions",
+      "depth": 6,
+      "id": "ch6_s5_t2"
+    }
+  ],
+  "edges": [
+    {
+      "strength": 4,
+      "source": "ch6_s1_t1",
+      "evidence": "periodic",
+      "target": "ch6_s5_t2"
+    },
+    {
+      "strength": 3,
+      "source": "ch6_s1_t1",
+      "evidence": "Section 6.1",
+      "target": "ch6_s2_t1"
+    },
+    {
+      "strength": 1,
+      "source": "ch6_s2_t1",
+      "evidence": "section 6.2 → 6.3",
+      "target": "ch6_s3_t1"
+    },
+    {
+      "strength": 1,
+      "source": "ch6_s3_t1",
+      "evidence": "section 6.3 → 6.4",
+      "target": "ch6_s4_t1"
+    },
+    {
+      "strength": 2,
+      "source": "ch6_s4_t1",
+      "evidence": "adjacent in section 6.4",
+      "target": "ch6_s4_t2"
+    },
+    {
+      "strength": 1,
+      "source": "ch6_s4_t2",
+      "evidence": "section 6.4 → 6.5",
+      "target": "ch6_s5_t1"
+    },
+    {
+      "strength": 2,
+      "source": "ch6_s5_t1",
+      "evidence": "adjacent in section 6.5",
+      "target": "ch6_s5_t2"
+    }
+  ]
+}

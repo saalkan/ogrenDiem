@@ -1,0 +1,195 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "title": "Linear Functions",
+      "description": "As you hop into a taxicab in Las Vegas, the meter\nwill immediately read $3.50; this is the “drop”\ncharge made when the taximeter is activated. After\nthat initial fee, the taximeter will add $2.76 for\neach mile the taxi drives (Nevada Taxicab\nAuthority, retrieved May 8, 2017.",
+      "parent_section": "Linear Functions",
+      "parent_section_num": "1",
+      "position_in_section": 0,
+      "difficulty_level": 2,
+      "difficulty_tier": "easy",
+      "concepts": [
+        "calculating",
+        "change",
+        "cost",
+        "dollars",
+        "linear",
+        "mile",
+        "miles",
+        "rate",
+        "slope"
+      ],
+      "defined_terms": [
+        "linear",
+        "slope",
+        "calculating"
+      ],
+      "sample_content": "As you hop into a taxicab in Las Vegas, the meter will immediately read $3.50; this is the “drop” charge made when the taximeter is activated. After that initial fee, the taximeter will add $2.76 for each mile the taxi drives (Nevada Taxicab Authority, retrieved May 8, 2017. There is also a waiting fee assessed when the taxi is waiting at red lights, but we’ll ignore that in this discussion. This chapter is part of Precalculus: An Investigation of Functions © Lippman & Rasmussen 2017. This material is licensed under a Creative Commons CC-BY-SA license.). In this scenario, the total taxi fare depends upon the number of miles ridden in the taxi, and we can ask whether it is possible to model this type of scenario with a function. Using descriptive variables, we choose \\(m\\) for miles and \\(C\\) for Cost in dollars as a function of miles: \\(C(m)\\). We know for certain that \\(C(0)=3.50\\), since the $3.50 drop charge is assessed regardless of how many miles are driven. Since $2.67 is added for each mile driven, then \\[C(1)=3.50+2.67=6.17\\nonumber \\] If we then drove a second mile, another $2.67 would be added to the cost: \\[C(2)=3.50+2.67+2.67=3.50+2.67(2)=8.84\\nonumber \\] If we drove a third mile, another $2.67 would be added to the cost: \\[C(3)=3.50+2.67+2.67+2.67=3.50+2.67(3)=11.51\\nonumber \\] From this we might observe the pattern, and conclude that if \\(m\\) miles are driven, \\(C(m)=3.50+2.67m\\) because we start with a $3.50 drop fee and then for each mile increase we add $2.67. It is good to verify that the units make sense in this equation. The $3.50 drop charge is measured in dollars; the $2.67 charge is measured in dollars per mile. \\[C(m)=3.50\\text{ dollars}+\\left(2.67\\dfrac{\\text{dollars}}{\\text{mile}} \\right)\\left(m\\; \\text{ miles}\\right)\\nonumber \\] When dollars per mile are multiplied by a number of miles, the result is a number of dollars, matching the units on the 3.50, and matching the desired units for the C function. Notice this equation \\(C(m)=3.50+2.67",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/02%3A_Linear_Functions/2.01%3A_Linear_Functions",
+      "depth": 0,
+      "id": "ch2_s1_t1"
+    },
+    {
+      "title": "Graphs of Linear Functions",
+      "description": "When we are working with a new function, it is\nuseful to know as much as we can about the\nfunction: its graph, where the function is zero,\nand any other special behaviors of the function.\nWe will begin this exploration of linear functions\nwith a look at graphs.",
+      "parent_section": "Graphs of Linear Functions",
+      "parent_section_num": "2",
+      "position_in_section": 0,
+      "difficulty_level": 3,
+      "difficulty_tier": "medium",
+      "concepts": [
+        "change",
+        "finding",
+        "graphical",
+        "horizontal",
+        "line",
+        "lines",
+        "parallel",
+        "perpendicular",
+        "vertical"
+      ],
+      "defined_terms": [
+        "graphical",
+        "finding",
+        "horizontal",
+        "parallel",
+        "perpendicular"
+      ],
+      "sample_content": "When we are working with a new function, it is useful to know as much as we can about the function: its graph, where the function is zero, and any other special behaviors of the function. We will begin this exploration of linear functions with a look at graphs. When graphing a linear function, there are three basic ways to graph it: By plotting points (at least 2) and drawing a line through the points Using the initial value (output when x = 0) and rate of change (slope) Using transformations of the identity function \\(f(x)=x\\) When using the initial value and rate of change to graph, we need to consider the graphical interpretation of these values. Remember the initial value of the function is the output when the input is zero, so in the equation \\(f(x)=b+mx\\), the graph includes the point \\((0, b)\\). On the graph, this is the vertical intercept – the point where the graph crosses the vertical axis. For the rate of change, it is helpful to recall that we calculated this value as \\[m = \\dfrac{change\\ of\\ output}{change\\ of\\ input}\\nonumber\\] From a graph of a line, this tells us that if we divide the vertical difference, or rise, of the function outputs by the horizontal difference, or run, of the inputs, we will obtain the rate of change, also called slope of the line. \\[m=\\dfrac{change\\ of \\ output}{change\\ of\\ input} = \\dfrac{rise}{run}\\nonumber \\] Notice that this ratio is the same regardless of which two points we use. Exercise \\(\\PageIndex{1}\\) Consider that the slope \\(-\\dfrac{2}{3}\\) could also be written as \\(\\dfrac{2}{-3}\\). Using \\(\\dfrac{2}{-3}\\), find another point on the graph that has a negative \\(x\\) value. Answer \\((-3,7)\\) found by starting at the vertical intercept, going up \\(2\\) units and \\(3\\) in the negative horizontal direction. You could have also answered, \\((-6, 9)\\) or \\((-9, 11)\\) etc … Another option for graphing is to use transformations of the identity function\\(f(x)=x\\). In the equation\\(f(x)=mx\\), the m is acting as the vertical str",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/02%3A_Linear_Functions/2.02%3A_Graphs_of_Linear_Functions",
+      "depth": 1,
+      "id": "ch2_s2_t1"
+    },
+    {
+      "title": "Modeling with Linear Functions",
+      "description": "When modeling scenarios with a linear function and\nsolving problems involving quantities changing\nlinearly, we typically follow the same problem\nsolving strategies that we would use for any type\nof function: Problem Solving Strategy Identify\nchanging quantities, and then carefull",
+      "parent_section": "Modeling with Linear Functions",
+      "parent_section_num": "3",
+      "position_in_section": 0,
+      "difficulty_level": 3,
+      "difficulty_tier": "medium",
+      "concepts": [
+        "appropriate",
+        "carefully",
+        "formula",
+        "identify",
+        "information",
+        "problem"
+      ],
+      "defined_terms": [],
+      "sample_content": "When modeling scenarios with a linear function and solving problems involving quantities changing linearly, we typically follow the same problem solving strategies that we would use for any type of function: Problem Solving Strategy Identify changing quantities, and then carefully and clearly define descriptive variables to represent those quantities. When appropriate, sketch a picture or define a coordinate system. Carefully read the problem to identify important information. Look for information giving values for the variables, or values for parts of the functional model, like slope and initial value. Carefully read the problem to identify what we are trying to find, identify, solve, or interpret. Identify a solution pathway from the provided information to what we are trying to find. Often this will involve checking and tracking units, building a table or even finding a formula for the function being used to model the problem. When needed, find a formula for the function. Solve or evaluate using the formula you found for the desired quantities. Reflect on whether your answer is reasonable for the given situation and whether it makes sense mathematically. Clearly convey your result using appropriate units, and answer in full sentences when appropriate. Exercise \\(\\PageIndex{1}\\) A database manager is loading a large table from backups. Getting impatient, she notices 1.2 million rows had been loaded. Ten minutes later, 2.5 million rows had been loaded. How much longer will she have to wait for all 80 million rows to load? Answer Letting \\(t\\) be the number of minutes since she got impatient, and N be the number rows loaded, in millions, we have two points: (0, 1.2) and (10, 2.5). The slope is \\(m=\\dfrac{2.5-1.2}{10-0} =\\dfrac{1.3}{10} =0.13\\) million rows per minute. We know the \\(N\\) intercept, so we can write the equation: \\[N=0.13t+1.2\\nonumber \\] To determine how long she will have to wait, we need to solve for when \\(N = 80\\). \\[N = 0.13t + 1.2 = 80\\nonumber \\",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/02%3A_Linear_Functions/2.03%3A_Modeling_with_Linear_Functions",
+      "depth": 2,
+      "id": "ch2_s3_t1"
+    },
+    {
+      "title": "Fitting Linear Models to Data",
+      "description": "In the real world, rarely do things follow trends\nperfectly. When we expect the trend to behave\nlinearly, or when inspection suggests the trend is\nbehaving linearly, it is often desirable to find\nan equation to approximate the data.",
+      "parent_section": "Fitting Linear Models to Data",
+      "parent_section_num": "4",
+      "position_in_section": 0,
+      "difficulty_level": 4,
+      "difficulty_tier": "hard",
+      "concepts": [
+        "chirps",
+        "coefficient",
+        "correlation",
+        "correlation coefficient",
+        "data",
+        "interpolation",
+        "temperature"
+      ],
+      "defined_terms": [
+        "interpolation",
+        "correlation"
+      ],
+      "sample_content": "In the real world, rarely do things follow trends perfectly. When we expect the trend to behave linearly, or when inspection suggests the trend is behaving linearly, it is often desirable to find an equation to approximate the data. Finding an equation to approximate the data helps us understand the behavior of the data and allows us to use the linear model to make predictions about the data, inside and outside of the data range. The simplest way to find an equation to approximate this data is to try to “eyeball” a line that seems to fit the data pretty well, then find an equation for that line based on the slope and intercept. You can see from the trend in the data that the number of chirps increases as the temperature increases. As you consider a function for this data you should know that you are looking at an increasing function or a function with a positive slope. flashback What descriptive variables would you choose to represent Temperature & Chirps? Which variable is the independent variable and which is the dependent variable? Based on this data and the graph, what is a reasonable domain & range? Based on the data alone, is this function one-to-one, explain? Answer 1. a. T = Temperature, C = Chirps (answers may vary) b. Independent (Chirps) , Dependent (Temperature) c. Reasonable Domain (18.5, 44) , Reasonable Range (52, 80.5) (answers may vary) d. NO, it is not one-to-one, there are two different output values for 35 chirps. This linear equation can then be used to approximate the solution to various questions we might ask about the trend. While the data does not perfectly fall on the linear equation, the equation is our best guess as to how the relationship will behave outside of the values we have data for. There is a difference, though, between making predictions inside the domain and range of values we have data for, and outside that domain and range. For the Temperature as a function of chirps in our hand drawn model above, Interpolation would occur if",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/02%3A_Linear_Functions/2.04%3A_Fitting_Linear_Models_to_Data",
+      "depth": 3,
+      "id": "ch2_s4_t1"
+    },
+    {
+      "title": "Absolute Value Functions",
+      "description": "So far in this chapter we have been studying the\nbehavior of linear functions. The Absolute Value\nFunction is a piecewise-defined function made up\nof two linear functions.",
+      "parent_section": "Absolute Value Functions",
+      "parent_section_num": "5",
+      "position_in_section": 0,
+      "difficulty_level": 5,
+      "difficulty_tier": "hard",
+      "concepts": [
+        "absolute",
+        "absolute value",
+        "inequalities",
+        "left right",
+        "nonumber",
+        "value function"
+      ],
+      "defined_terms": [
+        "absolute"
+      ],
+      "sample_content": "So far in this chapter we have been studying the behavior of linear functions. The Absolute Value Function is a piecewise-defined function made up of two linear functions. The name, Absolute Value Function, should be familiar to you from Section 1.2. In its basic form\\(f(x)=\\left|x\\right|\\) it is one of our toolkit functions. The absolute value function is commonly used to determine the distance between two numbers on the number line. Given two values a and b , then \\(\\left|a-b\\right|\\) will give the distance, a positive quantity, between these values, regardless of which value is larger. Exercise \\(\\PageIndex{1}\\) Students who score within 20 points of 80 will pass the test. Write this as a distance from 80 using the absolute value notation. Answer Using the variable p, for passing, \\(\\left|p-80\\right|\\le 20\\) Important Features The most significant feature of the absolute value graphAbsolute Value Functions:Graphing is the corner point where the graph changes direction. When finding the equation for a transformed absolute value function, this point is very helpful for determining the horizontal and vertical shifts. Exercise \\(\\PageIndex{2}\\) Given the description of the transformed absolute value function write the equation. The absolute value function is horizontally shifted left 2 units, is vertically flipped, and vertically shifted up 3 units. Answer \\[f(x)=-\\left|x+2\\right|+3\\nonumber \\] The graph of an absolute value function will have a vertical intercept when the input is zero. The graph may or may not have horizontal intercepts, depending on how the graph has been shifted and reflected. It is possible for the absolute value function to have zero, one, or two horizontal intercepts. Zero horizontal intercepts One Two One Two To find the horizontal intercepts, we will need to solve an equation involving an absolute value. Notice that the absolute value function is not one-to-one, so typically inverses of absolute value functions are not discussed. Solving Abs",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/02%3A_Linear_Functions/2.05%3A_Absolute_Value_Functions",
+      "depth": 4,
+      "id": "ch2_s5_t1"
+    }
+  ],
+  "edges": [
+    {
+      "strength": 4,
+      "source": "ch2_s1_t1",
+      "evidence": "linear",
+      "target": "ch2_s2_t1"
+    },
+    {
+      "strength": 4,
+      "source": "ch2_s1_t1",
+      "evidence": "linear",
+      "target": "ch2_s3_t1"
+    },
+    {
+      "strength": 4,
+      "source": "ch2_s1_t1",
+      "evidence": "linear",
+      "target": "ch2_s4_t1"
+    },
+    {
+      "strength": 4,
+      "source": "ch2_s1_t1",
+      "evidence": "linear",
+      "target": "ch2_s5_t1"
+    },
+    {
+      "strength": 4,
+      "source": "ch2_s2_t1",
+      "evidence": "finding",
+      "target": "ch2_s3_t1"
+    },
+    {
+      "strength": 4,
+      "source": "ch2_s2_t1",
+      "evidence": "finding",
+      "target": "ch2_s4_t1"
+    },
+    {
+      "strength": 4,
+      "source": "ch2_s2_t1",
+      "evidence": "finding",
+      "target": "ch2_s5_t1"
+    },
+    {
+      "strength": 1,
+      "source": "ch2_s3_t1",
+      "evidence": "section 2.3 → 2.4",
+      "target": "ch2_s4_t1"
+    },
+    {
+      "strength": 1,
+      "source": "ch2_s4_t1",
+      "evidence": "section 2.4 → 2.5",
+      "target": "ch2_s5_t1"
+    }
+  ]
+}

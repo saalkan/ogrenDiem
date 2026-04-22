@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 800px;
+                 background-color: #111;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#6ab04c", "font": {"color": "#74b9ff"}, "id": "ch3_s1_t1", "label": "Characteristics of Power Functions", "shape": "dot", "title": "\u003cb\u003eCharacteristics of Power Functions\u003c/b\u003e\u003cbr\u003e\u00a7 1 \u00b7 difficulty 1 (easy)\u003cbr\u003e\u003ci\u003eShown to the right are the graphs of\u003cbr\u003e\\(f(x)=x^{2}\\), \\(f(x)=x^{4}\\), and\u003cbr\u003e\\(f(x)=x^{6}\\), all even whole number powers.\u003cbr\u003eNotice that all these graphs have a fairly similar\u003cbr\u003eshape, very similar to the quadratic toolkit, but\u003cbr\u003eas the power increases the graphs flatten somewhat\u003cbr\u003enear the\u003c/i\u003e"}, {"color": "#6ab04c", "font": {"color": "#74b9ff"}, "id": "ch3_s1_t2", "label": "Polynomials", "shape": "dot", "title": "\u003cb\u003ePolynomials\u003c/b\u003e\u003cbr\u003e\u00a7 1 \u00b7 difficulty 1 (easy)\u003cbr\u003e\u003ci\u003eAn oil pipeline bursts in the Gulf of Mexico,\u003cbr\u003ecausing an oil slick in a roughly circular shape.\u003cbr\u003eThe slick is currently 24 miles in radius, but\u003cbr\u003ethat radius is increasing by 8 miles each week.\u003c/i\u003e"}, {"color": "#6ab04c", "font": {"color": "#74b9ff"}, "id": "ch3_s1_t3", "label": "Short Run Behavior", "shape": "dot", "title": "\u003cb\u003eShort Run Behavior\u003c/b\u003e\u003cbr\u003e\u00a7 1 \u00b7 difficulty 1 (easy)\u003cbr\u003e\u003ci\u003eCharacteristics of the graph such as vertical and\u003cbr\u003ehorizontal intercepts and the places the graph\u003cbr\u003echanges direction are part of the short run\u003cbr\u003ebehavior of the polynomial. Like with all\u003cbr\u003efunctions, the vertical intercept is where the\u003cbr\u003egraph crosses the vertical axis, and occurs when t\u003c/i\u003e"}, {"color": "#6ab04c", "font": {"color": "#74b9ff"}, "id": "ch3_s2_t1", "label": "Short run Behavior: Vertex", "shape": "dot", "title": "\u003cb\u003eShort run Behavior: Vertex\u003c/b\u003e\u003cbr\u003e\u00a7 2 \u00b7 difficulty 2 (easy)\u003cbr\u003e\u003ci\u003eWe now explore the interesting features of the\u003cbr\u003egraphs of quadratics. In addition to intercepts,\u003cbr\u003equadratics have an interesting feature where they\u003cbr\u003echange direction, called the vertex .\u003c/i\u003e"}, {"color": "#6ab04c", "font": {"color": "#74b9ff"}, "id": "ch3_s2_t2", "label": "Short run Behavior: Intercepts", "shape": "dot", "title": "\u003cb\u003eShort run Behavior: Intercepts\u003c/b\u003e\u003cbr\u003e\u00a7 2 \u00b7 difficulty 2 (easy)\u003cbr\u003e\u003ci\u003eAs with any function, we can find the vertical\u003cbr\u003eintercepts of a quadratic by evaluating the\u003cbr\u003efunction at an input of zero, and we can find the\u003cbr\u003ehorizontal intercepts by solving for when the\u003cbr\u003eoutput will be zero. Notice that depending upon\u003cbr\u003ethe location of the graph, we might have zero\u003c/i\u003e"}, {"color": "#6ab04c", "font": {"color": "#74b9ff"}, "id": "ch3_s3_t1", "label": "Short run Behavior: Intercepts", "shape": "dot", "title": "\u003cb\u003eShort run Behavior: Intercepts\u003c/b\u003e\u003cbr\u003e\u00a7 3 \u00b7 difficulty 2 (easy)\u003cbr\u003e\u003ci\u003eAs with any function, the vertical intercept can\u003cbr\u003ebe found by evaluating the function at an input of\u003cbr\u003ezero. Since this is evaluation, it is relatively\u003cbr\u003eeasy to do it for a polynomial of any degree.\u003c/i\u003e"}, {"color": "#f0932b", "font": {"color": "#74b9ff"}, "id": "ch3_s3_t2", "label": "Graphical Behavior at Intercepts", "shape": "dot", "title": "\u003cb\u003eGraphical Behavior at Intercepts\u003c/b\u003e\u003cbr\u003e\u00a7 3 \u00b7 difficulty 3 (medium)\u003cbr\u003e\u003ci\u003eIf we graph the function \\(f(x)=(x+3)(x-2)^{2}\u003cbr\u003e(x+1)^{3}\\), notice that the behavior at each of\u003cbr\u003ethe horizontal intercepts is different. At the\u003cbr\u003ehorizontal intercept x = -3, coming from the\u003cbr\u003e\\((x+3)\\) factor of the polynomial, the graph\u003cbr\u003epasses directly through the horizontal interce\u003c/i\u003e"}, {"color": "#6ab04c", "font": {"color": "#74b9ff"}, "id": "ch3_s3_t3", "label": "Solving Polynomial Inequalities", "shape": "dot", "title": "\u003cb\u003eSolving Polynomial Inequalities\u003c/b\u003e\u003cbr\u003e\u00a7 3 \u00b7 difficulty 2 (easy)\u003cbr\u003e\u003ci\u003eOne application of our ability to find intercepts\u003cbr\u003eand sketch a graph of polynomials is the ability\u003cbr\u003eto solve polynomial inequalities. It is a very\u003cbr\u003ecommon question to ask when a function will be\u003cbr\u003epositive and negative.\u003c/i\u003e"}, {"color": "#6ab04c", "font": {"color": "#74b9ff"}, "id": "ch3_s3_t4", "label": "Writing Equations using Intercepts", "shape": "dot", "title": "\u003cb\u003eWriting Equations using Intercepts\u003c/b\u003e\u003cbr\u003e\u00a7 3 \u00b7 difficulty 2 (easy)\u003cbr\u003e\u003ci\u003eSince a polynomial function written in factored\u003cbr\u003eform will have a horizontal intercept where each\u003cbr\u003efactor is equal to zero, we can form a function\u003cbr\u003ethat will pass through a set of horizontal\u003cbr\u003eintercepts by introducing a corresponding set of\u003cbr\u003efactors. factored form of polynomials If a\u003c/i\u003e"}, {"color": "#6ab04c", "font": {"color": "#74b9ff"}, "id": "ch3_s3_t5", "label": "Estimating Extrema", "shape": "dot", "title": "\u003cb\u003eEstimating Extrema\u003c/b\u003e\u003cbr\u003e\u00a7 3 \u00b7 difficulty 2 (easy)\u003cbr\u003e\u003ci\u003eWith quadratics, we were able to algebraically\u003cbr\u003efind the maximum or minimum value of the function\u003cbr\u003eby finding the vertex. For general polynomials,\u003cbr\u003efinding these turning points is not possible\u003cbr\u003ewithout more advanced techniques from calculus.\u003c/i\u003e"}, {"color": "#f0932b", "font": {"color": "#74b9ff"}, "id": "ch3_s4_t1", "label": "Factor Theorem and Remainder Theorem", "shape": "dot", "title": "\u003cb\u003eFactor Theorem and Remainder Theorem\u003c/b\u003e\u003cbr\u003e\u00a7 4 \u00b7 difficulty 3 (medium)\u003cbr\u003e\u003ci\u003eIn the last section, we limited ourselves to\u003cbr\u003efinding the intercepts, or zeros, of polynomials\u003cbr\u003ethat factored simply, or we turned to technology.\u003cbr\u003eIn this section, we will look at algebraic\u003cbr\u003etechniques for finding the zeros of polynomials\u003cbr\u003elike \\(h(t)=t^{3} +4t^{2} +t-6\\).\u003c/i\u003e"}, {"color": "#f0932b", "font": {"color": "#74b9ff"}, "id": "ch3_s5_t1", "label": "Real Zeros of Polynomials", "shape": "dot", "title": "\u003cb\u003eReal Zeros of Polynomials\u003c/b\u003e\u003cbr\u003e\u00a7 5 \u00b7 difficulty 3 (medium)\u003cbr\u003e\u003ci\u003eIn the last section, we saw how to determine if a\u003cbr\u003ereal number was a zero of a polynomial. In this\u003cbr\u003esection, we will learn how to find good candidates\u003cbr\u003eto test using synthetic division.\u003c/i\u003e"}, {"color": "#eb4d4b", "font": {"color": "#74b9ff"}, "id": "ch3_s6_t1", "label": "Arithmetic on Complex Numbers", "shape": "dot", "title": "\u003cb\u003eArithmetic on Complex Numbers\u003c/b\u003e\u003cbr\u003e\u00a7 6 \u00b7 difficulty 4 (hard)\u003cbr\u003e\u003ci\u003eBefore we dive into the more complicated uses of\u003cbr\u003ecomplex numbers, let\u2019s make sure we remember the\u003cbr\u003ebasic arithmetic involved. To add or subtract\u003cbr\u003ecomplex numbers, we simply add the like terms,\u003cbr\u003ecombining the real parts and combining the\u003cbr\u003eimaginary parts.\u003c/i\u003e"}, {"color": "#eb4d4b", "font": {"color": "#74b9ff"}, "id": "ch3_s6_t2", "label": "Complex Zeros of Polynomials", "shape": "dot", "title": "\u003cb\u003eComplex Zeros of Polynomials\u003c/b\u003e\u003cbr\u003e\u00a7 6 \u00b7 difficulty 4 (hard)\u003cbr\u003e\u003ci\u003eComplex numbers allow us a way to write solutions\u003cbr\u003eto quadratic equations that do not have real\u003cbr\u003esolutions. Exercise \\(\\PageIndex{3}\\) Find the\u003cbr\u003ezeros of \\(f(x)=2x^{2} +3x+4\\).\u003c/i\u003e"}, {"color": "#eb4d4b", "font": {"color": "#74b9ff"}, "id": "ch3_s7_t1", "label": "Rational Functions", "shape": "dot", "title": "\u003cb\u003eRational Functions\u003c/b\u003e\u003cbr\u003e\u00a7 7 \u00b7 difficulty 4 (hard)\u003cbr\u003e\u003ci\u003eIn the previous sections, we have built\u003cbr\u003epolynomials based on the positive whole number\u003cbr\u003epower functions. In this section, we explore\u003cbr\u003efunctions based on power functions with negative\u003cbr\u003einteger powers, called rational functions.\u003c/i\u003e"}, {"color": "#eb4d4b", "font": {"color": "#74b9ff"}, "id": "ch3_s8_t1", "label": "Inverses and Radical Functions", "shape": "dot", "title": "\u003cb\u003eInverses and Radical Functions\u003c/b\u003e\u003cbr\u003e\u00a7 8 \u00b7 difficulty 4 (hard)\u003cbr\u003e\u003ci\u003eIn this section, we will explore the inverses of\u003cbr\u003epolynomial and rational functions, and in\u003cbr\u003eparticular the radical functions that arise in the\u003cbr\u003eprocess. The previous example illustrated two\u003cbr\u003eimportant things: When finding the inverse of a\u003cbr\u003equadratic, we have to limit ourselves to a d\u003c/i\u003e"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "from": "ch3_s1_t1", "title": "term-definition (long)", "to": "ch3_s1_t2", "value": 4}, {"arrows": "to", "from": "ch3_s1_t1", "title": "term-definition (long)", "to": "ch3_s3_t2", "value": 4}, {"arrows": "to", "from": "ch3_s1_t1", "title": "term-definition (long)", "to": "ch3_s4_t1", "value": 4}, {"arrows": "to", "from": "ch3_s1_t1", "title": "term-definition (long)", "to": "ch3_s7_t1", "value": 4}, {"arrows": "to", "from": "ch3_s1_t2", "title": "structural-sec (adjacent in section 3.1)", "to": "ch3_s1_t3", "value": 2}, {"arrows": "to", "from": "ch3_s1_t3", "title": "structural-chap (section 3.1 \u2192 3.2)", "to": "ch3_s2_t1", "value": 1}, {"arrows": "to", "from": "ch3_s2_t1", "title": "structural-sec (adjacent in section 3.2)", "to": "ch3_s2_t2", "value": 2}, {"arrows": "to", "from": "ch3_s2_t2", "title": "structural-chap (section 3.2 \u2192 3.3)", "to": "ch3_s3_t1", "value": 1}, {"arrows": "to", "from": "ch3_s3_t1", "title": "structural-sec (adjacent in section 3.3)", "to": "ch3_s3_t2", "value": 2}, {"arrows": "to", "from": "ch3_s3_t2", "title": "structural-sec (adjacent in section 3.3)", "to": "ch3_s3_t3", "value": 2}, {"arrows": "to", "from": "ch3_s3_t3", "title": "structural-sec (adjacent in section 3.3)", "to": "ch3_s3_t4", "value": 2}, {"arrows": "to", "from": "ch3_s3_t4", "title": "structural-sec (adjacent in section 3.3)", "to": "ch3_s3_t5", "value": 2}, {"arrows": "to", "from": "ch3_s3_t5", "title": "structural-chap (section 3.3 \u2192 3.4)", "to": "ch3_s4_t1", "value": 1}, {"arrows": "to", "from": "ch3_s4_t1", "title": "structural-chap (section 3.4 \u2192 3.5)", "to": "ch3_s5_t1", "value": 1}, {"arrows": "to", "from": "ch3_s5_t1", "title": "structural-chap (section 3.5 \u2192 3.6)", "to": "ch3_s6_t1", "value": 1}, {"arrows": "to", "from": "ch3_s6_t1", "title": "term-definition (complex)", "to": "ch3_s6_t2", "value": 4}, {"arrows": "to", "from": "ch3_s6_t2", "title": "structural-chap (section 3.6 \u2192 3.7)", "to": "ch3_s7_t1", "value": 1}, {"arrows": "to", "from": "ch3_s7_t1", "title": "structural-chap (section 3.7 \u2192 3.8)", "to": "ch3_s8_t1", "value": 1}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

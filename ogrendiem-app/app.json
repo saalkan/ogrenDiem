@@ -1,0 +1,20 @@
+{
+  "expo": {
+    "name": "öğrenDiem",
+    "slug": "ogrendiem",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#0e1116",
+      "resizeMode": "contain"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": { "supportsTablet": true },
+    "android": {
+      "adaptiveIcon": { "backgroundColor": "#0e1116" }
+    },
+    "web": { "bundler": "metro" }
+  }
+}

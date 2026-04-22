@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 800px;
+                 background-color: #111;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#6ab04c", "font": {"color": "#74b9ff"}, "id": "ch1_s1_t1", "label": "What is a Function?", "shape": "dot", "title": "\u003cb\u003eWhat is a Function?\u003c/b\u003e\u003cbr\u003e\u00a7 1 \u00b7 difficulty 1 (easy)\u003cbr\u003e\u003ci\u003eThe natural world is full of relationships between\u003cbr\u003equantities that change. When we see these\u003cbr\u003erelationships, it is natural for us to ask \"If I\u003cbr\u003eknow one quantity, can I then determine the\u003cbr\u003eother?\" This establishes the idea of an input\u003cbr\u003equantity, or independent variable, and a corresp\u003c/i\u003e"}, {"color": "#6ab04c", "font": {"color": "#74b9ff"}, "id": "ch1_s1_t2", "label": "Function Notation", "shape": "dot", "title": "\u003cb\u003eFunction Notation\u003c/b\u003e\u003cbr\u003e\u00a7 1 \u00b7 difficulty 1 (easy)\u003cbr\u003e\u003ci\u003eTo simplify writing out expressions and equations\u003cbr\u003einvolving functions, a simplified notation is\u003cbr\u003eoften used. We also use descriptive variables to\u003cbr\u003ehelp us remember the meaning of the quantities in\u003cbr\u003ethe problem.\u003c/i\u003e"}, {"color": "#6ab04c", "font": {"color": "#74b9ff"}, "id": "ch1_s1_t3", "label": "Tables as Functions", "shape": "dot", "title": "\u003cb\u003eTables as Functions\u003c/b\u003e\u003cbr\u003e\u00a7 1 \u00b7 difficulty 1 (easy)\u003cbr\u003e\u003ci\u003eFunctions can be represented in many ways: Words\u003cbr\u003e(as we did in the last few examples), tables of\u003cbr\u003evalues, graphs, or formulas. Represented as a\u003cbr\u003etable, we are presented with a list of input and\u003cbr\u003eoutput values.\u003c/i\u003e"}, {"color": "#6ab04c", "font": {"color": "#74b9ff"}, "id": "ch1_s1_t4", "label": "Solving and Evaluating Functions", "shape": "dot", "title": "\u003cb\u003eSolving and Evaluating Functions\u003c/b\u003e\u003cbr\u003e\u00a7 1 \u00b7 difficulty 1 (easy)\u003cbr\u003e\u003ci\u003eWhen we work with functions, there are two typical\u003cbr\u003ethings we do: evaluate and solve. Evaluating a\u003cbr\u003efunction is what we do when we know an input, and\u003cbr\u003euse the function to determine the corresponding\u003cbr\u003eoutput.\u003c/i\u003e"}, {"color": "#6ab04c", "font": {"color": "#74b9ff"}, "id": "ch1_s1_t5", "label": "Graphs as Functions", "shape": "dot", "title": "\u003cb\u003eGraphs as Functions\u003c/b\u003e\u003cbr\u003e\u00a7 1 \u00b7 difficulty 1 (easy)\u003cbr\u003e\u003ci\u003eOftentimes a graph of a relationship can be used\u003cbr\u003eto define a function. By convention, graphs are\u003cbr\u003etypically created with the input quantity along\u003cbr\u003ethe horizontal axis and the output quantity along\u003cbr\u003ethe vertical.\u003c/i\u003e"}, {"color": "#6ab04c", "font": {"color": "#74b9ff"}, "id": "ch1_s1_t6", "label": "Formulas as Functions", "shape": "dot", "title": "\u003cb\u003eFormulas as Functions\u003c/b\u003e\u003cbr\u003e\u00a7 1 \u00b7 difficulty 1 (easy)\u003cbr\u003e\u003ci\u003eWhen possible, it is very convenient to define\u003cbr\u003erelationships using formulas. If it is possible to\u003cbr\u003eexpress the output as a formula involving the\u003cbr\u003einput quantity, then we can define a function.\u003c/i\u003e"}, {"color": "#6ab04c", "font": {"color": "#74b9ff"}, "id": "ch1_s1_t7", "label": "Basic Toolkit Functions", "shape": "dot", "title": "\u003cb\u003eBasic Toolkit Functions\u003c/b\u003e\u003cbr\u003e\u00a7 1 \u00b7 difficulty 1 (easy)\u003cbr\u003e\u003ci\u003eIn this text, we will be exploring functions \u2013 the\u003cbr\u003eshapes of their graphs, their unique features,\u003cbr\u003etheir equations, and how to solve problems with\u003cbr\u003ethem. When learning to read, we start with the\u003cbr\u003ealphabet.\u003c/i\u003e"}, {"color": "#6ab04c", "font": {"color": "#74b9ff"}, "id": "ch1_s2_t1", "label": "Notation", "shape": "dot", "title": "\u003cb\u003eNotation\u003c/b\u003e\u003cbr\u003e\u00a7 2 \u00b7 difficulty 2 (easy)\u003cbr\u003e\u003ci\u003eIn the previous examples, we used inequalities to\u003cbr\u003edescribe the domain and range of the functions.\u003cbr\u003eThis is one way to describe intervals of input and\u003cbr\u003eoutput values, but is not the only way.\u003c/i\u003e"}, {"color": "#6ab04c", "font": {"color": "#74b9ff"}, "id": "ch1_s2_t2", "label": "Domain and Range from Graphs", "shape": "dot", "title": "\u003cb\u003eDomain and Range from Graphs\u003c/b\u003e\u003cbr\u003e\u00a7 2 \u00b7 difficulty 2 (easy)\u003cbr\u003e\u003ci\u003eWe can also talk about domain and range based on\u003cbr\u003egraphs. Since domain refers to the set of possible\u003cbr\u003einput values, the domain of a graph consists of\u003cbr\u003eall the input values shown on the graph.\u003c/i\u003e"}, {"color": "#6ab04c", "font": {"color": "#74b9ff"}, "id": "ch1_s2_t3", "label": "Piecewise Functions", "shape": "dot", "title": "\u003cb\u003ePiecewise Functions\u003c/b\u003e\u003cbr\u003e\u00a7 2 \u00b7 difficulty 2 (easy)\u003cbr\u003e\u003ci\u003eIn the toolkit functions we introduced the\u003cbr\u003eabsolute value function \\(f(x)=\\left|x\\right|\\).\u003cbr\u003eWith a domain of all real numbers and a range of\u003cbr\u003evalues greater than or equal to 0, the absolute\u003cbr\u003evalue can be defined as the magnitude or modulus\u003cbr\u003eof a number, a real number value regardles\u003c/i\u003e"}, {"color": "#6ab04c", "font": {"color": "#74b9ff"}, "id": "ch1_s3_t1", "label": "Graphical Behavior of Functions", "shape": "dot", "title": "\u003cb\u003eGraphical Behavior of Functions\u003c/b\u003e\u003cbr\u003e\u00a7 3 \u00b7 difficulty 2 (easy)\u003cbr\u003e\u003ci\u003eAs part of exploring how functions change, it is\u003cbr\u003einteresting to explore the graphical behavior of\u003cbr\u003efunctions. Notice in the last example that we used\u003cbr\u003eopen intervals (intervals that don\u2019t include the\u003cbr\u003eendpoints) since the function is neither\u003cbr\u003eincreasing nor decreasing at \\(t =\\) 1, 3\u003c/i\u003e"}, {"color": "#6ab04c", "font": {"color": "#74b9ff"}, "id": "ch1_s3_t2", "label": "Concavity", "shape": "dot", "title": "\u003cb\u003eConcavity\u003c/b\u003e\u003cbr\u003e\u00a7 3 \u00b7 difficulty 2 (easy)\u003cbr\u003e\u003ci\u003eThe total sales, in thousands of dollars, for two\u003cbr\u003ecompanies over 4 weeks are shown. As you can see,\u003cbr\u003ethe sales for each company are increasing, but\u003cbr\u003ethey are increasing in very different ways.\u003c/i\u003e"}, {"color": "#f0932b", "font": {"color": "#74b9ff"}, "id": "ch1_s3_t3", "label": "Behaviors of the Toolkit Functions", "shape": "dot", "title": "\u003cb\u003eBehaviors of the Toolkit Functions\u003c/b\u003e\u003cbr\u003e\u00a7 3 \u00b7 difficulty 3 (medium)\u003cbr\u003e\u003ci\u003eWe will now return to our toolkit functions and\u003cbr\u003ediscuss their graphical behavior. Function\u003cbr\u003eIncreasing/Decreasing Concavity Constant Function\u003cbr\u003e\\(f(x)=c\\) Neither increasing nor decreasing\u003cbr\u003eNeither concave up nor down Identity Function\u003cbr\u003e\\(f(x)=x\\) Increasing Neither concave up nor dow\u003c/i\u003e"}, {"color": "#f0932b", "font": {"color": "#74b9ff"}, "id": "ch1_s4_t1", "label": "Composition of Functions using Tables and Graphs", "shape": "dot", "title": "\u003cb\u003eComposition of Functions using Tables and Graphs\u003c/b\u003e\u003cbr\u003e\u00a7 4 \u00b7 difficulty 3 (medium)\u003cbr\u003e\u003ci\u003eWhen working with functions given as tables and\u003cbr\u003egraphs, we can look up values for the functions\u003cbr\u003eusing a provided table or graph, as discussed in\u003cbr\u003esection 1.1. We start evaluation from the provided\u003cbr\u003einput, and first evaluate the inside function.\u003c/i\u003e"}, {"color": "#f0932b", "font": {"color": "#74b9ff"}, "id": "ch1_s4_t2", "label": "Composition using Formulas", "shape": "dot", "title": "\u003cb\u003eComposition using Formulas\u003c/b\u003e\u003cbr\u003e\u00a7 4 \u00b7 difficulty 3 (medium)\u003cbr\u003e\u003ci\u003eWhen evaluating a composition of functions where\u003cbr\u003ewe have either created or been given formulas, the\u003cbr\u003econcept of working from the inside out remains the\u003cbr\u003esame. First, we evaluate the inside function using\u003cbr\u003ethe input value provided, then use the resulting\u003cbr\u003eoutput as the input to the ou\u003c/i\u003e"}, {"color": "#f0932b", "font": {"color": "#74b9ff"}, "id": "ch1_s4_t3", "label": "Domain of Compositions", "shape": "dot", "title": "\u003cb\u003eDomain of Compositions\u003c/b\u003e\u003cbr\u003e\u00a7 4 \u00b7 difficulty 3 (medium)\u003cbr\u003e\u003ci\u003eWhen we think about the domain of a composition\u003cbr\u003e\\(h(x)=f(g(x))\\), we must consider both the domain\u003cbr\u003eof the inner function and the domain of the\u003cbr\u003ecomposition itself. While it is tempting to only\u003cbr\u003elook at the resulting composite function, if the\u003cbr\u003einner function were undefined at a valu\u003c/i\u003e"}, {"color": "#f0932b", "font": {"color": "#74b9ff"}, "id": "ch1_s4_t4", "label": "Decomposing Functions", "shape": "dot", "title": "\u003cb\u003eDecomposing Functions\u003c/b\u003e\u003cbr\u003e\u00a7 4 \u00b7 difficulty 3 (medium)\u003cbr\u003e\u003ci\u003eIn some cases, it is desirable to decompose a\u003cbr\u003efunction \u2013 to write it as a composition of two\u003cbr\u003esimpler functions.\u003c/i\u003e"}, {"color": "#eb4d4b", "font": {"color": "#74b9ff"}, "id": "ch1_s5_t1", "label": "Transformation of Functions", "shape": "dot", "title": "\u003cb\u003eTransformation of Functions\u003c/b\u003e\u003cbr\u003e\u00a7 5 \u00b7 difficulty 4 (hard)\u003cbr\u003e\u003ci\u003eOften when given a problem, we try to model the\u003cbr\u003escenario using mathematics in the form of words,\u003cbr\u003etables, graphs and equations in order to explain\u003cbr\u003eor solve it. When building models, it is often\u003cbr\u003ehelpful to build off of existing formulas or\u003cbr\u003emodels.\u003c/i\u003e"}, {"color": "#eb4d4b", "font": {"color": "#74b9ff"}, "id": "ch1_s6_t1", "label": "Inverse Functions", "shape": "dot", "title": "\u003cb\u003eInverse Functions\u003c/b\u003e\u003cbr\u003e\u00a7 6 \u00b7 difficulty 5 (hard)\u003cbr\u003e\u003ci\u003eA fashion designer is travelling to Milan for a\u003cbr\u003efashion show. He asks his assistant, Betty, what\u003cbr\u003e75 degrees Fahrenheit is in Celsius, and after a\u003cbr\u003equick search on Google, she finds the formula\u003cbr\u003e\\(C=\\dfrac{5}{9} (F-32)\\).\u003c/i\u003e"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "from": "ch1_s1_t1", "title": "term-definition (function)", "to": "ch1_s1_t2", "value": 4}, {"arrows": "to", "from": "ch1_s1_t1", "title": "term-definition (function)", "to": "ch1_s1_t3", "value": 4}, {"arrows": "to", "from": "ch1_s1_t1", "title": "term-definition (function)", "to": "ch1_s1_t4", "value": 4}, {"arrows": "to", "from": "ch1_s1_t1", "title": "term-definition (function)", "to": "ch1_s1_t5", "value": 4}, {"arrows": "to", "from": "ch1_s1_t1", "title": "term-definition (function)", "to": "ch1_s1_t6", "value": 4}, {"arrows": "to", "from": "ch1_s1_t1", "title": "term-definition (function)", "to": "ch1_s2_t2", "value": 4}, {"arrows": "to", "from": "ch1_s1_t1", "title": "term-definition (function)", "to": "ch1_s2_t3", "value": 4}, {"arrows": "to", "from": "ch1_s1_t1", "title": "term-definition (function)", "to": "ch1_s3_t1", "value": 4}, {"arrows": "to", "from": "ch1_s1_t1", "title": "term-definition (function)", "to": "ch1_s3_t2", "value": 4}, {"arrows": "to", "from": "ch1_s1_t1", "title": "term-definition (function)", "to": "ch1_s3_t3", "value": 4}, {"arrows": "to", "from": "ch1_s1_t1", "title": "term-definition (function)", "to": "ch1_s4_t1", "value": 4}, {"arrows": "to", "from": "ch1_s1_t1", "title": "term-definition (function)", "to": "ch1_s4_t2", "value": 4}, {"arrows": "to", "from": "ch1_s1_t1", "title": "term-definition (function)", "to": "ch1_s4_t3", "value": 4}, {"arrows": "to", "from": "ch1_s1_t1", "title": "term-definition (function)", "to": "ch1_s4_t4", "value": 4}, {"arrows": "to", "from": "ch1_s1_t1", "title": "term-definition (function)", "to": "ch1_s5_t1", "value": 4}, {"arrows": "to", "from": "ch1_s1_t1", "title": "term-definition (function)", "to": "ch1_s6_t1", "value": 4}, {"arrows": "to", "from": "ch1_s1_t2", "title": "explicit-ref (Section 1.1)", "to": "ch1_s4_t1", "value": 3}, {"arrows": "to", "from": "ch1_s1_t2", "title": "structural-sec (adjacent in section 1.1)", "to": "ch1_s1_t3", "value": 2}, {"arrows": "to", "from": "ch1_s1_t3", "title": "explicit-ref (Section 1.1)", "to": "ch1_s4_t1", "value": 3}, {"arrows": "to", "from": "ch1_s1_t3", "title": "structural-sec (adjacent in section 1.1)", "to": "ch1_s1_t4", "value": 2}, {"arrows": "to", "from": "ch1_s1_t4", "title": "explicit-ref (Section 1.1)", "to": "ch1_s4_t1", "value": 3}, {"arrows": "to", "from": "ch1_s1_t4", "title": "structural-sec (adjacent in section 1.1)", "to": "ch1_s1_t5", "value": 2}, {"arrows": "to", "from": "ch1_s1_t5", "title": "explicit-ref (Section 1.1)", "to": "ch1_s4_t1", "value": 3}, {"arrows": "to", "from": "ch1_s1_t5", "title": "structural-sec (adjacent in section 1.1)", "to": "ch1_s1_t6", "value": 2}, {"arrows": "to", "from": "ch1_s1_t6", "title": "explicit-ref (Section 1.1)", "to": "ch1_s4_t1", "value": 3}, {"arrows": "to", "from": "ch1_s1_t6", "title": "structural-sec (adjacent in section 1.1)", "to": "ch1_s1_t7", "value": 2}, {"arrows": "to", "from": "ch1_s1_t7", "title": "explicit-ref (Section 1.1)", "to": "ch1_s4_t1", "value": 3}, {"arrows": "to", "from": "ch1_s1_t7", "title": "structural-chap (section 1.1 \u2192 1.2)", "to": "ch1_s2_t1", "value": 1}, {"arrows": "to", "from": "ch1_s2_t1", "title": "structural-sec (adjacent in section 1.2)", "to": "ch1_s2_t2", "value": 2}, {"arrows": "to", "from": "ch1_s2_t2", "title": "structural-sec (adjacent in section 1.2)", "to": "ch1_s2_t3", "value": 2}, {"arrows": "to", "from": "ch1_s2_t3", "title": "structural-chap (section 1.2 \u2192 1.3)", "to": "ch1_s3_t1", "value": 1}, {"arrows": "to", "from": "ch1_s3_t1", "title": "term-definition (increasing/decreasing)", "to": "ch1_s3_t3", "value": 4}, {"arrows": "to", "from": "ch1_s3_t1", "title": "structural-sec (adjacent in section 1.3)", "to": "ch1_s3_t2", "value": 2}, {"arrows": "to", "from": "ch1_s3_t2", "title": "term-definition (concavity)", "to": "ch1_s3_t3", "value": 4}, {"arrows": "to", "from": "ch1_s3_t3", "title": "structural-chap (section 1.3 \u2192 1.4)", "to": "ch1_s4_t1", "value": 1}, {"arrows": "to", "from": "ch1_s4_t1", "title": "structural-sec (adjacent in section 1.4)", "to": "ch1_s4_t2", "value": 2}, {"arrows": "to", "from": "ch1_s4_t2", "title": "structural-sec (adjacent in section 1.4)", "to": "ch1_s4_t3", "value": 2}, {"arrows": "to", "from": "ch1_s4_t3", "title": "structural-sec (adjacent in section 1.4)", "to": "ch1_s4_t4", "value": 2}, {"arrows": "to", "from": "ch1_s4_t4", "title": "structural-chap (section 1.4 \u2192 1.5)", "to": "ch1_s5_t1", "value": 1}, {"arrows": "to", "from": "ch1_s5_t1", "title": "term-definition (even)", "to": "ch1_s6_t1", "value": 4}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

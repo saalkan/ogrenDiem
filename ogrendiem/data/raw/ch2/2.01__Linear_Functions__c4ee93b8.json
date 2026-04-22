@@ -1,0 +1,83 @@
+{
+  "url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/02%3A_Linear_Functions/2.01%3A_Linear_Functions",
+  "title": "2.1: Linear Functions",
+  "chapter": "2",
+  "section": "1",
+  "body_text": "As you hop into a taxicab in Las Vegas, the meter will immediately read $3.50; this is the “drop” charge made when the taximeter is activated. After that initial fee, the taximeter will add $2.76 for each mile the taxi drives (Nevada Taxicab Authority, retrieved May 8, 2017. There is also a waiting fee assessed when the taxi is waiting at red lights, but we’ll ignore that in this discussion. This chapter is part of Precalculus: An Investigation of Functions © Lippman & Rasmussen 2017. This material is licensed under a Creative Commons CC-BY-SA license.). In this scenario, the total taxi fare depends upon the number of miles ridden in the taxi, and we can ask whether it is possible to model this type of scenario with a function. Using descriptive variables, we choose \\(m\\) for miles and \\(C\\) for Cost in dollars as a function of miles: \\(C(m)\\). We know for certain that \\(C(0)=3.50\\), since the $3.50 drop charge is assessed regardless of how many miles are driven. Since $2.67 is added for each mile driven, then \\[C(1)=3.50+2.67=6.17\\nonumber \\] If we then drove a second mile, another $2.67 would be added to the cost: \\[C(2)=3.50+2.67+2.67=3.50+2.67(2)=8.84\\nonumber \\] If we drove a third mile, another $2.67 would be added to the cost: \\[C(3)=3.50+2.67+2.67+2.67=3.50+2.67(3)=11.51\\nonumber \\] From this we might observe the pattern, and conclude that if \\(m\\) miles are driven, \\(C(m)=3.50+2.67m\\) because we start with a $3.50 drop fee and then for each mile increase we add $2.67. It is good to verify that the units make sense in this equation. The $3.50 drop charge is measured in dollars; the $2.67 charge is measured in dollars per mile. \\[C(m)=3.50\\text{ dollars}+\\left(2.67\\dfrac{\\text{dollars}}{\\text{mile}} \\right)\\left(m\\; \\text{ miles}\\right)\\nonumber \\] When dollars per mile are multiplied by a number of miles, the result is a number of dollars, matching the units on the 3.50, and matching the desired units for the C function. Notice this equation \\(C(m)=3.50+2.67m\\) consisted of two quantities. The first is the fixed $3.50 charge which does not change based on the value of the input. The second is the $2.67 dollars per mile value, which is a rate of change . In the equation, this rate of change is multiplied by the input value. Looking at this same problem in table format we can also see the cost changes by $2.67 for every 1 mile increase. \\(m\\) 0 1 2 3 \\(C(m)\\) 3.50 6.17 8.84 11.51 It is important here to note that in this equation, the rate of change is constant ; over any interval, the rate of change is the same. Graphing this equation, \\(C(m)=3.50+2.67m\\) we see the shape is a line, which is how these functions get their name: linear functions . When the number of miles is zero the cost is $3.50, giving the point (0, 3.50) on the graph. This is the vertical or \\(C(m)\\) intercept. The graph is increasing in a straight line from left to right because for each mile the cost goes up by $2.67; this rate remains consistent. In this example, you have seen the taxicab cost modeled in words, an equation, a table and in graphical form. Whenever possible, ensure that you can link these four representations together to continually build your skills. It is important to note that you will not always be able to find all 4 representations for a problem and so being able to work with all 4 forms is very important. Exercise \\(\\PageIndex{1}\\) If you earn $30,000 per year and you spend $29,000 per year write an equation for the amount of money you save after y years, if you start with nothing. “The most important thing, spend less than you earn!( http://www.thesimpledollar.com/2009/...than-you-earn/ ) ” Answer \\(S(y)=30,000y - 29,000y = 1000y\\) $1000 is saved each year. Exercise \\(\\PageIndex{2}\\) Given the two points (2, 3) and (0, 4), find the rate of change. Is this function increasing or decreasing? Answer \\(m=\\dfrac{4-3}{0-2} =\\dfrac{1}{-2} =-\\dfrac{1}{2}\\) ; Decreasing because \\(m < 0\\) We can now find the rate of change given two input-output pairs, and can write an equation for a linear function once we have the rate of change and initial value. If we have two input-output pairs and they do not include the initial value of the function, then we will have to solve for it. flashback Looking at Example 7: Determine the independent and dependent variables. What is a reasonable domain and range? Is this function one-to-one? Answer \\(n\\) (number of policies sold) is the independent variable \\(I(n)\\) (weekly income as a function of policies sold) is the dependent variable. A reasonable domain is (0, 15)\\({}^{*}\\) A reasonable range is ($540, $1740)\\({}^{*}\\) \\({}^{*}\\)answers may vary given reasoning is stated; 15 is an arbitrary upper limit based on selling 3 policies per day in a 5 day work week and $1740 corresponds with the domain. Yes this function is one-to-one Exercise \\(\\PageIndex{3}\\) The balance in your college payment account, \\(C\\), is a function of the number of quarters, \\(q\\), you attend. Interpret the function \\(C(a) = 20000 – 4000q\\) in words. How many quarters of college can you pay for until this account is empty? Answer Your College account starts with $20,000 in it and you withdraw $4,000 each quarter (or your account contains $20,000 and decreases by $4000 each quarter.) Solving \\(C(a) = 0\\) gives \\(a = 5\\). You can pay for 5 quarters before the money in this account is gone. Important Topics of this Section Definition of Modeling Definition of a linear function Structure of a linear function Increasing & Decreasing functions Finding the vertical intercept (0, b ) Finding the slope/rate of change, m Interpreting linear functions",
+  "definitions": [
+    {
+      "kind": "boxed",
+      "text": "Definition: Linear Function A linear function is a function whose graph produces a line. Linear functions can always be written in the form \\(f(x)=b+mx\\) or \\(f(x)=mx+b\\); they’re equivalent where \\(b\\) is the initial or starting value of the function (when input, x = 0), and \\(m\\) is the constant rate of change of the function Many people like to write linear functions in the form \\(f(x)=b+mx\\) because it corresponds to the way we tend to speak: “The output starts at \\(b\\) and increases at a rate of \\(m\\).” For this reason alone we will use the \\(f(x)=b+mx\\) form for many of the examples, but remember they are equivalent and can be written correctly both ways."
+    },
+    {
+      "kind": "boxed",
+      "text": "Definition: slope and increasing/decreasing \\(m\\) is the constant rate of change of the function (also called slope ). Slope The slope determines if the function is an increasing function or a decreasing function. \\(f(x)=b+mx\\) is an increasing function if \\(m>0\\) \\(f(x)=b+mx\\) is a decreasing function if \\(m<0\\) If \\(m=0\\), the rate of change zero, and the function \\(f(x)=b+0x=b\\) is just a horizontal line passing through the point (0, \\(b\\)), neither increasing nor decreasing."
+    },
+    {
+      "kind": "boxed",
+      "text": "Definition: Calculating rate of change Given two values for the input,\\(x_{1} {\\rm \\; and\\; }x_{2}\\), and two corresponding values for the output, \\(y_{1} {\\rm \\; and\\; }y_{2}\\), or a set of points, \\((x_{1} {\\rm ,\\; \\; }y_{1} )\\) and\\((x_{2} {\\rm ,\\; \\; }y_{2} )\\), if we wish to find a linear function that contains both points we can calculate the rate of change, m : \\[m=\\dfrac{\\rm change\\; in\\; output}{\\rm change\\; in\\; input} =\\dfrac{\\Delta y}{\\Delta x} =\\dfrac{y_{2} -y_{1} }{x_{2} -x_{1} }\\] Rate of change of a linear function is also called the slope of the line. Note in function notation,\\(y_{1} =f(x_{1} )\\) and \\(y_{2} =f(x_{2} )\\), so we could equivalently write \\[m=\\dfrac{f\\left(x_{2} \\right)-f\\left(x_{1} \\right)}{x_{2} -x_{1} }\\]"
+    },
+    {
+      "kind": "inline",
+      "text": "Definition: Linear Function"
+    },
+    {
+      "kind": "inline",
+      "text": "Definition: slope and increasing/decreasing"
+    },
+    {
+      "kind": "inline",
+      "text": "Definition: Calculating rate of change"
+    }
+  ],
+  "examples": [
+    {
+      "text": "Example \\(\\PageIndex{1}\\) Marcus currently owns 200 songs in his iTunes collection. Every month, he adds 15 new songs. Write a formula for the number of songs, \\(N\\), in his iTunes collection as a function of the number of months, \\(m\\). How many songs will he own in a year? Solution The initial value for this function is 200, since he currently owns 200 songs, so \\(N(0)=200\\). The number of songs increases by 15 songs per month, so the rate of change is 15 songs per month. With this information, we can write the formula: \\[N(m)=200+15m\\nonumber \\] \\(N(m)\\) is an increasing linear function. With this formula we can predict how many songs he will have in 1 year (12 months): \\[N(12)=200+15(12)=200+180=380\\nonumber \\] Marcus will have 380 songs in 12 months."
+    },
+    {
+      "text": "Example \\(\\PageIndex{2}\\) The population of a city increased from 23,400 to 27,800 between 2002 and 2006. Find the rate of change of the population during this time span. Solution The rate of change will relate the change in population to the change in time. The population increased by \\(27800-23400=4400\\)people over the 4 year time interval. To find the rate of change, the number of people per year the population changed by: \\[\\dfrac{4400\\text{ people}}{4\\text{ years}} =1100\\dfrac{\\text{people}}{\\text{year}}= 1100\\text{ people per year}\\nonumber\\] Notice that we knew the population was increasing, so we would expect our value for \\(m\\) to be positive. This is a quick way to check to see if your value is reasonable."
+    },
+    {
+      "text": "Example \\(\\PageIndex{3}\\) The pressure, \\(P\\), in pounds per square inch (PSI) on a diver depends upon their depth below the water surface, \\(d\\), in feet, following the equation \\(P(d)=14.696+0.434d\\). Interpret the components of this function. Solution The rate of change, or slope, 0.434 would have units \\(\\dfrac{\\text{output}}{\\text{input}} = \\dfrac{\\text{pressure}}{\\text{depth}} = \\dfrac{\\text{PSI}}{\\text{ft}}\\). This tells us the pressure on the diver increases by 0.434 PSI for each foot their depth increases. The initial value, 14.696, will have the same units as the output, so this tells us that at a depth of 0 feet, the pressure on the diver will be 14.696 PSI."
+    },
+    {
+      "text": "Example \\(\\PageIndex{4}\\) If \\(f(x)\\) is a linear function, \\(f(3)=-2\\), and \\(f(8)=1\\), find the rate of change. Solution \\(f(3)=-2\\) tells us that the input 3 corresponds with the output -2, and \\(f(8)=1\\) tells us that the input 8 corresponds with the output 1. To find the rate of change, we divide the change in output by the change in input: \\[m=\\dfrac{\\text{change in output}}{\\text{change in input}} =\\dfrac{1-(-2)}{8-3} =\\dfrac{3}{5}\\nonumber\\] If desired we could also write this as \\(m = 0.6\\) Note that it is not important which pair of values comes first in the subtractions so long as the first output value used corresponds with the first input value used."
+    },
+    {
+      "text": "Example \\(\\PageIndex{5}\\) Write an equation for the linear function graphed to the right. Solution Looking at the graph, we might notice that it passes through the points (0, 7) and (4, 4). From the first value, we know the initial value of the function is \\(b = 7\\), so in this case we will only need to calculate the rate of change: \\[m=\\dfrac{4-7}{4-0} =\\dfrac{-3}{4}\\nonumber \\] This allows us to write the equation: \\[f(x)=7-\\dfrac{3}{4} x\\nonumber \\]"
+    },
+    {
+      "text": "Example \\(\\PageIndex{6}\\) If \\(f(x)\\)is a linear function, \\(f(3)=-2\\), and \\(f(8)=1\\), find an equation for the function. Solution In example 3, we computed the rate of change to be \\(m=\\dfrac{3}{5}\\). In this case, we do not know the initial value\\(f(0)\\), so we will have to solve for it. Using the rate of change, we know the equation will have the form \\(f(x)=b+\\dfrac{3}{5} x\\). Since we know the value of the function when \\(x = 3\\), we can evaluate the function at 3. \\[f(3)=b+\\dfrac{3}{5} (3)\\nonumber \\] Since we know that\\(f(3)=-2\\), we can substitute on the left side \\[-2=b+\\dfrac{3}{5} (3)\\nonumber \\] This leaves us with an equation we can solve for the initial value \\[b=-2-\\dfrac{9}{5} =\\dfrac{-19}{5}\\nonumber \\] Combining this with the value for the rate of change, we can now write a formula for this function: \\[f(x)=\\dfrac{-19}{5} +\\dfrac{3}{5} x\\nonumber \\]"
+    },
+    {
+      "text": "Example \\(\\PageIndex{7}\\) Working as an insurance salesperson, Ilya earns a base salary and a commission on each new policy, so Ilya’s weekly income, \\(I\\), depends on the number of new policies, \\(n\\), he sells during the week. Last week he sold 3 new policies, and earned $760 for the week. The week before, he sold 5 new policies, and earned $920. Find an equation for \\(I(n)\\), and interpret the meaning of the components of the equation. Solution The given information gives us two input-output pairs: (3,760) and (5,920). We start by finding the rate of change. \\[m=\\dfrac{920-760}{5-3} =\\dfrac{160}{2} =80\\nonumber \\] Keeping track of units can help us interpret this quantity. Income increased by $160 when the number of policies increased by 2, so the rate of change is $80 per policy; Ilya earns a commission of $80 for each policy sold during the week. We can then solve for the initial value \\[I(n)=b+80n\\nonumber\\] then when \\(n = 3\\), \\(I(3)=760\\), giving \\[760=b+80(3)\\nonumber \\] this allows us to solve for \\(b\\) \\[b=760-80(3)=520\\nonumber \\] This value is the starting value for the function. This is Ilya’s income when \\(n = 0\\), which means no new policies are sold. We can interpret this as Ilya’s base salary for the week, which does not depend upon the number of policies sold. Writing the final equation: \\[I(n)=520+80n\\nonumber \\] Our final interpretation is: Ilya’s base salary is $520 per week and he earns an additional $80 commission for each policy sold each week."
+    },
+    {
+      "text": "Example \\(\\PageIndex{8}\\) Given the table below write a linear equation that represents the table values \\(w\\), number of weeks 0 2 4 6 \\(P(w)\\), number of rats 1000 1080 1160 1240 Solution We can see from the table that the initial value of rats is 1000 so in the linear format \\[P(w)=b+mw,\\: b = 1000\\nonumber\\] Rather than solving for \\(m\\), we can notice from the table that the population goes up by 80 for every 2 weeks that pass. This rate is consistent from week 0, to week 2, 4, and 6. The rate of change is 80 rats per 2 weeks. This can be simplified to 40 rats per week and we can write \\[P(w)=b+mw\\text{ as }P(w)=1000+40w\\nonumber \\] If you didn’t notice this from the table you could still solve for the slope using any two points from the table. For example, using (2, 1080) and (6, 1240), \\[m=\\dfrac{1240-1080}{6-2} =\\dfrac{160}{4} =40\\text{ rats per week}\\nonumber\\]"
+    }
+  ],
+  "internal_links": [
+    {
+      "text": "Precalculus & Trigonometry",
+      "url": "https://math.libretexts.org/Bookshelves/Precalculus"
+    },
+    {
+      "text": "Precalculus - An Investigation of Functions (Lippman and Rasmussen)",
+      "url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)"
+    },
+    {
+      "text": "2: Linear Functions",
+      "url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/02%3A_Linear_Functions"
+    },
+    {
+      "text": "2.1: Linear Functions",
+      "url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/02%3A_Linear_Functions/2.01%3A_Linear_Functions"
+    },
+    {
+      "text": "2.1E: Linear Functions (Exercises)",
+      "url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/02%3A_Linear_Functions/2.01%3A_Linear_Functions/2.1E%3A_Linear_Functions_(Exercises)"
+    }
+  ],
+  "subsections": [],
+  "char_count": 5643
+}

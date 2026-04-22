@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 800px;
+                 background-color: #111;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#6ab04c", "font": {"color": "#74b9ff"}, "id": "ch6_s1_t1", "label": "Sinusoidal Graphs", "shape": "dot", "title": "\u003cb\u003eSinusoidal Graphs\u003c/b\u003e\u003cbr\u003e\u00a7 1 \u00b7 difficulty 2 (easy)\u003cbr\u003e\u003ci\u003eThe London Eye (London Eye photo by authors, 2010,\u003cbr\u003eCC-BY) is a huge Ferris wheel 135 meters (394\u003cbr\u003efeet) tall in London, Eng land, which completes\u003cbr\u003eone rotation every 30 minutes. When we look at the\u003cbr\u003ebehavior of this Ferris wheel it is clear that it\u003cbr\u003ecompletes 1 cycle, or 1 revolution\u003c/i\u003e"}, {"color": "#6ab04c", "font": {"color": "#74b9ff"}, "id": "ch6_s2_t1", "label": "Graphs of the Other Trig Functions", "shape": "dot", "title": "\u003cb\u003eGraphs of the Other Trig Functions\u003c/b\u003e\u003cbr\u003e\u00a7 2 \u00b7 difficulty 2 (easy)\u003cbr\u003e\u003ci\u003eIn this section, we will explore the graphs of the\u003cbr\u003eother four trigonometric functions. We\u2019ll begin\u003cbr\u003ewith the tangent function.\u003c/i\u003e"}, {"color": "#f0932b", "font": {"color": "#74b9ff"}, "id": "ch6_s3_t1", "label": "Inverse Trigonometric Functions", "shape": "dot", "title": "\u003cb\u003eInverse Trigonometric Functions\u003c/b\u003e\u003cbr\u003e\u00a7 3 \u00b7 difficulty 3 (medium)\u003cbr\u003e\u003ci\u003eIn previous sections, we have evaluated the\u003cbr\u003etrigonometric functions at various angles, but at\u003cbr\u003etimes we need to know what angle would yield a\u003cbr\u003especific sine, cosine, or tangent value. For this,\u003cbr\u003ewe need inverse functions.\u003c/i\u003e"}, {"color": "#eb4d4b", "font": {"color": "#74b9ff"}, "id": "ch6_s4_t1", "label": "Solving using Known Values", "shape": "dot", "title": "\u003cb\u003eSolving using Known Values\u003c/b\u003e\u003cbr\u003e\u00a7 4 \u00b7 difficulty 4 (hard)\u003cbr\u003e\u003ci\u003eIn the last chapter, we learned sine and cosine\u003cbr\u003evalues at commonly encountered angles. We can use\u003cbr\u003ethese to solve sine and cosine equations involving\u003cbr\u003ethese common angles.\u003c/i\u003e"}, {"color": "#eb4d4b", "font": {"color": "#74b9ff"}, "id": "ch6_s4_t2", "label": "Solving using the Inverse Trig Functions", "shape": "dot", "title": "\u003cb\u003eSolving using the Inverse Trig Functions\u003c/b\u003e\u003cbr\u003e\u00a7 4 \u00b7 difficulty 4 (hard)\u003cbr\u003e\u003ci\u003eNot all equations involve the \u201cspecial\u201d values of\u003cbr\u003ethe trig functions to we have learned. To find the\u003cbr\u003esolutions to these equations, we need to use the\u003cbr\u003einverse trig functions.\u003c/i\u003e"}, {"color": "#eb4d4b", "font": {"color": "#74b9ff"}, "id": "ch6_s5_t1", "label": "Solving right triangles for angles", "shape": "dot", "title": "\u003cb\u003eSolving right triangles for angles\u003c/b\u003e\u003cbr\u003e\u00a7 5 \u00b7 difficulty 4 (hard)\u003cbr\u003e\u003ci\u003eIn Section 5.5, we used trigonometry on a right\u003cbr\u003etriangle to solve for the sides of a triangle\u003cbr\u003egiven one side and an additional angle. Using the\u003cbr\u003einverse trig functions, we can solve for the\u003cbr\u003eangles of a right triangle given two sides.\u003c/i\u003e"}, {"color": "#eb4d4b", "font": {"color": "#74b9ff"}, "id": "ch6_s5_t2", "label": "Modeling with sinusoidal functions", "shape": "dot", "title": "\u003cb\u003eModeling with sinusoidal functions\u003c/b\u003e\u003cbr\u003e\u00a7 5 \u00b7 difficulty 4 (hard)\u003cbr\u003e\u003ci\u003eMany modeling situations involve functions that\u003cbr\u003eare periodic. Previously we learned that\u003cbr\u003esinusoidal functions are a special type of\u003cbr\u003eperiodic function.\u003c/i\u003e"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "from": "ch6_s1_t1", "title": "term-definition (periodic)", "to": "ch6_s5_t2", "value": 4}, {"arrows": "to", "from": "ch6_s1_t1", "title": "explicit-ref (Section 6.1)", "to": "ch6_s2_t1", "value": 3}, {"arrows": "to", "from": "ch6_s2_t1", "title": "structural-chap (section 6.2 \u2192 6.3)", "to": "ch6_s3_t1", "value": 1}, {"arrows": "to", "from": "ch6_s3_t1", "title": "structural-chap (section 6.3 \u2192 6.4)", "to": "ch6_s4_t1", "value": 1}, {"arrows": "to", "from": "ch6_s4_t1", "title": "structural-sec (adjacent in section 6.4)", "to": "ch6_s4_t2", "value": 2}, {"arrows": "to", "from": "ch6_s4_t2", "title": "structural-chap (section 6.4 \u2192 6.5)", "to": "ch6_s5_t1", "value": 1}, {"arrows": "to", "from": "ch6_s5_t1", "title": "structural-sec (adjacent in section 6.5)", "to": "ch6_s5_t2", "value": 2}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

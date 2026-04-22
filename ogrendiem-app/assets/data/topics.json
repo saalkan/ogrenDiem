@@ -1,0 +1,1335 @@
+{
+  "meta": {
+    "scope": "g1-3-8-9",
+    "chapters": [
+      1,
+      3,
+      8,
+      9
+    ],
+    "n_topics": 55,
+    "n_edges": 140
+  },
+  "topics": [
+    {
+      "topic_id": "ch1_s1_t1",
+      "title": "What is a Function?",
+      "parent_chapter_num": "1",
+      "parent_section_num": "1",
+      "parent_section": "Functions and Function Notation",
+      "position_in_section": 0,
+      "difficulty_level": 1,
+      "difficulty_tier": "easy",
+      "depth": 0,
+      "description": "The natural world is full of relationships between quantities that change. When we see these relationships, it is natural for us to ask \"If I know one quantity, can I then determine the other?\" This establishes the idea of an input quantity, or independent variable, and a corresp",
+      "garden_emoji": "🌷",
+      "cave_emoji": "🦁",
+      "garden_slot": {
+        "branch": 0,
+        "u": 0.3293
+      },
+      "cave_slot": {
+        "cluster": 0,
+        "x": 0.5485,
+        "y": 0.5732
+      },
+      "cluster_id": 0
+    },
+    {
+      "topic_id": "ch1_s1_t2",
+      "title": "Function Notation",
+      "parent_chapter_num": "1",
+      "parent_section_num": "1",
+      "parent_section": "Functions and Function Notation",
+      "position_in_section": 1,
+      "difficulty_level": 1,
+      "difficulty_tier": "easy",
+      "depth": 1,
+      "description": "To simplify writing out expressions and equations involving functions, a simplified notation is often used. We also use descriptive variables to help us remember the meaning of the quantities in the problem.",
+      "garden_emoji": "🪷",
+      "cave_emoji": "🐛",
+      "garden_slot": {
+        "branch": 0,
+        "u": 0.4292
+      },
+      "cave_slot": {
+        "cluster": 0,
+        "x": 0.9086,
+        "y": 0.5804
+      },
+      "cluster_id": 0
+    },
+    {
+      "topic_id": "ch1_s1_t3",
+      "title": "Tables as Functions",
+      "parent_chapter_num": "1",
+      "parent_section_num": "1",
+      "parent_section": "Functions and Function Notation",
+      "position_in_section": 2,
+      "difficulty_level": 1,
+      "difficulty_tier": "easy",
+      "depth": 2,
+      "description": "Functions can be represented in many ways: Words (as we did in the last few examples), tables of values, graphs, or formulas. Represented as a table, we are presented with a list of input and output values.",
+      "garden_emoji": "🌹",
+      "cave_emoji": "🐍",
+      "garden_slot": {
+        "branch": 0,
+        "u": 0.6124
+      },
+      "cave_slot": {
+        "cluster": 0,
+        "x": 0.92,
+        "y": 0.4693
+      },
+      "cluster_id": 0
+    },
+    {
+      "topic_id": "ch1_s1_t4",
+      "title": "Solving and Evaluating Functions",
+      "parent_chapter_num": "1",
+      "parent_section_num": "1",
+      "parent_section": "Functions and Function Notation",
+      "position_in_section": 3,
+      "difficulty_level": 1,
+      "difficulty_tier": "easy",
+      "depth": 3,
+      "description": "When we work with functions, there are two typical things we do: evaluate and solve. Evaluating a function is what we do when we know an input, and use the function to determine the corresponding output.",
+      "garden_emoji": "🌻",
+      "cave_emoji": "🦇",
+      "garden_slot": {
+        "branch": 0,
+        "u": 0.7498
+      },
+      "cave_slot": {
+        "cluster": 0,
+        "x": 0.8548,
+        "y": 0.3579
+      },
+      "cluster_id": 0
+    },
+    {
+      "topic_id": "ch1_s1_t5",
+      "title": "Graphs as Functions",
+      "parent_chapter_num": "1",
+      "parent_section_num": "1",
+      "parent_section": "Functions and Function Notation",
+      "position_in_section": 4,
+      "difficulty_level": 1,
+      "difficulty_tier": "easy",
+      "depth": 4,
+      "description": "Oftentimes a graph of a relationship can be used to define a function. By convention, graphs are typically created with the input quantity along the horizontal axis and the output quantity along the vertical.",
+      "garden_emoji": "🍓",
+      "cave_emoji": "🦋",
+      "garden_slot": {
+        "branch": 0,
+        "u": 0.7974
+      },
+      "cave_slot": {
+        "cluster": 0,
+        "x": 0.705,
+        "y": 0.2904
+      },
+      "cluster_id": 0
+    },
+    {
+      "topic_id": "ch1_s1_t6",
+      "title": "Formulas as Functions",
+      "parent_chapter_num": "1",
+      "parent_section_num": "1",
+      "parent_section": "Functions and Function Notation",
+      "position_in_section": 5,
+      "difficulty_level": 1,
+      "difficulty_tier": "easy",
+      "depth": 5,
+      "description": "When possible, it is very convenient to define relationships using formulas. If it is possible to express the output as a formula involving the input quantity, then we can define a function.",
+      "garden_emoji": "🥝",
+      "cave_emoji": "🐾",
+      "garden_slot": {
+        "branch": 0,
+        "u": 0.95
+      },
+      "cave_slot": {
+        "cluster": 0,
+        "x": 0.5194,
+        "y": 0.2874
+      },
+      "cluster_id": 0
+    },
+    {
+      "topic_id": "ch1_s1_t7",
+      "title": "Basic Toolkit Functions",
+      "parent_chapter_num": "1",
+      "parent_section_num": "1",
+      "parent_section": "Functions and Function Notation",
+      "position_in_section": 6,
+      "difficulty_level": 1,
+      "difficulty_tier": "easy",
+      "depth": 6,
+      "description": "In this text, we will be exploring functions – the shapes of their graphs, their unique features, their equations, and how to solve problems with them. When learning to read, we start with the alphabet.",
+      "garden_emoji": "🍐",
+      "cave_emoji": "🐗",
+      "garden_slot": {
+        "branch": 0,
+        "u": 0.95
+      },
+      "cave_slot": {
+        "cluster": 0,
+        "x": 0.3956,
+        "y": 0.1401
+      },
+      "cluster_id": 0
+    },
+    {
+      "topic_id": "ch1_s2_t1",
+      "title": "Notation",
+      "parent_chapter_num": "1",
+      "parent_section_num": "2",
+      "parent_section": "Domain and Range",
+      "position_in_section": 0,
+      "difficulty_level": 2,
+      "difficulty_tier": "easy",
+      "depth": 7,
+      "description": "In the previous examples, we used inequalities to describe the domain and range of the functions. This is one way to describe intervals of input and output values, but is not the only way.",
+      "garden_emoji": "🥝",
+      "cave_emoji": "🦡",
+      "garden_slot": {
+        "branch": 1,
+        "u": 0.2898
+      },
+      "cave_slot": {
+        "cluster": 0,
+        "x": 0.08,
+        "y": 0.08
+      },
+      "cluster_id": 0
+    },
+    {
+      "topic_id": "ch1_s2_t2",
+      "title": "Domain and Range from Graphs",
+      "parent_chapter_num": "1",
+      "parent_section_num": "2",
+      "parent_section": "Domain and Range",
+      "position_in_section": 1,
+      "difficulty_level": 2,
+      "difficulty_tier": "easy",
+      "depth": 8,
+      "description": "We can also talk about domain and range based on graphs. Since domain refers to the set of possible input values, the domain of a graph consists of all the input values shown on the graph.",
+      "garden_emoji": "🥭",
+      "cave_emoji": "🦂",
+      "garden_slot": {
+        "branch": 1,
+        "u": 0.4359
+      },
+      "cave_slot": {
+        "cluster": 0,
+        "x": 0.1573,
+        "y": 0.3464
+      },
+      "cluster_id": 0
+    },
+    {
+      "topic_id": "ch1_s2_t3",
+      "title": "Piecewise Functions",
+      "parent_chapter_num": "1",
+      "parent_section_num": "2",
+      "parent_section": "Domain and Range",
+      "position_in_section": 2,
+      "difficulty_level": 2,
+      "difficulty_tier": "easy",
+      "depth": 9,
+      "description": "In the toolkit functions we introduced the absolute value function \\(f(x)=\\left|x\\right|\\). With a domain of all real numbers and a range of values greater than or equal to 0, the absolute value can be defined as the magnitude or modulus of a number, a real number value regardles",
+      "garden_emoji": "🍁",
+      "cave_emoji": "🔶",
+      "garden_slot": {
+        "branch": 1,
+        "u": 0.5948
+      },
+      "cave_slot": {
+        "cluster": 0,
+        "x": 0.1417,
+        "y": 0.5396
+      },
+      "cluster_id": 0
+    },
+    {
+      "topic_id": "ch1_s3_t1",
+      "title": "Graphical Behavior of Functions",
+      "parent_chapter_num": "1",
+      "parent_section_num": "3",
+      "parent_section": "Rates of Change and Behavior of Graphs",
+      "position_in_section": 0,
+      "difficulty_level": 2,
+      "difficulty_tier": "easy",
+      "depth": 10,
+      "description": "As part of exploring how functions change, it is interesting to explore the graphical behavior of functions. Notice in the last example that we used open intervals (intervals that don’t include the endpoints) since the function is neither increasing nor decreasing at \\(t =\\) 1, 3",
+      "garden_emoji": "🍍",
+      "cave_emoji": "🔷",
+      "garden_slot": {
+        "branch": 2,
+        "u": 0.346
+      },
+      "cave_slot": {
+        "cluster": 0,
+        "x": 0.2459,
+        "y": 0.7068
+      },
+      "cluster_id": 0
+    },
+    {
+      "topic_id": "ch1_s3_t2",
+      "title": "Concavity",
+      "parent_chapter_num": "1",
+      "parent_section_num": "3",
+      "parent_section": "Rates of Change and Behavior of Graphs",
+      "position_in_section": 1,
+      "difficulty_level": 2,
+      "difficulty_tier": "easy",
+      "depth": 11,
+      "description": "The total sales, in thousands of dollars, for two companies over 4 weeks are shown. As you can see, the sales for each company are increasing, but they are increasing in very different ways.",
+      "garden_emoji": "🌼",
+      "cave_emoji": "⭐",
+      "garden_slot": {
+        "branch": 2,
+        "u": 0.4999
+      },
+      "cave_slot": {
+        "cluster": 0,
+        "x": 0.2053,
+        "y": 0.7945
+      },
+      "cluster_id": 0
+    },
+    {
+      "topic_id": "ch1_s3_t3",
+      "title": "Behaviors of the Toolkit Functions",
+      "parent_chapter_num": "1",
+      "parent_section_num": "3",
+      "parent_section": "Rates of Change and Behavior of Graphs",
+      "position_in_section": 2,
+      "difficulty_level": 3,
+      "difficulty_tier": "medium",
+      "depth": 12,
+      "description": "We will now return to our toolkit functions and discuss their graphical behavior. Function Increasing/Decreasing Concavity Constant Function \\(f(x)=c\\) Neither increasing nor decreasing Neither concave up nor down Identity Function \\(f(x)=x\\) Increasing Neither concave up nor dow",
+      "garden_emoji": "🏵️",
+      "cave_emoji": "🦎",
+      "garden_slot": {
+        "branch": 2,
+        "u": 0.5575
+      },
+      "cave_slot": {
+        "cluster": 0,
+        "x": 0.4008,
+        "y": 0.6613
+      },
+      "cluster_id": 0
+    },
+    {
+      "topic_id": "ch1_s4_t1",
+      "title": "Composition of Functions using Tables and Graphs",
+      "parent_chapter_num": "1",
+      "parent_section_num": "4",
+      "parent_section": "Composition of Functions",
+      "position_in_section": 0,
+      "difficulty_level": 3,
+      "difficulty_tier": "medium",
+      "depth": 13,
+      "description": "When working with functions given as tables and graphs, we can look up values for the functions using a provided table or graph, as discussed in section 1.1. We start evaluation from the provided input, and first evaluate the inside function.",
+      "garden_emoji": "🏵️",
+      "cave_emoji": "🦊",
+      "garden_slot": {
+        "branch": 3,
+        "u": 0.3072
+      },
+      "cave_slot": {
+        "cluster": 0,
+        "x": 0.6545,
+        "y": 0.4399
+      },
+      "cluster_id": 0
+    },
+    {
+      "topic_id": "ch1_s4_t2",
+      "title": "Composition using Formulas",
+      "parent_chapter_num": "1",
+      "parent_section_num": "4",
+      "parent_section": "Composition of Functions",
+      "position_in_section": 1,
+      "difficulty_level": 3,
+      "difficulty_tier": "medium",
+      "depth": 14,
+      "description": "When evaluating a composition of functions where we have either created or been given formulas, the concept of working from the inside out remains the same. First, we evaluate the inside function using the input value provided, then use the resulting output as the input to the ou",
+      "garden_emoji": "🥥",
+      "cave_emoji": "🦎",
+      "garden_slot": {
+        "branch": 3,
+        "u": 0.4195
+      },
+      "cave_slot": {
+        "cluster": 0,
+        "x": 0.7772,
+        "y": 0.6957
+      },
+      "cluster_id": 0
+    },
+    {
+      "topic_id": "ch1_s4_t3",
+      "title": "Domain of Compositions",
+      "parent_chapter_num": "1",
+      "parent_section_num": "4",
+      "parent_section": "Composition of Functions",
+      "position_in_section": 2,
+      "difficulty_level": 3,
+      "difficulty_tier": "medium",
+      "depth": 15,
+      "description": "When we think about the domain of a composition \\(h(x)=f(g(x))\\), we must consider both the domain of the inner function and the domain of the composition itself. While it is tempting to only look at the resulting composite function, if the inner function were undefined at a valu",
+      "garden_emoji": "☘️",
+      "cave_emoji": "🦗",
+      "garden_slot": {
+        "branch": 3,
+        "u": 0.6684
+      },
+      "cave_slot": {
+        "cluster": 0,
+        "x": 0.7645,
+        "y": 0.8572
+      },
+      "cluster_id": 0
+    },
+    {
+      "topic_id": "ch1_s4_t4",
+      "title": "Decomposing Functions",
+      "parent_chapter_num": "1",
+      "parent_section_num": "4",
+      "parent_section": "Composition of Functions",
+      "position_in_section": 3,
+      "difficulty_level": 3,
+      "difficulty_tier": "medium",
+      "depth": 16,
+      "description": "In some cases, it is desirable to decompose a function – to write it as a composition of two simpler functions.",
+      "garden_emoji": "🍐",
+      "cave_emoji": "🐾",
+      "garden_slot": {
+        "branch": 3,
+        "u": 0.6403
+      },
+      "cave_slot": {
+        "cluster": 0,
+        "x": 0.5946,
+        "y": 0.92
+      },
+      "cluster_id": 0
+    },
+    {
+      "topic_id": "ch1_s5_t1",
+      "title": "Transformation of Functions",
+      "parent_chapter_num": "1",
+      "parent_section_num": "5",
+      "parent_section": "Transformation of Functions",
+      "position_in_section": 0,
+      "difficulty_level": 4,
+      "difficulty_tier": "hard",
+      "depth": 17,
+      "description": "Often when given a problem, we try to model the scenario using mathematics in the form of words, tables, graphs and equations in order to explain or solve it. When building models, it is often helpful to build off of existing formulas or models.",
+      "garden_emoji": "🌼",
+      "cave_emoji": "💠",
+      "garden_slot": {
+        "branch": 4,
+        "u": 0.305
+      },
+      "cave_slot": {
+        "cluster": 2,
+        "x": 0.5157,
+        "y": 0.5017
+      },
+      "cluster_id": 2
+    },
+    {
+      "topic_id": "ch1_s6_t1",
+      "title": "Inverse Functions",
+      "parent_chapter_num": "1",
+      "parent_section_num": "6",
+      "parent_section": "Inverse Functions",
+      "position_in_section": 0,
+      "difficulty_level": 5,
+      "difficulty_tier": "hard",
+      "depth": 18,
+      "description": "A fashion designer is travelling to Milan for a fashion show. He asks his assistant, Betty, what 75 degrees Fahrenheit is in Celsius, and after a quick search on Google, she finds the formula \\(C=\\dfrac{5}{9} (F-32)\\).",
+      "garden_emoji": "🌼",
+      "cave_emoji": "🐾",
+      "garden_slot": {
+        "branch": 5,
+        "u": 0.3739
+      },
+      "cave_slot": {
+        "cluster": 1,
+        "x": 0.4439,
+        "y": 0.308
+      },
+      "cluster_id": 1
+    },
+    {
+      "topic_id": "ch3_s1_t1",
+      "title": "Characteristics of Power Functions",
+      "parent_chapter_num": "3",
+      "parent_section_num": "1",
+      "parent_section": "Power Functions",
+      "position_in_section": 0,
+      "difficulty_level": 1,
+      "difficulty_tier": "easy",
+      "depth": 19,
+      "description": "Shown to the right are the graphs of \\(f(x)=x^{2}\\), \\(f(x)=x^{4}\\), and \\(f(x)=x^{6}\\), all even whole number powers. Notice that all these graphs have a fairly similar shape, very similar to the quadratic toolkit, but as the power increases the graphs flatten somewhat near the ",
+      "garden_emoji": "🌱",
+      "cave_emoji": "🐺",
+      "garden_slot": {
+        "branch": 0,
+        "u": 0.3062
+      },
+      "cave_slot": {
+        "cluster": 1,
+        "x": 0.5084,
+        "y": 0.5798
+      },
+      "cluster_id": 1
+    },
+    {
+      "topic_id": "ch3_s1_t2",
+      "title": "Polynomials",
+      "parent_chapter_num": "3",
+      "parent_section_num": "1",
+      "parent_section": "Power Functions",
+      "position_in_section": 1,
+      "difficulty_level": 1,
+      "difficulty_tier": "easy",
+      "depth": 20,
+      "description": "An oil pipeline bursts in the Gulf of Mexico, causing an oil slick in a roughly circular shape. The slick is currently 24 miles in radius, but that radius is increasing by 8 miles each week.",
+      "garden_emoji": "🌸",
+      "cave_emoji": "🪲",
+      "garden_slot": {
+        "branch": 0,
+        "u": 0.4087
+      },
+      "cave_slot": {
+        "cluster": 4,
+        "x": 0.08,
+        "y": 0.08
+      },
+      "cluster_id": 4
+    },
+    {
+      "topic_id": "ch3_s1_t3",
+      "title": "Short Run Behavior",
+      "parent_chapter_num": "3",
+      "parent_section_num": "1",
+      "parent_section": "Power Functions",
+      "position_in_section": 2,
+      "difficulty_level": 1,
+      "difficulty_tier": "easy",
+      "depth": 21,
+      "description": "Characteristics of the graph such as vertical and horizontal intercepts and the places the graph changes direction are part of the short run behavior of the polynomial. Like with all functions, the vertical intercept is where the graph crosses the vertical axis, and occurs when t",
+      "garden_emoji": "🍎",
+      "cave_emoji": "🦨",
+      "garden_slot": {
+        "branch": 0,
+        "u": 0.5535
+      },
+      "cave_slot": {
+        "cluster": 4,
+        "x": 0.3508,
+        "y": 0.3508
+      },
+      "cluster_id": 4
+    },
+    {
+      "topic_id": "ch3_s2_t1",
+      "title": "Short run Behavior: Vertex",
+      "parent_chapter_num": "3",
+      "parent_section_num": "2",
+      "parent_section": "Quadratic Functions",
+      "position_in_section": 0,
+      "difficulty_level": 2,
+      "difficulty_tier": "easy",
+      "depth": 22,
+      "description": "We now explore the interesting features of the graphs of quadratics. In addition to intercepts, quadratics have an interesting feature where they change direction, called the vertex .",
+      "garden_emoji": "🪴",
+      "cave_emoji": "🦌",
+      "garden_slot": {
+        "branch": 1,
+        "u": 0.3848
+      },
+      "cave_slot": {
+        "cluster": 4,
+        "x": 0.6492,
+        "y": 0.6492
+      },
+      "cluster_id": 4
+    },
+    {
+      "topic_id": "ch3_s2_t2",
+      "title": "Short run Behavior: Intercepts",
+      "parent_chapter_num": "3",
+      "parent_section_num": "2",
+      "parent_section": "Quadratic Functions",
+      "position_in_section": 1,
+      "difficulty_level": 2,
+      "difficulty_tier": "easy",
+      "depth": 23,
+      "description": "As with any function, we can find the vertical intercepts of a quadratic by evaluating the function at an input of zero, and we can find the horizontal intercepts by solving for when the output will be zero. Notice that depending upon the location of the graph, we might have zero",
+      "garden_emoji": "🍏",
+      "cave_emoji": "🦊",
+      "garden_slot": {
+        "branch": 1,
+        "u": 0.5044
+      },
+      "cave_slot": {
+        "cluster": 4,
+        "x": 0.92,
+        "y": 0.92
+      },
+      "cluster_id": 4
+    },
+    {
+      "topic_id": "ch3_s3_t1",
+      "title": "Short run Behavior: Intercepts",
+      "parent_chapter_num": "3",
+      "parent_section_num": "3",
+      "parent_section": "Graphs of Polynomial Functions",
+      "position_in_section": 0,
+      "difficulty_level": 2,
+      "difficulty_tier": "easy",
+      "depth": 24,
+      "description": "As with any function, the vertical intercept can be found by evaluating the function at an input of zero. Since this is evaluation, it is relatively easy to do it for a polynomial of any degree.",
+      "garden_emoji": "🍀",
+      "cave_emoji": "✨",
+      "garden_slot": {
+        "branch": 2,
+        "u": 0.4037
+      },
+      "cave_slot": {
+        "cluster": 3,
+        "x": 0.92,
+        "y": 0.8857
+      },
+      "cluster_id": 3
+    },
+    {
+      "topic_id": "ch3_s3_t2",
+      "title": "Graphical Behavior at Intercepts",
+      "parent_chapter_num": "3",
+      "parent_section_num": "3",
+      "parent_section": "Graphs of Polynomial Functions",
+      "position_in_section": 1,
+      "difficulty_level": 3,
+      "difficulty_tier": "medium",
+      "depth": 25,
+      "description": "If we graph the function \\(f(x)=(x+3)(x-2)^{2} (x+1)^{3}\\), notice that the behavior at each of the horizontal intercepts is different. At the horizontal intercept x = -3, coming from the \\((x+3)\\) factor of the polynomial, the graph passes directly through the horizontal interce",
+      "garden_emoji": "🍉",
+      "cave_emoji": "🔮",
+      "garden_slot": {
+        "branch": 2,
+        "u": 0.4276
+      },
+      "cave_slot": {
+        "cluster": 3,
+        "x": 0.6764,
+        "y": 0.92
+      },
+      "cluster_id": 3
+    },
+    {
+      "topic_id": "ch3_s3_t3",
+      "title": "Solving Polynomial Inequalities",
+      "parent_chapter_num": "3",
+      "parent_section_num": "3",
+      "parent_section": "Graphs of Polynomial Functions",
+      "position_in_section": 2,
+      "difficulty_level": 2,
+      "difficulty_tier": "easy",
+      "depth": 26,
+      "description": "One application of our ability to find intercepts and sketch a graph of polynomials is the ability to solve polynomial inequalities. It is a very common question to ask when a function will be positive and negative.",
+      "garden_emoji": "💐",
+      "cave_emoji": "🔶",
+      "garden_slot": {
+        "branch": 2,
+        "u": 0.5385
+      },
+      "cave_slot": {
+        "cluster": 3,
+        "x": 0.4057,
+        "y": 0.8502
+      },
+      "cluster_id": 3
+    },
+    {
+      "topic_id": "ch3_s3_t4",
+      "title": "Writing Equations using Intercepts",
+      "parent_chapter_num": "3",
+      "parent_section_num": "3",
+      "parent_section": "Graphs of Polynomial Functions",
+      "position_in_section": 3,
+      "difficulty_level": 2,
+      "difficulty_tier": "easy",
+      "depth": 27,
+      "description": "Since a polynomial function written in factored form will have a horizontal intercept where each factor is equal to zero, we can form a function that will pass through a set of horizontal intercepts by introducing a corresponding set of factors. factored form of polynomials If a ",
+      "garden_emoji": "🌲",
+      "cave_emoji": "🌟",
+      "garden_slot": {
+        "branch": 2,
+        "u": 0.6718
+      },
+      "cave_slot": {
+        "cluster": 3,
+        "x": 0.186,
+        "y": 0.5228
+      },
+      "cluster_id": 3
+    },
+    {
+      "topic_id": "ch3_s3_t5",
+      "title": "Estimating Extrema",
+      "parent_chapter_num": "3",
+      "parent_section_num": "3",
+      "parent_section": "Graphs of Polynomial Functions",
+      "position_in_section": 4,
+      "difficulty_level": 2,
+      "difficulty_tier": "easy",
+      "depth": 28,
+      "description": "With quadratics, we were able to algebraically find the maximum or minimum value of the function by finding the vertex. For general polynomials, finding these turning points is not possible without more advanced techniques from calculus.",
+      "garden_emoji": "🪷",
+      "cave_emoji": "🐜",
+      "garden_slot": {
+        "branch": 2,
+        "u": 0.8972
+      },
+      "cave_slot": {
+        "cluster": 3,
+        "x": 0.08,
+        "y": 0.08
+      },
+      "cluster_id": 3
+    },
+    {
+      "topic_id": "ch3_s4_t1",
+      "title": "Factor Theorem and Remainder Theorem",
+      "parent_chapter_num": "3",
+      "parent_section_num": "4",
+      "parent_section": "Factor Theorem and Remainder Theorem",
+      "position_in_section": 0,
+      "difficulty_level": 3,
+      "difficulty_tier": "medium",
+      "depth": 29,
+      "description": "In the last section, we limited ourselves to finding the intercepts, or zeros, of polynomials that factored simply, or we turned to technology. In this section, we will look at algebraic techniques for finding the zeros of polynomials like \\(h(t)=t^{3} +4t^{2} +t-6\\).",
+      "garden_emoji": "🍉",
+      "cave_emoji": "🐗",
+      "garden_slot": {
+        "branch": 3,
+        "u": 0.3874
+      },
+      "cave_slot": {
+        "cluster": 1,
+        "x": 0.454,
+        "y": 0.854
+      },
+      "cluster_id": 1
+    },
+    {
+      "topic_id": "ch3_s5_t1",
+      "title": "Real Zeros of Polynomials",
+      "parent_chapter_num": "3",
+      "parent_section_num": "5",
+      "parent_section": "Real Zeros of Polynomials",
+      "position_in_section": 0,
+      "difficulty_level": 3,
+      "difficulty_tier": "medium",
+      "depth": 30,
+      "description": "In the last section, we saw how to determine if a real number was a zero of a polynomial. In this section, we will learn how to find good candidates to test using synthetic division.",
+      "garden_emoji": "🪴",
+      "cave_emoji": "🐯",
+      "garden_slot": {
+        "branch": 4,
+        "u": 0.3159
+      },
+      "cave_slot": {
+        "cluster": 1,
+        "x": 0.2338,
+        "y": 0.92
+      },
+      "cluster_id": 1
+    },
+    {
+      "topic_id": "ch3_s6_t1",
+      "title": "Arithmetic on Complex Numbers",
+      "parent_chapter_num": "3",
+      "parent_section_num": "6",
+      "parent_section": "Complex Zeros",
+      "position_in_section": 0,
+      "difficulty_level": 4,
+      "difficulty_tier": "hard",
+      "depth": 31,
+      "description": "Before we dive into the more complicated uses of complex numbers, let’s make sure we remember the basic arithmetic involved. To add or subtract complex numbers, we simply add the like terms, combining the real parts and combining the imaginary parts.",
+      "garden_emoji": "☘️",
+      "cave_emoji": "🐿️",
+      "garden_slot": {
+        "branch": 5,
+        "u": 0.3276
+      },
+      "cave_slot": {
+        "cluster": 1,
+        "x": 0.3094,
+        "y": 0.6839
+      },
+      "cluster_id": 1
+    },
+    {
+      "topic_id": "ch3_s6_t2",
+      "title": "Complex Zeros of Polynomials",
+      "parent_chapter_num": "3",
+      "parent_section_num": "6",
+      "parent_section": "Complex Zeros",
+      "position_in_section": 1,
+      "difficulty_level": 4,
+      "difficulty_tier": "hard",
+      "depth": 32,
+      "description": "Complex numbers allow us a way to write solutions to quadratic equations that do not have real solutions. Exercise \\(\\PageIndex{3}\\) Find the zeros of \\(f(x)=2x^{2} +3x+4\\).",
+      "garden_emoji": "🍋",
+      "cave_emoji": "🐛",
+      "garden_slot": {
+        "branch": 5,
+        "u": 0.5192
+      },
+      "cave_slot": {
+        "cluster": 1,
+        "x": 0.7064,
+        "y": 0.7248
+      },
+      "cluster_id": 1
+    },
+    {
+      "topic_id": "ch3_s7_t1",
+      "title": "Rational Functions",
+      "parent_chapter_num": "3",
+      "parent_section_num": "7",
+      "parent_section": "Rational Functions",
+      "position_in_section": 0,
+      "difficulty_level": 4,
+      "difficulty_tier": "hard",
+      "depth": 33,
+      "description": "In the previous sections, we have built polynomials based on the positive whole number power functions. In this section, we explore functions based on power functions with negative integer powers, called rational functions.",
+      "garden_emoji": "🍒",
+      "cave_emoji": "🦔",
+      "garden_slot": {
+        "branch": 6,
+        "u": 0.3248
+      },
+      "cave_slot": {
+        "cluster": 1,
+        "x": 0.8378,
+        "y": 0.5378
+      },
+      "cluster_id": 1
+    },
+    {
+      "topic_id": "ch3_s8_t1",
+      "title": "Inverses and Radical Functions",
+      "parent_chapter_num": "3",
+      "parent_section_num": "8",
+      "parent_section": "Inverses and Radical Functions",
+      "position_in_section": 0,
+      "difficulty_level": 4,
+      "difficulty_tier": "hard",
+      "depth": 34,
+      "description": "In this section, we will explore the inverses of polynomial and rational functions, and in particular the radical functions that arise in the process. The previous example illustrated two important things: When finding the inverse of a quadratic, we have to limit ourselves to a d",
+      "garden_emoji": "🌹",
+      "cave_emoji": "🐌",
+      "garden_slot": {
+        "branch": 7,
+        "u": 0.2962
+      },
+      "cave_slot": {
+        "cluster": 1,
+        "x": 0.8414,
+        "y": 0.2947
+      },
+      "cluster_id": 1
+    },
+    {
+      "topic_id": "ch8_s1_t1",
+      "title": "Law of Sines",
+      "parent_chapter_num": "8",
+      "parent_section_num": "1",
+      "parent_section": "Non-Right Triangles - Laws of Sines and Cosines",
+      "position_in_section": 0,
+      "difficulty_level": 2,
+      "difficulty_tier": "easy",
+      "depth": 35,
+      "description": "Given an arbitrary non-right triangle, we can drop an altitude, which we temporarily label \\(h\\), to create two right triangles. Using the right triangle relationships, \\[\\sin (\\alpha ) = \\dfrac{h}{b}\\text{ and }\\sin (\\beta ) = \\dfrac{h}{a}\\nonumber\\] Solving both equations for \\",
+      "garden_emoji": "🌳",
+      "cave_emoji": "💠",
+      "garden_slot": {
+        "branch": 0,
+        "u": 0.3856
+      },
+      "cave_slot": {
+        "cluster": 1,
+        "x": 0.92,
+        "y": 0.08
+      },
+      "cluster_id": 1
+    },
+    {
+      "topic_id": "ch8_s1_t2",
+      "title": "Law of Cosines",
+      "parent_chapter_num": "8",
+      "parent_section_num": "1",
+      "parent_section": "Non-Right Triangles - Laws of Sines and Cosines",
+      "position_in_section": 1,
+      "difficulty_level": 2,
+      "difficulty_tier": "easy",
+      "depth": 36,
+      "description": "Suppose a boat leaves port, travels 10 miles, turns 20 degrees, and travels another 8 miles. How far from port is the boat?",
+      "garden_emoji": "🍉",
+      "cave_emoji": "🦂",
+      "garden_slot": {
+        "branch": 0,
+        "u": 0.4081
+      },
+      "cave_slot": {
+        "cluster": 1,
+        "x": 0.6054,
+        "y": 0.082
+      },
+      "cluster_id": 1
+    },
+    {
+      "topic_id": "ch8_s2_t1",
+      "title": "Polar Coordinates",
+      "parent_chapter_num": "8",
+      "parent_section_num": "2",
+      "parent_section": "Polar Coordinates",
+      "position_in_section": 0,
+      "difficulty_level": 2,
+      "difficulty_tier": "easy",
+      "depth": 37,
+      "description": "The coordinate system we are most familiar with is called the Cartesian coordinate system, a rectangular plane divided into four quadrants by horizontal and vertical axes. In earlier chapters, we often found the Cartesian coordinates of a point on a circle at a given angle from t",
+      "garden_emoji": "🪷",
+      "cave_emoji": "🐌",
+      "garden_slot": {
+        "branch": 1,
+        "u": 0.3988
+      },
+      "cave_slot": {
+        "cluster": 1,
+        "x": 0.3221,
+        "y": 0.1145
+      },
+      "cluster_id": 1
+    },
+    {
+      "topic_id": "ch8_s3_t1",
+      "title": "Polar Form of Complex Numbers",
+      "parent_chapter_num": "8",
+      "parent_section_num": "3",
+      "parent_section": "Polar Form of Complex Numbers",
+      "position_in_section": 0,
+      "difficulty_level": 3,
+      "difficulty_tier": "medium",
+      "depth": 38,
+      "description": "From previous classes, you may have encountered “imaginary numbers” – the square roots of negative numbers – and, more generally, complex numbers which are the sum of a real number and an imaginary number. While these are useful for expressing the solutions to quadratic equations",
+      "garden_emoji": "🌷",
+      "cave_emoji": "🦡",
+      "garden_slot": {
+        "branch": 2,
+        "u": 0.4114
+      },
+      "cave_slot": {
+        "cluster": 1,
+        "x": 0.2431,
+        "y": 0.3854
+      },
+      "cluster_id": 1
+    },
+    {
+      "topic_id": "ch8_s4_t1",
+      "title": "Vectors",
+      "parent_chapter_num": "8",
+      "parent_section_num": "4",
+      "parent_section": "Vectors",
+      "position_in_section": 0,
+      "difficulty_level": 4,
+      "difficulty_tier": "hard",
+      "depth": 39,
+      "description": "A woman leaves home, walks 3 miles north, then 2 miles southeast. How far is she from home, and in which direction would she need to walk to return home?",
+      "garden_emoji": "🎍",
+      "cave_emoji": "🦨",
+      "garden_slot": {
+        "branch": 3,
+        "u": 0.384
+      },
+      "cave_slot": {
+        "cluster": 1,
+        "x": 0.1829,
+        "y": 0.542
+      },
+      "cluster_id": 1
+    },
+    {
+      "topic_id": "ch8_s5_t1",
+      "title": "Dot Product",
+      "parent_chapter_num": "8",
+      "parent_section_num": "5",
+      "parent_section": "Dot Product",
+      "position_in_section": 0,
+      "difficulty_level": 4,
+      "difficulty_tier": "hard",
+      "depth": 40,
+      "description": "Now that we can add, subtract, and scale vectors, you might be wondering whether we can multiply vectors. It turns out there are two different ways to multiply vectors, one which results in a number, and one which results in a vector.",
+      "garden_emoji": "🌴",
+      "cave_emoji": "🔷",
+      "garden_slot": {
+        "branch": 4,
+        "u": 0.3863
+      },
+      "cave_slot": {
+        "cluster": 1,
+        "x": 0.08,
+        "y": 0.3647
+      },
+      "cluster_id": 1
+    },
+    {
+      "topic_id": "ch8_s6_t1",
+      "title": "Parametric Equations",
+      "parent_chapter_num": "8",
+      "parent_section_num": "6",
+      "parent_section": "Parametric Equations",
+      "position_in_section": 0,
+      "difficulty_level": 5,
+      "difficulty_tier": "hard",
+      "depth": 41,
+      "description": "Many shapes, even ones as simple as circles, cannot be represented as an equation where \\(y\\) is a function of \\(x\\). Consider, for example, the path a moon follows as it orbits around a planet, which simultaneously rotates around a sun.",
+      "garden_emoji": "🏵️",
+      "cave_emoji": "🐌",
+      "garden_slot": {
+        "branch": 5,
+        "u": 0.339
+      },
+      "cave_slot": {
+        "cluster": 1,
+        "x": 0.1146,
+        "y": 0.2389
+      },
+      "cluster_id": 1
+    },
+    {
+      "topic_id": "ch9_s1_t1",
+      "title": "Ellipses Centered at the Origin",
+      "parent_chapter_num": "9",
+      "parent_section_num": "1",
+      "parent_section": "Ellipses",
+      "position_in_section": 0,
+      "difficulty_level": 2,
+      "difficulty_tier": "easy",
+      "depth": 42,
+      "description": "From the definition above we can find an equation for an ellipse. We will find it for a ellipse centered at the origin \\(C\\left( {0,0} \\right)\\) with foci at \\({F_1}\\left( {c,0} \\right)\\) and \\({F_2}\\left( { - c,0} \\right)\\) where \\(c > 0\\).",
+      "garden_emoji": "🍃",
+      "cave_emoji": "💎",
+      "garden_slot": {
+        "branch": 0,
+        "u": 0.3377
+      },
+      "cave_slot": {
+        "cluster": 2,
+        "x": 0.5617,
+        "y": 0.6165
+      },
+      "cluster_id": 2
+    },
+    {
+      "topic_id": "ch9_s1_t2",
+      "title": "Ellipses Not Centered at the Origin",
+      "parent_chapter_num": "9",
+      "parent_section_num": "1",
+      "parent_section": "Ellipses",
+      "position_in_section": 1,
+      "difficulty_level": 1,
+      "difficulty_tier": "easy",
+      "depth": 43,
+      "description": "Not all ellipses are centered at the origin. The graph of such an ellipse is a shift of the graph centered at the origin, so the standard equation for one centered at (\\(h\\), \\(k\\)) is slightly different.",
+      "garden_emoji": "🍀",
+      "cave_emoji": "🦗",
+      "garden_slot": {
+        "branch": 0,
+        "u": 0.5041
+      },
+      "cave_slot": {
+        "cluster": 2,
+        "x": 0.1941,
+        "y": 0.3883
+      },
+      "cluster_id": 2
+    },
+    {
+      "topic_id": "ch9_s1_t3",
+      "title": "Bridges with Semielliptical Arches",
+      "parent_chapter_num": "9",
+      "parent_section_num": "1",
+      "parent_section": "Ellipses",
+      "position_in_section": 2,
+      "difficulty_level": 1,
+      "difficulty_tier": "easy",
+      "depth": 44,
+      "description": "Arches have been used to build bridges for centuries, like in the Skerton Bridge in England which uses five semielliptical arches for support. Semielliptical arches can have engineering benefits such as allowing for longer spans between supports.",
+      "garden_emoji": "🥥",
+      "cave_emoji": "🪨",
+      "garden_slot": {
+        "branch": 0,
+        "u": 0.57
+      },
+      "cave_slot": {
+        "cluster": 2,
+        "x": 0.08,
+        "y": 0.15
+      },
+      "cluster_id": 2
+    },
+    {
+      "topic_id": "ch9_s1_t4",
+      "title": "Ellipse Foci",
+      "parent_chapter_num": "9",
+      "parent_section_num": "1",
+      "parent_section": "Ellipses",
+      "position_in_section": 3,
+      "difficulty_level": 1,
+      "difficulty_tier": "easy",
+      "depth": 45,
+      "description": "The location of the foci can play a key role in ellipse application problems. Standing on a focus in a whispering gallery allows you to hear someone whispering at the other focus.",
+      "garden_emoji": "🍑",
+      "cave_emoji": "🦇",
+      "garden_slot": {
+        "branch": 0,
+        "u": 0.6871
+      },
+      "cave_slot": {
+        "cluster": 2,
+        "x": 0.4501,
+        "y": 0.2665
+      },
+      "cluster_id": 2
+    },
+    {
+      "topic_id": "ch9_s1_t5",
+      "title": "Planetary Orbits",
+      "parent_chapter_num": "9",
+      "parent_section_num": "1",
+      "parent_section": "Ellipses",
+      "position_in_section": 4,
+      "difficulty_level": 1,
+      "difficulty_tier": "easy",
+      "depth": 46,
+      "description": "It was long thought that planetary orbits around the sun were circular. Around 1600, Johannes Kepler discovered they were really elliptical (Technically, they’re approximately elliptical.",
+      "garden_emoji": "🍎",
+      "cave_emoji": "🌟",
+      "garden_slot": {
+        "branch": 0,
+        "u": 0.8226
+      },
+      "cave_slot": {
+        "cluster": 2,
+        "x": 0.7375,
+        "y": 0.08
+      },
+      "cluster_id": 2
+    },
+    {
+      "topic_id": "ch9_s2_t1",
+      "title": "Hyperbolas Centered at the Origin",
+      "parent_chapter_num": "9",
+      "parent_section_num": "2",
+      "parent_section": "Hyperbolas",
+      "position_in_section": 0,
+      "difficulty_level": 3,
+      "difficulty_tier": "medium",
+      "depth": 47,
+      "description": "From the definition above we can find an equation of a hyperbola. We will find it for a hyperbola centered at the origin \\(C\\left( 0,0 \\right)\\) opening horizontally with foci at \\[F_1\\left( c,0 \\right)\\text{ and }F_2\\left( - c,0 \\right)\\text{ where }c > 0\\nonumber\\] Suppose \\(Q\\",
+      "garden_emoji": "🏵️",
+      "cave_emoji": "🔷",
+      "garden_slot": {
+        "branch": 1,
+        "u": 0.3183
+      },
+      "cave_slot": {
+        "cluster": 2,
+        "x": 0.7661,
+        "y": 0.3337
+      },
+      "cluster_id": 2
+    },
+    {
+      "topic_id": "ch9_s2_t2",
+      "title": "Hyperbolas Not Centered at the Origin",
+      "parent_chapter_num": "9",
+      "parent_section_num": "2",
+      "parent_section": "Hyperbolas",
+      "position_in_section": 1,
+      "difficulty_level": 2,
+      "difficulty_tier": "easy",
+      "depth": 48,
+      "description": "Not all hyperbolas are centered at the origin. The standard equation for one centered at (\\(h\\), \\(k\\)) is slightly different.",
+      "garden_emoji": "🫐",
+      "cave_emoji": "🦂",
+      "garden_slot": {
+        "branch": 1,
+        "u": 0.4571
+      },
+      "cave_slot": {
+        "cluster": 2,
+        "x": 0.7055,
+        "y": 0.489
+      },
+      "cluster_id": 2
+    },
+    {
+      "topic_id": "ch9_s2_t3",
+      "title": "Hyperbola Foci",
+      "parent_chapter_num": "9",
+      "parent_section_num": "2",
+      "parent_section": "Hyperbolas",
+      "position_in_section": 2,
+      "difficulty_level": 2,
+      "difficulty_tier": "easy",
+      "depth": 49,
+      "description": "The location of the foci can play a key role in hyperbola application problems. To find them, we need to find the length from the center to the foci, \\(c\\), using the equation \\(b^2 = c^2 - a^2\\).",
+      "garden_emoji": "🌴",
+      "cave_emoji": "🐍",
+      "garden_slot": {
+        "branch": 1,
+        "u": 0.5201
+      },
+      "cave_slot": {
+        "cluster": 2,
+        "x": 0.3094,
+        "y": 0.6188
+      },
+      "cluster_id": 2
+    },
+    {
+      "topic_id": "ch9_s2_t4",
+      "title": "LORAN",
+      "parent_chapter_num": "9",
+      "parent_section_num": "2",
+      "parent_section": "Hyperbolas",
+      "position_in_section": 3,
+      "difficulty_level": 2,
+      "difficulty_tier": "easy",
+      "depth": 50,
+      "description": "Before GPS, the Long Range Navigation (LORAN) system was used to determine a ship’s location. Two radio stations A and B simultaneously sent out a signal to a ship.",
+      "garden_emoji": "🍉",
+      "cave_emoji": "🐻",
+      "garden_slot": {
+        "branch": 1,
+        "u": 0.6417
+      },
+      "cave_slot": {
+        "cluster": 2,
+        "x": 0.1889,
+        "y": 0.7978
+      },
+      "cluster_id": 2
+    },
+    {
+      "topic_id": "ch9_s3_t1",
+      "title": "Equations for Parabolas with Vertex at the Origin",
+      "parent_chapter_num": "9",
+      "parent_section_num": "3",
+      "parent_section": "Parabolas and Non-Linear Systems",
+      "position_in_section": 0,
+      "difficulty_level": 4,
+      "difficulty_tier": "hard",
+      "depth": 51,
+      "description": "From the definition above we can find an equation of a parabola. We will find it for a parabola with vertex at the origin, \\(C\\left( 0,0 \\right)\\), opening upward with focus at \\(F\\left( 0,p \\right)\\) and directrix at \\(y = - p\\).",
+      "garden_emoji": "🌾",
+      "cave_emoji": "🦡",
+      "garden_slot": {
+        "branch": 2,
+        "u": 0.2918
+      },
+      "cave_slot": {
+        "cluster": 2,
+        "x": 0.449,
+        "y": 0.8002
+      },
+      "cluster_id": 2
+    },
+    {
+      "topic_id": "ch9_s3_t2",
+      "title": "Applications of Parabolas",
+      "parent_chapter_num": "9",
+      "parent_section_num": "3",
+      "parent_section": "Parabolas and Non-Linear Systems",
+      "position_in_section": 1,
+      "difficulty_level": 3,
+      "difficulty_tier": "medium",
+      "depth": 52,
+      "description": "In an earlier section, we learned that ellipses have a special property that a ray emanating from one focus will be reflected back to the other focus, the property that enables the whispering chamber to work. Parabolas also have a special property, that any ray emanating from the",
+      "garden_emoji": "🏵️",
+      "cave_emoji": "🐨",
+      "garden_slot": {
+        "branch": 2,
+        "u": 0.4404
+      },
+      "cave_slot": {
+        "cluster": 2,
+        "x": 0.6758,
+        "y": 0.92
+      },
+      "cluster_id": 2
+    },
+    {
+      "topic_id": "ch9_s3_t3",
+      "title": "Non-Linear Systems of Equations",
+      "parent_chapter_num": "9",
+      "parent_section_num": "3",
+      "parent_section": "Parabolas and Non-Linear Systems",
+      "position_in_section": 2,
+      "difficulty_level": 3,
+      "difficulty_tier": "medium",
+      "depth": 53,
+      "description": "In many applications, it is necessary to solve for the intersection of two curves. Many of the techniques you may have used before to solve systems of linear equations will work for non-linear equations as well, particularly substitution.",
+      "garden_emoji": "🥥",
+      "cave_emoji": "🐯",
+      "garden_slot": {
+        "branch": 2,
+        "u": 0.5215
+      },
+      "cave_slot": {
+        "cluster": 2,
+        "x": 0.92,
+        "y": 0.8367
+      },
+      "cluster_id": 2
+    },
+    {
+      "topic_id": "ch9_s4_t1",
+      "title": "Conics in Polar Coordinates",
+      "parent_chapter_num": "9",
+      "parent_section_num": "4",
+      "parent_section": "Conics in Polar Coordinates",
+      "position_in_section": 0,
+      "difficulty_level": 5,
+      "difficulty_tier": "hard",
+      "depth": 54,
+      "description": "In the preceding sections, we defined each conic in a different way, but each involved the distance between a point on the curve and the focus. In the previous section, the parabola was defined using the focus and a line called the directrix .",
+      "garden_emoji": "🍏",
+      "cave_emoji": "🦝",
+      "garden_slot": {
+        "branch": 3,
+        "u": 0.3651
+      },
+      "cave_slot": {
+        "cluster": 2,
+        "x": 0.9032,
+        "y": 0.657
+      },
+      "cluster_id": 2
+    }
+  ]
+}

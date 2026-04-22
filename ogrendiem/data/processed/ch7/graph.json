@@ -1,0 +1,158 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "title": "Solving Trigonometric Equations with Identities",
+      "description": "In the last chapter, we solved basic trigonometric\nequations. In this section, we explore the\ntechniques needed to solve more complicated trig\nequations.",
+      "parent_section": "Solving Trigonometric Equations with Identities",
+      "parent_section_num": "1",
+      "position_in_section": 0,
+      "difficulty_level": 2,
+      "difficulty_tier": "easy",
+      "concepts": [
+        "cos theta",
+        "dfrac",
+        "dfrac dfrac",
+        "identities",
+        "theta",
+        "theta cos",
+        "trig"
+      ],
+      "defined_terms": [
+        "identities"
+      ],
+      "sample_content": "In the last chapter, we solved basic trigonometric equations. In this section, we explore the techniques needed to solve more complicated trig equations. Building from what we already know makes this a much easier task. Consider the function \\(f(x)=2x^{2} +x\\). If you were asked to solve \\(f(x)=0\\), it requires simple algebra: \\[2x^{2} +x=0\\nonumber\\]Factor \\[x(2x+1)=0\\nonumber\\]Giving solutions \\[x = 0\\text{ or }x = -\\dfrac{1}{2}\\nonumber\\] Similarly, for \\(g(t)=\\sin (t)\\), if we asked you to solve \\(g(t)=0\\), you can solve this using unit circle values: \\[\\sin (t)=0\\text{ for }t=0, \\pi , 2\\pi\\text{ and so on.}\\nonumber\\] Using these same concepts, we consider the composition of these two functions: \\[f(g(t))=2(\\sin (t))^{2} +(\\sin (t))=2\\sin ^{2} (t)+\\sin (t)\\nonumber\\] This creates an equation that is a polynomial trig function. With these types of functions, we use algebraic techniques like factoring and the quadratic formula, along with trigonometric identities and techniques, to solve equations. As a reminder, here are some of the essential trigonometric identities that we have learned so far: Exercise \\(\\PageIndex{1}\\) Solve \\(2\\sin ^{2} (t)+3\\sin (t)+1=0\\) for all solutions with \\(0\\le t<2\\pi\\). Answer Factor as \\[\\left(2\\sin (t)+1\\right)\\left(\\sin (t)+1\\right)=0\\nonumber\\] \\[2\\sin (t)+1=0\\text{ at }t=\\dfrac{7\\pi }{6} ,\\dfrac{11\\pi }{6}\\nonumber\\] \\[\\sin (t)+1=0\\text{ at }t=\\dfrac{3\\pi }{2}\\nonumber\\] \\[t=\\dfrac{7\\pi }{6} ,\\dfrac{3\\pi }{2} ,\\dfrac{11\\pi }{6}\\nonumber\\] When solving some trigonometric equations, it becomes necessary to first rewrite the equation using trigonometric identities. One of the most common is the Pythagorean Identity, \\(\\sin ^{2} (\\theta )+\\cos ^{2} (\\theta )=1\\) which allows you to rewrite \\(\\sin ^{2} (\\theta )\\) in terms of \\(\\cos ^{2} (\\theta )\\) or vice versa, IDENTITIES Alternate Forms of the Pythagorean Identity \\[\\begin{array}{l} {\\sin ^{2} (\\theta )=1-\\cos ^{2} (\\theta )} \\\\ {\\cos ^{2} (\\theta )=1-\\sin ^{2} (\\theta )} \\end{a",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/07%3A_Trigonometric_Equations_and_Identities/7.01%3A_Solving_Trigonometric_Equations_with_Identities",
+      "depth": 0,
+      "id": "ch7_s1_t1"
+    },
+    {
+      "title": "Section 7.2 Addition and Subtraction Identities",
+      "description": "In this section, we begin expanding our repertoire\nof trigonometric identities. The sum and\ndifference identities \\[\\cos (\\alpha -\\beta )=\\cos\n(\\alpha )\\cos (\\beta )+\\sin (\\alpha )\\sin (\\beta\n)\\] \\[\\cos (\\alpha +\\beta )=\\cos (\\alpha )\\cos\n(\\beta )-\\sin (\\alpha )\\sin (\\beta )\\] \\[",
+      "parent_section": "Addition and Subtraction Identities",
+      "parent_section_num": "2",
+      "position_in_section": 0,
+      "difficulty_level": 3,
+      "difficulty_tier": "medium",
+      "concepts": [
+        "alpha",
+        "alpha beta",
+        "beta",
+        "beta sin",
+        "cos alpha",
+        "sin alpha"
+      ],
+      "defined_terms": [],
+      "sample_content": "In this section, we begin expanding our repertoire of trigonometric identities. The sum and difference identities \\[\\cos (\\alpha -\\beta )=\\cos (\\alpha )\\cos (\\beta )+\\sin (\\alpha )\\sin (\\beta )\\] \\[\\cos (\\alpha +\\beta )=\\cos (\\alpha )\\cos (\\beta )-\\sin (\\alpha )\\sin (\\beta )\\] \\[\\sin (\\alpha +\\beta )=\\sin (\\alpha )\\cos (\\beta )+\\cos (\\alpha )\\sin (\\beta )\\] \\[\\sin (\\alpha -\\beta )=\\sin (\\alpha )\\cos (\\beta )-\\cos (\\alpha )\\sin (\\beta )\\] We will prove the difference of angles identity for cosine. The rest of the identities can be derived from this one. Proof of the difference of angles identity for cosine Consider two points on a unit circle: \\(P\\) at an angle of \\(\\alpha\\) from the positive \\(x\\) axis with coordinates \\(\\left(\\cos (\\alpha ),\\sin (\\alpha )\\right)\\), and \\(Q\\) at an angle of \\(\\beta\\) with coordinates \\(\\left(\\cos (\\beta ),\\sin (\\beta)\\right)\\). Notice the measure of angle \\(POQ\\) is \\(\\alpha\\) – \\(\\beta\\). Label two more points: \\(C\\) at an angle of \\(\\alpha\\) – \\(\\beta\\), with coordinates \\(\\left(\\cos (\\alpha -\\beta ),\\sin (\\alpha -\\beta )\\right)\\), \\(D\\) at the point (1, 0). Notice that the distance from \\(C\\) to \\(D\\) is the same as the distance from \\(P\\) to \\(Q\\) because triangle \\(COD\\) is a rotation of triangle \\(POQ\\). Using the distance formula to find the distance from \\(P\\) to \\(Q\\) yields \\[\\sqrt{\\left(\\cos (\\alpha )-\\cos (\\beta )\\right)^{2} +\\left(\\sin (\\alpha )-\\sin (\\beta )\\right)^{2} }\\nonumber\\] Expanding this \\[\\sqrt{\\cos ^{2} (\\alpha )-2\\cos (\\alpha )\\cos (\\beta )+\\cos ^{2} (\\beta )+\\sin ^{2} (\\alpha )-2\\sin (\\alpha )\\sin (\\beta )+\\sin ^{2} (\\beta )}\\nonumber\\] Applying the Pythagorean Identity and simplifying \\[\\sqrt{2-2\\cos (\\alpha )\\cos (\\beta )-2\\sin (\\alpha )\\sin (\\beta )}\\nonumber\\] Similarly, using the distance formula to find the distance from \\(C\\) to \\(D\\) \\[\\sqrt{\\left(\\cos (\\alpha -\\beta )-1\\right)^{2} +\\left(\\sin (\\alpha -\\beta )-0\\right)^{2} }\\nonumber\\] Expanding this \\[\\sqrt{\\cos ^{2} (\\alpha -\\beta )-2\\cos (\\alpha",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/07%3A_Trigonometric_Equations_and_Identities/7.02%3A_Addition_and_Subtraction_Identities",
+      "depth": 1,
+      "id": "ch7_s2_t1"
+    },
+    {
+      "title": "Combining Waves of Equal Period",
+      "description": "A sinusoidal function of the form \\(f(x)=A\\sin\n(Bx+C)\\) can be rewritten using the sum of angles\nidentity. Notice that the result is a stretch of\nthe sine added to a different stretch of the\ncosine, but both have the same horizontal\ncompression, which results in the same period.",
+      "parent_section": "Addition and Subtraction Identities",
+      "parent_section_num": "2",
+      "position_in_section": 1,
+      "difficulty_level": 3,
+      "difficulty_tier": "medium",
+      "concepts": [
+        "alpha",
+        "alpha beta",
+        "beta",
+        "dfrac",
+        "left dfrac",
+        "left right"
+      ],
+      "defined_terms": [],
+      "sample_content": "A sinusoidal function of the form \\(f(x)=A\\sin (Bx+C)\\) can be rewritten using the sum of angles identity. Notice that the result is a stretch of the sine added to a different stretch of the cosine, but both have the same horizontal compression, which results in the same period. We might ask now whether this process can be reversed – can a combination of a sine and cosine of the same period be written as a single sinusoidal function? To explore this, we will look in general at the procedure used in the example above. \\[f(x)=A\\sin (Bx+C)\\nonumber\\]Use the sum of angles identity \\[=A\\left(\\sin (Bx)\\cos (C)+\\cos (Bx)\\sin (C)\\right)\\nonumber\\]Distribute the \\(A\\) \\[=A\\sin (Bx)\\cos (C)+A\\cos (Bx)\\sin (C)\\nonumber\\]Rearrange the terms a bit \\[=A\\cos (C)\\sin (Bx)+A\\sin (C)\\cos (Bx)\\nonumber\\] Based on this result, if we have an expression of the form \\(m\\sin (Bx)+n\\cos (Bx)\\), we could rewrite it as a single sinusoidal function if we can find values A and C so that \\(m\\sin (Bx)+n\\cos (Bx)\\) \\(=A\\cos (C)\\sin (Bx)+A\\sin (C)\\cos (Bx)\\), which will require that: \\[\\begin{array}{l} {m=A\\cos (C)} \\\\ {n=A\\sin (C)} \\end{array}\\nonumber\\] which can be rewritten as \\[\\begin{array}{l} {\\dfrac{m}{A} =\\cos (C)} \\\\ {\\dfrac{n}{A} =\\sin (C)} \\end{array}\\nonumber\\] To find \\(A\\), \\[m^{2} +n^{2} =\\left(A\\cos (C)\\right)^{2} +\\left(A\\sin (C)\\right)^{2}\\nonumber\\] \\[=A^{2} \\cos ^{2} (C)+A^{2} \\sin ^{2} (C)\\nonumber\\] \\[=A^{2} \\left(\\cos ^{2} (C)+\\sin ^{2} (C)\\right)\\nonumber\\]Apply the Pythagorean Identity and simplify \\[=A^{2}\\nonumber\\] REWRITING A SUM OF SINE AND COSINE AS A SINGLE SINE To rewrite \\(m\\sin (Bx)+n\\cos (Bx)\\) as \\(A\\sin (Bx+C)\\) \\[A^{2} =m^{2} +n^{2}\\quad \\cos (C)=\\dfrac{m}{A}\\text{ and }\\sin (C)=\\dfrac{n}{A}\\] You can use either of the last two equations to solve for possible values of C . Since there will usually be two possible solutions, we will need to look at both to determine which quadrant C is in and determine which solution for C satisfies both equations. Exercise \\(",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/07%3A_Trigonometric_Equations_and_Identities/7.02%3A_Addition_and_Subtraction_Identities",
+      "depth": 2,
+      "id": "ch7_s2_t2"
+    },
+    {
+      "title": "Double Angle Identities",
+      "description": "Two special cases of the sum of angles identities\narise often enough that we choose to state these\nidentities separately. IDENTITIES The double angle\nidentities \\[\\sin (2\\alpha )=2\\sin (\\alpha )\\cos\n(\\alpha )\\] \\[\\begin{array}{ccc} {\\cos (2\\alpha )}\n& {=} & {\\cos ^{2} (\\alpha )-\\",
+      "parent_section": "Double Angle Identities",
+      "parent_section_num": "3",
+      "position_in_section": 0,
+      "difficulty_level": 4,
+      "difficulty_tier": "hard",
+      "concepts": [
+        "alpha",
+        "alpha sin",
+        "cos alpha",
+        "dfrac",
+        "sin alpha",
+        "theta"
+      ],
+      "defined_terms": [],
+      "sample_content": "Two special cases of the sum of angles identities arise often enough that we choose to state these identities separately. IDENTITIES The double angle identities \\[\\sin (2\\alpha )=2\\sin (\\alpha )\\cos (\\alpha )\\] \\[\\begin{array}{ccc} {\\cos (2\\alpha )} & {=} & {\\cos ^{2} (\\alpha )-\\sin ^{2} (\\alpha )} \\\\ {} & {=} & {1-2\\sin ^{2} (\\alpha )} \\\\ {} & {=} & {2\\cos ^{2} (\\alpha )-1} \\end{array}\\] These identities follow from the sum of angles identities. Proof of the sine double angle identity \\[\\sin (2\\alpha )\\nonumber\\] \\[=\\sin (\\alpha +\\alpha )\\nonumber\\]Apply the sum of angles identity \\[=\\sin (\\alpha )\\cos (\\alpha )+\\cos (\\alpha )\\sin (\\alpha )\\nonumber\\]Simplify \\[=2\\sin (\\alpha )\\cos (\\alpha )\\nonumber\\]Establishing the identity Exercise \\(\\PageIndex{1}\\) Show \\(\\cos (2\\alpha )=\\cos ^{2} (\\alpha )-\\sin ^{2} (\\alpha )\\) by using the sum of angles identity for cosine. Answer \\[\\begin{array}{l} {\\cos \\left(2\\alpha \\right)=\\cos (\\alpha +\\alpha )} \\\\ {\\cos (\\alpha )\\cos (\\alpha )-\\sin (\\alpha )\\sin (\\alpha )} \\\\ {\\cos ^{2} (\\alpha )-\\sin ^{2} (\\alpha )} \\end{array}\\nonumber\\] For the cosine double angle identity, there are three forms of the identity stated because the basic form, \\(\\cos (2\\alpha )=\\cos ^{2} (\\alpha )-\\sin ^{2} (\\alpha )\\), can be rewritten using the Pythagorean Identity. Rearranging the Pythagorean Identity results in the equality \\(\\cos ^{2} (\\alpha )=1-\\sin ^{2} (\\alpha )\\), and by substituting this into the basic double angle identity, we obtain the second form of the double angle identity. \\[\\cos (2\\alpha )=\\cos ^{2} (\\alpha )-\\sin ^{2} (\\alpha )\\nonumber\\]Substituting using the Pythagorean identity \\[\\cos (2\\alpha )=1-\\sin ^{2} (\\alpha )-\\sin ^{2} (\\alpha )\\nonumber\\]Simplifying \\[\\cos (2\\alpha )=1-2\\sin ^{2} (\\alpha )\\nonumber\\] We can use the double angle identities to simplify expressions and prove identities. Exercise \\(\\PageIndex{2}\\) Use an identity to find the exact value of \\(\\cos ^{2} \\left(75{}^\\circ \\right)-\\sin ^{2} \\left(75{}^\\circ \\rig",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/07%3A_Trigonometric_Equations_and_Identities/7.03%3A_Double_Angle_Identities",
+      "depth": 3,
+      "id": "ch7_s3_t1"
+    },
+    {
+      "title": "Modeling Changing Amplitude and Midline",
+      "description": "Section 7.4 Modeling Changing Amplitude and\nMidline While sinusoidal functions can model a\nvariety of behaviors, it is often necessary to\ncombine sinusoidal functions with linear and\nexponential curves to model real applications and\nbehaviors. We begin this section by looking at",
+      "parent_section": "Modeling Changing Amplitude and Midline",
+      "parent_section_num": "4",
+      "position_in_section": 0,
+      "difficulty_level": 4,
+      "difficulty_tier": "hard",
+      "concepts": [
+        "amplitude",
+        "changing",
+        "function",
+        "midline",
+        "model",
+        "sinusoidal"
+      ],
+      "defined_terms": [],
+      "sample_content": "Section 7.4 Modeling Changing Amplitude and Midline While sinusoidal functions can model a variety of behaviors, it is often necessary to combine sinusoidal functions with linear and exponential curves to model real applications and behaviors. We begin this section by looking at changes to the midline of a sinusoidal function. Recall that the midline describes the middle, or average value, of the sinusoidal function. Changing Midlines This is an example of changing midline – in this case an exponentially changing midline. CHANGING MIDLINE A function of the form \\(f(t)=A\\sin (Bt)+g(t)\\) will oscillate above and below the average given by the function \\(g(t)\\). Changing Midline Changing midlines can be exponential, linear, or any other type of function. Here are some examples: Exercise \\(\\PageIndex{1}\\) Given the function \\(g(x)=(x^{2} -1)+8\\cos (x)\\), describe the midline and amplitude using words. Answer The midline follows the path of the quadratic \\(x^{2} -1\\) and the amplitude is a constant value of 8. Changing Amplitude There are also situations in which the amplitude of a sinusoidal function does not stay constant. Back in Chapter 6, we modeled the motion of a spring using a sinusoidal function, but had to ignore friction in doing so. If there were friction in the system, we would expect the amplitude of the oscillation to decrease over time. In the equation \\(f(t)=A\\sin (Bt)+k\\), \\(A\\) gives the amplitude of the oscillation, we can allow the amplitude to change by replacing this constant \\(A\\) with a function \\(A(t)\\). CHANGING AMPLITUDE A function of the form \\(f(t)=A(t)\\sin (Bt)+k\\) will oscillate above and below the midline with an amplitude given by \\(A(t)\\). Here are some examples: When thinking about a spring with amplitude decreasing over time, it is tempting to use the simplest tool for the job – a lin ear function. But if we attempt to model the amplitude with a decreasing linear function, such as \\(A(t)=10-t\\), we quickly see the problem when we grap",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/07%3A_Trigonometric_Equations_and_Identities/7.04%3A_Modeling_Changing_Amplitude_and_Midline",
+      "depth": 4,
+      "id": "ch7_s4_t1"
+    }
+  ],
+  "edges": [
+    {
+      "strength": 4,
+      "source": "ch7_s1_t1",
+      "evidence": "identities",
+      "target": "ch7_s2_t1"
+    },
+    {
+      "strength": 4,
+      "source": "ch7_s1_t1",
+      "evidence": "identities",
+      "target": "ch7_s2_t2"
+    },
+    {
+      "strength": 4,
+      "source": "ch7_s1_t1",
+      "evidence": "identities",
+      "target": "ch7_s3_t1"
+    },
+    {
+      "strength": 2,
+      "source": "ch7_s2_t1",
+      "evidence": "adjacent in section 7.2",
+      "target": "ch7_s2_t2"
+    },
+    {
+      "strength": 1,
+      "source": "ch7_s2_t2",
+      "evidence": "section 7.2 → 7.3",
+      "target": "ch7_s3_t1"
+    },
+    {
+      "strength": 1,
+      "source": "ch7_s3_t1",
+      "evidence": "section 7.3 → 7.4",
+      "target": "ch7_s4_t1"
+    }
+  ]
+}

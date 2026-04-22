@@ -1,0 +1,94 @@
+{
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "title": "Functions and Function Notation / Composition of Functions",
+      "color": "#e74c3c",
+      "topic_ids": [
+        "ch1_s1_t1",
+        "ch1_s1_t2",
+        "ch1_s1_t3",
+        "ch1_s1_t4",
+        "ch1_s1_t5",
+        "ch1_s1_t6",
+        "ch1_s1_t7",
+        "ch1_s2_t1",
+        "ch1_s2_t2",
+        "ch1_s2_t3",
+        "ch1_s3_t1",
+        "ch1_s3_t2",
+        "ch1_s3_t3",
+        "ch1_s4_t1",
+        "ch1_s4_t2",
+        "ch1_s4_t3",
+        "ch1_s4_t4"
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "title": "Complex Zeros / Non-Right Triangles - Laws of…",
+      "color": "#f39c12",
+      "topic_ids": [
+        "ch1_s6_t1",
+        "ch3_s1_t1",
+        "ch3_s4_t1",
+        "ch3_s5_t1",
+        "ch3_s6_t1",
+        "ch3_s6_t2",
+        "ch3_s7_t1",
+        "ch3_s8_t1",
+        "ch8_s1_t1",
+        "ch8_s1_t2",
+        "ch8_s2_t1",
+        "ch8_s3_t1",
+        "ch8_s4_t1",
+        "ch8_s5_t1",
+        "ch8_s6_t1"
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "title": "Ellipses / Hyperbolas",
+      "color": "#f1c40f",
+      "topic_ids": [
+        "ch1_s5_t1",
+        "ch9_s1_t1",
+        "ch9_s1_t2",
+        "ch9_s1_t3",
+        "ch9_s1_t4",
+        "ch9_s1_t5",
+        "ch9_s2_t1",
+        "ch9_s2_t2",
+        "ch9_s2_t3",
+        "ch9_s2_t4",
+        "ch9_s3_t1",
+        "ch9_s3_t2",
+        "ch9_s3_t3",
+        "ch9_s4_t1"
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "title": "Graphs of Polynomial Functions",
+      "color": "#2ecc71",
+      "topic_ids": [
+        "ch3_s3_t1",
+        "ch3_s3_t2",
+        "ch3_s3_t3",
+        "ch3_s3_t4",
+        "ch3_s3_t5"
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "title": "Quadratic Functions / Power Functions",
+      "color": "#1abc9c",
+      "topic_ids": [
+        "ch3_s1_t2",
+        "ch3_s1_t3",
+        "ch3_s2_t1",
+        "ch3_s2_t2"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/04%3A_Exponential_and_Logarithmic_Functions/4.03%3A_Logarithmic_Functions",
+  "title": "4.3: Logarithmic Functions",
+  "chapter": "4",
+  "section": "3",
+  "body_text": "A population of 50 flies is expected to double every week, leading to a function of the form \\(f(x)=50(2)^{x}\\), where x represents the number of weeks that have passed. When will this population reach 500? Trying to solve this problem leads to: \\[500=50(2)^{x}\\nonumber\\] Dividing both sides by 50 to isolate the exponential \\[10=2^{x}\\nonumber\\] While we have set up exponential models and used them to make predictions, you may have noticed that solving exponential equations has not yet been mentioned. The reason is simple: none of the algebraic tools discussed so far are sufficient to solve exponential equations. Consider the equation \\(2^{x} =10\\) above. We know that \\(2^{3} =8\\) and \\(2^{4} =16\\), so it is clear that \\(x\\) must be some value between 3 and 4 since \\(g(x)=2^{x}\\) is increasing. We could use technology to create a table of values or graph to better estimate the solution. From the graph, we could better estimate the solution to be around 3.3. This result is still fairly unsatisfactory, and since the exponential function is one-to-one, it would be great to have an inverse function. None of the functions we have already discussed would serve as an inverse function and so we must introduce a new function, named log as the inverse of an exponential function. Since exponential functions have different bases, we will define corresponding logarithms of different bases as well. Since the logarithm and exponential are inverses, it follows that: properties of logs: inverse properties \\[\\log _{b} \\left(b^{x} \\right)=x\\] \\[b^{\\log _{b} x} =x\\] Recall from the definition of an inverse function that if \\(f(a)=c\\), then \\(f^{-1} (c)=a\\). Applying this to the exponential and logarithmic functions, we can convert between a logarithmic equation and its equivalent exponential. logarithm equivalent to an exponential The statement \\(b^{a} =c\\) is equivalent to the statement \\(\\log _{b} (c)=a\\). Alternatively, we could show this by starting with the exponential function\\(c=b^{a}\\), then taking the log base \\(b\\) of both sides, giving \\(\\log _{b} (c)=\\log _{b} b^{a}\\). Using the inverse property of logs, we see that \\(\\log _{b} (c)=a\\). Since log is a function, it is most correctly written as \\(\\log _{b} (c)\\), using parentheses to denote function evaluation, just as we would with \\(f(c)\\). However, when the input is a single variable or number, it is common to see the parentheses dropped and the expression written as \\(\\log _{b} c\\). Exercise \\(\\PageIndex{1}\\) Write the exponential equation \\(4^{2} =16\\) as a logarithmic equation. Answer \\[\\log _{4} \\left(16\\right)=2=\\log _{4} 4^{2} =2\\log _{4} 4\\nonumber\\] By establishing the relationship between exponential and logarithmic functions, we can now solve basic logarithmic and exponential equations by rewriting. While this does define a solution, and an exact solution at that, you may find it somewhat unsatisfying since it is difficult to compare this expression to the decimal estimate we made earlier. Also, giving an exact expression for a solution is not always useful – often we really need a decimal approximation to the solution. Luckily, this is a task calculators and computers are quite adept at. Unluckily for us, most calculators and computers will only evaluate logarithms of two bases. Happily, this ends up not being a problem, as we’ll see briefly. Exercise \\(\\PageIndex{2}\\) Evaluate \\(\\log (1000000)\\). Answer \\[\\log \\left(1000000\\right)=\\log \\left(10^{6} \\right)=6\\nonumber\\] To utilize the common or natural logarithm functions to evaluate expressions like \\(\\log _{2} (10)\\), we need to establish some additional properties. properties of logs: exponent property \\[\\log _{b} \\left(A^{r} \\right)=r\\log _{b} \\left(A\\right)\\] To show why this is true, we offer a proof: Since the logarithmic and exponential functions are inverses, \\(b^{\\log _{b} A} =A\\). Raising both sides to the r power, we get \\(A^{r} =\\left(b^{\\log _{b} A} \\right)^{r}\\). Utilizing the exponential rule that states\\(\\left(x^{p} \\right)^{q} =x^{pq}\\), \\(A^{r} =\\left(b^{\\log _{b} A} \\right)^{r} =b^{r\\log _{b} A}\\) Taking the log of both sides, \\(\\log _{b} \\left(A^{r} \\right)=\\log _{b} \\left(b^{r\\log _{b} A} \\right)\\) Utilizing the inverse property on the right side yields the result: \\(\\log _{b} \\left(A^{r} \\right)=r\\log _{b} A\\) Exercise \\(\\PageIndex{3}\\) Rewrite using the exponent property for logs: \\(\\ln \\left(\\dfrac{1}{x^{2} } \\right)\\). Answer \\[3. \\ln \\left(\\dfrac{1}{x^{2} } \\right)=\\ln \\left(x^{-2} \\right)=-2\\ln (x)\\nonumber \\] The exponent property allows us to find a method for changing the base of a logarithmic expression. properties of logs: change of base \\[\\log _{b} \\left(A\\right)=\\dfrac{\\log _{c} (A)}{\\log _{c} (b)}\\nonumber\\] Proof Let \\(\\log _{b} \\left(A\\right)=x\\). Rewriting as an exponential gives \\(b^{x} =A\\). Taking the log base c of both sides of this equation gives \\[\\log _{c} b^{x} =\\log _{c} A \\nonumber\\] Now utilizing the exponent property for logs on the left side, \\[x\\log _{c} b=\\log _{c} A \\nonumber\\] Dividing, we obtain \\(x=\\dfrac{\\log _{c} A}{\\log _{c} b}\\). Replacing our original expression for \\(x\\), \\[\\log _{b} A=\\dfrac{\\log _{c} A}{\\log _{c} b} \\nonumber\\] With this change of base formula, we can finally find a good decimal approximation to our question from the beginning of the section. While we can solve the basic exponential equation \\(2^{x} =10\\) by rewriting in logarithmic form and then using the change of base formula to evaluate the logarithm, the proof of the change of base formula illuminates an alternative approach to solving exponential equations. Solving Exponential Equations Isolate the exponential expressions when possible Take the logarithm of both sides Utilize the exponent property for logarithms to pull the variable out of the exponent Use algebra to solve for the variable. Exercise \\(\\PageIndex{4}\\) Solve \\(5(0.93)^{x} =10\\). Answer \\[5(0.93)^{x} =10(0.93)^{x} =2\\ln \\left(0.93^{x} \\right)=\\ln \\left(2\\right)x\\ln \\left(0.93\\right)=\\ln \\left(2\\right)\\dfrac{\\ln (2)}{\\ln (0.93)} \\approx -9.5513\\nonumber\\] In addition to solving exponential equations, logarithmic expressions are common in many physical situations. Logarithms also provide us a mechanism for finding continuous growth models for exponential growth given two data points. In general, we can relate the standard form of an exponential with the continuous growth form by noting (using k to represent the continuous growth rate to avoid the confusion of using r in two different ways in the same formula): \\[a(1+r)^{x} =ae^{kx}\\] \\[(1+r)^{x} =e^{kx}\\] \\[1+r=e^{k}\\] converting between periodic to continuous growth rate In the equation \\(f(x)=a(1+r)^{x}\\), \\(r\\) is the periodic growth rate , the percent growth each time period (weekly growth, annual growth, etc.). In the equation \\(f(x)=ae^{kx}\\), \\(k\\) is the continuous growth rate . You can convert between these using: \\(1+r=e^{k}\\). Remember that the continuous growth rate \\(k\\) represents the nominal growth rate before accounting for the effects of continuous compounding, while \\(r\\) represents the actual percent increase in one time unit (one week, one year, etc.). Important Topics of this Section The Logarithmic function as the inverse of the exponential function Writing logarithmic & exponential expressions Properties of logs Inverse properties Exponential properties Change of base Common log Natural log Solving exponential equations Converting between periodic and continuous growth rate.",
+  "definitions": [
+    {
+      "kind": "boxed",
+      "text": "Definition: logarithm The logarithm (base \\(b\\)) function, written \\(\\log _{b} \\left(x\\right)\\), is the inverse of the exponential function (base \\(b\\)), \\(b^{x}\\)."
+    },
+    {
+      "kind": "boxed",
+      "text": "Definition: common and natural logarithms The common log is the logarithm with base 10, and is typically written \\(\\log (x)\\). The natural log is the logarithm with base \\(e\\), and is typically written \\(\\ln (x)\\)."
+    },
+    {
+      "kind": "inline",
+      "text": "Definition: logarithm"
+    },
+    {
+      "kind": "inline",
+      "text": "Definition: common and natural logarithms"
+    }
+  ],
+  "examples": [
+    {
+      "text": "Example \\(\\PageIndex{1}\\) Write these exponential equations as logarithmic equations: \\(2^{3} =8\\) \\(5^{2} =25\\) \\(10^{-4} =\\dfrac{1}{10000}\\) Solution a) \\(2^{3} =8\\) is equivalent to \\(\\log _{2} (8)=3\\) b) \\(5^{2} =25\\) is equivalent to \\(\\log _{5} (25)=2\\) c) \\(10^{-4} =\\dfrac{1}{10000}\\) is equivalent to \\(\\log _{10} \\left(\\dfrac{1}{10000} \\right)=-4\\)"
+    },
+    {
+      "text": "Example \\(\\PageIndex{2}\\) Write these logarithmic equations as exponential equations: a) \\(\\log _{6} \\left(\\sqrt{6} \\right)=\\dfrac{1}{2}\\) b) \\(\\log _{3} \\left(9\\right)=2\\) Solution a) \\(\\log _{6} \\left(\\sqrt{6} \\right)=\\dfrac{1}{2}\\) is equivalent to \\(6^{1/2} =\\sqrt{6}\\) b) \\(\\log _{3} \\left(9\\right)=2\\) is equivalent to \\(3^{2} =9\\)"
+    },
+    {
+      "text": "Example \\(\\PageIndex{3}\\) Solve \\(\\log _{4} \\left(x\\right)=2\\) for \\(x\\). Solution By rewriting this expression as an exponential, \\(4^{2} =x\\), so \\(x = 16\\)."
+    },
+    {
+      "text": "Example \\(\\PageIndex{4}\\) Solve \\(2^{x} =10\\) for \\(x\\). Solution By rewriting this expression as a logarithm, we get \\(x=\\log _{2} (10)\\)."
+    },
+    {
+      "text": "Example \\(\\PageIndex{5}\\) Evaluate \\(\\log (1000)\\) using the definition of the common log. Values of the common log number number as exponential log(number) 1000 \\(10^3\\) 3 100 \\(10^2\\) 2 10 \\(10^1\\) 1 1 \\(10^0\\) 0 0.1 \\(10^{-1}\\) -1 0.01 \\(10^{-2}\\) -2 0.001 \\(10^{-3}\\) -3 Solution To evaluate \\(\\log (1000)\\), we can let \\(x=\\log (1000)\\), then rewrite into exponential form using the common log base of 10: \\(10^{x} =1000.\\) From this, we might recognize that 1000 is the cube of 10, so \\(x\\) = 3. We also can use the inverse property of logs to write \\(\\log _{10} \\left(10^{3} \\right)=3\\)."
+    },
+    {
+      "text": "Example \\(\\PageIndex{6}\\) Evaluate \\(\\ln \\left(\\sqrt{e} \\right)\\). Solution We can rewrite \\(\\ln \\left(\\sqrt{e} \\right)\\) as \\(\\ln \\left(e^{1/2} \\right)\\). Since ln is a log base \\(e\\), we can use the inverse property for logs: \\[\\ln \\left(e^{1/2} \\right)=\\log _{e} \\left(e^{1/2} \\right)=\\dfrac{1}{2}\\nonumber\\]."
+    },
+    {
+      "text": "Example \\(\\PageIndex{7}\\) Evaluate log(500) using your calculator or computer. Solution Using a computer, we can evaluate \\(\\log (500)\\approx 2.69897\\)"
+    },
+    {
+      "text": "Example \\(\\PageIndex{8}\\) Rewrite \\(\\log _{3} \\left(25\\right)\\) using the exponent property for logs. Solution Since 25 = 5\\({}^{2}\\), \\[\\log _{3} \\left(25\\right)=\\log _{3} \\left(5^{2} \\right)=2\\log _{3} \\left(5\\right)\\nonumber\\]"
+    },
+    {
+      "text": "Example \\(\\PageIndex{9}\\) Rewrite \\(4\\ln (x)\\)using the exponent property for logs. Solution Using the property in reverse, \\(4\\ln (x)=\\ln \\left(x^{4} \\right)\\)."
+    },
+    {
+      "text": "Example \\(\\PageIndex{10}\\) Evaluate \\(\\log _{2} (10)\\) using the change of base formula. Solution According to the change of base formula, we can rewrite the log base 2 as a logarithm of any other base. Since our calculators can evaluate the natural log, we might choose to use the natural logarithm, which is the log base \\(e\\): \\[\\log _{2} 10=\\dfrac{\\log _{e} 10}{\\log _{e} 2} =\\dfrac{\\ln 10}{\\ln 2}\\nonumber\\] Using our calculators to evaluate this, \\[\\dfrac{\\ln 10}{\\ln 2} \\approx \\dfrac{2.30259}{0.69315} \\approx 3.3219\\nonumber\\] This finally allows us to answer our original question – the population of flies we discussed at the beginning of the section will take 3.32 weeks to grow to 500."
+    },
+    {
+      "text": "Example \\(\\PageIndex{11}\\) Evaluate \\(\\log _{5} (100)\\) using the change of base formula. Solution We can rewrite this expression using any other base. If our calculators are able to evaluate the common logarithm, we could rewrite using the common log, base 10. \\[\\log _{5} (100)=\\dfrac{\\log _{10} 100}{\\log _{10} 5} \\approx \\dfrac{2}{0.69897} =2.861 \\nonumber\\]"
+    },
+    {
+      "text": "Example \\(\\PageIndex{12}\\) Solve \\(2^{x} =10\\) for \\(x\\). Solution Using this alternative approach, rather than rewrite this exponential into logarithmic form, we will take the logarithm of both sides of the equation. Since we often wish to evaluate the result to a decimal answer, we will usually utilize either the common log or natural log. For this example, we’ll use the natural log: \\[\\ln \\left(2^{x} \\right)=\\ln (10)\\nonumber\\] Utilizing the exponent property for logs, \\[x\\ln \\left(2\\right)=\\ln (10)\\nonumber\\] Now dividing by ln(2), \\[x=\\dfrac{\\ln (10)}{\\ln \\left(2\\right)} \\approx 3.3219\\nonumber\\] Notice that this result matches the result we found using the change of base formula."
+    },
+    {
+      "text": "Example \\(\\PageIndex{13}\\) In the first section, we predicted the population (in billions) of India \\(t\\) years after 2008 by using the function \\(f(t)=1.14(1+0.0134)^{t}\\). If the population continues following this trend, when will the population reach 2 billion? Solution We need to solve for time \\(t\\) so that \\(f(t) = 2\\). \\[2=1.14(1.0134)^{t}\\nonumber\\] Divide by 1.14 to isolate the exponential expression \\[\\dfrac{2}{1.14} =1.0134^{t}\\nonumber\\] Take the logarithm of both sides of the equation \\[\\ln \\left(\\dfrac{2}{1.14} \\right)=\\ln \\left(1.0134^{t} \\right)\\nonumber\\] Apply the exponent property on the right side \\[\\ln \\left(\\dfrac{2}{1.14} \\right)=t\\ln \\left(1.0134\\right)\\nonumber\\] Divide both sides by ln(1.0134) \\[t=\\dfrac{\\ln \\left(\\dfrac{2}{1.14} \\right)}{\\ln \\left(1.0134\\right)} \\approx 42.23\\text{ years}\\nonumber\\] If this growth rate continues, the model predicts the population of India will reach 2 billion about 42 years after 2008, or approximately in the year 2050."
+    },
+    {
+      "text": "Example \\(\\PageIndex{14}\\) Solve \\(5(1.07)^{3t} =2\\) Solution To start, we want to isolate the exponential part of the expression, the \\((1.07)^{3t}\\), so it is alone on one side of the equation. Then we can use the log to solve the equation. We can use any base log; this time we’ll use the common log. \\[5(1.07)^{3t} =2\\nonumber\\] Divide both sides by 5 to isolate the exponential \\[(1.07)^{3t} =\\dfrac{2}{5}\\nonumber\\] Take the log of both sides. \\[\\log \\left((1.07)^{3t} \\right)=\\log \\left(\\dfrac{2}{5} \\right)\\nonumber\\] Use the exponent property for logs \\[3t\\log \\left(1.07\\right)=\\log \\left(\\dfrac{2}{5} \\right)\\nonumber\\] Divide by \\(3\\log \\left(1.07\\right)\\) on both sides \\[\\dfrac{3t\\log \\left(1.07\\right)}{3\\log \\left(1.07\\right)} =\\dfrac{\\log \\left(\\dfrac{2}{5} \\right)}{3\\log \\left(1.07\\right)}\\nonumber\\] Simplify and evaluate \\[t=\\dfrac{\\log \\left(\\dfrac{2}{5} \\right)}{3\\log \\left(1.07\\right)} \\approx -4.5143\\nonumber\\] Note that when entering that expression on your calculator, be sure to put parentheses around the whole denominator to ensure the proper order of operations: log(2/5)/(3*log(1.07))"
+    },
+    {
+      "text": "Example \\(\\PageIndex{15}\\) In chemistry, pH is a measure of the acidity or basicity of a liquid. The pH is related to the concentration of hydrogen ions, [ H \\({}^{+}\\)], measured in moles per liter, by the equation \\[pH=-\\log \\left(\\left[H^{+} \\right]\\right)\\] If a liquid has concentration of 0.0001 moles per liber, determine the pH. Determine the hydrogen ion concentration of a liquid with pH of 7. Solution To answer the first question, we evaluate the expression \\(-\\log \\left(0.0001\\right)\\). While we could use our calculators for this, we do not really need them here, since we can use the inverse property of logs: \\[-\\log \\left(0.0001\\right)=-\\log \\left(10^{-4} \\right)=-(-4)=4\\nonumber\\] To answer the second question, we need to solve the equation \\(7=-\\log \\left(\\left[H^{+} \\right]\\right)\\). Begin by isolating the logarithm on one side of the equation by multiplying both sides by -1: \\[-7=\\log \\left(\\left[H^{+} \\right]\\right)\\nonumber\\]. Rewriting into exponential form yields the answer: \\[\\left[H^{+} \\right]=10^{-7} =0.0000001\\text{ moles per liter}\\nonumber \\]"
+    },
+    {
+      "text": "Example \\(\\PageIndex{16}\\) A population grows from 100 to 130 in 2 weeks. Find the continuous growth rate. Solution Measuring \\(t\\) in weeks, we are looking for an equation \\(P(t)=ae^{rt}\\) so that \\(P(0)\\) = 100 and \\(P(2)\\) = 130. Using the first pair of values, \\(100=ae^{r\\cdot 0}\\), so \\(a\\) = 100. Using the second pair of values, \\[130=100e^{r\\cdot 2}\\nonumber\\] Divide by 100 \\[\\dfrac{130}{100} =e^{r2}\\nonumber\\] Take the natural log of both sides \\[\\ln (1.3)=\\ln \\left(e^{r2} \\right)\\nonumber\\] Use the inverse property of logs \\[\\begin{array}{l} {\\ln (1.3)=2r} \\\\ {r=\\dfrac{\\ln (1.3)}{2} \\approx 0.1312} \\end{array}\\nonumber\\] This population is growing at a continuous rate of 13.12% per week."
+    },
+    {
+      "text": "Example \\(\\PageIndex{17}\\) A company’s sales can be modeled by the function \\(S(t)=5000e^{0.12t}\\), with \\(t\\) measured in years. Find the annual growth rate. Solution Noting that \\(1+r=e^{k}\\), then \\(r=e^{0.12} -1=0.1275\\), so the annual growth rate is 12.75%. The sales function could also be written in the form \\(S(t)=5000(1+0.1275)^{t}\\)."
+    }
+  ],
+  "internal_links": [
+    {
+      "text": "Precalculus & Trigonometry",
+      "url": "https://math.libretexts.org/Bookshelves/Precalculus"
+    },
+    {
+      "text": "Precalculus - An Investigation of Functions (Lippman and Rasmussen)",
+      "url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)"
+    },
+    {
+      "text": "4: Exponential and Logarithmic Functions",
+      "url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/04%3A_Exponential_and_Logarithmic_Functions"
+    },
+    {
+      "text": "4.3: Logarithmic Functions",
+      "url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/04%3A_Exponential_and_Logarithmic_Functions/4.03%3A_Logarithmic_Functions"
+    },
+    {
+      "text": "4.2E: Graphs of Exponential Functions (Exercises)",
+      "url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/04%3A_Exponential_and_Logarithmic_Functions/4.02%3A_Graphs_of_Exponential_Functions/4.2E%3A_Graphs_of_Exponential_Functions_(Exercises)"
+    },
+    {
+      "text": "4.3E: Logarithmic Functions (Exercises)",
+      "url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/04%3A_Exponential_and_Logarithmic_Functions/4.03%3A_Logarithmic_Functions/4.3E%3A_Logarithmic_Functions_(Exercises)"
+    }
+  ],
+  "subsections": [],
+  "char_count": 7492
+}

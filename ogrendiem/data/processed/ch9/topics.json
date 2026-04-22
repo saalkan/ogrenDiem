@@ -1,0 +1,592 @@
+{
+  "meta": {
+    "source": "Lippman & Rasmussen — Precalculus, Chapter 9 (LibreTexts)",
+    "scope": "ch9",
+    "chapters": [
+      9
+    ],
+    "n_topics": 13,
+    "n_edges": 21,
+    "edge_source_counts": {
+      "term-definition": 10,
+      "structural-sec": 8,
+      "structural-chap": 3
+    }
+  },
+  "topics": [
+    {
+      "topic_id": "ch9_s1_t1",
+      "title": "Ellipses Centered at the Origin",
+      "parent_section": "Ellipses",
+      "parent_chapter_num": "9",
+      "parent_section_num": "1",
+      "position_in_section": 0,
+      "body_text": "From the definition above we can find an equation for an ellipse. We will find it for a ellipse centered at the origin \\(C\\left( {0,0} \\right)\\) with foci at \\({F_1}\\left( {c,0} \\right)\\) and \\({F_2}\\left( { - c,0} \\right)\\) where \\(c > 0\\). Suppose\\(\\;Q\\left( {x,y} \\right)\\) is some point on the ellipse. The distance from \\(F_1\\) to \\(Q\\) is \\[d\\left( Q,{F_1} \\right) = \\sqrt {{{\\left( {x - c} \\right)}^2} + {{\\left( {y - 0} \\right)}^2}\\;} = \\sqrt {{{\\left( {x - c} \\right)}^2} + {y^2}\\;} \\nonumber\\] Likewise, the distance from \\(F_2\\) to \\(Q\\) is \\[d\\left( {Q,{F_2}} \\right) = \\sqrt {{\\left( {x - \\left( { - c} \\right)} \\right)}^2 + {\\left( {y - 0} \\right)}^2} = \\sqrt {{{\\left( {x + c} \\right)}^2} + {y^2}\\;} \\nonumber\\] From the definition of the ellipse, the sum of these distances should be constant: \\[d\\left( {Q,{F_1}} \\right) + d\\left( {Q,{F_2}} \\right) = k\\nonumber\\]so that \\[\\sqrt {\\left( {x - c} \\right)^2} + y^2; + \\sqrt {{{\\left( {x + c} \\right)}^2} + {y^2}\\;} = k\\nonumber\\] If we label one of the vertices \\(\\left( a,0 \\right)\\), it should satisfy the equation above since it is a point on the ellipse. This allows us to write \\(k\\) in terms of \\(a\\). \\[\\sqrt {\\left( a - c \\right)^2 +0^2} + \\sqrt {\\left( a + c \\right)^2 + 0^2} = k\\nonumber\\] \\[\\left| {a - c} \\right| + \\left| {a + c} \\right| = k\\nonumber\\] Since \\(a > c\\), these will be positive \\[(a - c) + (a + c) = k\\nonumber\\] \\[2a = k\\nonumber\\] Substituting that into our equation, we will now try to rewrite the equation in a friendlier form. \\[\\sqrt {\\left( x - c \\right)^2 + y^2} + \\sqrt {\\left( x + c \\right)^2 + y^2} = 2a\\nonumber\\]Move one radical \\[\\sqrt {\\left( x - c \\right)^2 + y^2} = 2a - \\sqrt {\\left( x + c \\right)^2 + y^2} \\nonumber\\]Square both sides \\[\\left( \\sqrt {\\left( x - c \\right)^2 + y^2 } \\right)^2 = \\left( 2a - \\sqrt {\\left( x + c \\right)^2 + y^2} \\right)^2\\nonumber\\]Expand \\[\\left( x - c \\right)^2 + y^2= 4a^2 - 4a\\sqrt {\\left( x + c \\right)^2 + y^2} + \\left( x + c \\right)^2 + y^2\\nonumber\\]Expand more \\[x^2 - 2xc + c^2 + y^2 = 4a^2 - 4a\\sqrt {\\left( x + c \\right)^2 + y^2} + x^2 + 2xc + c^2 + y^2\\nonumber\\] Combining like terms and isolating the radical leaves \\[4a\\sqrt {\\left( x + c \\right)^2 + y^2} = 4a^2 + 4xc\\nonumber\\]Divide by 4 \\[a\\sqrt {\\left( x + c \\right)^2 + y^2} = a^2 + xc\\nonumber\\]Square both sides again \\[a^2\\left( \\left( x + c \\right)^2 + y^2 \\right) = a^4 + 2a^2xc + x^2c^2\\nonumber\\]Expand \\[a^2\\left( x^2 + 2xc + c^2 + y^2 \\right) = a^4 + 2a^2xc + x^2c^2\\nonumber\\]Distribute \\[a^2x^2 + 2a^2xc + a^2c^2 + a^2y^2 = a^4 + 2a^2xc + x^2c^2\\nonumber\\]Combine like terms \\[a^2x^2 - x^2c^2 + a^2y^2 =a^4 - a^2c^2\\nonumber\\]Factor common terms \\[\\left( a^2 - c^2 \\right)x^2 + a^2y^2 = a^2\\left( a^2 - c^2 \\right)\\nonumber\\] Let \\(b^2 = a^2 - c^2\\). Since \\(a > c\\), we know \\(b > 0\\). Substituting \\(b^2\\)for \\(a^2 - c^2\\) leaves \\[b^2x^2 + a^2y^2 = a^2b^2\\nonumber\\] Divide both sides by \\(a^2b^2\\) \\[\\dfrac{x^2}{a^2} + \\dfrac{y^2}{b^2} = 1\\nonumber\\] This is the standard equation for an ellipse. We typically swap \\(a\\) and \\(b\\) when the major axis of the ellipse is vertical. Major Axis Horizontal Vertical Vertices \\(\\dfrac{x^2}{a^2} + \\dfrac{y^2}{b^2} = 1\\) \\(\\dfrac{x^2}{b^2} + \\dfrac{y^2}{a^2} = 1\\) Standard Equation (-\\(a\\), 0) and (\\(a\\), 0) (0, -\\(a\\)) and (0, \\(a\\)) Minor Axis Endpoints (0, -\\(b\\)) and (0, \\(b\\)) (-\\(b\\), 0) and (\\(b\\), 0) Foci (-\\(c\\), 0) and (\\(c\\), 0) where \\(b^2 = a^2 - c^2\\) (0, -\\(c\\)) and (0, \\(c\\)) where \\(b^2 = a^2 - c^2\\) Graph (-\\(c\\), 0) and (\\(c\\), 0) where \\(b^2 = a^2 - c^2\\) (0, -\\(c\\)) and (0, \\(c\\)) where \\(b^2 = a^2 - c^2\\) Sometimes we are given the equation. Sometimes we need to find the equation from a graph or other information. Exercise \\(\\PageIndex{1}\\) Find the standard form of the equation for an ellipse with horizontal major axis length 20 and minor axis length 6. \\(2a = 20\\), so \\(a =10\\). \\(2b = 6\\), so \\(b = 3\\). \\[\\dfrac{x^2}{100} + \\dfrac{y^2}{9} = 1\\nonumber\\]",
+      "definitions": [
+        {
+          "kind": "boxed",
+          "text": "Definition: EQUATION OF AN ELLIPSE CENTERED AT THE ORIGIN IN STANDARD FORM The standard form of an equation of an ellipse centered at the origin \\(C\\left( 0,0 \\right)\\) depends on whether the major axis is horizontal or vertical. The table below gives the standard equation, vertices, minor axis endpoints, foci, and graph for each."
+        }
+      ],
+      "examples": [
+        {
+          "text": "Example \\(\\PageIndex{1}\\) Put the equation of the ellipse \\(9{x^2} + {y^2} = 9\\) in standard form. Find the vertices, minor axis endpoints, length of the major axis, and length of the minor axis. Sketch the graph, then check using a graphing utility. Solution The standard equation has a 1 on the right side, so this equation can be put in standard form by dividing by 9: \\[\\dfrac{x^2}{1} + \\dfrac{y^2}{9} = 1\\nonumber\\] Since the \\(y\\)-denominator is greater than the \\(x\\)-denominator, the ellipse has a vertical major axis. Comparing to the general standard form equation \\(\\dfrac{x^2}{b^2} + \\dfrac{y^2}{a^2} = 1\\), we see the value of \\(a = \\sqrt 9 = 3\\) and the value of \\(b = \\sqrt 1 = 1\\). The vertices lie on the \\(y\\)-axis at (0, \\(\\pm a\\)) = (0, \\(\\pm 3\\)). The minor axis endpoints lie on the \\(x\\)-axis at (\\(\\pm b\\), 0) = (\\(\\pm 1\\), 0). The length of the major axis is \\(2\\left( a \\right) = 2\\left( 3 \\right) = 6\\). The length of the minor axis is \\(2\\left( b \\right) = 2\\left( 1 \\right) = 2\\). To sketch the graph we plot the vertices and the minor axis endpoints. Then we sketch the ellipse, rounding at the vertices and the minor axis endpoints. To check on a graphing utility, we must solve the equation for \\(y\\). Isolating \\(y^2\\) gives us \\[y^2 = 9\\left( 1 - x^2 \\right)\\nonumber\\] Taking the square root of both sides we get \\[y = \\pm 3\\sqrt {1 - x^2} \\nonumber\\] Under Y= on your graphing utility enter the two halves of the ellipse as \\(y = 3\\sqrt {1 - x^2} \\) and \\(y = - 3\\sqrt {1 - x^2} \\). Set the window to a comparable scale to the sketch with xmin = -5, xmax = 5, ymin= -5, and ymax = 5. Here’s an example output on a TI-84 calculator:"
+        },
+        {
+          "text": "Example \\(\\PageIndex{2}\\) Find the standard form of the equation for an ellipse centered at (0,0) with horizontal major axis length 28 and minor axis length 16. Solution Since the center is at (0,0) and the major axis is horizontal, the ellipse equation has the standard form \\(\\dfrac{x^2}{a^2} + \\dfrac{y^2}{b^2} = 1\\). The major axis has length \\(2a = 28\\) or \\(a = 14\\). The minor axis has length \\(2b = 16\\) or b = 8. Substituting gives \\[\\dfrac{x^2}{16^2} + \\dfrac{y^2}{8^2} = 1\\text{ or }\\dfrac{x^2}{256} + \\dfrac{y^2}{64.} = 1\\nonumber\\]"
+        },
+        {
+          "text": "Example \\(\\PageIndex{3}\\) Find the standard form of the equation for the ellipse graphed here. Solution The center is at (0,0) and the major axis is vertical, so the standard form of the equation will be \\(\\dfrac{x^2}{b^2} + \\dfrac{y^2}{a^2} = 1\\). From the graph we can see the vertices are (0,4) and (0,-4), giving \\(a = 4\\). The minor-axis endpoints are (2,0) and (-2,0), giving \\(b = 2\\). The equation will be \\[\\dfrac{x^2}{2^2} + \\dfrac{y^2}{4^2} = 1\\text{ or }\\dfrac{x^2}{4} + \\dfrac{y^2}{16} = 1\\nonumber\\]"
+        }
+      ],
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/09%3A_Conics/9.01%3A_Ellipses",
+      "defined_terms": [
+        "equation"
+      ],
+      "concepts": [
+        "equation",
+        "left right",
+        "nonumber",
+        "right left",
+        "right nonumber",
+        "right sqrt",
+        "sqrt left"
+      ],
+      "difficulty_level": 2,
+      "difficulty_tier": "easy",
+      "description": "From the definition above we can find an equation for an ellipse. We will find it for a ellipse centered at the origin \\(C\\left( {0,0} \\right)\\) with foci at \\({F_1}\\left( {c,0} \\right)\\) and \\({F_2}\\left( { - c,0} \\right)\\) where \\(c > 0\\).",
+      "sample_content": "From the definition above we can find an equation for an ellipse. We will find it for a ellipse centered at the origin \\(C\\left( {0,0} \\right)\\) with foci at \\({F_1}\\left( {c,0} \\right)\\) and \\({F_2}\\left( { - c,0} \\right)\\) where \\(c > 0\\). Suppose\\(\\;Q\\left( {x,y} \\right)\\) is some point on the ellipse. The distance from \\(F_1\\) to \\(Q\\) is \\[d\\left( Q,{F_1} \\right) = \\sqrt {{{\\left( {x - c} \\right)}^2} + {{\\left( {y - 0} \\right)}^2}\\;} = \\sqrt {{{\\left( {x - c} \\right)}^2} + {y^2}\\;} \\nonumber\\] Likewise, the distance from \\(F_2\\) to \\(Q\\) is \\[d\\left( {Q,{F_2}} \\right) = \\sqrt {{\\left( {x - \\left( { - c} \\right)} \\right)}^2 + {\\left( {y - 0} \\right)}^2} = \\sqrt {{{\\left( {x + c} \\right)}^2} + {y^2}\\;} \\nonumber\\] From the definition of the ellipse, the sum of these distances should be constant: \\[d\\left( {Q,{F_1}} \\right) + d\\left( {Q,{F_2}} \\right) = k\\nonumber\\]so that \\[\\sqrt {\\left( {x - c} \\right)^2} + y^2; + \\sqrt {{{\\left( {x + c} \\right)}^2} + {y^2}\\;} = k\\nonumber\\] If we label one of the vertices \\(\\left( a,0 \\right)\\), it should satisfy the equation above since it is a point on the ellipse. This allows us to write \\(k\\) in terms of \\(a\\). \\[\\sqrt {\\left( a - c \\right)^2 +0^2} + \\sqrt {\\left( a + c \\right)^2 + 0^2} = k\\nonumber\\] \\[\\left| {a - c} \\right| + \\left| {a + c} \\right| = k\\nonumber\\] Since \\(a > c\\), these will be positive \\[(a - c) + (a + c) = k\\nonumber\\] \\[2a = k\\nonumber\\] Substituting that into our equation, we will now try to rewrite the equation in a friendlier form. \\[\\sqrt {\\left( x - c \\right)^2 + y^2} + \\sqrt {\\left( x + c \\right)^2 + y^2} = 2a\\nonumber\\]Move one radical \\[\\sqrt {\\left( x - c \\right)^2 + y^2} = 2a - \\sqrt {\\left( x + c \\right)^2 + y^2} \\nonumber\\]Square both sides \\[\\left( \\sqrt {\\left( x - c \\right)^2 + y^2 } \\right)^2 = \\left( 2a - \\sqrt {\\left( x + c \\right)^2 + y^2} \\right)^2\\nonumber\\]Expand \\[\\left( x - c \\right)^2 + y^2= 4a^2 - 4a\\sqrt {\\left( x + c \\right)^2 + y^2} + \\left( x + c \\right)^2 + y^2\\nonumber\\]E"
+    },
+    {
+      "topic_id": "ch9_s1_t2",
+      "title": "Ellipses Not Centered at the Origin",
+      "parent_section": "Ellipses",
+      "parent_chapter_num": "9",
+      "parent_section_num": "1",
+      "position_in_section": 1,
+      "body_text": "Not all ellipses are centered at the origin. The graph of such an ellipse is a shift of the graph centered at the origin, so the standard equation for one centered at (\\(h\\), \\(k\\)) is slightly different. We can shift the graph right \\(h\\) units and up \\(k\\) units by replacing \\(x\\) with \\(x – h\\) and \\(y\\) with \\(y – k\\), similar to what we did when we learned transformations. Major Axis Horizontal Vertical Standard Equation \\(\\dfrac{(x - h)^2}{a^2} + \\dfrac{(y - k)^2}{b^2} = 1\\) \\(\\dfrac{(x - h)^2}{b^2} + \\dfrac{(y - k)^2}{a^2} = 1\\) Vertices \\((h \\pm a, k)\\) \\((h, k \\pm a)\\) Minor Axis Endpoints \\((h, k \\pm b)\\) \\((h \\pm b, k)\\) Foci \\((h \\pm c, k)\\) where \\(b^2 = a^2 - c^2\\) \\((h, k \\pm c)\\) where \\(b^2 = a^2 - c^2\\) Graph Exercise \\(\\PageIndex{2}\\) Find the center, vertices, minor axis endpoints, length of the major axis, and length of the minor axis for the ellipse \\(\\left( x - 4 \\right)^2 + \\dfrac{\\left( y + 2 \\right)^2}{4} = 1\\). Center (4, -2). Vertical ellipse with \\(a = 2\\), \\(b = 1\\). Vertices at (4, -2 \\(\\pm\\) 2) = (4, 0) and (4, -4), minor axis endpoints at (4 \\(\\pm\\) 1, -2) = (3,-2) and (5,-2), major axis length 4, minor axis length 2",
+      "definitions": [
+        {
+          "kind": "boxed",
+          "text": "Definition: EQUATION OF AN ELLIPSE CENTERED AT \\((h,k)\\) IN STANDARD FORM The standard form of an equation of an ellipse centered at the point C\\(\\left( {h,k} \\right)\\) depends on whether the major axis is horizontal or vertical. The table below gives the standard equation, vertices, minor axis endpoints, foci, and graph for each."
+        }
+      ],
+      "examples": [
+        {
+          "text": "Example \\(\\PageIndex{4}\\) Put the equation of the ellipse \\(x^2 + 2x + 4y^2 - 24y = - 33\\) in standard form. Find the vertices, minor axis endpoints, length of the major axis, and length of the minor axis. Sketch the graph. Solution To rewrite this in standard form, we will need to complete the square, twice. Looking at the \\(x\\) terms, \\(x^2 + 2x\\), we like to have something of the form \\((x + n)^2\\). Notice that if we were to expand this, we’d get \\(x^2 + 2nx + n^2\\), so in order for the coefficient on \\(x\\) to match, we’ll need \\((x + 1)^2 = x^2 + 2x + 1\\). However, we don’t have \\(a +1\\) on the left side of the equation to allow this factoring. To accommodate this, we will add 1 to both sides of the equation, which then allows us to factor the left side as a perfect square: \\[x^2 + 2x + 1 + 4y^2 - 24y = - 33 + 1\\nonumber\\] \\[(x + 1)^2 + 4y^2 - 24y = - 32\\nonumber\\] Repeating the same approach with the \\(y\\) terms, first we’ll factor out the 4. \\[4y^2 - 24y = 4(y^2 - 6y)\\nonumber\\] Now we want to be able to write \\(4\\left( y^2 - 6y \\right)\\) as \\[4(y + n)^2 = 4\\left( y^2 + 2ny + n^2 \\right)\\nonumber\\] For the coefficient of \\(y\\) to match, \\(n\\) will have to -3, giving \\(4(y - 3)^2 = 4\\left( y^2 - 6y + 9 \\right) = 4y^2 - 24y + 36\\). To allow this factoring, we can add 36 to both sides of the equation. \\[(x + 1)^2 + 4y^2 - 24y + 36 = - 32 + 36\\nonumber\\] \\[(x + 1)^2 + 4\\left( y^2 - 6y + 9 \\right) = 4\\nonumber\\] \\[(x + 1)^2 + 4\\left( y - 3 \\right)^2 = 4\\nonumber\\] Dividing by 4 gives the standard form of the equation for the ellipse \\[\\dfrac{\\left( x + 1 \\right)^2}{4} + \\dfrac{\\left( y - 3 \\right)^2}{1} = 1\\nonumber\\] Since the \\(x\\)-denominator is greater than the \\(y\\)-denominator, the ellipse has a horizontal major axis. From the general standard equation \\(\\dfrac{\\left( x - h \\right)^2}{a^2} + \\dfrac{\\left( h - k \\right)^2}{b^2} = 1\\) we see the value of \\(a = \\sqrt 4 = 2\\) and the value of \\(b = \\sqrt 1 = 1\\). The center is at (\\(h\\), \\(k\\)) = (-1, 3). The vertices are at (\\(h \\pm a\\), \\(k\\)) or (-3, 3) and (1,3). The minor axis endpoints are at (\\(h\\), \\(k \\pm b\\)) or (-1, 2) and (-1,4). The length of the major axis is \\(2\\left( a \\right) = 2\\left( 2 \\right) = 4\\). The length of the minor axis is \\(2\\left( b \\right) = 2\\left( 1 \\right) = 2\\). To sketch the graph we plot the vertices and the minor axis endpoints. Then we sketch the ellipse, rounding at the vertices and the minor axis endpoints."
+        },
+        {
+          "text": "Example \\(\\PageIndex{5}\\) Find the standard form of the equation for an ellipse centered at (-2,1), a vertex at (-2,4) and passing through the point (0,1). Solution The center at (-2,1) and vertex at (-2,4) means the major axis is vertical since the x-values are the same. The ellipse equation has the standard form \\[\\dfrac{\\left( x - h \\right)^2}{b^2} + \\dfrac{\\left( y - k \\right)^2}{a^2} = 1\\nonumber\\] The value of \\(a = 4 - 1 = 3\\). Substituting \\(a = 3\\), \\(h = -2\\), and \\(k = 1\\) gives \\[\\dfrac{\\left( x + 2 \\right)^2}{b^2} + \\dfrac{\\left( y - 1 \\right)^2}{3^2} = 1\\nonumber\\]Substituting for \\(x\\) and \\(y\\) using the point (0,1) gives \\[\\dfrac{\\left( 0 + 2 \\right)^2}{b^2} + \\dfrac{\\left( 1 - 1 \\right)^2}{3^2} = 1\\nonumber\\] Solving for b gives \\(b = 2\\). The equation of the ellipse in standard form is \\[\\dfrac{\\left( x + 2 \\right)^2}{2^2} + \\dfrac{\\left( y - 1 \\right)^2}{3^2} = 1\\text{ or }\\dfrac{\\left( x + 2 \\right)^2}{4} + \\dfrac{\\left( y - 1 \\right)^2}{9} = 1\\nonumber\\]"
+        }
+      ],
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/09%3A_Conics/9.01%3A_Ellipses",
+      "defined_terms": [
+        "equation"
+      ],
+      "concepts": [
+        "axis",
+        "axis endpoints",
+        "endpoints",
+        "equation",
+        "minor",
+        "minor axis",
+        "vertices minor"
+      ],
+      "difficulty_level": 1,
+      "difficulty_tier": "easy",
+      "description": "Not all ellipses are centered at the origin. The graph of such an ellipse is a shift of the graph centered at the origin, so the standard equation for one centered at (\\(h\\), \\(k\\)) is slightly different.",
+      "sample_content": "Not all ellipses are centered at the origin. The graph of such an ellipse is a shift of the graph centered at the origin, so the standard equation for one centered at (\\(h\\), \\(k\\)) is slightly different. We can shift the graph right \\(h\\) units and up \\(k\\) units by replacing \\(x\\) with \\(x – h\\) and \\(y\\) with \\(y – k\\), similar to what we did when we learned transformations. Major Axis Horizontal Vertical Standard Equation \\(\\dfrac{(x - h)^2}{a^2} + \\dfrac{(y - k)^2}{b^2} = 1\\) \\(\\dfrac{(x - h)^2}{b^2} + \\dfrac{(y - k)^2}{a^2} = 1\\) Vertices \\((h \\pm a, k)\\) \\((h, k \\pm a)\\) Minor Axis Endpoints \\((h, k \\pm b)\\) \\((h \\pm b, k)\\) Foci \\((h \\pm c, k)\\) where \\(b^2 = a^2 - c^2\\) \\((h, k \\pm c)\\) where \\(b^2 = a^2 - c^2\\) Graph Exercise \\(\\PageIndex{2}\\) Find the center, vertices, minor axis endpoints, length of the major axis, and length of the minor axis for the ellipse \\(\\left( x - 4 \\right)^2 + \\dfrac{\\left( y + 2 \\right)^2}{4} = 1\\). Center (4, -2). Vertical ellipse with \\(a = 2\\), \\(b = 1\\). Vertices at (4, -2 \\(\\pm\\) 2) = (4, 0) and (4, -4), minor axis endpoints at (4 \\(\\pm\\) 1, -2) = (3,-2) and (5,-2), major axis length 4, minor axis length 2"
+    },
+    {
+      "topic_id": "ch9_s1_t3",
+      "title": "Bridges with Semielliptical Arches",
+      "parent_section": "Ellipses",
+      "parent_chapter_num": "9",
+      "parent_section_num": "1",
+      "position_in_section": 2,
+      "body_text": "Arches have been used to build bridges for centuries, like in the Skerton Bridge in England which uses five semielliptical arches for support. Semielliptical arches can have engineering benefits such as allowing for longer spans between supports. (Maxine Armstrong (commons.wikimedia.org/wiki/F...r,_England.JPG), “Skerton Bridge, Lancaster, England”, CC BY-SA)",
+      "definitions": [],
+      "examples": [
+        {
+          "text": "Example \\(\\PageIndex{6}\\) A bridge over a river is supported by a single semielliptical arch. The river is 50 feet wide. At the center, the arch rises 20 feet above the river. The roadway is 4 feet above the center of the arch. What is the vertical distance between the roadway and the arch 15 feet from the center? Solution Put the center of the ellipse at (0,0) and make the span of the river the major axis. Since the major axis is horizontal, the equation has the form \\(\\dfrac{x^2}{a^2} + \\dfrac{y^2}{b^2} = 1\\). The value of \\(a = \\dfrac{1}{2}(50) = 25\\) and the value of \\(b = 20\\), giving \\(\\dfrac{x^2}{25^2} + \\dfrac{y^2}{15^2} = 1\\). Substituting \\(x = 15\\) gives \\(\\dfrac{15^2}{25^2} + \\dfrac{y^2}{20^2} = 1\\). Solving for \\(y\\), \\[y = 20\\sqrt {1 - \\dfrac{225}{625}} = 16\\nonumber\\] The roadway is 20 + 4 = 24 feet above the river. The vertical distance between the roadway and the arch 15 feet from the center is 24 - 16 = 8 feet."
+        }
+      ],
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/09%3A_Conics/9.01%3A_Ellipses",
+      "defined_terms": [],
+      "concepts": [
+        "arches",
+        "england",
+        "semielliptical",
+        "semielliptical arches",
+        "skerton",
+        "skerton bridge"
+      ],
+      "difficulty_level": 1,
+      "difficulty_tier": "easy",
+      "description": "Arches have been used to build bridges for centuries, like in the Skerton Bridge in England which uses five semielliptical arches for support. Semielliptical arches can have engineering benefits such as allowing for longer spans between supports.",
+      "sample_content": "Arches have been used to build bridges for centuries, like in the Skerton Bridge in England which uses five semielliptical arches for support. Semielliptical arches can have engineering benefits such as allowing for longer spans between supports. (Maxine Armstrong (commons.wikimedia.org/wiki/F...r,_England.JPG), “Skerton Bridge, Lancaster, England”, CC BY-SA)"
+    },
+    {
+      "topic_id": "ch9_s1_t4",
+      "title": "Ellipse Foci",
+      "parent_section": "Ellipses",
+      "parent_chapter_num": "9",
+      "parent_section_num": "1",
+      "position_in_section": 3,
+      "body_text": "The location of the foci can play a key role in ellipse application problems. Standing on a focus in a whispering gallery allows you to hear someone whispering at the other focus. To find the foci, we need to find the length from the center to the foci, \\(c\\), using the equation \\({b^2} = {a^2} - {c^2}\\). It looks similar to, but is not the same as, the Pythagorean Theorem. Exercise \\(\\PageIndex{3}\\) Find the standard form of the equation for an ellipse with focus (2,4), vertex (2,6), and center (2,1). Vertex, center, and focus have the same \\(x\\)-value, so it’s a vertical ellipse. Using the vertex and center, \\[a = 6 – 1 = 5\\nonumber\\] Using the center and focus, \\[c = 4 – 1 = 3\\nonumber\\] \\[b^2 = 5^2 - 3^2\\quad b = 4\\nonumber\\] \\[\\dfrac{\\left( x - 2 \\right)^2}{16} + \\dfrac{\\left( y - 1 \\right)^2}{25} = 1\\nonumber\\]",
+      "definitions": [],
+      "examples": [
+        {
+          "text": "Example \\(\\PageIndex{7}\\) The National Statuary Hall whispering chamber is an elliptical room 46 feet wide and 96 feet long. To hear each other whispering, two people need to stand at the foci of the ellipse. Where should they stand? Solution We could represent the hall with a horizontal ellipse centered at the origin. The major axis length would be 96 feet, so \\(a = \\dfrac{1}{2}(96) = 48\\), and the minor axis length would be 46 feet, so \\(b = \\dfrac{1}{2}(46) = 23\\). To find the foci, we can use the equation \\(b^2 = a^2 - c^2\\). \\[23^2 =48^2 - c^2\\nonumber\\] \\[c^2 = 48^2 - 23^2\\nonumber\\] \\[c = \\sqrt {1775} \\approx \\pm 42\\text{ ft}\\nonumber\\] To hear each other whisper, two people would need to stand 2(42) = 84 feet apart along the major axis, each about 48 – 42 = 6 feet from the wall."
+        },
+        {
+          "text": "Example \\(\\PageIndex{8}\\) Find the foci of the ellipse \\(\\dfrac{\\left( x - 2 \\right)^2}{4} + \\dfrac{\\left( y + 3 \\right)^2}{29} = 1\\). Solution The ellipse is vertical with an equation of the form \\(\\dfrac{\\left( x - h \\right)^2}{b^2} + \\dfrac{\\left( y - k \\right)^2}{a^2} = 1\\). The center is at (\\(h\\), \\(k\\)) = (2, -3). The foci are at (\\(h\\), \\(k \\pm c\\)). To find length \\(c\\) we use \\(b^2 = a^2 - c^2\\). Substituting gives \\(4 = 29 - c^2\\) or \\(c = \\sqrt {25} = 5\\). The ellipse has foci (2, -3 ± 5), or (2, -8) and (2, 2)."
+        },
+        {
+          "text": "Example \\(\\PageIndex{9}\\) Find the standard form of the equation for an ellipse with foci (-1,4) and (3,4) and major axis length 10. Solution Since the foci differ in the \\(x\\) -coordinates, the ellipse is horizontal with an equation of the form \\(\\dfrac{\\left( x - h \\right)^2}{a^2} + \\dfrac{\\left( h - k \\right)^2}{b^2} = 1\\). The center is at the midpoint of the foci \\(\\left( \\dfrac{x_1 + x_2}{2},\\dfrac{y_1 + y_2}{2} \\right) = \\left( \\dfrac{\\left( - 1 \\right) + 3}{2},\\dfrac{4 + 4}{2} \\right) = \\left( 1,4 \\right)\\). The value of \\(a\\) is half the major axis length: \\[a = \\dfrac{1}{2}(10) = 5\\nonumber\\] The value of \\(c\\) is half the distance between the foci: \\[c = \\dfrac{1}{2}(3 - ( - 1)) = \\dfrac{1}{2}(4) = 2\\nonumber\\] To find length \\(b\\) we use \\({b^2} = {a^2} - {c^2}\\). Substituting a and c gives \\(b^2 = 5^2 - 2^2\\) = 21. The equation of the ellipse in standard form is \\[\\dfrac{\\left( x - 1 \\right)^2}{5^2} + \\dfrac{\\left( y - 4 \\right)^2}{21} = 1\\text{ or }\\dfrac{\\left( x - 1 \\right)^2}{25} + \\dfrac{\\left( y - 4 \\right)^2}{21} = 1\\nonumber\\]"
+        }
+      ],
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/09%3A_Conics/9.01%3A_Ellipses",
+      "defined_terms": [],
+      "concepts": [
+        "center",
+        "focus",
+        "nonumber",
+        "vertex",
+        "vertex center",
+        "whispering"
+      ],
+      "difficulty_level": 1,
+      "difficulty_tier": "easy",
+      "description": "The location of the foci can play a key role in ellipse application problems. Standing on a focus in a whispering gallery allows you to hear someone whispering at the other focus.",
+      "sample_content": "The location of the foci can play a key role in ellipse application problems. Standing on a focus in a whispering gallery allows you to hear someone whispering at the other focus. To find the foci, we need to find the length from the center to the foci, \\(c\\), using the equation \\({b^2} = {a^2} - {c^2}\\). It looks similar to, but is not the same as, the Pythagorean Theorem. Exercise \\(\\PageIndex{3}\\) Find the standard form of the equation for an ellipse with focus (2,4), vertex (2,6), and center (2,1). Vertex, center, and focus have the same \\(x\\)-value, so it’s a vertical ellipse. Using the vertex and center, \\[a = 6 – 1 = 5\\nonumber\\] Using the center and focus, \\[c = 4 – 1 = 3\\nonumber\\] \\[b^2 = 5^2 - 3^2\\quad b = 4\\nonumber\\] \\[\\dfrac{\\left( x - 2 \\right)^2}{16} + \\dfrac{\\left( y - 1 \\right)^2}{25} = 1\\nonumber\\]"
+    },
+    {
+      "topic_id": "ch9_s1_t5",
+      "title": "Planetary Orbits",
+      "parent_section": "Ellipses",
+      "parent_chapter_num": "9",
+      "parent_section_num": "1",
+      "position_in_section": 4,
+      "body_text": "It was long thought that planetary orbits around the sun were circular. Around 1600, Johannes Kepler discovered they were really elliptical (Technically, they’re approximately elliptical. The orbits of the planets are not exactly elliptical because of interactions with each other and other celestial bodies.). His first law of planetary motion says that planets travel around the sun in an elliptical orbit with the sun as one of the foci. The length of the major axis can be found by measuring the planet’s aphelion, its greatest distance from the sun, and perihelion, its shortest distance from the sun, and summing them together.",
+      "definitions": [],
+      "examples": [
+        {
+          "text": "Example \\(\\PageIndex{10}\\) Mercury’s aphelion is 35.98 million miles and its perihelion is 28.58 million miles. Write an equation for Mercury’s orbit. Solution Let the center of the ellipse be (0,0) and its major axis be horizontal so the equation will have form \\(\\dfrac{x^2}{a^2} + \\dfrac{y^2}{b^2} = 1\\). The length of the major axis is \\(2a = 35.98 + 28.58 = 64.56\\) giving \\(a = 32.28\\) and \\(a^2 = 1041.9984\\). Since the perihelion is the distance from the focus to one vertex, we can find the distance between the foci by subtracting twice the perihelion from the major axis length: \\(2c = 64.56 - 2\\left( 28.58 \\right) = 7.4\\) giving \\(c = 3.7\\). Substitution of \\(a\\) and \\(c\\) into \\(b^2 = a^2 - c^2\\) yields \\(b^2 = 32.28^2 - 3.7^2 = 1028.3084\\). The equation is \\[\\dfrac{x^2}{1041.9984} + \\dfrac{y^2}{1028.3084} = 1\\nonumber\\]"
+        }
+      ],
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/09%3A_Conics/9.01%3A_Ellipses",
+      "defined_terms": [],
+      "concepts": [
+        "distance sun",
+        "elliptical",
+        "orbits",
+        "planetary",
+        "planets",
+        "sun"
+      ],
+      "difficulty_level": 1,
+      "difficulty_tier": "easy",
+      "description": "It was long thought that planetary orbits around the sun were circular. Around 1600, Johannes Kepler discovered they were really elliptical (Technically, they’re approximately elliptical.",
+      "sample_content": "It was long thought that planetary orbits around the sun were circular. Around 1600, Johannes Kepler discovered they were really elliptical (Technically, they’re approximately elliptical. The orbits of the planets are not exactly elliptical because of interactions with each other and other celestial bodies.). His first law of planetary motion says that planets travel around the sun in an elliptical orbit with the sun as one of the foci. The length of the major axis can be found by measuring the planet’s aphelion, its greatest distance from the sun, and perihelion, its shortest distance from the sun, and summing them together."
+    },
+    {
+      "topic_id": "ch9_s2_t1",
+      "title": "Hyperbolas Centered at the Origin",
+      "parent_section": "Hyperbolas",
+      "parent_chapter_num": "9",
+      "parent_section_num": "2",
+      "position_in_section": 0,
+      "body_text": "From the definition above we can find an equation of a hyperbola. We will find it for a hyperbola centered at the origin \\(C\\left( 0,0 \\right)\\) opening horizontally with foci at \\[F_1\\left( c,0 \\right)\\text{ and }F_2\\left( - c,0 \\right)\\text{ where }c > 0\\nonumber\\] Suppose \\(Q\\left( x,y \\right)\\) is a point on the hyperbola. The distances from \\(Q\\) to \\(F_1\\) and \\(Q\\) to \\(F_2\\) are: \\[d\\left( Q, F_1 \\right) = \\sqrt {\\left( x - c \\right)^2 + \\left( y - 0 \\right)^2} = \\sqrt {\\left( x - c \\right)^2 + y^2} \\nonumber\\] \\[d\\left( Q,F_2 \\right) = \\sqrt {\\left( x - \\left( - c \\right) \\right)^2 + \\left( y - 0 \\right)^2} = \\sqrt {\\left( x + c \\right)^2 + y^2} \\nonumber\\] From the definition, the absolute value of the difference should be constant: \\[\\left| d\\left( Q, F_1 \\right) - d\\left(Q, F_2 \\right) \\right| = \\left| \\sqrt {\\left( x - c \\right)^2 + y^2} - \\sqrt {\\left( x + c \\right)^2 + y^2 } \\right| = k\\nonumber\\] Substituting in one of the vertices \\(\\left( a,0 \\right)\\), we can determine \\(k\\) in terms of \\(a\\): \\[\\left| \\sqrt {\\left( a - c \\right)^2 + 0^2} - \\sqrt {\\left( a + c \\right)^2 + 0^2 } \\right| = k\\nonumber\\] \\[\\left| \\left| a - c \\right| - \\left| a + c \\right| \\right| = k\\nonumber\\] Since \\(c > a\\), \\(\\left| a - c \\right| = c - a\\) \\[\\left| (c - a) - (a + c) \\right| = k\\nonumber\\] \\[k = \\left| - 2a \\right| = \\left| 2a \\right|\\nonumber\\] Using \\(k = 2a\\) and removing the absolute values, \\[\\sqrt {\\left( x - c \\right)^2 + y^2} - \\sqrt {\\left( x + c \\right)^2+ y^2} = \\pm 2a\\nonumber\\]Move one radical \\[\\sqrt {\\left( x - c \\right)^2 + y^2} = \\pm 2a + \\sqrt {\\left( x + c \\right)^2 + y^2} \\nonumber\\]Square both sides \\[\\left( x - c \\right)^2 + y^2 = 4a^2 \\pm 4a\\sqrt {\\left( x + c \\right)^2 + y^2} + \\left( x + c \\right)^2 + y^2\\nonumber\\]Expand \\[x^2 - 2xc + c^2 + y^2 = 4a^2 \\pm 4a\\sqrt {\\left( x + c \\right)^2 + y^2} + x^2 + 2xc + c^2 + y^2\\nonumber\\] Combining like terms leaves \\[ - 4xc = 4a^2 \\pm 4a\\sqrt {\\left( x + c \\right)^2 + y^2} \\nonumber\\]Divide by 4 \\[ - xc = a^2 \\pm a \\sqrt {\\left( x + c \\right)^2 + y^2} \\nonumber\\]Isolate the radical \\[ \\pm a \\sqrt {\\left( x + c \\right)^2 + y^2} = - a^2 - xc\\nonumber\\]Square both sides again \\[a^2\\left( \\left( x + c \\right)^2 + y^2 \\right) = a^4 + 2a^2xc + x^2c^2\\nonumber\\]Expand and distribute \\[a^2x^2 + 2a^2xc + a^2c^2 + a^2y^2 = a^4 + 2a^2xc + x^2c^2\\nonumber\\]Combine like terms \\[a^2y^2 + a^2c^2 - a^4 = x^2c^2 - a^2x^2\\nonumber\\]Factor common terms \\[a^2y^2 + a^2\\left( c^2 - a^2 \\right) = \\left( c^2 - a^2 \\right)x^2\\nonumber\\] Let \\(b^2 = c^2 - a^2\\). Since \\(c > a\\), \\(b > 0\\). Substituting \\(b^2\\) for \\(c^2 - a^2\\) leaves \\[a^2y^2 +a^2b^2 = b^2x^2\\nonumber\\]Divide both sides by \\(a^2b^2\\) \\[\\dfrac{y^2}{b^2} + 1 = \\dfrac{x^2}{a^2}\\nonumber\\]Rewrite \\[\\dfrac{x^2}{a^2} - \\dfrac{y^2}{b^2} = 1\\nonumber\\] We can see from the graphs of the hyperbolas that the branches appear to approach asymptotes as \\(x\\) gets large in the negative or positive direction. The equations of the horizontal hyperbola asymptotes can be derived from its standard equation. \\[\\dfrac{x^2}{a^2} - \\dfrac{y^2}{b^2} = 1\\nonumber\\]Solve for \\(y\\) \\[y^2 = b^2\\left( \\dfrac{x^2}{a^2} - 1 \\right)\\nonumber\\]Rewrite 1 as \\(\\dfrac{x^2}{a^2}\\dfrac{a^2}{x^2}\\) \\[y^2 = b^2\\left( \\dfrac{x^2}{a^2} - \\dfrac{x^2}{a^2}\\dfrac{a^2}{x^2} \\right)\\nonumber\\]Factor out \\(\\dfrac{x^2}{a^2}\\) \\[y^2 = b^2\\dfrac{x^2}{a^2}\\left( 1 - \\dfrac{a^2}{x^2} \\right)\\nonumber\\]Take the square root \\[y = \\pm \\dfrac{b}{a}x\\sqrt {1 - \\dfrac{a^2}{x^2}} \\nonumber\\] As \\(x \\to \\pm \\infty\\) the quantity \\(\\dfrac{a^2}{x^2} \\to 0\\) and \\(\\sqrt {1 - \\dfrac{a^2}{x^2}} \\to 1\\), so the asymptotes are \\(y = \\pm \\dfrac{b}{a}x\\). Similarly, for vertical hyperbolas the asymptotes are \\(y = \\pm \\dfrac{a}{b}x\\). The standard form of an equation of a hyperbola centered at the origin C\\(\\left( {0,0} \\right)\\) depends on whether it opens horizontally or vertically. The following table gives the standard equation, vertices, foci, asymptotes, construction rectangle vertices, and graph for each. Equation of a Hyperbola Centered at the Origin in Standard Form Opens Horizontally Vertically Standard Equation \\(\\dfrac{x^2}{a^2} - \\dfrac{y^2}{b^2} = 1\\) \\(\\dfrac{y^2}{a^2} - \\dfrac{x^2}{b^2} = 1\\) Vertices \\((-a, 0)\\) and \\((a, 0)\\) \\((0, -a)\\) and \\((0, a)\\) Foci \\((-c, 0)\\) and \\((c, 0)\\) where \\(b^2 = c^2 - a^2\\) \\((0, -c)\\) and \\((0, c)\\) Asymptotes \\(y = \\pm \\dfrac{b}{a} x\\) \\(y = \\pm \\dfrac{a}{b} x\\) Construction Rectangle Vertices \\((a, b)\\), \\((-a, b)\\), \\((a, -b)\\), \\((-a, -b)\\) \\((b, a)\\), \\((-b, a)\\), \\((b, -a)\\), \\((-b, -a)\\) Graph Sometimes we are given the equation. Sometimes we need to find the equation from a graph or other information. Exercise \\(\\PageIndex{2}\\) Find the standard form of the equation for a hyperbola with vertices at (0, -8) and (0, 8) and asymptote \\(y = 2x\\) The vertices are on the \\(y\\) axis so this is a vertical hyperbola. The center is at the origin. \\[a = 8\\nonumber\\] Using the asymptote slope, \\(\\dfrac{8}{b} = 2\\), so \\(b = 4\\). \\[\\dfrac{y^2}{64} - \\dfrac{x^2}{16} = 1\\nonumber\\]",
+      "definitions": [],
+      "examples": [
+        {
+          "text": "Example \\(\\PageIndex{1}\\) Put the equation of the hyperbola \\(y^2 - 4x^2 = 4\\) in standard form. Find the vertices, length of the transverse axis, and the equations of the asymptotes. Sketch the graph. Check using a graphing utility. Solution The equation can be put in standard form \\(\\dfrac{y^2}{4} - \\dfrac{x^2}{1} = 1\\) by dividing by 4. Comparing to the general standard equation \\(\\dfrac{y^2}{a^2} - \\dfrac{x^2}{b^2} = 1\\) we see that \\(a = \\sqrt 4 = 2\\) and \\(b = \\sqrt 1 = 1\\). Since the \\(x\\) term is subtracted, the hyperbola opens vertically and the vertices lie on the \\(y\\)-axis at (0, \\(\\pm a\\)) = (0, \\(\\pm\\)2). The length of the transverse axis is \\[2\\left( a \\right) = 2\\left( 2 \\right) = 4\\nonumber\\] Equations of the asymptotes are \\[y = \\pm \\dfrac{a}{b}x\\text{ or } = \\pm 2x\\nonumber\\] To sketch the graph we plot the vertices of the construction rectangle at \\((\\pm b, \\pm a)\\) or (-1,-2), (-1,2), (1,-2), and (1,2). The asymptotes are drawn through the diagonals of the rectangle and the vertices plotted. Then we sketch in the hyperbola, rounded at the vertices and approaching the asymptotes. To check on a graphing utility, we must solve the equation for \\(y\\). Isolating \\(y^2\\) gives us\\(y^2 = 4\\left( 1 + x^2 \\right)\\). Taking the square root of both sides we find \\[y = \\pm 2\\sqrt {1 + x^2} \\nonumber\\] Under Y= enter the two halves of the hyperbola and the two asymptotes as \\(y = 2\\sqrt {1 + x^2} \\), \\(y = - 2\\sqrt {1 + x^2} \\), \\(y = 2x\\), and \\(y = - 2x\\). Set the window to a comparable scale to the sketch with xmin = -4, xmax = 4, ymin= -3, and ymax = 3."
+        },
+        {
+          "text": "Example \\(\\PageIndex{2}\\) Find the standard form of the equation for a hyperbola with vertices at (-6,0) and (6,0) and asymptote \\(y = \\dfrac{4}{3}x\\). Solution Since the vertices lie on the \\(x\\)-axis with a midpoint at the origin, the hyperbola is horizontal with an equation of the form \\(\\dfrac{x^2}{a^2} - \\dfrac{y^2}{b^2} = 1\\). The value of a is the distance from the center to a vertex. The distance from (6, 0) to (0, 0) is 6, so \\(a\\) = 6. The asymptotes follow the form \\(y = \\pm \\dfrac{b}{a}x\\). From \\(y = \\dfrac{3}{4}x\\) we see \\(\\dfrac{3}{4} = \\dfrac{b}{a}\\) and substituting \\(a = 6\\) give us \\(\\dfrac{3}{4} = \\dfrac{b}{6}\\). Solving yields \\(b = 8\\). The equation of the hyperbola in standard form is \\[\\dfrac{x^2}{6^2} - \\dfrac{y^2}{8^2} = 1\\text{ or }\\dfrac{x^2}{36} - \\dfrac{y^2}{64} = 1\\nonumber\\]"
+        },
+        {
+          "text": "Example \\(\\PageIndex{3}\\) Find the standard form of the equation for a hyperbola with vertices at (0, 9) and (0, -9) and passing through the point (8, 15). Solution Since the vertices lie on the \\(y\\)-axis with a midpoint at the origin, the hyperbola is vertical with an equation of the form \\(\\dfrac{y^2}{a^2} - \\dfrac{x^2}{b^2} = 1\\). The value of a is the distance from the center to a vertex. The distance from (0, 9) to (0, 0) is 9, so \\(a = 9\\). Substituting \\(a = 9\\) and the point (8, 15) gives \\(\\dfrac{15^2}{9^2} - \\dfrac{8^2}{b^2} = 1\\). Solving for \\(b\\) yields \\[b = \\sqrt {\\dfrac{9^2 \\left( 8^2 \\right)}{15^2 - 9^2}} = 6\\nonumber\\] The standard equation for the hyperbola is \\[\\dfrac{y^2}{9^2} - \\dfrac{x^2}{6^2} = 1\\text{ or}\\dfrac{y^2}{81} - \\dfrac{x^2}{36} = 1\\nonumber\\]"
+        }
+      ],
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/09%3A_Conics/9.02%3A_Hyperbolas",
+      "defined_terms": [],
+      "concepts": [
+        "dfrac",
+        "left right",
+        "nonumber",
+        "right nonumber",
+        "right sqrt",
+        "sqrt left"
+      ],
+      "difficulty_level": 3,
+      "difficulty_tier": "medium",
+      "description": "From the definition above we can find an equation of a hyperbola. We will find it for a hyperbola centered at the origin \\(C\\left( 0,0 \\right)\\) opening horizontally with foci at \\[F_1\\left( c,0 \\right)\\text{ and }F_2\\left( - c,0 \\right)\\text{ where }c > 0\\nonumber\\] Suppose \\(Q\\",
+      "sample_content": "From the definition above we can find an equation of a hyperbola. We will find it for a hyperbola centered at the origin \\(C\\left( 0,0 \\right)\\) opening horizontally with foci at \\[F_1\\left( c,0 \\right)\\text{ and }F_2\\left( - c,0 \\right)\\text{ where }c > 0\\nonumber\\] Suppose \\(Q\\left( x,y \\right)\\) is a point on the hyperbola. The distances from \\(Q\\) to \\(F_1\\) and \\(Q\\) to \\(F_2\\) are: \\[d\\left( Q, F_1 \\right) = \\sqrt {\\left( x - c \\right)^2 + \\left( y - 0 \\right)^2} = \\sqrt {\\left( x - c \\right)^2 + y^2} \\nonumber\\] \\[d\\left( Q,F_2 \\right) = \\sqrt {\\left( x - \\left( - c \\right) \\right)^2 + \\left( y - 0 \\right)^2} = \\sqrt {\\left( x + c \\right)^2 + y^2} \\nonumber\\] From the definition, the absolute value of the difference should be constant: \\[\\left| d\\left( Q, F_1 \\right) - d\\left(Q, F_2 \\right) \\right| = \\left| \\sqrt {\\left( x - c \\right)^2 + y^2} - \\sqrt {\\left( x + c \\right)^2 + y^2 } \\right| = k\\nonumber\\] Substituting in one of the vertices \\(\\left( a,0 \\right)\\), we can determine \\(k\\) in terms of \\(a\\): \\[\\left| \\sqrt {\\left( a - c \\right)^2 + 0^2} - \\sqrt {\\left( a + c \\right)^2 + 0^2 } \\right| = k\\nonumber\\] \\[\\left| \\left| a - c \\right| - \\left| a + c \\right| \\right| = k\\nonumber\\] Since \\(c > a\\), \\(\\left| a - c \\right| = c - a\\) \\[\\left| (c - a) - (a + c) \\right| = k\\nonumber\\] \\[k = \\left| - 2a \\right| = \\left| 2a \\right|\\nonumber\\] Using \\(k = 2a\\) and removing the absolute values, \\[\\sqrt {\\left( x - c \\right)^2 + y^2} - \\sqrt {\\left( x + c \\right)^2+ y^2} = \\pm 2a\\nonumber\\]Move one radical \\[\\sqrt {\\left( x - c \\right)^2 + y^2} = \\pm 2a + \\sqrt {\\left( x + c \\right)^2 + y^2} \\nonumber\\]Square both sides \\[\\left( x - c \\right)^2 + y^2 = 4a^2 \\pm 4a\\sqrt {\\left( x + c \\right)^2 + y^2} + \\left( x + c \\right)^2 + y^2\\nonumber\\]Expand \\[x^2 - 2xc + c^2 + y^2 = 4a^2 \\pm 4a\\sqrt {\\left( x + c \\right)^2 + y^2} + x^2 + 2xc + c^2 + y^2\\nonumber\\] Combining like terms leaves \\[ - 4xc = 4a^2 \\pm 4a\\sqrt {\\left( x + c \\right)^2 + y^2} \\nonumber\\]Divide by 4 \\["
+    },
+    {
+      "topic_id": "ch9_s2_t2",
+      "title": "Hyperbolas Not Centered at the Origin",
+      "parent_section": "Hyperbolas",
+      "parent_chapter_num": "9",
+      "parent_section_num": "2",
+      "position_in_section": 1,
+      "body_text": "Not all hyperbolas are centered at the origin. The standard equation for one centered at (\\(h\\), \\(k\\)) is slightly different. IN STANDARD FORM The standard form of an equation of a hyperbola centered at \\(C\\left( h,k \\right)\\) depends on whether it opens horizontally or vertically. The table below gives the standard equation, vertices, foci, asymptotes, construction rectangle vertices, and graph for each. Opens Horizontally Vertically Standard Equation \\(\\dfrac{(x - h)^2}{a^2} - \\dfrac{(y - k)^2}{b^2} = 1\\) \\(\\dfrac{(y - k)^2}{a^2} - \\dfrac{(x - h)^2}{b^2} = 1\\) Vertices \\((h \\pm a, k)\\) \\((h, k \\pm a)\\) Foci \\((h \\pm c, k)\\) where \\(b^2 = c^2 - a^2\\) \\((h, k \\pm c)\\) where \\(b^2 = c^2 - a^2\\) Asymptotes \\(y - k = \\pm \\dfrac{b}{a} (x - h)\\) \\(y - k = \\pm \\dfrac{a}{b} (x - h)\\) Construction Rectangle Vertices \\((h \\pm a, k \\pm b)\\) \\((h \\pm b, k \\pm a)\\) Graph Exercise \\(\\PageIndex{2}\\) Find the center, vertices, length of the transverse axis, and equations of the asymptotes for the hyperbola \\(\\dfrac{\\left( x + 5 \\right)^2}{9} - \\dfrac{\\left( y - 2 \\right)^2}{36} = 1\\). Center (-5, 2). This is a horizontal hyperbola. \\(a = 3\\). \\(b = 6\\). transverse axis length 6, Vertices will be at (-5 \\(\\pm\\) 3,2) = (-2, 2) and (-8, 2), Asymptote slope will be \\(\\dfrac{6}{3} = 2\\). Asymptotes: \\(y - 2 = \\pm 2\\left( x + 5 \\right)\\)",
+      "definitions": [],
+      "examples": [
+        {
+          "text": "Example \\(\\PageIndex{4}\\) Write an equation for the hyperbola in the graph shown. Solution The center is at (2, 3), where the asymptotes cross. It opens vertically, so the equation will look like \\(\\dfrac{\\left( y - 3 \\right)^2}{a^2} - \\dfrac{\\left( x - 2 \\right)^2}{b^2} = 1\\). The vertices are at (2, 2) and (2, 4). The distance from the center to a vertex is \\(a = 4 - 3 = 1\\). If we were to draw in the construction rectangle, it would extend from \\(x = -1\\) to \\(x = 5\\). The distance from the center to the right side of the rectangle gives \\(b = 5 - 2 = 3\\). The standard equation of this hyperbola is \\[\\dfrac{\\left( y - 3 \\right)^2}{1^2} - \\dfrac{\\left( x - 2 \\right)^2}{3^2} = 1\\text{, or }\\left( y - 3 \\right)^2 - \\dfrac{\\left( x - 2\\right)^2}{9} = 1\\nonumber\\]"
+        },
+        {
+          "text": "Example \\(\\PageIndex{5}\\) Put the equation of the hyperbola \\(9x^2 + 18x - 4y^2 + 16y = 43\\) in standard form. Find the center, vertices, length of the transverse axis, and the equations of the asymptotes. Sketch the graph, then check on a graphing utility. Solution To rewrite the equation, we complete the square for both variables to get \\(9\\left( x^2 + 2x + 1 \\right) - 4\\left( y^2 - 4y + 4 \\right) = 43 + 9 - 16\\) \\(9\\left( x + 1 \\right)^2 - 4\\left( y - 2 \\right)^2 = 36\\) Dividing by 36 gives the standard form of the equation, \\[\\dfrac{\\left( x + 1 \\right)^2}{4} - \\dfrac{\\left( y - 2 \\right)^2}{9} = 1\\nonumber\\] Comparing to the general standard equation \\(\\dfrac{\\left( x - h \\right)^2}{a^2} - \\dfrac{\\left( h - k \\right)^2}{b^2} = 1\\) we see that \\[a = \\sqrt 4 = 2\\text{and }b = \\sqrt 9 = 3\\nonumber\\] Since the \\(y\\) term is subtracted, the hyperbola opens horizontally. The center is at (\\(h\\), \\(k\\)) = (-1, 2). The vertices are at (\\(h \\pm a\\), \\(k\\)) or (-3, 2) and (1,2). The length of the transverse axis is \\(2\\left( a \\right) = 2\\left( 2 \\right) = 4\\). Equations of the asymptotes are \\[y - k = \\pm \\dfrac{b}{a}\\left( x - h \\right)\\text{ or }y - 2 = \\pm \\dfrac{3}{2}\\left( x + 1 \\right)\\nonumber\\] To sketch the graph we plot the corners of the construction rectangle at (\\(h \\pm a\\), \\(k \\pm b\\)) or (1, 5), (1, -1), (-3, 5), and (-3, -1). The asymptotes are drawn through the diagonals of the rectangle and the vertices plotted. Then we sketch in the hyperbola rounded at the vertices and approaching the asymptotes. To check on a graphing utility, we must solve the equation for \\(y\\). \\[y = 2 \\pm \\sqrt {9\\left( \\dfrac{\\left( x + 1 \\right)^2}{4} - 1 \\right)} \\nonumber\\] Under Y= enter the two halves of the hyperbola and the two asymptotes as \\[y = 2 + \\sqrt {9\\left( \\dfrac{\\left( x + 1 \\right)^2}{4} - 1 \\right)} \\quad y = 2 - \\sqrt {9\\left( \\dfrac{\\left( x + 1 \\right)^2}{4} - 1 \\right)} \\quad y = \\dfrac{3}{2}\\left( x + 1 \\right) + 2\\quad\\text{, and }y = - \\dfrac{3}{2}\\left( x + 1 \\right) + 2\\nonumber\\] Set the window to a comparable scale to the sketch, then graph. Note that the gaps you see on the calculator are not really there; they’re a limitation of the technology."
+        },
+        {
+          "text": "Example \\(\\PageIndex{6}\\) Find the standard form of the equation for a hyperbola with vertices at \\(( - 2, - 5)\\) and \\(( - 2, 7)\\), and asymptote \\(y = \\dfrac{3}{2}x + 4\\). Solution Since the vertices differ in the \\(y\\)-coordinates, the hyperbola opens vertically with an equation of the form \\(\\dfrac{\\left( y - k \\right)^2}{a^2} - \\dfrac{\\left( x - h\\right)^2}{b^2} = 1\\) and asymptote equations of the form \\[y - k = \\pm \\dfrac{a}{b}\\left( x - h \\right)\\nonumber\\] The center will be halfway between the vertices, at \\(\\left( - 2,\\dfrac{ - 5 + 7}{2} \\right) = ( - 2,1)\\). The value of a is the distance from the center to a vertex. The distance from \\(( - 2,1)\\) to \\(( - 2, - 5)\\) is 6, so \\(a = 6\\). While our asymptote is not given in the form \\(y - k = \\pm \\dfrac{a}{b}\\left( {x - h} \\right)\\), notice this equation would have slope \\(\\dfrac{a}{b}\\). We can compare that to the slope of the given asymptote equation to find b. Setting \\(\\dfrac{3}{2} = \\dfrac{a}{b}\\) and substituting \\(a = 6\\) gives us \\(b = 4\\). The equation of the hyperbola in standard form is \\[\\dfrac{\\left( y - 1 \\right)^2}{6^2} - \\dfrac{\\left( x + 2 \\right)^2}{4^2} = 1\\text{ or }\\dfrac{\\left( y - 1 \\right)^2}{36} - \\dfrac{\\left( x + 2 \\right)^2}{16} = 1\\nonumber\\]"
+        }
+      ],
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/09%3A_Conics/9.02%3A_Hyperbolas",
+      "defined_terms": [],
+      "concepts": [
+        "asymptotes",
+        "dfrac",
+        "dfrac dfrac",
+        "standard",
+        "transverse axis",
+        "vertices"
+      ],
+      "difficulty_level": 2,
+      "difficulty_tier": "easy",
+      "description": "Not all hyperbolas are centered at the origin. The standard equation for one centered at (\\(h\\), \\(k\\)) is slightly different.",
+      "sample_content": "Not all hyperbolas are centered at the origin. The standard equation for one centered at (\\(h\\), \\(k\\)) is slightly different. IN STANDARD FORM The standard form of an equation of a hyperbola centered at \\(C\\left( h,k \\right)\\) depends on whether it opens horizontally or vertically. The table below gives the standard equation, vertices, foci, asymptotes, construction rectangle vertices, and graph for each. Opens Horizontally Vertically Standard Equation \\(\\dfrac{(x - h)^2}{a^2} - \\dfrac{(y - k)^2}{b^2} = 1\\) \\(\\dfrac{(y - k)^2}{a^2} - \\dfrac{(x - h)^2}{b^2} = 1\\) Vertices \\((h \\pm a, k)\\) \\((h, k \\pm a)\\) Foci \\((h \\pm c, k)\\) where \\(b^2 = c^2 - a^2\\) \\((h, k \\pm c)\\) where \\(b^2 = c^2 - a^2\\) Asymptotes \\(y - k = \\pm \\dfrac{b}{a} (x - h)\\) \\(y - k = \\pm \\dfrac{a}{b} (x - h)\\) Construction Rectangle Vertices \\((h \\pm a, k \\pm b)\\) \\((h \\pm b, k \\pm a)\\) Graph Exercise \\(\\PageIndex{2}\\) Find the center, vertices, length of the transverse axis, and equations of the asymptotes for the hyperbola \\(\\dfrac{\\left( x + 5 \\right)^2}{9} - \\dfrac{\\left( y - 2 \\right)^2}{36} = 1\\). Center (-5, 2). This is a horizontal hyperbola. \\(a = 3\\). \\(b = 6\\). transverse axis length 6, Vertices will be at (-5 \\(\\pm\\) 3,2) = (-2, 2) and (-8, 2), Asymptote slope will be \\(\\dfrac{6}{3} = 2\\). Asymptotes: \\(y - 2 = \\pm 2\\left( x + 5 \\right)\\)"
+    },
+    {
+      "topic_id": "ch9_s2_t3",
+      "title": "Hyperbola Foci",
+      "parent_section": "Hyperbolas",
+      "parent_chapter_num": "9",
+      "parent_section_num": "2",
+      "position_in_section": 2,
+      "body_text": "The location of the foci can play a key role in hyperbola application problems. To find them, we need to find the length from the center to the foci, \\(c\\), using the equation \\(b^2 = c^2 - a^2\\). It looks similar to, but is not the same as, the Pythagorean Theorem. Compare this with the equation to find length \\(c\\) for ellipses, which is \\(b^2 = a^2 - c^2\\). If you remember that for the foci to be inside the ellipse they have to come before the vertices \\((c < a)\\), it’s clear why we would calculate \\(a^2\\) minus \\(c^2\\). To be inside a hyperbola, the foci have to go beyond the vertices \\((c > a)\\), so we can see for hyperbolas we need \\(c^2\\) minus \\(a^2\\), the opposite. Exercise \\(\\PageIndex{3}\\) Find the standard form of the equation for a hyperbola with focus (1, 9), vertex (1, 8), center (1, 4). Focus, vertex, and center have the same \\(x\\) value so this is a vertical hyperbola. Using the vertex and center, \\[a = 9 – 4 = 5\\nonumber\\] Using the focus and center, \\[c = 8 – 4 = 4\\nonumber\\] \\[b^2 =5^2 - 4^2\\quad b = 3\\nonumber\\] \\[\\dfrac{\\left( y - 4 \\right)^2}{16} - \\dfrac{\\left( x - 1 \\right)^2}{9} = 1\\nonumber\\]",
+      "definitions": [],
+      "examples": [
+        {
+          "text": "Example\\(\\PageIndex{7}\\) Find the foci of the hyperbola \\(\\dfrac{\\left( y + 1 \\right)^2}{4} - \\dfrac{\\left( x - 3 \\right)^2}{5} = 1\\). Solution The hyperbola is vertical with an equation of the form \\[\\dfrac{\\left( y - k \\right)^2}{a^2} - \\dfrac{\\left( x - h \\right)^2}{b^2} = 1\\nonumber\\] The center is at (\\(h\\), \\(k\\)) = (3, -1). The foci are at (\\(h\\), \\(k \\pm c\\)). To find length c we use \\(b^2 = c^2 - a^2\\). Substituting gives \\[5 = c^2 - 4\\text{ or }c = \\sqrt 9 = 3\\nonumber\\] The hyperbola has foci (3, -4) and (3, 2)."
+        },
+        {
+          "text": "Example \\(\\PageIndex{8}\\) Find the standard form of the equation for a hyperbola with foci (5, -8) and (-3, -8) and vertices (4, -8) and (-2, -8). Solution Since the vertices differ in the \\(x\\)-coordinates, the hyperbola opens horizontally with an equation of the form \\(\\dfrac{\\left( x - h \\right)^2}{a^2} - \\dfrac{\\left( y - k \\right)^2}{b^2} = 1\\). The center is at the midpoint of the vertices \\[\\left( \\dfrac{x_1 + x_2}{2},\\dfrac{y_1 + y_2}{2} \\right) = \\left( \\dfrac{4 + \\left( - 2 \\right)}{2},\\dfrac{ - 8 + \\left( - 8 \\right)}{2} \\right) = \\left( 1, - 8 \\right)\\nonumber\\] The value of \\(a\\) is the horizontal length from the center to a vertex, or \\[a = 4 - 1 = 3\\nonumber\\] The value of \\(c\\) is the horizontal length from the center to a focus, or \\[= 5 - 1 = 4\\nonumber\\] To find length \\(b\\) we use \\(b^2 = c^2 - a^2\\). Substituting gives \\[b^2 = 16 - 9 = 7\\nonumber\\] The equation of the hyperbola in standard form is \\[\\dfrac{\\left( x - 1 \\right)^2}{3^2} - \\dfrac{\\left( y - \\left( - 8 \\right) \\right)^2}{7} = 1\\text{ or }\\dfrac{\\left( x - 1\\right)^2}{9} - \\dfrac{\\left( y + 8\\right)^2}{7} = 1\\nonumber\\]"
+        }
+      ],
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/09%3A_Conics/9.02%3A_Hyperbolas",
+      "defined_terms": [],
+      "concepts": [
+        "center",
+        "foci",
+        "hyperbola",
+        "inside",
+        "minus",
+        "vertex center"
+      ],
+      "difficulty_level": 2,
+      "difficulty_tier": "easy",
+      "description": "The location of the foci can play a key role in hyperbola application problems. To find them, we need to find the length from the center to the foci, \\(c\\), using the equation \\(b^2 = c^2 - a^2\\).",
+      "sample_content": "The location of the foci can play a key role in hyperbola application problems. To find them, we need to find the length from the center to the foci, \\(c\\), using the equation \\(b^2 = c^2 - a^2\\). It looks similar to, but is not the same as, the Pythagorean Theorem. Compare this with the equation to find length \\(c\\) for ellipses, which is \\(b^2 = a^2 - c^2\\). If you remember that for the foci to be inside the ellipse they have to come before the vertices \\((c < a)\\), it’s clear why we would calculate \\(a^2\\) minus \\(c^2\\). To be inside a hyperbola, the foci have to go beyond the vertices \\((c > a)\\), so we can see for hyperbolas we need \\(c^2\\) minus \\(a^2\\), the opposite. Exercise \\(\\PageIndex{3}\\) Find the standard form of the equation for a hyperbola with focus (1, 9), vertex (1, 8), center (1, 4). Focus, vertex, and center have the same \\(x\\) value so this is a vertical hyperbola. Using the vertex and center, \\[a = 9 – 4 = 5\\nonumber\\] Using the focus and center, \\[c = 8 – 4 = 4\\nonumber\\] \\[b^2 =5^2 - 4^2\\quad b = 3\\nonumber\\] \\[\\dfrac{\\left( y - 4 \\right)^2}{16} - \\dfrac{\\left( x - 1 \\right)^2}{9} = 1\\nonumber\\]"
+    },
+    {
+      "topic_id": "ch9_s2_t4",
+      "title": "LORAN",
+      "parent_section": "Hyperbolas",
+      "parent_chapter_num": "9",
+      "parent_section_num": "2",
+      "position_in_section": 3,
+      "body_text": "Before GPS, the Long Range Navigation (LORAN) system was used to determine a ship’s location. Two radio stations A and B simultaneously sent out a signal to a ship. The difference in time it took to receive the signal was computed as a distance locating the ship on the hyperbola with the A and B radio stations as the foci. A second pair of radio stations C and D sent simultaneous signals to the ship and computed its location on the hyperbola with C and D as the foci. The point P where the two hyperbolas intersected gave the location of the ship. To determine the position of a ship using LORAN, we would need an equation for the second hyperbola and would solve for the intersection. We will explore how to do that in the next section.",
+      "definitions": [],
+      "examples": [
+        {
+          "text": "Example \\(\\PageIndex{9}\\) Stations A and B are 150 kilometers apart and send a simultaneous radio signal to the ship. The signal from B arrives 0.0003 seconds before the signal from A. If the signal travels 300,000 kilometers per second, find the equation of the hyperbola on which the ship is positioned. Solution Stations A and B are at the foci, so the distance from the center to one focus is half the distance between them, giving \\(c = \\dfrac{1}{2}(150) = 75\\) km. By letting the center of the hyperbola be at (0, 0) and placing the foci at (\\(\\pm\\)75,0), the equation \\(\\dfrac{x^2}{a^2} - \\dfrac{y^2}{b^2} = 1\\) for a hyperbola centered at the origin can be used. The difference of the distances of the ship from the two stations is \\(k = 300,000\\dfrac{\\rm{km}}{\\rm{s}} \\cdot (0.0003 \\rm{s}) = 90 \\rm{km}\\). From our derivation of the hyperbola equation we determined \\(k = 2a\\), so \\[a = \\dfrac{1}{2}(90) = 45\\nonumber\\] Substituting \\(a\\) and \\(c\\) into \\(b^2 = c^2 - a^2\\) yields \\[b^2 = 75^2 - 45^2 = 3600\\nonumber\\] The equation of the hyperbola in standard form is \\[\\dfrac{x^2}{45^2} - \\dfrac{y^2}{3600} = 1\\text{ or }\\dfrac{x^2}{2025} - \\dfrac{y^2}{3600} = 1\\nonumber\\]"
+        }
+      ],
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/09%3A_Conics/9.02%3A_Hyperbolas",
+      "defined_terms": [],
+      "concepts": [
+        "location",
+        "radio",
+        "radio stations",
+        "sent",
+        "ship",
+        "stations"
+      ],
+      "difficulty_level": 2,
+      "difficulty_tier": "easy",
+      "description": "Before GPS, the Long Range Navigation (LORAN) system was used to determine a ship’s location. Two radio stations A and B simultaneously sent out a signal to a ship.",
+      "sample_content": "Before GPS, the Long Range Navigation (LORAN) system was used to determine a ship’s location. Two radio stations A and B simultaneously sent out a signal to a ship. The difference in time it took to receive the signal was computed as a distance locating the ship on the hyperbola with the A and B radio stations as the foci. A second pair of radio stations C and D sent simultaneous signals to the ship and computed its location on the hyperbola with C and D as the foci. The point P where the two hyperbolas intersected gave the location of the ship. To determine the position of a ship using LORAN, we would need an equation for the second hyperbola and would solve for the intersection. We will explore how to do that in the next section."
+    },
+    {
+      "topic_id": "ch9_s3_t1",
+      "title": "Equations for Parabolas with Vertex at the Origin",
+      "parent_section": "Parabolas and Non-Linear Systems",
+      "parent_chapter_num": "9",
+      "parent_section_num": "3",
+      "position_in_section": 0,
+      "body_text": "From the definition above we can find an equation of a parabola. We will find it for a parabola with vertex at the origin, \\(C\\left( 0,0 \\right)\\), opening upward with focus at \\(F\\left( 0,p \\right)\\) and directrix at \\(y = - p\\). Suppose\\(Q\\left( x,y \\right)\\) is some point on the parabola. The distance from \\(Q\\) to the focus is \\[d(Q,F)=\\sqrt{(x-0)^{2}+(y-p)^{2}}=\\sqrt{x^{2}+(y-p)^{2}}\\nonumber\\] The distance from the point \\(Q\\) to the directrix is the difference of the \\(y\\)-values: \\[d = y - ( - p) = y + p\\nonumber\\] From the definition of the parabola, these distances should be equal: \\[\\sqrt {x^2 + \\left( y - p \\right)^2} = y + p\\nonumber\\]Square both sides \\[x^2 + \\left( y - p \\right)^2 = \\left( y + p \\right)^2\\nonumber\\]Expand \\[x^2 + y^2 - 2py + p^2 = y^2 + 2py +p^2\\nonumber\\]Combine like terms \\[x^2 = 4py\\nonumber\\] This is the standard conic form of a parabola that opens up or down (vertical axis of symmetry), centered at the origin. Note that if we divided by \\(4p\\), we would get a more familiar equation for the parabola, \\(y = \\dfrac{x^2}{4p}\\). We can recognize this as a transformation of the parabola \\(y = x^2\\), vertically compressed or stretched by \\(\\dfrac{1}{4p}\\). Using a similar process, we could find an equation of a parabola with vertex at the origin opening left or right. The focus will be at (\\(p\\),0) and the graph will have a horizontal axis of symmetry and a vertical directrix. The standard conic form of its equation will be \\(y^2 = 4px\\), which we could also write as \\(x = \\dfrac{y^2}{4p}\\). EQUATION OF A PARABOLA WITH VERTEX AT \\(h,k\\) IN STANDARD CONIC FORM The standard conic form of an equation of a parabola with vertex at the point \\(\\left( h,k \\right)\\) depends on whether the axis of symmetry is horizontal or vertical. The table below gives the standard equation, vertex, axis of symmetry, directrix, focus, and graph for each. Horizontal Vertical Standard Equation \\((y - k)^2 = 4p(x - h)\\) \\((x - h)^2 = 4p(y - k)\\) Vertex \\((h, k)\\) \\((h, k)\\) Axis of symmetry \\(y = k\\) \\(x = h\\) Directrix \\(x = h - p\\) \\(y = k - p\\) Focus \\((h +p, k)\\) \\((h, k + p)\\) Graph An example with \\(p < 0\\) An example with \\(p > 0\\) Since you already studied quadratics in some depth earlier, we will primarily explore the new concepts associated with parabolas, particularly the focus. Exercise \\(\\PageIndex{1}\\) A parabola has its vertex at (-2,3) and focus at (-2,2). Find an equation for this parabola. Axis of symmetry is vertical, and the focus is below the vertex. \\[p = 2 – 3 = -1\\nonumber\\] \\[\\left( x - ( - 2) \\right)^2 = 4( - 1)\\left( y - 3 \\right)\\text{, or }\\left( x + 2 \\right)^2 = - 4\\left( y - 3 \\right)\\nonumber\\]",
+      "definitions": [],
+      "examples": [
+        {
+          "text": "Example \\(\\PageIndex{1}\\) Write the standard conic equation for a parabola with vertex at the origin and focus at (0, -2). Solution With focus at (0, -2), the axis of symmetry is vertical, so the standard conic equation is \\(x^2 = 4py\\). Since the focus is (0, -2), \\(p = -2\\). The standard conic equation for the parabola is \\[x^2 = 4( - 2)y\\text{, or }x^2 = - 8y\\nonumber\\] For parabolas with vertex not at the origin, we can shift these equations, leading to the equations summarized next."
+        },
+        {
+          "text": "Example \\(\\PageIndex{2}\\) Put the equation of the parabola \\(y = 8{(x - 1)^2} + 2\\) in standard conic form. Find the vertex, focus, and axis of symmetry. Solution From your earlier work with quadratics, you may already be able to identify the vertex as (1,2), but we’ll go ahead and put the parabola in the standard conic form. To do so, we need to isolate the squared factor. \\[y = 8(x - 1)^2 + 2\\nonumber\\]Subtract 2 from both sides \\[y - 2 = 8(x - 1)^2\\nonumber\\]Divide by 8 \\[\\dfrac{\\left( y - 2 \\right)}{8} = (x - 1)^2\\nonumber\\] This matches the general form for a vertical parabola, \\(\\left( x - h \\right)^2 = 4p\\left( y - k \\right)\\), where \\(4p = \\dfrac{1}{8}\\). Solving this tells us \\(p = \\dfrac{1}{32}\\). The standard conic form of the equation is \\[\\left( x - 1 \\right)^2 = 4\\left( \\dfrac{1}{32} \\right)\\left( y - 2 \\right). \\nonumber\\] The vertex is at (1,2). The axis of symmetry is at \\(x = 1\\). The directrix is at \\[y = 2 - \\dfrac{1}{32} = \\dfrac{63}{32}\\nonumber\\] The focus is at \\[\\left( 1,2 + \\dfrac{1}{32} \\right) = \\left( 1,\\dfrac{65}{32} \\right)\\nonumber\\]"
+        },
+        {
+          "text": "Example \\(\\PageIndex{3}\\) A parabola has its vertex at (1, 5) and focus at (3, 5). Find an equation for the parabola. Solution Since the vertex and focus lie on the line \\(y = 5\\), that is our axis of symmetry. The vertex (1, 5) tells us \\(h = 1\\) and \\(k = 5\\). Looking at the distance from the vertex to the focus, \\(p = 3 – 1 = 2\\). Substituting these values into the standard conic form of an equation for a horizontal parabola gives the equation \\[\\left( y - 5 \\right)^2 = 4(2)\\left( x - 1 \\right)\\nonumber\\] \\[\\left( y - 5 \\right)^2 = 8\\left( x - 1 \\right)\\nonumber\\] Note this could also be rewritten by solving for \\(x\\), resulting in \\[x = \\dfrac{1}{8}{\\left( {y - 5} \\right)^2} + 1\\nonumber\\]"
+        }
+      ],
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/09%3A_Conics/9.03%3A_Parabolas_and_Non-Linear_Systems",
+      "defined_terms": [],
+      "concepts": [
+        "equation parabola",
+        "focus",
+        "left right",
+        "parabola",
+        "parabola vertex",
+        "vertex"
+      ],
+      "difficulty_level": 4,
+      "difficulty_tier": "hard",
+      "description": "From the definition above we can find an equation of a parabola. We will find it for a parabola with vertex at the origin, \\(C\\left( 0,0 \\right)\\), opening upward with focus at \\(F\\left( 0,p \\right)\\) and directrix at \\(y = - p\\).",
+      "sample_content": "From the definition above we can find an equation of a parabola. We will find it for a parabola with vertex at the origin, \\(C\\left( 0,0 \\right)\\), opening upward with focus at \\(F\\left( 0,p \\right)\\) and directrix at \\(y = - p\\). Suppose\\(Q\\left( x,y \\right)\\) is some point on the parabola. The distance from \\(Q\\) to the focus is \\[d(Q,F)=\\sqrt{(x-0)^{2}+(y-p)^{2}}=\\sqrt{x^{2}+(y-p)^{2}}\\nonumber\\] The distance from the point \\(Q\\) to the directrix is the difference of the \\(y\\)-values: \\[d = y - ( - p) = y + p\\nonumber\\] From the definition of the parabola, these distances should be equal: \\[\\sqrt {x^2 + \\left( y - p \\right)^2} = y + p\\nonumber\\]Square both sides \\[x^2 + \\left( y - p \\right)^2 = \\left( y + p \\right)^2\\nonumber\\]Expand \\[x^2 + y^2 - 2py + p^2 = y^2 + 2py +p^2\\nonumber\\]Combine like terms \\[x^2 = 4py\\nonumber\\] This is the standard conic form of a parabola that opens up or down (vertical axis of symmetry), centered at the origin. Note that if we divided by \\(4p\\), we would get a more familiar equation for the parabola, \\(y = \\dfrac{x^2}{4p}\\). We can recognize this as a transformation of the parabola \\(y = x^2\\), vertically compressed or stretched by \\(\\dfrac{1}{4p}\\). Using a similar process, we could find an equation of a parabola with vertex at the origin opening left or right. The focus will be at (\\(p\\),0) and the graph will have a horizontal axis of symmetry and a vertical directrix. The standard conic form of its equation will be \\(y^2 = 4px\\), which we could also write as \\(x = \\dfrac{y^2}{4p}\\). EQUATION OF A PARABOLA WITH VERTEX AT \\(h,k\\) IN STANDARD CONIC FORM The standard conic form of an equation of a parabola with vertex at the point \\(\\left( h,k \\right)\\) depends on whether the axis of symmetry is horizontal or vertical. The table below gives the standard equation, vertex, axis of symmetry, directrix, focus, and graph for each. Horizontal Vertical Standard Equation \\((y - k)^2 = 4p(x - h)\\) \\((x - h)^2 = 4p(y - k)\\) Vertex \\((h, k)\\)"
+    },
+    {
+      "topic_id": "ch9_s3_t2",
+      "title": "Applications of Parabolas",
+      "parent_section": "Parabolas and Non-Linear Systems",
+      "parent_chapter_num": "9",
+      "parent_section_num": "3",
+      "position_in_section": 1,
+      "body_text": "In an earlier section, we learned that ellipses have a special property that a ray emanating from one focus will be reflected back to the other focus, the property that enables the whispering chamber to work. Parabolas also have a special property, that any ray emanating from the focus will be reflected parallel to the axis of symmetry. Reflectors in flashlights take advantage of this property to focus the light from the bulb into a collimated beam. The same property can be used in reverse, taking parallel rays of sunlight or radio signals and directing them all to the focus. Exercise \\(\\PageIndex{2}\\) A radio telescope is 100 meters in diameter and 20 meters deep. Where should the receiver be placed? The standard conic form of the equation is \\[x^2 = 4py\\nonumber\\] Using (50,20), we can find that \\(50^2 = 4p(20)\\), so \\(p = 31.25\\) meters. The receiver should be placed 31.25 meters above the vertex.",
+      "definitions": [],
+      "examples": [
+        {
+          "text": "Example \\(\\PageIndex{4}\\) A solar cooker is a parabolic dish that reflects the sun’s rays to a central point allowing you to cook food. If a solar cooker has a parabolic dish 16 inches in diameter and 4 inches tall, where should the food be placed? Solution We need to determine the location of the focus, since that’s where the food should be placed. Positioning th e base of the dish at the origin, the shape from the side looks like: The standard conic form of an equation for the parabola would be \\({x^2} = 4py\\). The parabola passes through (4, 8), so substituting that into the equation, we can solve for \\(p\\): \\[8^2 = 4(p)(4)\\nonumber\\] \\[p = \\dfrac{8^2}{16} = 4\\nonumber\\] The focus is 4 inches above the vertex. This makes for a very convenient design, since then a grate could be placed on top of the dish to hold the food."
+        }
+      ],
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/09%3A_Conics/9.03%3A_Parabolas_and_Non-Linear_Systems",
+      "defined_terms": [],
+      "concepts": [
+        "focus",
+        "meters",
+        "parallel",
+        "placed",
+        "property",
+        "property ray"
+      ],
+      "difficulty_level": 3,
+      "difficulty_tier": "medium",
+      "description": "In an earlier section, we learned that ellipses have a special property that a ray emanating from one focus will be reflected back to the other focus, the property that enables the whispering chamber to work. Parabolas also have a special property, that any ray emanating from the",
+      "sample_content": "In an earlier section, we learned that ellipses have a special property that a ray emanating from one focus will be reflected back to the other focus, the property that enables the whispering chamber to work. Parabolas also have a special property, that any ray emanating from the focus will be reflected parallel to the axis of symmetry. Reflectors in flashlights take advantage of this property to focus the light from the bulb into a collimated beam. The same property can be used in reverse, taking parallel rays of sunlight or radio signals and directing them all to the focus. Exercise \\(\\PageIndex{2}\\) A radio telescope is 100 meters in diameter and 20 meters deep. Where should the receiver be placed? The standard conic form of the equation is \\[x^2 = 4py\\nonumber\\] Using (50,20), we can find that \\(50^2 = 4p(20)\\), so \\(p = 31.25\\) meters. The receiver should be placed 31.25 meters above the vertex."
+    },
+    {
+      "topic_id": "ch9_s3_t3",
+      "title": "Non-Linear Systems of Equations",
+      "parent_section": "Parabolas and Non-Linear Systems",
+      "parent_chapter_num": "9",
+      "parent_section_num": "3",
+      "position_in_section": 2,
+      "body_text": "In many applications, it is necessary to solve for the intersection of two curves. Many of the techniques you may have used before to solve systems of linear equations will work for non-linear equations as well, particularly substitution. You have already solved some examples of non-linear systems when you found the intersection of a parabola and line while studying quadratics, and when you found the intersection of a circle and line while studying circles. It’s worth noting there is a second technique we could have used in the previous example, called elimination. If we multiplied the circle equation by -4 to get \\( - 4x^2 - 4y^2 = - 36\\), we can then add it to the ellipse equation, eliminating the variable \\(y\\). \\[25x^2 + 4y^2 = 100\\nonumber\\] \\[ - 4x^2 - 4y^2 = - 36\\nonumber\\]Add the left sides, and add the right sides \\[21x^2 = 64\\nonumber\\]Solve for \\(x\\) \\[x = \\pm \\sqrt {\\dfrac{64}{21}} = \\pm \\dfrac{8}{\\sqrt {21} }\\nonumber\\] Exercise \\(\\PageIndex{3}\\) Find the points where the line \\(y = 4x\\) intersect the ellipse \\(\\dfrac{y^2}{4} - \\dfrac{x^2}{16} = 1\\) Substituting \\(y = 4x\\) gives \\(\\dfrac{\\left( 4x \\right)^2}{4} - \\dfrac{x^2}{16} = 1\\). Simplify \\[\\dfrac{16x^2}{4} - \\dfrac{x^2}{16} = 1\\nonumber\\]Multiply by 16 to get \\[64x^2 - x^2 = 16\\nonumber\\] \\[x = \\pm \\sqrt {\\dfrac{16}{63}} = \\pm 0.504\\nonumber\\] Substituting those into \\(y = 4x\\) gives the corresponding \\(y\\) values. The curves intersect at (0.504, 2.016) and (-0.504, -2.016). Solving for the intersection of two hyperbolas allows us to utilize the LORAN navigation approach descr ibed in the last section. In our example, stations A and B are 150 kilometers apart and send a simultaneous radio signal to the ship. The signal from B arrives 0.0003 seconds before the signal from A. We found the equation of the hyperbola in standard form would be \\[\\dfrac{x^2}{2025} - \\dfrac{y^2}{3600} = 1\\nonumber\\]",
+      "definitions": [],
+      "examples": [
+        {
+          "text": "Example \\(\\PageIndex{4}\\) Find the points where the ellipse \\(\\dfrac{x^2}{4} + \\dfrac{y^2}{25} = 1\\) intersects the circle \\(x^2+ y^2 = 9\\). Solution To start, we might multiply the ellipse equation by 100 on both sides to clear the fractions, giving \\[25x^2 + 4y^2 = 100\\nonumber\\] A common approach for finding intersections is substitution. With these equations, rather than solving for \\(x\\) or \\(y\\), it might be easier to solve for \\(x^2\\) or \\(y^2\\). Solving the circle equation for \\(x^2\\) gives \\(x^2 = 9 - y^2\\). We can then substitute that expression for \\(x^2\\) into the ellipse equation. \\[25x^2 + 4y^2= 100\\nonumber\\]Substitute \\(x^2 = 9 - y^2\\) \\[25\\left( 9 - y^2 \\right) + 4y^2 = 100\\nonumber\\]Distribute \\[225 - 25y^2 + 4y^2 = 100\\nonumber\\]Combine like terms \\[ - 21y^2 = - 125\\nonumber\\]Divide by -21 \\[y^2 = \\dfrac{125}{21}\\nonumber\\]Use the square root to solve \\[y = \\pm \\sqrt {\\dfrac{125}{21}} = \\pm \\dfrac{5\\sqrt 5 }{\\sqrt {21} }\\nonumber\\] We can substitute each of these \\(y\\) values back in to \\(x^2 = 9 - y^2\\) to find \\(x\\) \\[x^{2}=9-\\left(\\sqrt{\\frac{125}{21}} \\right)^{2}=9-\\frac{125}{21}=\\frac{189}{21}-\\frac{125}{21}=\\frac{64}{21}\\nonumber\\] \\[x = \\pm \\sqrt {\\dfrac{64}{21}} = \\pm \\dfrac{8}{\\sqrt {21} }\\nonumber\\] There are four points of intersection: \\[\\left( \\pm \\dfrac{8}{\\sqrt {21} }, \\pm \\dfrac{5\\sqrt 5 }{\\sqrt {21} } \\right)\\nonumber\\]"
+        },
+        {
+          "text": "Example \\(\\PageIndex{5}\\) Find the points where the hyperbola \\(\\dfrac{y^2}{4} - \\dfrac{x^2}{9} = 1\\) intersects the parabola \\(y = 2x^2\\). Solution We can solve this system of equations by substituting \\(y = 2{x^2}\\) into the hyperbola equation. \\[\\dfrac{(2x^2)^2}{4} - \\dfrac{x^2}{9} = 1\\nonumber\\]Simplify \\[\\dfrac{4x^4}{4} - \\dfrac{x^2}{9} = 1\\nonumber\\]Simplify, and multiply by 9 \\[9x^4 - x^2 = 9\\nonumber\\]Move the 9 to the left \\[9x^4 - x^2 - 9 = 0\\nonumber\\] While this looks challenging to solve, we can think of it as a “quadratic in disguise,” since \\(x^4 = (x^2)^2\\). Letting \\(u = x^2\\), the equation becomes \\[9u^2 - u^2 - 9 = 0\\nonumber\\]Solve using the quadratic formula \\[u = \\dfrac{ - ( - 1) \\pm \\sqrt ( - 1)^2 - 4(9)( - 9) }{2(9)} = \\dfrac{1 \\pm \\sqrt {325} }{18}\\nonumber\\]Solve for \\(x\\) \\[x^2 = \\dfrac{1 \\pm \\sqrt {325} }{18}\\nonumber\\]But \\(1 - \\sqrt {325} < 0\\), so \\[x = \\pm \\sqrt {\\dfrac{1 + \\sqrt {325} }{18}} \\nonumber\\]This leads to two real solutions \\[x \\approx 1.028, -1.028\\nonumber\\] Substituting these into \\(y = 2{x^2}\\), we can find the corresponding y values. The curves intersect at the points (1.028, 2.114) and (-1.028, 2.114)."
+        },
+        {
+          "text": "Example \\(\\PageIndex{10}\\) Continuing the situation from the last section, suppose stations C and D are located 200 km due south of stations A and B and 100 km apart. The signal from D arrives 0.0001 seconds before the signal from C, leading to the equation \\(\\dfrac{x^2}{225} - \\dfrac{(y + 200)^2}{2275} = 1\\). Find the position of the ship. Solution To solve for the position of the boat, we need to find where the hyperbolas intersect. This means solving the system of equations. To do this, we could start by solving both equations for \\({x^2}\\). With the first equation from the previous example \\[\\dfrac{x^2}{2025} - \\dfrac{y^2}{3600} = 1\\nonumber\\]Move the \\(y\\) term to the right \\[\\dfrac{x^2}{2025} = 1 + \\dfrac{y^2}{3600}\\nonumber\\]Multiply both sides by 2025 \\[x^2 = 2025 + \\dfrac{2025y^2}{3600}\\nonumber\\]Simplify \\[x^2 = 2025 + \\dfrac{9y^2}{16}\\nonumber\\] With the second equation, we repeat the same process \\[\\dfrac{x^2}{225} - \\dfrac{(y + 200)^2}{2275} = 1\\nonumber\\]Move the \\(y\\) term to the right and multiply by 225 \\[x^2 = 225 + \\dfrac{225(y + 200)^2}{2275}\\nonumber\\]Simplify \\[x^2 = 225 + \\dfrac{9(y + 200)^2}{91}\\nonumber\\] Now set these two expressions for \\(x^2\\) equal to each other and solve. \\[2025 + \\dfrac{9y^2}{16} = 225 + \\dfrac{9(y + 200)^2}{91}\\nonumber\\]Subtract 225 from both sides \\[1800 + \\dfrac{9y^2}{16} = \\dfrac{9(y + 200)^2}{91}\\nonumber\\]Divide by 9 \\[200 + \\dfrac{y^2}{16} = \\dfrac{(y + 200)^2}{91}\\nonumber\\]Multiply both sides by \\(16 \\cdot 91 = 1456\\) \\[291200 + 91y^2 = 16(y + 200)^2\\nonumber\\]Expand and distribute \\[291200 + 91y^2 = 16y^2 + 6400y + 640000\\nonumber\\]Combine like terms on one side \\[75y^2 - 6400y - 348800 = 0\\nonumber\\] Solve using the quadratic formula \\[y = \\dfrac{ - ( - 6400) \\pm \\sqrt {( - 6400)^2 - 4(75)( - 348800)} }{2(75)} \\approx 123.11 \\text{ km or }-37.78\\text{ km}\\nonumber\\] We can find the associated \\(x\\) values by substituting these \\(y\\)-values into either hyperbola equation. When \\(y \\approx 123.11\\), \\[x^2 \\approx 2025 + \\dfrac{9(123.11)^2}{16}\\nonumber\\] \\[x \\approx \\pm 102.71\\nonumber\\] When \\(y \\approx\\) -37.78 km, \\[x^2 \\approx 2025 + \\dfrac{9( - 37.78)^2}{16}\\nonumber\\] \\[x \\approx \\pm 53.18\\nonumber\\] This provides 4 possible locations for the ship. Two can be immediately discarded, as they’re on land. Navigators would use other navigational techniques to decide between the two remaining locations."
+        }
+      ],
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/09%3A_Conics/9.03%3A_Parabolas_and_Non-Linear_Systems",
+      "defined_terms": [],
+      "concepts": [
+        "add",
+        "dfrac",
+        "intersection",
+        "line",
+        "nonumber",
+        "signal"
+      ],
+      "difficulty_level": 3,
+      "difficulty_tier": "medium",
+      "description": "In many applications, it is necessary to solve for the intersection of two curves. Many of the techniques you may have used before to solve systems of linear equations will work for non-linear equations as well, particularly substitution.",
+      "sample_content": "In many applications, it is necessary to solve for the intersection of two curves. Many of the techniques you may have used before to solve systems of linear equations will work for non-linear equations as well, particularly substitution. You have already solved some examples of non-linear systems when you found the intersection of a parabola and line while studying quadratics, and when you found the intersection of a circle and line while studying circles. It’s worth noting there is a second technique we could have used in the previous example, called elimination. If we multiplied the circle equation by -4 to get \\( - 4x^2 - 4y^2 = - 36\\), we can then add it to the ellipse equation, eliminating the variable \\(y\\). \\[25x^2 + 4y^2 = 100\\nonumber\\] \\[ - 4x^2 - 4y^2 = - 36\\nonumber\\]Add the left sides, and add the right sides \\[21x^2 = 64\\nonumber\\]Solve for \\(x\\) \\[x = \\pm \\sqrt {\\dfrac{64}{21}} = \\pm \\dfrac{8}{\\sqrt {21} }\\nonumber\\] Exercise \\(\\PageIndex{3}\\) Find the points where the line \\(y = 4x\\) intersect the ellipse \\(\\dfrac{y^2}{4} - \\dfrac{x^2}{16} = 1\\) Substituting \\(y = 4x\\) gives \\(\\dfrac{\\left( 4x \\right)^2}{4} - \\dfrac{x^2}{16} = 1\\). Simplify \\[\\dfrac{16x^2}{4} - \\dfrac{x^2}{16} = 1\\nonumber\\]Multiply by 16 to get \\[64x^2 - x^2 = 16\\nonumber\\] \\[x = \\pm \\sqrt {\\dfrac{16}{63}} = \\pm 0.504\\nonumber\\] Substituting those into \\(y = 4x\\) gives the corresponding \\(y\\) values. The curves intersect at (0.504, 2.016) and (-0.504, -2.016). Solving for the intersection of two hyperbolas allows us to utilize the LORAN navigation approach descr ibed in the last section. In our example, stations A and B are 150 kilometers apart and send a simultaneous radio signal to the ship. The signal from B arrives 0.0003 seconds before the signal from A. We found the equation of the hyperbola in standard form would be \\[\\dfrac{x^2}{2025} - \\dfrac{y^2}{3600} = 1\\nonumber\\]"
+    },
+    {
+      "topic_id": "ch9_s4_t1",
+      "title": "Conics in Polar Coordinates",
+      "parent_section": "Conics in Polar Coordinates",
+      "parent_chapter_num": "9",
+      "parent_section_num": "4",
+      "position_in_section": 0,
+      "body_text": "In the preceding sections, we defined each conic in a different way, but each involved the distance between a point on the curve and the focus. In the previous section, the parabola was defined using the focus and a line called the directrix . It turns out that all conic sections (circles, ellipses, hyperbolas, and parabolas) can be defined using a single relationship. The Polar Form of a Conic To create a general equation for a conic section using the definition above, we will use polar coordinates. Represent \\(Q\\left( x,y \\right)\\) in polar coordinates so \\(\\left( x,y \\right) = \\left( r\\cos (\\theta ), r\\sin (\\theta ) \\right)\\). For now, we’ll focus on the case of a horizontal directrix at \\(y = - p\\), as in the picture above on the left. The distance from the focus to the point \\(Q\\) in polar is just \\(r\\). The distance from the point \\(Q\\) to the directrix \\(y = - p\\) is\\(r\\sin (\\theta ) - ( - p) = p + r\\sin (\\theta )\\) The ratio of these should be the constant eccentricity e, so \\[\\dfrac{d\\left( Q,F \\right)}{d(Q,L)} = e\\nonumber\\]Substituting in the expressions for the distances, \\[\\dfrac{r}{p + r\\sin (\\theta )} = e\\nonumber\\] To have a standard polar equation, we need to solve for r. Start by clearing the fraction. \\[r = e\\left( {p + r\\sin (\\theta )} \\right)\\nonumber\\]Distribute \\[r = ep + er\\sin (\\theta )\\nonumber\\]Move terms with \\(r\\) to the left \\[r - er\\sin (\\theta ) = ep\\nonumber\\]Factor the \\(r\\) \\[r\\left( 1 - e\\sin (\\theta ) \\right) = ep\\nonumber\\]Divide \\[r = \\dfrac{ep}{1 - e\\sin (\\theta )}\\nonumber\\] We could repeat the same approach for a directrix at \\(y = p\\) and for vertical directrices to obtain the polar equations below. POLAR EQUATION FOR A CONIC SECTION A conic section with a focus at the origin, eccentricity \\(e\\), and directrix at \\(x = \\pm p\\) or \\(y = \\pm p\\) will have polar equation: \\[r = \\dfrac{ep}{1 \\pm e\\sin (\\theta )}\\text{ when the directrix is }y = \\pm p\\] \\[r = \\dfrac{ep}{1 \\pm e\\cos (\\theta )}\\text{ when the directrix is }x = \\pm p\\] Exercise \\(\\PageIndex{1}\\) Write a polar equation for a conic with eccentricity 1 and directrix at \\(y = - 3\\). Answer \\[r = \\dfrac{(1)(3)}{1 - \\sin(\\theta)}\\quad r = \\dfrac{3}{1 - \\sin (\\theta)}\\nonumber\\] Relating the Polar Equation to the Shape It was probably not obvious to you that the polar equation in the last example would give the graph of a hyperbola. To explore the relationship between the polar equation and the shape, we will try to convert the polar equation into a Cartesian one. For simplicity, we will consider the case where the directrix is \\(x = 1\\). \\[r = \\dfrac{e}{1 + e\\cos (\\theta )}\\nonumber\\]Multiply by the denominator \\[r\\left( 1 + e\\cos (\\theta ) \\right) = e\\nonumber\\]Rewrite \\(\\cos (\\theta ) = \\dfrac{x}{r}\\) \\[r\\left( 1 + e\\dfrac{x}{r} \\right) = e\\nonumber\\]Distribute \\[r + ex = e\\nonumber\\]Isolate \\(r\\) \\[r = e - ex\\nonumber\\]Square both sides \\[r^2 = \\left( e - ex \\right)^2\\nonumber\\]Rewrite \\(r^2 = x^2 + y^2\\) and expand \\[x^2 + y^2 = e^2 - 2e^2x + e^2x^2\\nonumber\\]Move variable terms to the left \\[x^2 + 2e^2x - e^2x^2 + y^2 = e^2\\nonumber\\]Combine like terms \\[x^2(1 - e^2) + 2e^2x + y^2 = e^2\\nonumber\\] We could continue, by completing the square with the \\(x\\) terms, to eventually rewrite this in the standard form as \\(\\left(\\frac{(1-e^{2})^{2}}{e^{2}} \\right)\\left(x-\\frac{e^{2}}{1-e^{2}} \\right)^{2}+\\left(\\frac{1-e^{2}}{e^{2}} \\right)y^{2}=1\\), but happily there’s no need for us to do that. In the equation \\(x^2(1 - e^2) + 2e^2x + y^2 = e^2\\), we can see that: When \\(e < 1\\), the coefficients of both \\(x^2\\) and \\(y^2\\) are positive, resulting in ellipse. When \\(e > 1\\), the coefficient of \\(x^2\\) is negative while the coefficient of \\(y^2\\) is positive, resulting in a hyperbola. When \\(e = 1\\), the \\(x^2\\) will drop out of the equation, resulting in a parabola. RELATION BETWEEN THE POLAR EQUATION OF A CONIC AND ITS SHAPE For a conic section with a focus at the origin, eccentricity \\(e\\), and directrix at \\(x = \\pm p\\) or \\(y = \\pm p\\), when \\(0 < e < 1\\), the graph is an ellipse when \\(e = 1\\), the graph is a parabola when \\(e > 1\\), the graph is a hyperbola Taking a more intuitive approach, notice that if \\(e < 1\\), the denominator \\(1 + e\\cos (\\theta )\\) will always be positive and so \\(r\\) will always be positive. This means that the radial distance \\(r\\) is defined and finite for every value of \\(\\theta\\), including \\(\\dfrac{\\pi }{2}\\), with no breaks. The only conic with this characteristic is an ellipse. If \\(e = 1\\), the denominator will be positive for all values of \\(\\theta\\), except \\( - \\pi \\) where the denominator is 0 and \\(r\\) is undefined. This fits with a parabola, which has a point at every angle except at the angle pointing along the axis of symmetry away from the vertex. If \\(e > 1\\), then the denominator will be zero at two angles other than \\( \\pm \\dfrac{\\pi }{2}\\), and \\(r\\) will be negative for a set of \\(\\theta\\) values. This division of positive and negative radius values would result in two distinct branches of the graph, fitting with a hyperbola. Exercise \\(\\PageIndex{2}\\) Identify the shape, the directrix, and the eccentricity of \\(r = \\dfrac{9}{4 + 2\\cos (\\theta )}\\) Answer We can convert to standard form by multiplying the top and bottom by \\(\\dfrac{1}{4}\\). \\[r = \\dfrac{\\dfrac{9}{4}}{1 + \\dfrac{1}{2}\\cos (\\theta )}\\nonumber\\]Eccentricity = \\(\\dfrac{1}{2}\\), so the shape is an ellipse. The numerator is \\[ep = \\dfrac{1}{2}p = \\dfrac{9}{4}\\nonumber\\]The directrix is \\[x = \\dfrac{9}{2}\\nonumber\\] Graphing Conics from the Polar Form Identifying additional features of a conic in polar form can be challenging, which makes graphing without technology likewise challenging. We can utilize our understanding of the conic shapes from earlier sections to aid us. Exercise \\(\\PageIndex{3}\\) Sketch a graph of \\(r = \\dfrac{6}{1 + 2\\cos (\\theta )}\\) and identify the important features. Answer The eccentricity is \\(e = 2\\), so the graph of the equation is a hyperbola. The directrix is \\(x = 3\\). Since the directrix is a vertical line and the focus is at the origin, the hyperbola is horizontal. \\[\\theta = 0\\quad r = \\dfrac{6}{1 + 2\\cos (0)} = \\dfrac{6}{1 + 2} = 2\\quad (x,y) = (2,0)\\nonumber\\] \\[\\theta = \\dfrac{\\pi }{2}\\quad r = \\dfrac{6}{1 + 2\\cos \\left( \\dfrac{\\pi }{2} \\right)} = \\dfrac{6}{1} = 6\\quad (x,y) = (0,6)\\nonumber\\] \\[\\theta = \\pi \\quad r = \\dfrac{6}{1 + 2\\cos (\\pi )} = \\dfrac{6}{1 - 2} = - 6\\quad (x,y) = (6,0)\\nonumber\\] \\[\\theta = \\dfrac{3\\pi }{2}\\quad r = \\dfrac{6}{1 + 2\\cos \\left( \\dfrac{3\\pi }{2} \\right)} = \\dfrac{6}{1} = 6\\quad (x,y) = (0, - 6)\\nonumber\\] Plotting those points, we can connect the three on the left with a smooth curve to form one branch of the hyperbola, and th e other branch will be a mirror image passing through the last point. The vertices are at (2, 0) and (6, 0). The center of the hyperbola would be at the midpoint of the vertices, at (4, 0). The vertices are a distance \\(a = 2\\) from the center. The focus at the origin is a distance \\(c = 4\\) from the center. Solving for \\(b\\), \\(b^2 = 4^2 - 2^2 = 12\\). \\(b = \\pm \\sqrt {12} = \\pm 2 \\sqrt 3 \\). The asymptotes would be \\(y = \\pm \\sqrt 3 \\left( x - 4 \\right)\\). The Cartesian equation of the hyperbola would be: \\(\\dfrac{\\left( x - 4 \\right)^2}{4} - \\dfrac{y^2}{12} = 1\\) Important Topics of This Section Polar equations for Conic Sections Eccentricity and Directrix Determining the shape of a polar conic section",
+      "definitions": [
+        {
+          "kind": "boxed",
+          "text": "CONIC SECTIONS GENERAL Definition A conic section can be defined by placing a fixed point at the origin, \\(F\\left( 0,0 \\right)\\), called the focus, and drawing a line L called the directrix at \\(x = \\pm p\\) or \\(y = \\pm p\\). The conic section is the set of all points \\(Q\\left( x,y \\right)\\) for which the ratio of the distance from \\(Q\\) to \\(F\\) to the distance from \\(Q\\) to the directrix is some positive constant \\(e\\) , called the eccentricity. In other words, \\[\\dfrac{d\\left( Q,F \\right)}{d(Q,L)} = e\\] Warning: the eccentricity, \\(e\\), is not the Euler constant \\(e \\approx 2.71828\\) we studied with exponentials"
+        }
+      ],
+      "examples": [
+        {
+          "text": "Example \\(\\PageIndex{1}\\) Write the polar equation for a conic section with eccentricity 3 and directrix at \\(x = 2\\). Solution We are given \\(e = 3\\) and \\(p = 2\\). Since the directrix is vertical and at a pos itive \\(x\\) value, we use the equation involving cos with the positive sign. \\[r = \\dfrac{(3)(2)}{1 + 3\\cos (\\theta )} = \\dfrac{6}{1 + 3\\cos (\\theta )}\\nonumber\\] Graphing that using technology reveals it’s an equation for a hyperbola."
+        },
+        {
+          "text": "Example \\(\\PageIndex{2}\\) For each of the following conics with focus at the origin, identify the shape, the directrix, and the eccentricity. a. \\(r = \\dfrac{8}{1 - 2\\sin (\\theta )}\\) b. \\(r = \\dfrac{6}{3 - 2\\cos (\\theta )}\\) c. \\(r = \\dfrac{8}{5 + 5\\sin (\\theta )}\\) Solution a. This equation is already in standard form \\(r = \\dfrac{ep}{1 \\pm e\\sin (\\theta )}\\) for a conic with horizontal directrix at \\(y = - p\\). The eccentricity is the coefficient of \\(\\sin (\\theta )\\), so \\(e = 2\\). Since \\(e = 2 > 1\\), the shape will be a hyperbola. Looking at the numerator, \\(ep = 8\\), and substituting \\(e = 2\\) gives \\(p = 4\\). The directrix is \\(y = - 4\\). b. This equation is not in standard form, since the constant in the denominator is not 1. To put it into standard form, we can multiply the numerator and denominator by 1/3. \\[r = \\dfrac{6}{3 - 2\\cos (\\theta )} \\cdot \\dfrac{\\dfrac{1}{3}}{\\dfrac{1}{3}} = \\dfrac{6\\left( \\dfrac{1}{3} \\right)}{\\left( 3 - 2\\cos (\\theta ) \\right)\\left( \\dfrac{1}{3} \\right)} = \\dfrac{2}{1 - \\dfrac{2}{3}\\cos (\\theta )}\\nonumber\\] This is the standard form for a conic with vertical directrix \\(x = - p\\). The eccentricity is the coefficient on \\(\\cos (\\theta )\\), so \\(e = \\dfrac{2}{3}\\). Since \\(0 < e < 1\\), the shape is an ellipse. Looking at the numerator, \\(ep = 2\\), so \\(\\dfrac{2}{3}p = 2\\), giving \\(p = 3\\). The directrix is \\(x = - 3\\). c. This equation is also not in standard form. Multiplying the numerator and denominator by 1/5 will put it in standard form. \\[r = \\dfrac{8}{5 + 5\\sin (\\theta )} \\cdot \\dfrac{\\dfrac{1}{5}}{\\dfrac{1}{5}} = \\dfrac{8\\left( \\dfrac{1}{5} \\right)}{\\left( 5 + 5\\sin (\\theta ) \\right)\\left( \\dfrac{1}{5} \\right)} = \\dfrac{\\dfrac{8}{5}}{1 + \\sin (\\theta )}\\nonumber\\] This is the standard form for a conic with horizontal directrix at \\(y = p\\). The eccentricity is the coefficient on \\(\\sin (\\theta )\\), so \\(e = 1\\). The shape will be a parabola. Looking at the numerator, \\(ep = \\dfrac{8}{5}\\). Since \\(e = 1\\), \\(p = \\dfrac{8}{5}\\). The directrix is \\(y = \\dfrac{8}{5}\\). Notice that since the directrix is above the focus at the origin, the parabola will open downward."
+        },
+        {
+          "text": "Example \\(\\PageIndex{3}\\) Sketch a graph of \\(r = \\dfrac{3}{1 - 0.5\\sin (\\theta )}\\) and write its Cartesian equation. Solution This is in standard form, and we can identify that \\(e = 0.5\\), so the shape is an ellipse. From the numerator, \\(ep = 3\\), so \\(0.5p = 3\\), giving p = 6. The directrix is \\(y = - 6\\). To sketch a graph, we can start by evaluating the function at a few convenient ? values, and finding the corresponding Cartesian coordinates. \\[\\theta = 0\\quad r = \\dfrac{3}{1 - 0.5\\sin (0)} = \\dfrac{3}{1} = 3\\quad (x,y) = (3,0)\\nonumber\\] \\[\\theta = \\dfrac{\\pi }{2}\\quad r = \\dfrac{3}{1 - 0.5\\sin \\left( \\dfrac{\\pi }{2} \\right)} = \\dfrac{3}{1 - 0.5} = 6\\quad (x,y) = (0,6)\\nonumber\\] \\[\\theta = \\pi \\quad r = \\dfrac{3}{1 - 0.5\\sin (\\pi )} = \\dfrac{3}{1} = 3\\quad (x,y) = ( - 3,0)\\nonumber\\] \\[\\theta = \\dfrac{3\\pi }{2}\\quad r = \\dfrac{3}{1 - 0.5\\sin \\left( \\dfrac{3\\pi }{2} \\right)} = \\dfrac{3}{1 + 0.5} = 2\\quad (x,y) = (0, - 2)\\nonumber\\] Plotting these points and remembering the origin is one of the foci gives an idea of the shape, which we could sketch in. To get a b etter understanding of the shape, we could use these features to find more. The vertices are at (0, -2) and (0, 6), so the center must be halfway between, at \\(\\left( 0,\\dfrac{ - 2 + 6}{2} \\right)\\) = (0, 2). Since the vertices are a distance a from the center, \\(a = 6 – 2 = 4\\). One focus is at (0, 0), a distance of 2 from the center, so \\(c = 2\\), and the other focus must be 2 above the center, at (0, 4). We can now solve for b: \\(b^2 = a^2 - c^2\\), so \\(b^2 = 4^2 - 2^2 = 10\\), hence \\(b = \\pm \\sqrt {10} \\). The minor axis endpoints would be at \\(\\left( - \\sqrt {10} ,2 \\right)\\) and \\(\\left( \\sqrt {10} ,2 \\right)\\). We can now use the center, \\(a\\), and \\(b\\) to write the Cartesian equation for this curve: \\[\\dfrac{x^2}{10} + \\dfrac{(y - 2)^2}{16} = 1\\nonumber\\]"
+        }
+      ],
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/09%3A_Conics/9.04%3A_Conics_in_Polar_Coordinates",
+      "defined_terms": [],
+      "concepts": [
+        "cos",
+        "dfrac",
+        "directrix",
+        "polar",
+        "sin",
+        "theta"
+      ],
+      "difficulty_level": 5,
+      "difficulty_tier": "hard",
+      "description": "In the preceding sections, we defined each conic in a different way, but each involved the distance between a point on the curve and the focus. In the previous section, the parabola was defined using the focus and a line called the directrix .",
+      "sample_content": "In the preceding sections, we defined each conic in a different way, but each involved the distance between a point on the curve and the focus. In the previous section, the parabola was defined using the focus and a line called the directrix . It turns out that all conic sections (circles, ellipses, hyperbolas, and parabolas) can be defined using a single relationship. The Polar Form of a Conic To create a general equation for a conic section using the definition above, we will use polar coordinates. Represent \\(Q\\left( x,y \\right)\\) in polar coordinates so \\(\\left( x,y \\right) = \\left( r\\cos (\\theta ), r\\sin (\\theta ) \\right)\\). For now, we’ll focus on the case of a horizontal directrix at \\(y = - p\\), as in the picture above on the left. The distance from the focus to the point \\(Q\\) in polar is just \\(r\\). The distance from the point \\(Q\\) to the directrix \\(y = - p\\) is\\(r\\sin (\\theta ) - ( - p) = p + r\\sin (\\theta )\\) The ratio of these should be the constant eccentricity e, so \\[\\dfrac{d\\left( Q,F \\right)}{d(Q,L)} = e\\nonumber\\]Substituting in the expressions for the distances, \\[\\dfrac{r}{p + r\\sin (\\theta )} = e\\nonumber\\] To have a standard polar equation, we need to solve for r. Start by clearing the fraction. \\[r = e\\left( {p + r\\sin (\\theta )} \\right)\\nonumber\\]Distribute \\[r = ep + er\\sin (\\theta )\\nonumber\\]Move terms with \\(r\\) to the left \\[r - er\\sin (\\theta ) = ep\\nonumber\\]Factor the \\(r\\) \\[r\\left( 1 - e\\sin (\\theta ) \\right) = ep\\nonumber\\]Divide \\[r = \\dfrac{ep}{1 - e\\sin (\\theta )}\\nonumber\\] We could repeat the same approach for a directrix at \\(y = p\\) and for vertical directrices to obtain the polar equations below. POLAR EQUATION FOR A CONIC SECTION A conic section with a focus at the origin, eccentricity \\(e\\), and directrix at \\(x = \\pm p\\) or \\(y = \\pm p\\) will have polar equation: \\[r = \\dfrac{ep}{1 \\pm e\\sin (\\theta )}\\text{ when the directrix is }y = \\pm p\\] \\[r = \\dfrac{ep}{1 \\pm e\\cos (\\theta )}\\text{ when the directrix is }x = \\pm"
+    }
+  ],
+  "edges": [
+    {
+      "from": "ch9_s1_t1",
+      "to": "ch9_s1_t2",
+      "source": "term-definition",
+      "evidence": "equation"
+    },
+    {
+      "from": "ch9_s1_t1",
+      "to": "ch9_s1_t4",
+      "source": "term-definition",
+      "evidence": "equation"
+    },
+    {
+      "from": "ch9_s1_t1",
+      "to": "ch9_s2_t1",
+      "source": "term-definition",
+      "evidence": "equation"
+    },
+    {
+      "from": "ch9_s1_t1",
+      "to": "ch9_s2_t2",
+      "source": "term-definition",
+      "evidence": "equation"
+    },
+    {
+      "from": "ch9_s1_t1",
+      "to": "ch9_s2_t3",
+      "source": "term-definition",
+      "evidence": "equation"
+    },
+    {
+      "from": "ch9_s1_t1",
+      "to": "ch9_s2_t4",
+      "source": "term-definition",
+      "evidence": "equation"
+    },
+    {
+      "from": "ch9_s1_t1",
+      "to": "ch9_s3_t1",
+      "source": "term-definition",
+      "evidence": "equation"
+    },
+    {
+      "from": "ch9_s1_t1",
+      "to": "ch9_s3_t2",
+      "source": "term-definition",
+      "evidence": "equation"
+    },
+    {
+      "from": "ch9_s1_t1",
+      "to": "ch9_s3_t3",
+      "source": "term-definition",
+      "evidence": "equation"
+    },
+    {
+      "from": "ch9_s1_t1",
+      "to": "ch9_s4_t1",
+      "source": "term-definition",
+      "evidence": "equation"
+    },
+    {
+      "from": "ch9_s1_t2",
+      "to": "ch9_s1_t3",
+      "source": "structural-sec",
+      "evidence": "adjacent in section 9.1"
+    },
+    {
+      "from": "ch9_s1_t3",
+      "to": "ch9_s1_t4",
+      "source": "structural-sec",
+      "evidence": "adjacent in section 9.1"
+    },
+    {
+      "from": "ch9_s1_t4",
+      "to": "ch9_s1_t5",
+      "source": "structural-sec",
+      "evidence": "adjacent in section 9.1"
+    },
+    {
+      "from": "ch9_s2_t1",
+      "to": "ch9_s2_t2",
+      "source": "structural-sec",
+      "evidence": "adjacent in section 9.2"
+    },
+    {
+      "from": "ch9_s2_t2",
+      "to": "ch9_s2_t3",
+      "source": "structural-sec",
+      "evidence": "adjacent in section 9.2"
+    },
+    {
+      "from": "ch9_s2_t3",
+      "to": "ch9_s2_t4",
+      "source": "structural-sec",
+      "evidence": "adjacent in section 9.2"
+    },
+    {
+      "from": "ch9_s3_t1",
+      "to": "ch9_s3_t2",
+      "source": "structural-sec",
+      "evidence": "adjacent in section 9.3"
+    },
+    {
+      "from": "ch9_s3_t2",
+      "to": "ch9_s3_t3",
+      "source": "structural-sec",
+      "evidence": "adjacent in section 9.3"
+    },
+    {
+      "from": "ch9_s1_t5",
+      "to": "ch9_s2_t1",
+      "source": "structural-chap",
+      "evidence": "section 9.1 → 9.2"
+    },
+    {
+      "from": "ch9_s2_t4",
+      "to": "ch9_s3_t1",
+      "source": "structural-chap",
+      "evidence": "section 9.2 → 9.3"
+    },
+    {
+      "from": "ch9_s3_t3",
+      "to": "ch9_s4_t1",
+      "source": "structural-chap",
+      "evidence": "section 9.3 → 9.4"
+    }
+  ]
+}

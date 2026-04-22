@@ -1,0 +1,179 @@
+{
+  "url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/01%3A_Functions/1.03%3A_Rates_of_Change_and_Behavior_of_Graphs",
+  "title": "1.3: Rates of Change and Behavior of Graphs",
+  "chapter": "1",
+  "section": "3",
+  "body_text": "Since functions represent how an output quantity varies with an input quantity, it is natural to ask about the rate at which the values of the function are changing. For example, the function \\(C(t)\\) below gives the average cost, in dollars, of a gallon of gasoline \\(t\\) years after 2000. \\(t\\) 2 3 4 5 6 7 8 9 \\(C(t)\\) 1.47 1.69 1.94 2.30 2.51 2.64 3.01 2.14 If we were interested in how the gas prices had changed between 2002 and 2009, we could compute that the cost per gallon had increased from $1.47 to $2.14, an increase of $0.67. While this is interesting, it might be more useful to look at how much the price changed per year . You are probably noticing that the price didn’t change the same amount each year, so we would be finding the average rate of change over a specified amount of time. The gas price increased by $0.67 from 2002 to 2009, over 7 years, for an average of \\(\\dfrac{\\$ 0.67}{7years} \\approx 0.096\\)dollars per year. On average, the price of gas increased by about 9.6 cents each year. Some other examples of rates of change would be quantities like: A population of rats increases by 40 rats per week A barista earns $9 per hour (dollars per hour) A farmer plants 60,000 onions per acre A car can drive 27 miles per gallon A population of grey whales decreases by 8 whales per year The amount of money in your college account decreases by $4,000 per quarter Exercise \\(\\PageIndex{1}\\) Using the same cost-of-gas function, find the average rate of change between 2003 and 2008 Answer \\(\\dfrac{$3.01 - $1.69}{5\\ years} = \\dfrac{$1.32}{5\\ years} = 0.264\\) dollars per year. Notice that in the last example the change of output was negative since the output value of the function had decreased. Correspondingly, the average rate of change is negative. We can more formally state the average rate of change calculation using function notation. Exercise \\(\\PageIndex{2}\\) Find the average rate of change of \\(f(x) = x - 2\\sqrt{x}\\) on the interval [1, 9]. Answer Average rate of change = \\(\\dfrac{f(9) - f(1)}{9 - 1} = \\dfrac{(9 - 2\\sqrt{9}) - (1 - 2\\sqrt{1})}{9 - 1} = \\dfrac{(3) - (-1)}{9 - 1} = \\dfrac{4}{8} = \\dfrac{1}{2}\\) Exercise \\(\\PageIndex{3}\\) Find the average rate of change of \\(f(x)=x^{3} +2\\) on the interval \\([a,a+h]\\). Answer \\[\\dfrac{f(a + h) - f(a)}{(a + h) - a} = \\dfrac{((a + h)^3 + 2) - (a^3 + 2)}{h} = \\dfrac{a^3 + 3a^2h + 3ah^2 + h^3 + 2 - a^3 - 2}{h} = \\dfrac{3a^2h + 3ah^2 + h^3}{h} = \\dfrac{h(3a^2 + 3ah + h^2)}{h} = 3a^2 + 3ah + h^2\\nonumber\\] Graphical Behavior of Functions As part of exploring how functions change, it is interesting to explore the graphical behavior of functions. Notice in the last example that we used open intervals (intervals that don’t include the endpoints) since the function is neither increasing nor decreasing at \\(t =\\) 1, 3, or 4. Exercise \\(\\PageIndex{4}\\) Use a graph of the function \\(f(x)=x^{3} -6x^{2} -15x + 20\\) to estimate the local extrema of the function. Use these to determine the intervals on which the function is increasing and decreasing. Answer Based on the graph, the local maximum appears to occur at (-1, 28), and the local minimum occurs at (5, -80). The function is increasing on \\((-\\infty, -1) \\cup (5, \\infty)\\) and decreasing on (−1, 5) . Concavity The total sales, in thousands of dollars, for two companies over 4 weeks are shown. As you can see, the sales for each company are increasing, but they are increasing in very different ways. To describe the difference in behavior, we can investigate how the average rate of change varies over different intervals. Using tables of values, From the tables, we can see that the rate of change for company A is decreasing , while the rate of change for company B is increasing . When the rate of change is getting smaller, as with Company A, we say the function is concave down . When the rate of change is getting larger, as with Company B, we say the function is concave up . Exercise \\(\\PageIndex{5}\\) Is the function described in the table below concave up or concave down? Answer Calculating the rates of change, we see the rates of change become more negative, so the rates of change are decreasing . This function is concave down. Graphically, concave down functions bend downwards like a frown, and concave up function bend upwards like a smile. Exercise \\(\\PageIndex{6}\\) Using the graph from Try it Now 4, \\(f(x)=x^{3} -6x^{2} -15x+20\\), estimate the intervals on which the function is concave up and concave down. Answer Looking at the graph, it appears the function is concave down on \\((−\\infty,2)\\) and concave up on \\((2, \\infty)\\). Behaviors of the Toolkit Functions We will now return to our toolkit functions and discuss their graphical behavior. Function Increasing/Decreasing Concavity Constant Function \\(f(x)=c\\) Neither increasing nor decreasing Neither concave up nor down Identity Function \\(f(x)=x\\) Increasing Neither concave up nor down Quadratic Function \\(f(x)=x^{2}\\) Increasing on \\((0,\\infty )\\) Decreasing on \\((-\\infty ,0)\\) Minimum at \\(x = 0\\) Concave up \\((-\\infty ,\\infty )\\) Cubic Function \\(f(x)=x^{3}\\) Increasing Concave down on \\((-\\infty ,0)\\) Concave up on \\((0,\\infty )\\) Inflection point at (0,0) Reciprocal \\(f(x)=\\dfrac{1}{x}\\) Decreasing \\((-\\infty ,0) \\cup (0,\\infty )\\) Concave down on \\((-\\infty ,0)\\) Concave up on \\((0,\\infty )\\) Function Increasing/Decreasing Concavity Reciprocal squared \\(f(x)=\\dfrac{1}{x^{2} }\\) Increasing on \\((-\\infty ,0)\\) Decreasing on \\((0,\\infty )\\) Concave up on \\((-\\infty ,0) \\cup (0,\\infty )\\) Cube Root \\(f(x)=\\sqrt[{3}]{x}\\) Increasing Concave down on \\((0,\\infty )\\) Concave up on \\((-\\infty ,0)\\) Inflection point at (0,0) Square Root \\(f(x)=\\sqrt[{}]{x}\\) Increasing on \\((0,\\infty )\\) Concave down on \\((0,\\infty )\\) Absolute Value \\(f(x)=\\left|x\\right|\\) Increasing on \\((0, \\infty )\\) Decreasing on \\((-\\infty , 0)\\) Neither concave up or down Important Topics of This Section Rate of Change Average Rate of Change Calculating Average Rate of Change using Function Notation Increasing/Decreasing Local Maxima and Minima (Extrema) Inflection points Concavity",
+  "definitions": [
+    {
+      "kind": "boxed",
+      "text": "Definition: Rate of Change A rate of change describes how the output quantity changes in relation to the input quantity. The units on a rate of change are output units per input units ."
+    },
+    {
+      "kind": "boxed",
+      "text": "Definition: Average Rate of Change The average rate of change between two input values is the total change of the function values (output values) divided by the change in the input values. \\[\\text{Average rate of change} = \\dfrac{\\text{Change of Output}}{\\text{Change of Input}} = \\dfrac{\\Delta y}{\\Delta x} =\\dfrac{y_{2} -y_{1} }{x_{2} -x_{1} }\\]"
+    },
+    {
+      "kind": "boxed",
+      "text": "Definition: Average Rate of Change using Function Notation Given a function \\(f(x)\\), the average rate of change on the interval [a, b] is \\[\\text{Average rate of change} = \\dfrac{\\text{Change of Output}}{\\text{Change of Input}} =\\dfrac{f(b)-f(a)}{b-a} \\label{avgratefunction}\\]"
+    },
+    {
+      "kind": "boxed",
+      "text": "Definition: increasing/decreasing A function is increasing on an interval if the function values increase as the inputs increase. More formally, a function is increasing if \\(f(b) > f(a)\\) for any two input values a and b in the interval with \\(b > a\\). The average rate of change of an increasing function is positive. A function is decreasing on an interval if the function values decrease as the inputs increase. More formally, a function is decreasing if \\(f(b) < f(a)\\) for any two input values a and b in the interval with \\(b > a\\). The average rate of change of a decreasing function is negative."
+    },
+    {
+      "kind": "boxed",
+      "text": "Definition: Local Extrema A point where a function changes from increasing to decreasing is called a local maximum . A point where a function changes from decreasing to increasing is called a local minimum . Together, local maxima and minima are called the local extrema , or local extreme values, of the function."
+    },
+    {
+      "kind": "boxed",
+      "text": "Definition: concavity A function is concave up if the rate of change is increasing. A function is concave down if the rate of change is decreasing. A point where a function changes from concave up to concave down or vice versa is called an inflection point ."
+    },
+    {
+      "kind": "inline",
+      "text": "Definition: Rate of Change"
+    },
+    {
+      "kind": "inline",
+      "text": "Definition: Average Rate of Change"
+    },
+    {
+      "kind": "inline",
+      "text": "Definition: Average Rate of Change using Function Notation"
+    },
+    {
+      "kind": "inline",
+      "text": "Definition: increasing/decreasing"
+    },
+    {
+      "kind": "inline",
+      "text": "Definition: Local Extrema"
+    },
+    {
+      "kind": "inline",
+      "text": "Definition: concavity"
+    }
+  ],
+  "examples": [
+    {
+      "text": "Example \\(\\PageIndex{1}\\) Using the cost-of-gas function from earlier, find the average rate of change between 2007 and 2009. Solution From the table, in 2007 the cost of gas was $2.64. In 2009 the cost was $2.14. The input (years) has changed by 2. The output has changed by $2.14 - $2.64 = -0.50. The average rate of change is then \\(\\dfrac{-\\$ 0.50}{2years}\\) = -0.25 dollars per year"
+    },
+    {
+      "text": "Example \\(\\PageIndex{2}\\) Given the function \\(g(t)\\) shown here, find the average rate of change on the interval [0, 3]. Solution At t = 0, the graph shows \\(g(0) = 1\\) At t = 3, the graph shows \\(g(3) = 4\\) The output has changed by 3 while the input has changed by 3, giving an average rate of change of: \\[\\dfrac{4-1}{3-0} =\\dfrac{3}{3} =1\\nonumber \\]"
+    },
+    {
+      "text": "Example \\(\\PageIndex{3}\\) On a road trip, after picking up your friend who lives 10 miles away, you decide to record your distance from home over time. Find your average speed over the first 6 hours. \\(t\\) (hours) 0 1 2 3 4 5 6 7 \\(D(t)\\) (miles) 10 55 90 153 214 240 292 300 Solution Here, your average speed is the average rate of change. You traveled 282 miles in 6 hours, for an average speed of \\[\\dfrac{292-10}{6-0} =\\dfrac{282}{6}= 47\\text{ miles per hour}\\nonumber\\]"
+    },
+    {
+      "text": "Example \\(\\PageIndex{4}\\) Compute the average rate of change of \\(f(x)=x^{2} -\\dfrac{1}{x}\\) on the interval [2, 4]. Solution We can start by computing the function values at each endpoint of the interval \\[f(2)=2^{2} -\\dfrac{1}{2} =4-\\dfrac{1}{2} =\\dfrac{7}{2} \\nonumber\\] \\[f(4)=4^{2} -\\dfrac{1}{4} =16-\\dfrac{1}{4} =\\dfrac{63}{4} \\nonumber\\] Now computing the average rate of change \\[\\text{Average rate of change} = \\dfrac{f(4) - f(2)}{4 - 2} =\\dfrac{\\dfrac{63}{4} -\\dfrac{7}{2} }{4-2} =\\dfrac{\\dfrac{49}{4} }{2} = \\dfrac{49}{8} \\nonumber\\]"
+    },
+    {
+      "text": "Example \\(\\PageIndex{5}\\) The magnetic force \\(F\\), measured in Newtons, between two magnets is related to the distance between the magnets \\(d\\), in centimeters, by the formula \\(F(d)=\\dfrac{2}{d^{2} }\\). Find the average rate of change of force if the distance between the magnets is increased from 2 cm to 6 cm. Solution We are computing the average rate of change of \\(F(d)=\\dfrac{2}{d^{2} }\\) on the interval [2, 6]. Average rate of change = \\(\\dfrac{F(6) - F(2)}{6 - 2}\\) Evaluating the function \\[\\dfrac{F(6)-F(2)}{6-2} =\\nonumber \\] \\[= \\dfrac{\\dfrac{2}{6^{2} } -\\dfrac{2}{2^{2} } }{6-2}\\nonumber \\] Simplifying \\[= \\dfrac{\\dfrac{2}{36} -\\dfrac{2}{4} }{4}\\nonumber \\] Combining the numerator terms \\[= \\dfrac{\\dfrac{-16}{36} }{4}\\nonumber \\] Simplifying further \\[= \\dfrac{-1}{9}\\nonumber \\] Newtons per centimeter This tells us the magnetic force decreases, on average, by 1/9 Newtons per centimeter over this interval."
+    },
+    {
+      "text": "Example \\(\\PageIndex{6}\\) Find the average rate of change of \\(g(t)=t^{2} +3t+1\\)on the interval \\([0, a]\\). Your answer will be an expression involving a . Solution Using the average rate of change formula \\[\\dfrac{g(a)-g(0)}{a-0}\\nonumber\\] Evaluating the function \\[\\dfrac{(a^{2} +3a+1)-(0^{2} +3(0)+1)}{a-0}\\nonumber\\] Simplifying \\[\\dfrac{a^{2} +3a+1-1}{a}\\nonumber\\] Simplifying further, and factoring \\[\\dfrac{a(a+3)}{a}\\nonumber\\] Cancelling the common factor \\(a\\) \\[a+3\\nonumber\\] This result tells us the average rate of change between t = 0 and any other point t = a . For example, on the interval [0, 5], the average rate of change would be 5+3 = 8."
+    },
+    {
+      "text": "Example \\(\\PageIndex{7}\\) Given the function \\(p(t)\\) graphed here, on what intervals does the function appear to be increasing? The function appears to be increasing from \\(t = 1\\) to \\(t = 3\\), and from \\(t = 4\\) on. In interval notation, we would say the function appears to be increasing on the interval \\((1, 3)\\)and the interval \\((4, \\infty)\\). Solution Add text here."
+    },
+    {
+      "text": "Example \\(\\PageIndex{8}\\) Using the cost of gasoline function from the beginning of the section, find an interval on which the function appears to be decreasing. Estimate any local extrema using the table. \\(t\\) 2 3 4 5 6 7 8 9 \\(C(t)\\) 1.47 1.69 1.94 2.30 2.51 2.64 3.01 2.14 It appears that the cost of gas increased from \\(t = 2\\) to \\(t = 8\\). It appears the cost of gas decreased from \\(t = 8\\) to \\(t = 9\\), so the function appears to be decreasing on the interval (8, 9). Since the function appears to change from increasing to decreasing at \\(t = 8\\), there is local maximum at \\(t = 8\\)."
+    },
+    {
+      "text": "Example \\(\\PageIndex{9}\\) Use a graph to estimate the local extrema of the function \\(f(x)=\\dfrac{2}{x} +\\dfrac{x}{3}\\). Use these to determine the intervals on which the function is increasing. Solution Using technology to graph the function, it appears there is a local minimum somewhere between \\(x = 2\\) and \\(x = 3\\), and a symmetric local maximum somewhere between \\(x = -3\\) and \\(x = -2\\). Most graphing calculators and graphing utilities can estimate the location of maxima and minima. Below are screen images from two different technologies, showing the estimate for the local maximum and minimum. Based on these estimates, the function is increasing on the intervals \\((-\\infty , -2.449)\\)and \\((2.449, \\infty )\\). Notice that while we expect the extrema to be symmetric, the two different technologies agree only up to 4 decimals due to the differing approximation algorithms used by each."
+    },
+    {
+      "text": "Example \\(\\PageIndex{10}\\) An object is thrown from the top of a building. The object’s height in feet above ground after t seconds is given by the function \\(h(t)=144 - 16t^{2}\\) for \\(0 \\le t \\le 3\\). Describe the concavity of the graph. Sketching a graph of the function, we can see that the function is decreasing. We can calculate some rates of change to explore the behavior. Notice that the rates of change are becoming more negative, so the rates of change are decreasing . This means the function is concave down."
+    },
+    {
+      "text": "Example \\(\\PageIndex{11}\\) The value, \\(V\\), of a car after \\(t\\) years is given in the table below. Is the value increasing or decreasing? Is the function concave up or concave down? Solution can compute rates of change to determine concavity. Since these values are becoming less negative, the rates of change are increasing , so this function is concave up."
+    },
+    {
+      "text": "Example \\(\\PageIndex{12}\\) Estimate from the graph shown the intervals on which the function is concave down and concave up. On the far left, the graph is decreasing but concave up, since it is bending upwards. It begins increasing at \\(x = -2\\), but it continues to bend upwards until about \\(x = -1\\). From \\(x = -1\\) the graph starts to bend downward, and continues to do so until about \\(x = 2\\). The graph then begins curving upwards for the remainder of the graph shown. From this, we can estimate that the graph is concave up on the intervals \\((-\\infty, -1)\\) and \\((2, \\infty)\\), and is concave down on the interval \\((-1, 2)\\). The graph has inflection points at \\(x = -1\\) and \\(x = 2\\)."
+    }
+  ],
+  "internal_links": [
+    {
+      "text": "Precalculus & Trigonometry",
+      "url": "https://math.libretexts.org/Bookshelves/Precalculus"
+    },
+    {
+      "text": "Precalculus - An Investigation of Functions (Lippman and Rasmussen)",
+      "url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)"
+    },
+    {
+      "text": "1: Functions",
+      "url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/01%3A_Functions"
+    },
+    {
+      "text": "1.3: Rates of Change and Behavior of Graphs",
+      "url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/01%3A_Functions/1.03%3A_Rates_of_Change_and_Behavior_of_Graphs"
+    },
+    {
+      "text": "1.2E: Domain and Range",
+      "url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/01%3A_Functions/1.02%3A_Domain_and_Range/1.2E%3A_Domain_and_Range"
+    },
+    {
+      "text": "1.3E: Rates of Change and Behavior of Graphs",
+      "url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/01%3A_Functions/1.03%3A_Rates_of_Change_and_Behavior_of_Graphs/1.3E%3A_Rates_of_Change_and_Behavior_of_Graphs"
+    }
+  ],
+  "subsections": [
+    {
+      "heading": "Graphical Behavior of Functions",
+      "level": "h2",
+      "body_text": "As part of exploring how functions change, it is interesting to explore the graphical behavior of functions. Notice in the last example that we used open intervals (intervals that don’t include the endpoints) since the function is neither increasing nor decreasing at \\(t =\\) 1, 3, or 4. Exercise \\(\\PageIndex{4}\\) Use a graph of the function \\(f(x)=x^{3} -6x^{2} -15x + 20\\) to estimate the local extrema of the function. Use these to determine the intervals on which the function is increasing and decreasing. Based on the graph, the local maximum appears to occur at (-1, 28), and the local minimum occurs at (5, -80). The function is increasing on \\((-\\infty, -1) \\cup (5, \\infty)\\) and decreasing on (−1, 5) .",
+      "definitions": [
+        {
+          "kind": "boxed",
+          "text": "Definition: increasing/decreasing A function is increasing on an interval if the function values increase as the inputs increase. More formally, a function is increasing if \\(f(b) > f(a)\\) for any two input values a and b in the interval with \\(b > a\\). The average rate of change of an increasing function is positive. A function is decreasing on an interval if the function values decrease as the inputs increase. More formally, a function is decreasing if \\(f(b) < f(a)\\) for any two input values a and b in the interval with \\(b > a\\). The average rate of change of a decreasing function is negative."
+        },
+        {
+          "kind": "boxed",
+          "text": "Definition: Local Extrema A point where a function changes from increasing to decreasing is called a local maximum . A point where a function changes from decreasing to increasing is called a local minimum . Together, local maxima and minima are called the local extrema , or local extreme values, of the function."
+        }
+      ],
+      "examples": [
+        {
+          "text": "Example \\(\\PageIndex{7}\\) Given the function \\(p(t)\\) graphed here, on what intervals does the function appear to be increasing? The function appears to be increasing from \\(t = 1\\) to \\(t = 3\\), and from \\(t = 4\\) on. In interval notation, we would say the function appears to be increasing on the interval \\((1, 3)\\)and the interval \\((4, \\infty)\\). Solution Add text here."
+        },
+        {
+          "text": "Example \\(\\PageIndex{8}\\) Using the cost of gasoline function from the beginning of the section, find an interval on which the function appears to be decreasing. Estimate any local extrema using the table. \\(t\\) 2 3 4 5 6 7 8 9 \\(C(t)\\) 1.47 1.69 1.94 2.30 2.51 2.64 3.01 2.14 It appears that the cost of gas increased from \\(t = 2\\) to \\(t = 8\\). It appears the cost of gas decreased from \\(t = 8\\) to \\(t = 9\\), so the function appears to be decreasing on the interval (8, 9). Since the function appears to change from increasing to decreasing at \\(t = 8\\), there is local maximum at \\(t = 8\\)."
+        },
+        {
+          "text": "Example \\(\\PageIndex{9}\\) Use a graph to estimate the local extrema of the function \\(f(x)=\\dfrac{2}{x} +\\dfrac{x}{3}\\). Use these to determine the intervals on which the function is increasing. Solution Using technology to graph the function, it appears there is a local minimum somewhere between \\(x = 2\\) and \\(x = 3\\), and a symmetric local maximum somewhere between \\(x = -3\\) and \\(x = -2\\). Most graphing calculators and graphing utilities can estimate the location of maxima and minima. Below are screen images from two different technologies, showing the estimate for the local maximum and minimum. Based on these estimates, the function is increasing on the intervals \\((-\\infty , -2.449)\\)and \\((2.449, \\infty )\\). Notice that while we expect the extrema to be symmetric, the two different technologies agree only up to 4 decimals due to the differing approximation algorithms used by each."
+        }
+      ]
+    },
+    {
+      "heading": "Concavity",
+      "level": "h2",
+      "body_text": "The total sales, in thousands of dollars, for two companies over 4 weeks are shown. As you can see, the sales for each company are increasing, but they are increasing in very different ways. To describe the difference in behavior, we can investigate how the average rate of change varies over different intervals. Using tables of values, From the tables, we can see that the rate of change for company A is decreasing , while the rate of change for company B is increasing . When the rate of change is getting smaller, as with Company A, we say the function is concave down . When the rate of change is getting larger, as with Company B, we say the function is concave up . Exercise \\(\\PageIndex{5}\\) Is the function described in the table below concave up or concave down? Calculating the rates of change, we see the rates of change become more negative, so the rates of change are decreasing . This function is concave down. Graphically, concave down functions bend downwards like a frown, and concave up function bend upwards like a smile. Exercise \\(\\PageIndex{6}\\) Using the graph from Try it Now 4, \\(f(x)=x^{3} -6x^{2} -15x+20\\), estimate the intervals on which the function is concave up and concave down. Looking at the graph, it appears the function is concave down on \\((−\\infty,2)\\) and concave up on \\((2, \\infty)\\).",
+      "definitions": [
+        {
+          "kind": "boxed",
+          "text": "Definition: concavity A function is concave up if the rate of change is increasing. A function is concave down if the rate of change is decreasing. A point where a function changes from concave up to concave down or vice versa is called an inflection point ."
+        }
+      ],
+      "examples": [
+        {
+          "text": "Example \\(\\PageIndex{10}\\) An object is thrown from the top of a building. The object’s height in feet above ground after t seconds is given by the function \\(h(t)=144 - 16t^{2}\\) for \\(0 \\le t \\le 3\\). Describe the concavity of the graph. Sketching a graph of the function, we can see that the function is decreasing. We can calculate some rates of change to explore the behavior. Notice that the rates of change are becoming more negative, so the rates of change are decreasing . This means the function is concave down."
+        },
+        {
+          "text": "Example \\(\\PageIndex{11}\\) The value, \\(V\\), of a car after \\(t\\) years is given in the table below. Is the value increasing or decreasing? Is the function concave up or concave down? Solution can compute rates of change to determine concavity. Since these values are becoming less negative, the rates of change are increasing , so this function is concave up."
+        },
+        {
+          "text": "Example \\(\\PageIndex{12}\\) Estimate from the graph shown the intervals on which the function is concave down and concave up. On the far left, the graph is decreasing but concave up, since it is bending upwards. It begins increasing at \\(x = -2\\), but it continues to bend upwards until about \\(x = -1\\). From \\(x = -1\\) the graph starts to bend downward, and continues to do so until about \\(x = 2\\). The graph then begins curving upwards for the remainder of the graph shown. From this, we can estimate that the graph is concave up on the intervals \\((-\\infty, -1)\\) and \\((2, \\infty)\\), and is concave down on the interval \\((-1, 2)\\). The graph has inflection points at \\(x = -1\\) and \\(x = 2\\)."
+        }
+      ]
+    },
+    {
+      "heading": "Behaviors of the Toolkit Functions",
+      "level": "h2",
+      "body_text": "We will now return to our toolkit functions and discuss their graphical behavior. Function Increasing/Decreasing Concavity Constant Function \\(f(x)=c\\) Neither increasing nor decreasing Neither concave up nor down Identity Function \\(f(x)=x\\) Increasing Neither concave up nor down Quadratic Function \\(f(x)=x^{2}\\) Increasing on \\((0,\\infty )\\) Decreasing on \\((-\\infty ,0)\\) Minimum at \\(x = 0\\) Concave up \\((-\\infty ,\\infty )\\) Cubic Function \\(f(x)=x^{3}\\) Increasing Concave down on \\((-\\infty ,0)\\) Concave up on \\((0,\\infty )\\) Inflection point at (0,0) Reciprocal \\(f(x)=\\dfrac{1}{x}\\) Decreasing \\((-\\infty ,0) \\cup (0,\\infty )\\) Concave down on \\((-\\infty ,0)\\) Concave up on \\((0,\\infty )\\) Function Increasing/Decreasing Concavity Reciprocal squared \\(f(x)=\\dfrac{1}{x^{2} }\\) Increasing on \\((-\\infty ,0)\\) Decreasing on \\((0,\\infty )\\) Concave up on \\((-\\infty ,0) \\cup (0,\\infty )\\) Cube Root \\(f(x)=\\sqrt[{3}]{x}\\) Increasing Concave down on \\((0,\\infty )\\) Concave up on \\((-\\infty ,0)\\) Inflection point at (0,0) Square Root \\(f(x)=\\sqrt[{}]{x}\\) Increasing on \\((0,\\infty )\\) Concave down on \\((0,\\infty )\\) Absolute Value \\(f(x)=\\left|x\\right|\\) Increasing on \\((0, \\infty )\\) Decreasing on \\((-\\infty , 0)\\) Neither concave up or down",
+      "definitions": [],
+      "examples": []
+    }
+  ],
+  "char_count": 6112
+}

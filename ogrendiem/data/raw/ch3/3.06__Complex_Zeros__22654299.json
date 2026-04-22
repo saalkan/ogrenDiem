@@ -1,0 +1,118 @@
+{
+  "url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/03%3A_Polynomial_and_Rational_Functions./3.06%3A_Complex_Zeros",
+  "title": "3.6: Complex Zeros",
+  "chapter": "3",
+  "section": "6",
+  "body_text": "When finding the zeros of polynomials, at some point you’re faced with the problem \\(x^{2} =-1\\). While there are clearly no real numbers that are solutions to this equation, leaving things there has a certain feel of incompleteness. To address that, we will need utilize the imaginary unit, \\(i\\). A complex number is the sum of a real number and an imaginary number. Arithmetic on Complex Numbers Before we dive into the more complicated uses of complex numbers, let’s make sure we remember the basic arithmetic involved. To add or subtract complex numbers, we simply add the like terms, combining the real parts and combining the imaginary parts. Exercise \\(\\PageIndex{1}\\) Subtract \\(2+5i\\) from \\(3-4i\\). Answer \\[(3-4i)-(2+5i)=1-9i \\nonumber\\] We can also multiply and divide complex numbers. Exercise \\(\\PageIndex{2}\\) Multiply \\(3-4i\\) and \\(2+3i\\). Answer \\[(3-4i)(2+3i)=18+i\\nonumber\\] In the last example, we used the conjugate of a complex number Complex Zeros of Polynomials Complex numbers allow us a way to write solutions to quadratic equations that do not have real solutions. Exercise \\(\\PageIndex{3}\\) Find the zeros of \\(f(x)=2x^{2} +3x+4\\). Answer \\[x=\\dfrac{-3\\pm \\sqrt{(3)^{2} -4(2)(4)} }{2(2)} =\\dfrac{-3\\pm \\sqrt{-23} }{4} =\\dfrac{-3\\pm i\\sqrt{23} }{4} =\\dfrac{-3}{4} \\pm \\dfrac{\\sqrt{23} }{4} i \\nonumber\\] Two things are important to note. First, the zeros \\(1+2i\\) and \\(1-2i\\) are complex conjugates. This will always be the case when we find non-real zeros to a quadratic function with real coefficients. Second, we could write \\[f(x)=x^{2} -2x+5=\\left(x-\\left(1+2i\\right)\\right)\\left(x-\\left(1-2i\\right)\\right) \\nonumber\\] if we really wanted to, so the Factor and Remainder Theorems hold. How do we know if a general polynomial has any complex zeros? We have seen examples of polynomials with no real zeros; can there be polynomials with no zeros at all? The answer to that last question, which comes from the Fundamental Theorem of Algebra, is \"No.\" Theorem: Fundamental theorem of algebra A non-constant polynomial \\(f\\) with real or complex coefficients will have at least one real or complex zero. This theorem is an example of an \"existence\" theorem in mathematics. It guarantees the existence of at least one zero, but provides no algorithm to use for finding it. Now suppose we have a polynomial \\(f(x)\\) of degree \\(n\\). The Fundamental Theorem of Algebra guarantees at least one zero \\(z_{1}\\), then the Factor Theorem guarantees that \\(f\\) can be factored as \\(f(x)=\\left(x - z_{1} \\right)q_{1} (x)\\), where the quotient \\(q_{1} (x)\\) will be of degree \\(n - 1\\). If this function is non-constant, than the Fundamental Theorem of Algebra applies to it, and we can find another zero. This can be repeated \\(n\\) times. Theorem: complex factorization theorem If \\(f\\) is a polynomial \\(f\\) with real or complex coefficients with degree \\(n \\ge 1\\), then \\(f\\) has exactly \\(n\\) real or complex zeros, counting multiplicities. If \\(z_{1} ,z_{2} ,\\ldots ,z_{k}\\) are the distinct zero of \\(f\\) with multiplicities \\(m_{1} ,m_{2} ,\\ldots ,m_{k}\\) respectively, then \\[f(x)=a\\left(x-z_{1} \\right)^{m_{1} } \\left(x-z_{2} \\right)^{m_{2} } \\cdots \\left(x-z_{k} \\right)^{m_{k} }\\] When factoring a polynomial like we did at the end of the last example, we say that it is factored completely over the complex numbers , meaning it is impossible to factor the polynomial any further using complex numbers. If we wanted to factor the function over the real numbers , we would have stopped at \\(f(x)=12\\left(x-\\dfrac{1}{2} \\right)^{2} \\left(x+\\dfrac{1}{3} \\right)\\left(x^{2} -x+1\\right)\\). Since the zeros of \\(x^{2} -x+1\\) are nonreal, we call \\(x^{2} -x+1\\) an irreducible quadratic meaning it is impossible to break it down any further using real numbers. It turns out that a polynomial with real number coefficients can be factored into a product of linear factors corresponding to the real zeros of the function and irreducible quadratic factors which give the nonreal zeros of the function. Consequently, any nonreal zeros will come in conjugate pairs, so if \\(z\\) is a zero of the polynomial, so is \\(\\bar{z}\\). Exercise \\(\\PageIndex{4}\\) Find the real and complex zeros of \\(f(x)=x^{3} -4x^{2} +9x-10\\). Answer Cauchy’s Bound limits us to the interval [-11, 11]. The rational roots theorem gives a list of potential zeros: \\(\\left\\{\\pm 1,\\pm 2,\\pm 5,\\pm 10\\right\\}\\). A quick graph shows that the likely rational root is \\(x = 2\\). Verifying this, So \\(f(x)=(x-2)(x^{2} -2x+5)\\) Using quadratic formula, we can find the complex roots from the irreducible quadratic. \\[x=\\dfrac{-(-2)\\pm \\sqrt{(-2)^{2} -4(1)(5)} }{2(1)} =\\dfrac{2\\pm \\sqrt{-16} }{2} =\\dfrac{-2\\pm 4i}{2} =-1\\pm 2i\\nonumber \\] The zeros of this polynomial are \\(x=2,\\; -1+2i,\\; -1-2i\\) Important Topics of This Section Complex and Imaginary numbers Finding Complex zeros of polynomials",
+  "definitions": [
+    {
+      "kind": "boxed",
+      "text": "Definition: Imaginary number \\(i\\) The most basic complex number is \\(i\\), defined to be \\(i=\\sqrt{-1}\\), commonly called an imaginary number . Any real multiple of i is also an imaginary number."
+    },
+    {
+      "kind": "boxed",
+      "text": "Definition: Complex Numbers A complex number is a number \\(z=a+bi\\), where \\(a\\) and \\(b\\) are real numbers \\(a\\) is the real part of the complex number \\(b\\) is the imaginary part of the complex number \\[i=\\sqrt{-1}\\]"
+    },
+    {
+      "kind": "boxed",
+      "text": "Definition: Complex Conjugate The conjugate of a complex number \\(a+bi\\) is the number \\(a-bi\\). The notation commonly used for conjugation is a bar: \\[\\overline{a+bi}=a-bi\\nonumber\\]"
+    },
+    {
+      "kind": "inline",
+      "text": "Definition: Imaginary number \\(i\\)"
+    },
+    {
+      "kind": "inline",
+      "text": "Definition: Complex Numbers"
+    },
+    {
+      "kind": "inline",
+      "text": "Definition: Complex Conjugate"
+    }
+  ],
+  "examples": [
+    {
+      "text": "Example \\(\\PageIndex{1}\\) Simplify \\(\\sqrt{-9}\\). Solution We can separate \\(\\sqrt{-9}\\) as \\(\\sqrt{9} \\sqrt{-1}\\). We can take the square root of 9, and write the square root of -1 as \\(i\\). \\[\\sqrt{-9} =\\sqrt{9} \\sqrt{-1} =3i \\nonumber\\]"
+    },
+    {
+      "text": "Example \\(\\PageIndex{2}\\) Add \\(3-4i\\) and \\(2+5i\\). Solution Adding \\((3-4i)+(2+5i)\\), we add the real parts and the imaginary parts \\[3+2-4i+5i\\nonumber\\] \\[5+i \\nonumber\\]"
+    },
+    {
+      "text": "Example \\(\\PageIndex{3}\\) Multiply: \\(4(2+5i)\\). Solution To multiply the complex number by a real number, we simply distribute as we would when multiplying polynomials. \\[\\begin{align*} 4(2+5i) &=4\\cdot 2+4\\cdot 5i \\\\[4pt] &=8+20i \\end{align*}\\]"
+    },
+    {
+      "text": "Example \\(\\PageIndex{4}\\) Divide \\(\\dfrac{(2+5i)}{(4-i)}\\). Solution To divide two complex numbers, we have to devise a way to write this as a complex number with a real part and an imaginary part. We start this process by eliminating the complex number in the denominator. To do this, we multiply the numerator and denominator by a special complex number so that the result in the denominator is a real number. The number we need to multiply by is called the complex conjugate , in which the sign of the imaginary part is changed. Here, 4+ i is the complex conjugate of 4– i . Of course, obeying our algebraic rules, we must multiply by 4+ i on both the top and bottom. \\[\\dfrac{(2+5i)}{(4-i)} \\, \\cdot \\dfrac{(4+i)}{(4+i)} \\nonumber \\] To multiply two complex numbers, we expand the product as we would with polynomials (the process commonly called FOIL – “first outer inner last”). In the numerator: \\[(2+5i)(4+i)\\nonumber\\] Expand \\[=8+20i+2i+5i^{2}\\nonumber\\] Since \\(i=\\sqrt{-1}\\), \\(i^{2} =-1\\) \\[=8+20i+2i+5(-1)\\nonumber\\] Simplify \\[=3+22i\\nonumber\\] Following the same process to multiply the denominator \\[(4-i)(4+i)\\nonumber\\] Expand \\[=(16-4i+4i-i^{2} )\\nonumber\\] Since \\(i=\\sqrt{-1}\\), \\(i^{2} =-1\\) \\[=(16-(-1))\\nonumber\\] \\[=17\\nonumber\\] Combining this we get \\(\\dfrac{3+22i}{17} =\\dfrac{3}{17} +\\dfrac{22i}{17}\\)"
+    },
+    {
+      "text": "Example \\(\\PageIndex{5}\\) Find the zeros of \\(f(x)=x^{2} -2x+5\\). Solution Using the quadratic formula, \\[x=\\dfrac{2\\pm \\sqrt{(-2)^{2} -4(1)(5)} }{2(1)} =\\dfrac{2\\pm \\sqrt{-16} }{2} =\\dfrac{2\\pm 4i}{2} =1\\pm 2i. \\nonumber\\]"
+    },
+    {
+      "text": "Example \\(\\PageIndex{6}\\) Find all the real and complex zeros of \\(f(x)=12x^{5} -20x^{4} +19x^{3} -6x^{2} -2x+1\\). Solution Using the Rational Roots Theorem, the possible real rational roots are \\[\\left\\{\\pm \\dfrac{1}{1} ,\\pm \\dfrac{1}{2} ,\\pm \\dfrac{1}{3} ,\\pm \\dfrac{1}{4} ,\\pm \\dfrac{1}{6} ,\\pm \\dfrac{1}{12} \\right\\}\\nonumber \\] Testing \\(\\dfrac{1}{2}\\), Success! Because the graph bounces at this intercept, it is likely that this zero has multiplicity 2. We can try synthetic division again to test that. The other real root appears to be \\(-\\dfrac{1}{3}\\) or \\(-\\dfrac{1}{4}\\). Testing \\(-\\dfrac{1}{3}\\), Excellent! So far, we have factored the polynomial to \\[f(x)=\\left(x-\\dfrac{1}{2} \\right)^{2} \\left(x+\\dfrac{1}{3} \\right)\\left(12x^{2} -12x+12\\right)=12\\left(x-\\dfrac{1}{2} \\right)^{2} \\left(x+\\dfrac{1}{3} \\right)\\left(x^{2} -x+1\\right)\\nonumber \\] We can use the quadratic formula to find the two remaining zeros by setting \\(x^{2} -x+1=0\\), which are likely complex zeros. \\[x=\\dfrac{1\\pm \\sqrt{(-1)^{2} -4(1)(1)} }{2(1)} =\\dfrac{1\\pm \\sqrt{-3} }{2} =\\dfrac{1\\pm i\\sqrt{3} }{2} \\nonumber \\] The zeros of the function are \\(x=\\dfrac{1}{2} ,-\\dfrac{1}{3} ,\\dfrac{1+i\\sqrt{3} }{2} ,\\dfrac{1-i\\sqrt{3} }{2}\\). We could write the function fully factored as \\(f(x)=12\\left(x-\\dfrac{1}{2} \\right)^{2} \\left(x+\\dfrac{1}{3} \\right)\\left(x-\\dfrac{1+i\\sqrt{3} }{2} \\right)\\left(x-\\dfrac{1-i\\sqrt{3} }{2} \\right)\\)."
+    }
+  ],
+  "internal_links": [
+    {
+      "text": "Precalculus & Trigonometry",
+      "url": "https://math.libretexts.org/Bookshelves/Precalculus"
+    },
+    {
+      "text": "Precalculus - An Investigation of Functions (Lippman and Rasmussen)",
+      "url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)"
+    },
+    {
+      "text": "3: Polynomial and Rational Functions.",
+      "url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/03%3A_Polynomial_and_Rational_Functions."
+    },
+    {
+      "text": "3.6: Complex Zeros",
+      "url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/03%3A_Polynomial_and_Rational_Functions./3.06%3A_Complex_Zeros"
+    },
+    {
+      "text": "3.5E: Real Zeros of Polynomials (Exercises)",
+      "url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/03%3A_Polynomial_and_Rational_Functions./3.05%3A_Real_Zeros_of_Polynomials/3.5E%3A_Real_Zeros_of_Polynomials_(Exercises)"
+    },
+    {
+      "text": "3.6E: Complex Zeros (Exercises)",
+      "url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/03%3A_Polynomial_and_Rational_Functions./3.06%3A_Complex_Zeros/3.6E%3A_Complex_Zeros_(Exercises)"
+    }
+  ],
+  "subsections": [
+    {
+      "heading": "Arithmetic on Complex Numbers",
+      "level": "h2",
+      "body_text": "Before we dive into the more complicated uses of complex numbers, let’s make sure we remember the basic arithmetic involved. To add or subtract complex numbers, we simply add the like terms, combining the real parts and combining the imaginary parts. Exercise \\(\\PageIndex{1}\\) Subtract \\(2+5i\\) from \\(3-4i\\). \\[(3-4i)-(2+5i)=1-9i \\nonumber\\] We can also multiply and divide complex numbers. Exercise \\(\\PageIndex{2}\\) Multiply \\(3-4i\\) and \\(2+3i\\). \\[(3-4i)(2+3i)=18+i\\nonumber\\] In the last example, we used the conjugate of a complex number",
+      "definitions": [
+        {
+          "kind": "boxed",
+          "text": "Definition: Complex Conjugate The conjugate of a complex number \\(a+bi\\) is the number \\(a-bi\\). The notation commonly used for conjugation is a bar: \\[\\overline{a+bi}=a-bi\\nonumber\\]"
+        }
+      ],
+      "examples": [
+        {
+          "text": "Example \\(\\PageIndex{2}\\) Add \\(3-4i\\) and \\(2+5i\\). Solution Adding \\((3-4i)+(2+5i)\\), we add the real parts and the imaginary parts \\[3+2-4i+5i\\nonumber\\] \\[5+i \\nonumber\\]"
+        },
+        {
+          "text": "Example \\(\\PageIndex{3}\\) Multiply: \\(4(2+5i)\\). Solution To multiply the complex number by a real number, we simply distribute as we would when multiplying polynomials. \\[\\begin{align*} 4(2+5i) &=4\\cdot 2+4\\cdot 5i \\\\[4pt] &=8+20i \\end{align*}\\]"
+        },
+        {
+          "text": "Example \\(\\PageIndex{4}\\) Divide \\(\\dfrac{(2+5i)}{(4-i)}\\). Solution To divide two complex numbers, we have to devise a way to write this as a complex number with a real part and an imaginary part. We start this process by eliminating the complex number in the denominator. To do this, we multiply the numerator and denominator by a special complex number so that the result in the denominator is a real number. The number we need to multiply by is called the complex conjugate , in which the sign of the imaginary part is changed. Here, 4+ i is the complex conjugate of 4– i . Of course, obeying our algebraic rules, we must multiply by 4+ i on both the top and bottom. \\[\\dfrac{(2+5i)}{(4-i)} \\, \\cdot \\dfrac{(4+i)}{(4+i)} \\nonumber \\] To multiply two complex numbers, we expand the product as we would with polynomials (the process commonly called FOIL – “first outer inner last”). In the numerator: \\[(2+5i)(4+i)\\nonumber\\] Expand \\[=8+20i+2i+5i^{2}\\nonumber\\] Since \\(i=\\sqrt{-1}\\), \\(i^{2} =-1\\) \\[=8+20i+2i+5(-1)\\nonumber\\] Simplify \\[=3+22i\\nonumber\\] Following the same process to multiply the denominator \\[(4-i)(4+i)\\nonumber\\] Expand \\[=(16-4i+4i-i^{2} )\\nonumber\\] Since \\(i=\\sqrt{-1}\\), \\(i^{2} =-1\\) \\[=(16-(-1))\\nonumber\\] \\[=17\\nonumber\\] Combining this we get \\(\\dfrac{3+22i}{17} =\\dfrac{3}{17} +\\dfrac{22i}{17}\\)"
+        }
+      ]
+    },
+    {
+      "heading": "Complex Zeros of Polynomials",
+      "level": "h2",
+      "body_text": "Complex numbers allow us a way to write solutions to quadratic equations that do not have real solutions. Exercise \\(\\PageIndex{3}\\) Find the zeros of \\(f(x)=2x^{2} +3x+4\\). \\[x=\\dfrac{-3\\pm \\sqrt{(3)^{2} -4(2)(4)} }{2(2)} =\\dfrac{-3\\pm \\sqrt{-23} }{4} =\\dfrac{-3\\pm i\\sqrt{23} }{4} =\\dfrac{-3}{4} \\pm \\dfrac{\\sqrt{23} }{4} i \\nonumber\\] Two things are important to note. First, the zeros \\(1+2i\\) and \\(1-2i\\) are complex conjugates. This will always be the case when we find non-real zeros to a quadratic function with real coefficients. Second, we could write \\[f(x)=x^{2} -2x+5=\\left(x-\\left(1+2i\\right)\\right)\\left(x-\\left(1-2i\\right)\\right) \\nonumber\\] if we really wanted to, so the Factor and Remainder Theorems hold. How do we know if a general polynomial has any complex zeros? We have seen examples of polynomials with no real zeros; can there be polynomials with no zeros at all? The answer to that last question, which comes from the Fundamental Theorem of Algebra, is \"No.\" Theorem: Fundamental theorem of algebra A non-constant polynomial \\(f\\) with real or complex coefficients will have at least one real or complex zero. This theorem is an example of an \"existence\" theorem in mathematics. It guarantees the existence of at least one zero, but provides no algorithm to use for finding it. Now suppose we have a polynomial \\(f(x)\\) of degree \\(n\\). The Fundamental Theorem of Algebra guarantees at least one zero \\(z_{1}\\), then the Factor Theorem guarantees that \\(f\\) can be factored as \\(f(x)=\\left(x - z_{1} \\right)q_{1} (x)\\), where the quotient \\(q_{1} (x)\\) will be of degree \\(n - 1\\). If this function is non-constant, than the Fundamental Theorem of Algebra applies to it, and we can find another zero. This can be repeated \\(n\\) times. Theorem: complex factorization theorem If \\(f\\) is a polynomial \\(f\\) with real or complex coefficients with degree \\(n \\ge 1\\), then \\(f\\) has exactly \\(n\\) real or complex zeros, counting multiplicities. If \\(z_{1} ,z_{2} ,\\ldots ,z_{k}\\) are the distinct zero of \\(f\\) with multiplicities \\(m_{1} ,m_{2} ,\\ldots ,m_{k}\\) respectively, then \\[f(x)=a\\left(x-z_{1} \\right)^{m_{1} } \\left(x-z_{2} \\right)^{m_{2} } \\cdots \\left(x-z_{k} \\right)^{m_{k} }\\] When factoring a polynomial like we did at the end of the last example, we say that it is factored completely over the complex numbers , meaning it is impossible to factor the polynomial any further using complex numbers. If we wanted to factor the function over the real numbers , we would have stopped at \\(f(x)=12\\left(x-\\dfrac{1}{2} \\right)^{2} \\left(x+\\dfrac{1}{3} \\right)\\left(x^{2} -x+1\\right)\\). Since the zeros of \\(x^{2} -x+1\\) are nonreal, we call \\(x^{2} -x+1\\) an irreducible quadratic meaning it is impossible to break it down any further using real numbers. It turns out that a polynomial with real number coefficients can be factored into a product of linear factors corresponding to the real zeros of the function and irreducible quadratic factors which give the nonreal zeros of the function. Consequently, any nonreal zeros will come in conjugate pairs, so if \\(z\\) is a zero of the polynomial, so is \\(\\bar{z}\\). Exercise \\(\\PageIndex{4}\\) Find the real and complex zeros of \\(f(x)=x^{3} -4x^{2} +9x-10\\). Cauchy’s Bound limits us to the interval [-11, 11]. The rational roots theorem gives a list of potential zeros: \\(\\left\\{\\pm 1,\\pm 2,\\pm 5,\\pm 10\\right\\}\\). A quick graph shows that the likely rational root is \\(x = 2\\). Verifying this, So \\(f(x)=(x-2)(x^{2} -2x+5)\\) Using quadratic formula, we can find the complex roots from the irreducible quadratic. \\[x=\\dfrac{-(-2)\\pm \\sqrt{(-2)^{2} -4(1)(5)} }{2(1)} =\\dfrac{2\\pm \\sqrt{-16} }{2} =\\dfrac{-2\\pm 4i}{2} =-1\\pm 2i\\nonumber \\] The zeros of this polynomial are \\(x=2,\\; -1+2i,\\; -1-2i\\)",
+      "definitions": [],
+      "examples": [
+        {
+          "text": "Example \\(\\PageIndex{5}\\) Find the zeros of \\(f(x)=x^{2} -2x+5\\). Solution Using the quadratic formula, \\[x=\\dfrac{2\\pm \\sqrt{(-2)^{2} -4(1)(5)} }{2(1)} =\\dfrac{2\\pm \\sqrt{-16} }{2} =\\dfrac{2\\pm 4i}{2} =1\\pm 2i. \\nonumber\\]"
+        },
+        {
+          "text": "Example \\(\\PageIndex{6}\\) Find all the real and complex zeros of \\(f(x)=12x^{5} -20x^{4} +19x^{3} -6x^{2} -2x+1\\). Solution Using the Rational Roots Theorem, the possible real rational roots are \\[\\left\\{\\pm \\dfrac{1}{1} ,\\pm \\dfrac{1}{2} ,\\pm \\dfrac{1}{3} ,\\pm \\dfrac{1}{4} ,\\pm \\dfrac{1}{6} ,\\pm \\dfrac{1}{12} \\right\\}\\nonumber \\] Testing \\(\\dfrac{1}{2}\\), Success! Because the graph bounces at this intercept, it is likely that this zero has multiplicity 2. We can try synthetic division again to test that. The other real root appears to be \\(-\\dfrac{1}{3}\\) or \\(-\\dfrac{1}{4}\\). Testing \\(-\\dfrac{1}{3}\\), Excellent! So far, we have factored the polynomial to \\[f(x)=\\left(x-\\dfrac{1}{2} \\right)^{2} \\left(x+\\dfrac{1}{3} \\right)\\left(12x^{2} -12x+12\\right)=12\\left(x-\\dfrac{1}{2} \\right)^{2} \\left(x+\\dfrac{1}{3} \\right)\\left(x^{2} -x+1\\right)\\nonumber \\] We can use the quadratic formula to find the two remaining zeros by setting \\(x^{2} -x+1=0\\), which are likely complex zeros. \\[x=\\dfrac{1\\pm \\sqrt{(-1)^{2} -4(1)(1)} }{2(1)} =\\dfrac{1\\pm \\sqrt{-3} }{2} =\\dfrac{1\\pm i\\sqrt{3} }{2} \\nonumber \\] The zeros of the function are \\(x=\\dfrac{1}{2} ,-\\dfrac{1}{3} ,\\dfrac{1+i\\sqrt{3} }{2} ,\\dfrac{1-i\\sqrt{3} }{2}\\). We could write the function fully factored as \\(f(x)=12\\left(x-\\dfrac{1}{2} \\right)^{2} \\left(x+\\dfrac{1}{3} \\right)\\left(x-\\dfrac{1+i\\sqrt{3} }{2} \\right)\\left(x-\\dfrac{1-i\\sqrt{3} }{2} \\right)\\)."
+        }
+      ]
+    }
+  ],
+  "char_count": 4883
+}

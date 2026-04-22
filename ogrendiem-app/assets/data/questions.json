@@ -1,0 +1,446 @@
+[
+  {
+    "question_id": "ch1_s1_t1__recognize__1",
+    "topic_id": "ch1_s1_t1",
+    "role": "recognize",
+    "tier": "easy",
+    "prompt": "Let's consider bank account information. Is your balance a function of your bank account number?",
+    "solution_steps": [
+      "Recall the definition of a function: each input uniquely determines one output.",
+      "Consider the bank account number as the input and the balance as the output.",
+      "Each unique bank account number corresponds to exactly one balance."
+    ],
+    "answer": "Yes — for each bank account, there is one balance.",
+    "checks": ["function", "bank", "balance"],
+    "origin": "bundled"
+  },
+  {
+    "question_id": "ch1_s1_t1__apply__1",
+    "topic_id": "ch1_s1_t1",
+    "role": "apply",
+    "tier": "easy",
+    "prompt": "At a coffee shop, items map to prices. Is price a function of the item?",
+    "solution_steps": [
+      "Input = item, output = price.",
+      "Check whether each item uniquely determines one price.",
+      "An item has a single set price, so the rule holds."
+    ],
+    "answer": "Yes",
+    "checks": ["function"],
+    "origin": "bundled"
+  },
+  {
+    "question_id": "ch1_s1_t1__vary__1",
+    "topic_id": "ch1_s1_t1",
+    "role": "vary",
+    "tier": "easy",
+    "prompt": "In the relationship between height and age, is age a function of height?",
+    "solution_steps": [
+      "Input = height, output = age.",
+      "Ask if one height corresponds to exactly one age.",
+      "Most people stay the same height for years, so one height maps to many ages."
+    ],
+    "answer": "No",
+    "checks": ["function"],
+    "origin": "bundled"
+  },
+  {
+    "question_id": "ch1_s1_t2__recognize__1",
+    "topic_id": "ch1_s1_t2",
+    "role": "recognize",
+    "tier": "easy",
+    "prompt": "How would you read the function notation $h = f(a)$?",
+    "solution_steps": [
+      "Notation format: output = f(input).",
+      "Here $h$ is the output, $a$ is the input.",
+      "Translate to English."
+    ],
+    "answer": "$h$ is $f$ of $a$",
+    "checks": ["notation", "function"],
+    "origin": "bundled"
+  },
+  {
+    "question_id": "ch1_s1_t2__apply__1",
+    "topic_id": "ch1_s1_t2",
+    "role": "apply",
+    "tier": "easy",
+    "prompt": "A function $N = f(y)$ gives the number of police officers $N$ in a town in year $y$. What does $f(2005) = 300$ mean?",
+    "solution_steps": [
+      "Input 2005 is a year.",
+      "Output 300 is the number of police officers.",
+      "Combine into a sentence about the year 2005."
+    ],
+    "answer": "In 2005 there were 300 police officers in the town.",
+    "checks": ["function", "notation"],
+    "origin": "bundled"
+  },
+  {
+    "question_id": "ch1_s1_t2__vary__1",
+    "topic_id": "ch1_s1_t2",
+    "role": "vary",
+    "tier": "easy",
+    "prompt": "Write function notation for a function $d$ that takes a month name $m$ and returns the number of days in that month.",
+    "solution_steps": [
+      "Function name: $d$.",
+      "Input variable: $m$.",
+      "Put the input inside parentheses after the function name."
+    ],
+    "answer": "$d(m)$",
+    "checks": ["notation"],
+    "origin": "bundled"
+  },
+  {
+    "question_id": "ch3_s1_t1__recognize__1",
+    "topic_id": "ch3_s1_t1",
+    "role": "recognize",
+    "tier": "easy",
+    "prompt": "For $f(x) = x^4$, write symbolically what happens as $x$ grows large positive.",
+    "solution_steps": [
+      "Symbol for positive infinity: $\\infty$.",
+      "Use $\\to$ for 'approaches'.",
+      "Combine for both input and output."
+    ],
+    "answer": "as $x \\to \\infty$, $f(x) \\to \\infty$",
+    "checks": ["infinity", "long"],
+    "origin": "bundled"
+  },
+  {
+    "question_id": "ch3_s1_t1__apply__1",
+    "topic_id": "ch3_s1_t1",
+    "role": "apply",
+    "tier": "easy",
+    "prompt": "Describe in symbols the long-run behavior of $f(x) = -x^4$ as $x \\to \\infty$.",
+    "solution_steps": [
+      "Even power with a negative sign flips the graph vertically.",
+      "Large positive input becomes a large negative output.",
+      "Write using limit notation."
+    ],
+    "answer": "as $x \\to \\infty$, $f(x) \\to -\\infty$",
+    "checks": ["negative", "infinity"],
+    "origin": "bundled"
+  },
+  {
+    "question_id": "ch3_s1_t1__vary__1",
+    "topic_id": "ch3_s1_t1",
+    "role": "vary",
+    "tier": "easy",
+    "prompt": "Describe in symbols the long-run behavior of $f(x) = x^7$ as $x \\to -\\infty$.",
+    "solution_steps": [
+      "Odd power without a reflection.",
+      "For odd powers, negative input gives a negative output.",
+      "Write symbolically."
+    ],
+    "answer": "as $x \\to -\\infty$, $f(x) \\to -\\infty$",
+    "checks": ["negative", "infinity"],
+    "origin": "bundled"
+  },
+  {
+    "question_id": "ch3_s1_t2__recognize__1",
+    "topic_id": "ch3_s1_t2",
+    "role": "recognize",
+    "tier": "easy",
+    "prompt": "Identify the leading term of $f(x) = 3 + 2x^2 - 4x^3$.",
+    "solution_steps": [
+      "List the terms.",
+      "Find the one with the highest power of $x$.",
+      "Highest power is 3."
+    ],
+    "answer": "$-4x^3$",
+    "checks": ["leading", "term"],
+    "origin": "bundled"
+  },
+  {
+    "question_id": "ch3_s1_t2__apply__1",
+    "topic_id": "ch3_s1_t2",
+    "role": "apply",
+    "tier": "easy",
+    "prompt": "Give the degree and leading coefficient of $g(t) = 5t^5 - 2t^3 + 7t$.",
+    "solution_steps": [
+      "Leading term is $5t^5$.",
+      "Degree = highest power = 5.",
+      "Leading coefficient = 5."
+    ],
+    "answer": "Degree 5, leading coefficient 5",
+    "checks": ["degree", "leading"],
+    "origin": "bundled"
+  },
+  {
+    "question_id": "ch3_s1_t2__vary__1",
+    "topic_id": "ch3_s1_t2",
+    "role": "vary",
+    "tier": "easy",
+    "prompt": "What is the leading term of $f(x) = 0.2(x-2)(x+1)(x-5)$ in standard form?",
+    "solution_steps": [
+      "Highest-degree term from each factor is $x$.",
+      "Multiply: $0.2 \\cdot x \\cdot x \\cdot x$.",
+      "Simplify."
+    ],
+    "answer": "$0.2x^3$",
+    "checks": ["leading"],
+    "origin": "bundled"
+  },
+  {
+    "question_id": "ch3_s3_t1__recognize__1",
+    "topic_id": "ch3_s3_t1",
+    "role": "recognize",
+    "tier": "easy",
+    "prompt": "How do you find the vertical intercept of a polynomial function?",
+    "solution_steps": [
+      "The vertical intercept is where the graph crosses the vertical axis.",
+      "The vertical axis is at input zero.",
+      "Evaluate the function at $x = 0$."
+    ],
+    "answer": "Evaluate the function at zero.",
+    "checks": ["intercept", "vertical"],
+    "origin": "bundled"
+  },
+  {
+    "question_id": "ch3_s3_t1__apply__1",
+    "topic_id": "ch3_s3_t1",
+    "role": "apply",
+    "tier": "easy",
+    "prompt": "Find the vertical intercept of $f(t) = t^4 - 4t^2$.",
+    "solution_steps": [
+      "Set $t = 0$.",
+      "$f(0) = 0 - 0 = 0$.",
+      "The intercept is $(0, 0)$."
+    ],
+    "answer": "$(0, 0)$",
+    "checks": ["intercept"],
+    "origin": "bundled"
+  },
+  {
+    "question_id": "ch3_s3_t1__vary__1",
+    "topic_id": "ch3_s3_t1",
+    "role": "vary",
+    "tier": "easy",
+    "prompt": "Find the horizontal intercepts of $g(t) = (t-2)^2(2t+3)$.",
+    "solution_steps": [
+      "Set $g(t) = 0$.",
+      "Either $(t-2)^2 = 0$ or $2t+3 = 0$.",
+      "Solve: $t = 2$ or $t = -3/2$."
+    ],
+    "answer": "$t = 2$ and $t = -3/2$",
+    "checks": ["intercept", "horizontal"],
+    "origin": "bundled"
+  },
+  {
+    "question_id": "ch3_s3_t2__recognize__1",
+    "topic_id": "ch3_s3_t2",
+    "role": "recognize",
+    "tier": "medium",
+    "prompt": "If a polynomial factor $(x-h)^p$ has $p = 2$, what happens at the intercept $h$?",
+    "solution_steps": [
+      "Power of 2 means quadratic behavior at the root.",
+      "The graph touches the axis and turns back.",
+      "This is the 'bounce' behavior."
+    ],
+    "answer": "The graph bounces off the axis.",
+    "checks": ["multiplicity", "bounce"],
+    "origin": "bundled"
+  },
+  {
+    "question_id": "ch3_s3_t2__apply__1",
+    "topic_id": "ch3_s3_t2",
+    "role": "apply",
+    "tier": "medium",
+    "prompt": "For $f(x) = (x+3)(x-2)^2(x+1)^3$, describe the behavior at $x = 2$.",
+    "solution_steps": [
+      "Factor at $x=2$ is $(x-2)^2$.",
+      "Power 2 means the graph bounces off the axis."
+    ],
+    "answer": "The graph touches the axis and bounces.",
+    "checks": ["multiplicity", "bounce"],
+    "origin": "bundled"
+  },
+  {
+    "question_id": "ch3_s3_t2__vary__1",
+    "topic_id": "ch3_s3_t2",
+    "role": "vary",
+    "tier": "medium",
+    "prompt": "For the same $f(x) = (x+3)(x-2)^2(x+1)^3$, describe the behavior at $x = -1$.",
+    "solution_steps": [
+      "Factor at $x=-1$ is $(x+1)^3$.",
+      "Odd power at least 3 passes through the axis but flattens first."
+    ],
+    "answer": "The graph passes through the axis but flattens near it.",
+    "checks": ["multiplicity", "flatten"],
+    "origin": "bundled"
+  },
+  {
+    "question_id": "ch8_s1_t1__recognize__1",
+    "topic_id": "ch8_s1_t1",
+    "role": "recognize",
+    "tier": "easy",
+    "prompt": "Write the Law of Sines relating angles $\\alpha, \\beta$ and opposite sides $a, b$.",
+    "solution_steps": [
+      "Ratio of sin of angle to opposite side is constant.",
+      "Form the two ratios.",
+      "Set them equal."
+    ],
+    "answer": "$\\dfrac{\\sin(\\alpha)}{a} = \\dfrac{\\sin(\\beta)}{b}$",
+    "checks": ["sin", "alpha", "beta"],
+    "origin": "bundled"
+  },
+  {
+    "question_id": "ch8_s1_t1__apply__1",
+    "topic_id": "ch8_s1_t1",
+    "role": "apply",
+    "tier": "easy",
+    "prompt": "If $\\alpha = 80^{\\circ}$, $a = 120$, $b = 121$, set up the Law of Sines equation for $\\beta$.",
+    "solution_steps": [
+      "Use $\\dfrac{\\sin(\\alpha)}{a} = \\dfrac{\\sin(\\beta)}{b}$.",
+      "Substitute the known values."
+    ],
+    "answer": "$\\dfrac{\\sin(80^{\\circ})}{120} = \\dfrac{\\sin(\\beta)}{121}$",
+    "checks": ["sin", "beta"],
+    "origin": "bundled"
+  },
+  {
+    "question_id": "ch8_s1_t1__vary__1",
+    "topic_id": "ch8_s1_t1",
+    "role": "vary",
+    "tier": "easy",
+    "prompt": "With $\\alpha = 80^{\\circ}$, $a = 120$, $b = 121$, solve for $\\beta$ (acute).",
+    "solution_steps": [
+      "From $\\dfrac{\\sin(80^{\\circ})}{120} = \\dfrac{\\sin(\\beta)}{121}$:",
+      "$\\sin(\\beta) = 121 \\cdot \\dfrac{\\sin(80^{\\circ})}{120} \\approx 0.9928$.",
+      "$\\beta \\approx \\arcsin(0.9928) \\approx 83.2^{\\circ}$."
+    ],
+    "answer": "$\\beta \\approx 83.2^{\\circ}$",
+    "checks": ["beta"],
+    "origin": "bundled"
+  },
+  {
+    "question_id": "ch8_s1_t2__recognize__1",
+    "topic_id": "ch8_s1_t2",
+    "role": "recognize",
+    "tier": "easy",
+    "prompt": "Give the Law of Cosines that finds side $a$ from sides $b, c$ and included angle $\\alpha$.",
+    "solution_steps": [
+      "Square of the unknown side on the left.",
+      "Sum of squares of the other two sides, minus $2bc\\cos(\\alpha)$."
+    ],
+    "answer": "$a^2 = b^2 + c^2 - 2bc\\cos(\\alpha)$",
+    "checks": ["cos", "alpha"],
+    "origin": "bundled"
+  },
+  {
+    "question_id": "ch8_s1_t2__apply__1",
+    "topic_id": "ch8_s1_t2",
+    "role": "apply",
+    "tier": "easy",
+    "prompt": "A boat sails 10 mi, turns through an interior angle of $160^{\\circ}$, then sails another 8 mi. Set up the Law of Cosines for the distance $x$ from start.",
+    "solution_steps": [
+      "Known sides $b=10$, $c=8$.",
+      "Included angle $\\alpha = 160^{\\circ}$.",
+      "Substitute into the formula."
+    ],
+    "answer": "$x^2 = 8^2 + 10^2 - 2(8)(10)\\cos(160^{\\circ})$",
+    "checks": ["cos"],
+    "origin": "bundled"
+  },
+  {
+    "question_id": "ch8_s1_t2__trap__1",
+    "topic_id": "ch8_s1_t2",
+    "role": "trap",
+    "tier": "easy",
+    "prompt": "If the included angle is exactly $90^{\\circ}$, what famous theorem does the Law of Cosines reduce to?",
+    "solution_steps": [
+      "$\\cos(90^{\\circ}) = 0$.",
+      "The $-2ab\\cos(\\alpha)$ term vanishes.",
+      "Equation becomes $c^2 = a^2 + b^2$."
+    ],
+    "answer": "The Pythagorean Theorem.",
+    "checks": ["pythagorean"],
+    "origin": "bundled"
+  },
+  {
+    "question_id": "ch9_s1_t1__recognize__1",
+    "topic_id": "ch9_s1_t1",
+    "role": "recognize",
+    "tier": "easy",
+    "prompt": "Write the standard equation for an ellipse centered at the origin with a horizontal major axis.",
+    "solution_steps": [
+      "Standard ellipse at origin.",
+      "Horizontal major axis means larger denominator under $x^2$."
+    ],
+    "answer": "$\\dfrac{x^2}{a^2} + \\dfrac{y^2}{b^2} = 1$ with $a > b$",
+    "checks": ["ellipse"],
+    "origin": "bundled"
+  },
+  {
+    "question_id": "ch9_s1_t1__apply__1",
+    "topic_id": "ch9_s1_t1",
+    "role": "apply",
+    "tier": "easy",
+    "prompt": "Find the standard equation of an origin-centered ellipse with horizontal major axis length 20 and minor axis length 6.",
+    "solution_steps": [
+      "$2a = 20 \\Rightarrow a = 10$.",
+      "$2b = 6 \\Rightarrow b = 3$.",
+      "Plug $a^2 = 100$, $b^2 = 9$ into the horizontal-ellipse form."
+    ],
+    "answer": "$\\dfrac{x^2}{100} + \\dfrac{y^2}{9} = 1$",
+    "checks": ["ellipse"],
+    "origin": "bundled"
+  },
+  {
+    "question_id": "ch9_s1_t1__vary__1",
+    "topic_id": "ch9_s1_t1",
+    "role": "vary",
+    "tier": "easy",
+    "prompt": "For $\\dfrac{x^2}{1} + \\dfrac{y^2}{9} = 1$, find the coordinates of the vertices.",
+    "solution_steps": [
+      "$y$-denominator 9 is larger than 1, so the major axis is vertical.",
+      "$a = \\sqrt{9} = 3$.",
+      "Vertices at $(0, \\pm a)$."
+    ],
+    "answer": "$(0, 3)$ and $(0, -3)$",
+    "checks": ["vertices"],
+    "origin": "bundled"
+  },
+  {
+    "question_id": "ch9_s1_t2__recognize__1",
+    "topic_id": "ch9_s1_t2",
+    "role": "recognize",
+    "tier": "easy",
+    "prompt": "Write the standard equation for an ellipse centered at $(h, k)$ with a horizontal major axis.",
+    "solution_steps": [
+      "Start from the origin-centered horizontal form.",
+      "Replace $x$ with $x-h$ and $y$ with $y-k$."
+    ],
+    "answer": "$\\dfrac{(x-h)^2}{a^2} + \\dfrac{(y-k)^2}{b^2} = 1$",
+    "checks": ["ellipse", "shift"],
+    "origin": "bundled"
+  },
+  {
+    "question_id": "ch9_s1_t2__apply__1",
+    "topic_id": "ch9_s1_t2",
+    "role": "apply",
+    "tier": "easy",
+    "prompt": "Find the center of $\\dfrac{(x-4)^2}{16} + \\dfrac{(y+2)^2}{4} = 1$.",
+    "solution_steps": [
+      "Compare to $\\dfrac{(x-h)^2}{a^2} + \\dfrac{(y-k)^2}{b^2} = 1$.",
+      "$h = 4$ from $(x-4)^2$.",
+      "$k = -2$ from $(y+2)^2 = (y-(-2))^2$."
+    ],
+    "answer": "$(4, -2)$",
+    "checks": ["center"],
+    "origin": "bundled"
+  },
+  {
+    "question_id": "ch9_s1_t2__vary__1",
+    "topic_id": "ch9_s1_t2",
+    "role": "vary",
+    "tier": "easy",
+    "prompt": "Find the length of the major axis for $\\dfrac{(x-4)^2}{16} + \\dfrac{(y+2)^2}{4} = 1$.",
+    "solution_steps": [
+      "Larger denominator is 16, so $a^2 = 16$.",
+      "$a = 4$.",
+      "Major axis length $= 2a$."
+    ],
+    "answer": "8",
+    "checks": ["major", "axis"],
+    "origin": "bundled"
+  }
+]

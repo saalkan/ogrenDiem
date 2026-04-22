@@ -1,0 +1,222 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "title": "Law of Sines",
+      "description": "Given an arbitrary non-right triangle, we can drop\nan altitude, which we temporarily label \\(h\\), to\ncreate two right triangles. Using the right\ntriangle relationships, \\[\\sin (\\alpha ) =\n\\dfrac{h}{b}\\text{ and }\\sin (\\beta ) =\n\\dfrac{h}{a}\\nonumber\\] Solving both equations for\n\\",
+      "parent_section": "Non-Right Triangles - Laws of Sines and Cosines",
+      "parent_section_num": "1",
+      "position_in_section": 0,
+      "difficulty_level": 2,
+      "difficulty_tier": "easy",
+      "concepts": [
+        "alpha",
+        "beta",
+        "circ",
+        "dfrac sin",
+        "gamma",
+        "sin beta"
+      ],
+      "defined_terms": [],
+      "sample_content": "Given an arbitrary non-right triangle, we can drop an altitude, which we temporarily label \\(h\\), to create two right triangles. Using the right triangle relationships, \\[\\sin (\\alpha ) = \\dfrac{h}{b}\\text{ and }\\sin (\\beta ) = \\dfrac{h}{a}\\nonumber\\] Solving both equations for \\(h\\), we get \\(b\\sin (\\alpha ) = h\\) and \\(a\\sin (\\beta ) = h\\). Since the \\(h\\) is the same in both equations, we establish \\(b\\sin (\\alpha ) = a\\sin (\\beta )\\). Dividing both sides by \\(ab\\), we conclude that \\[\\dfrac{\\sin (\\alpha )}{a} = \\dfrac{\\sin (\\beta )}{b}\\nonumber\\] Had we drawn the altitude to be perpendicular to side \\(b\\) or \\(a\\), we could similarly establish \\[\\dfrac{\\sin (\\alpha )}{a} = \\dfrac{\\sin (\\gamma )}{c}\\text{ and }\\dfrac{\\sin (\\beta )}{b} = \\dfrac{\\sin (\\gamma )}{c}\\nonumber\\] Collectively, these relationships are called the Law of Sines. LAW OF SINES Given a triangle with angles and sides opposite labeled as shown, the ratio of sine of angle to length of the opposite side will always be equal, or, symbolically, \\[\\dfrac{\\sin (\\alpha )}{a} = \\dfrac{\\sin (\\beta )}{b} = \\dfrac{\\sin (\\gamma )}{c}\\] For clarity, we call side \\(a\\) the corresponding side of angle \\(\\alpha\\). Similarly, we call angle \\(\\alpha\\), the corresponding angle of side \\(a\\). Likewise for side \\(b\\) and angle \\(\\beta\\), and for side \\(c\\) and angle \\(\\gamma\\). When we use the law of sines, we use any pair of ratios as an equation. In the most straightforward case, we know two angles and one of the corresponding sides. In addition to solving triangles in which two angles are known, the law of sines can be used to solve for an angle when two sides and one corresponding angle are known. Notice that in the problem above, when we use Law of Sines to solve for an unknown angle, there can be two possible solutions. This is called the ambiguous case, and can arise when we know two sides and a non-included angle. In the ambiguous case we may find that a particular set of given information can lead to 2, 1 o",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/08%3A_Further_Applications_of_Trigonometry/8.01%3A_Non-Right_Triangles_-_Laws_of_Sines_and_Cosines",
+      "depth": 0,
+      "id": "ch8_s1_t1"
+    },
+    {
+      "title": "Law of Cosines",
+      "description": "Suppose a boat leaves port, travels 10 miles,\nturns 20 degrees, and travels another 8 miles. How\nfar from port is the boat?",
+      "parent_section": "Non-Right Triangles - Laws of Sines and Cosines",
+      "parent_section_num": "1",
+      "position_in_section": 1,
+      "difficulty_level": 2,
+      "difficulty_tier": "easy",
+      "concepts": [
+        "alpha",
+        "circ",
+        "cosines",
+        "law",
+        "law cosines",
+        "sides"
+      ],
+      "defined_terms": [],
+      "sample_content": "Suppose a boat leaves port, travels 10 miles, turns 20 degrees, and travels another 8 miles. How far from port is the boat? Unfortunately, while the Law of Sines lets us address many non-right triangle cases, it does not allow us to address triangles where the one known angle is included between two known sides, which means it is not a corresponding angle for a known side. For this, we need another tool. Given an arbitrary non-right triangle, we can drop an altitude, which we te mporarily label \\(h\\), to create two right triangles. We will divide the base \\(b\\) into two pieces, one of which we will temporarily label \\(x\\). From this picture, we can establish the right triangle relationship \\[\\cos (\\alpha ) = \\dfrac{x}{c}\\text{ or equivalently,} x = c\\cos \\left( \\alpha \\right)\\nonumber\\] Using the Pythagorean Theorem, we can establish \\[{\\left( {b - x} \\right)^2} + {h^2} = {a^2}\\text{ and }{x^2} + {h^2} = {c^2}\\nonumber\\] Both of these equations can be solved for \\({h^2}\\) \\[{h^2} = {a^2} - {\\left( {b - x} \\right)^2}\\text{ and }{h^2} = {c^2} - {x^2}\\nonumber\\] Since the left side of each equation is \\({h^2}\\), the right sides must be equal \\[{c^2} - {x^2} = {a^2} - {\\left( {b - x} \\right)^2}\\nonumber\\]Multiply out the right \\[{c^2} - {x^2} = {a^2} - \\left( {b^2} - 2bx + {x^2} \\right)\\nonumber\\]Simplify \\[{c^2} - {x^2} = {a^2} - {b^2} + 2bx - {x^2}\\nonumber\\] \\[{c^2} = {a^2} - {b^2} + 2bx\\nonumber\\]Isolate \\({a^2}\\) \\[{a^2} = {c^2} + {b^2} - 2bx\\nonumber\\]Substitute in \\(c\\cos (\\alpha ) = x\\) from above \\[{a^2} = {c^2} + {b^2} - 2bc\\cos (\\alpha )\\nonumber\\] This result is called the Law of Cosines. Depending upon which side we dropped the altitude down from, we could have established this relationship using any of the angles. The important thing to note is that the right side of the equation involves an angle and the sides adjacent to that angle – the left side of the equation involves the side opposite that angle. LAW OF COSINES Given a triangle with angles and oppos",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/08%3A_Further_Applications_of_Trigonometry/8.01%3A_Non-Right_Triangles_-_Laws_of_Sines_and_Cosines",
+      "depth": 1,
+      "id": "ch8_s1_t2"
+    },
+    {
+      "title": "Polar Coordinates",
+      "description": "The coordinate system we are most familiar with is\ncalled the Cartesian coordinate system, a\nrectangular plane divided into four quadrants by\nhorizontal and vertical axes. In earlier chapters,\nwe often found the Cartesian coordinates of a\npoint on a circle at a given angle from t",
+      "parent_section": "Polar Coordinates",
+      "parent_section_num": "2",
+      "position_in_section": 0,
+      "difficulty_level": 2,
+      "difficulty_tier": "easy",
+      "concepts": [
+        "cartesian",
+        "coordinates",
+        "polar",
+        "polar coordinates",
+        "polar equations",
+        "theta"
+      ],
+      "defined_terms": [],
+      "sample_content": "The coordinate system we are most familiar with is called the Cartesian coordinate system, a rectangular plane divided into four quadrants by horizontal and vertical axes. In earlier chapters, we often found the Cartesian coordinates of a point on a circle at a given angle from the positive horizontal axis. Sometimes that angle, along with the point’s distance from the origin, provides a more useful way of describing the point’s location than conventional Cartesian coordinates. POLAR COORDINATES Polar coordinates of a point consist of an ordered pair, (\\(r\\),\\(\\theta\\)), where \\(r\\) is the distance from the point to the origin, and \\(\\theta\\) is the angle measured in standard position. Notice that if we were to “grid” the plane for polar coordinates, it would look like the graph to the right, with circles at incremental radii, and rays drawn at incremental angles. Note the resulting point is the same as the polar point (\\(2, \\dfrac{5\\pi}{4}\\)). In fact, any Cartesian point can be represented by an infinite number of different polar coordinates by adding or subtracting full rotations to these points. For example, same point could also be represented as (\\(2, \\dfrac{13\\pi}{4}\\)). Exercise \\(\\PageIndex{1}\\) Plot the following points given in polar coordinates and label them. a. \\(A = (3, \\dfrac{\\pi}{6})\\) b. \\(B = (-2, \\dfrac{\\pi}{3})\\) c. \\(C = (4, \\dfrac{3\\pi}{4})\\) Answer Converting Points To convert between polar coordinates and Cartesian coordinates, we recall the relationships we developed back in Chapter 5. CONVERTING BETWEEN POLAR AND CARTESIAN COORDINATES To convert between polar (\\(r, \\theta\\)) and Cartesian (\\(x, y\\)) coordidates, we use the relationships \\[\\cos (\\theta )=\\frac{x}{r}\\quad x=r\\cos (\\theta )\\] \\[\\sin (\\theta )=\\frac{y}{r}\\quad y=r\\sin (\\theta )\\] \\[\\tan (\\theta )=\\frac{y}{x}\\quad x^{2}+y^{2}=r^{2}\\] From these relationship and our knowledge of the unit circle, if \\(r = 1\\) and \\(\\theta = \\dfrac{\\pi}{3}\\), the polar coordinates would be \\((r, \\",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/08%3A_Further_Applications_of_Trigonometry/8.02%3A_Polar_Coordinates",
+      "depth": 2,
+      "id": "ch8_s2_t1"
+    },
+    {
+      "title": "Polar Form of Complex Numbers",
+      "description": "From previous classes, you may have encountered\n“imaginary numbers” – the square roots of negative\nnumbers – and, more generally, complex numbers\nwhich are the sum of a real number and an\nimaginary number. While these are useful for\nexpressing the solutions to quadratic equations",
+      "parent_section": "Polar Form of Complex Numbers",
+      "parent_section_num": "3",
+      "position_in_section": 0,
+      "difficulty_level": 3,
+      "difficulty_tier": "medium",
+      "concepts": [
+        "complex",
+        "complex numbers",
+        "imaginary",
+        "number",
+        "numbers",
+        "polar",
+        "theta"
+      ],
+      "defined_terms": [
+        "imaginary",
+        "complex",
+        "polar"
+      ],
+      "sample_content": "From previous classes, you may have encountered “imaginary numbers” – the square roots of negative numbers – and, more generally, complex numbers which are the sum of a real number and an imaginary number. While these are useful for expressing the solutions to quadratic equations, they have much richer applications in electrical engineering, signal analysis, and other fields. Most of these more advanced applications rely on properties that arise from looking at complex numbers from the perspective of polar coordinates. We will begin with a review of the definition of complex numbers. A complex number is the sum of a real number and an imaginary number. Plotting a complex number We can plot real numbers on a number line. For example, if we wanted to show the number 3, we plot a point: To plot a complex number like \\(3 − 4i\\), we need more than just a number line since there are two components to the number. To p lot this number, we need two number lines, crossed to form a complex plane. COMPLEX PLANE In the complex plane , the horizontal axis is the real axis and the vertical axis is the imaginary axis. Arithmetic on Complex Numbers Before we dive into the more complicated uses of complex numbers, let’s make sure we remember the basic arithmetic involved. To add or subtract complex numbers, we simply add the like terms, combining the real parts and combining the imaginary parts. Exercise \\(\\PageIndex{1}\\) Subtract \\(2 + 5i\\) from \\(3 - 4i\\). Answer \\[(3 - 4i) - (2 + 5i) = 1 - 9i\\nonumber\\] We can also multiply and divide complex numbers. Exercise \\(\\PageIndex{2}\\) Multiply \\(3 - 4i\\) and \\(2 + 3i\\). Answer \\[(3 - 4i) (2 + 3i) = 18 + i\\nonumber\\] With the interpretation of complex numbers as points in a plane, which can be related to the Cartesian coordinate system, you might be starting to guess our next step – to refer to this point not by its horizontal and vertical components, but using its polar location, given by the distance from the origin and an angle. Polar ",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/08%3A_Further_Applications_of_Trigonometry/8.03%3A_Polar_Form_of_Complex_Numbers",
+      "depth": 3,
+      "id": "ch8_s3_t1"
+    },
+    {
+      "title": "Vectors",
+      "description": "A woman leaves home, walks 3 miles north, then 2\nmiles southeast. How far is she from home, and in\nwhich direction would she need to walk to return\nhome?",
+      "parent_section": "Vectors",
+      "parent_section_num": "4",
+      "position_in_section": 0,
+      "difficulty_level": 4,
+      "difficulty_tier": "hard",
+      "concepts": [
+        "langle",
+        "magnitude",
+        "rangle",
+        "vec",
+        "vec vec",
+        "vector",
+        "vectors"
+      ],
+      "defined_terms": [
+        "vector",
+        "magnitude"
+      ],
+      "sample_content": "A woman leaves home, walks 3 miles north, then 2 miles southeast. How far is she from home, and in which direction would she need to walk to return home? How far has she walked by the time she gets home? This question may seem familiar – indeed we did a similar problem with a boat in the first section of this chapter. In that section, we solved the problem using triangles. In this section, we will investigate another way to approach the problem using vectors, a geometric entity that indicates both a distance and a direction. We will begin our investigation using a purely geometric view of vectors. A Geometric View of Vectors Exercise \\(\\PageIndex{1}\\) Draw a vector, \\(\\vec{v}\\), that travels from the origin to the point (3, 5). Answer Using this geometric representation of vectors, we can visualize the addition and scaling of vectors. To add vectors, we envision a sum of two movements. To find \\(\\vec{u} + \\vec{v}\\), we first draw the vector \\(\\vec{u}\\), then from the end of \\(\\vec{u}\\) we drawn the vector \\(\\vec{v}\\). This corresponds to the notion that first we move along the first vector, and then from that end position we move along the second vector. The sum \\(\\vec{u} + \\vec{v}\\) is the new vector that travels directly from the beginning of \\(\\vec{u}\\) to the end of \\(\\vec{v}\\) in a straight path. ADDING VECTORS GEOMETRICALLY To add vectors geometrically, draw \\(\\vec{v}\\) starting from the end of \\(\\vec{u}\\). The sum \\(\\vec{u} + \\vec{v}\\) is the vector from the beginn ing of \\(\\vec{u}\\) to the end of \\(\\vec{v}\\). Notice that path of the walking woman from the beginning of the section could be visualized as the sum of two vectors. The resulting sum vector would indicate her end position relative to home. Although vectors can exist anywhere in the plane, if we put the starting point at the origin it is easy to understand its size and direction relative to other vectors. To scale vectors by a constant, such as \\(3\\vec{u}\\), we can imagine adding \\(\\vec{u} + \\vec{u}",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/08%3A_Further_Applications_of_Trigonometry/8.04%3A_Vectors",
+      "depth": 4,
+      "id": "ch8_s4_t1"
+    },
+    {
+      "title": "Dot Product",
+      "description": "Now that we can add, subtract, and scale vectors,\nyou might be wondering whether we can multiply\nvectors. It turns out there are two different ways\nto multiply vectors, one which results in a\nnumber, and one which results in a vector.",
+      "parent_section": "Dot Product",
+      "parent_section_num": "5",
+      "position_in_section": 0,
+      "difficulty_level": 4,
+      "difficulty_tier": "hard",
+      "concepts": [
+        "langle",
+        "langle rangle",
+        "product",
+        "rangle",
+        "vec",
+        "vec vec"
+      ],
+      "defined_terms": [],
+      "sample_content": "Now that we can add, subtract, and scale vectors, you might be wondering whether we can multiply vectors. It turns out there are two different ways to multiply vectors, one which results in a number, and one which results in a vector. In this section, we'll focus on the first, called the dot product or scalar product , since it produces a single numeric value (a scalar). We'll begin with some motivation. In physics, we often want to know how much of a force is acting in the direction of motion. To determine this, we need to know the angle between direction of force and the direction of motion. Likewise, in computer graphics, the lighting system determines how bright a triangle on the object should be based on the angle between object and the direction of the light. In both applications, we're interested in the angle between the vectors, so let's start there. Suppose we have two vectors, \\[\\vec{a} = \\langle a_1, a_2 \\rangle\\quad \\text{and} \\quad \\vec{b} = \\langle b_1, b_2 \\rangle.\\nonumber\\] Using our polar coordinate conversions, we could write \\[\\vec{a} = \\langle |\\vec{a}|\\cos(\\alpha), |\\vec{a}|\\sin(\\alpha) \\rangle\\nonumber\\] and \\[\\vec{b} = \\langle |\\vec{b}|\\cos(\\beta), |\\vec{b}|\\sin(\\beta) \\rangle\\nonumber\\] Now, if we knew the angle \\(\\alpha\\) and \\(\\beta\\), we wouldn't have much work to do = the angle between the vectors would be \\(\\theta = \\alpha - \\beta\\). While we certainly could use some inverse tangents to find the two angles, it would be great if we could find a way to determine the angle between the vector just from the vector components. To help us manipulate \\(\\theta = \\alpha - \\beta\\), we might try introducing a trigonometric function: \\[\\cos(\\theta) = \\cos(\\alpha - \\beta)\\nonumber\\] Now we can apply the difference of angles identity \\[\\cos(\\theta) = \\cos(\\alpha) \\cos(\\beta) + \\sin(\\alpha) \\sin(\\beta)\\nonumber\\] Now \\(a_1 = |\\vec{a}|\\cos(\\alpha)\\), so \\(\\cos(\\alpha) = \\dfrac{a_1}{|\\vec{a}|}\\), and likewise for the other three components. Making those ",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/08%3A_Further_Applications_of_Trigonometry/8.05%3A_Dot_Product",
+      "depth": 5,
+      "id": "ch8_s5_t1"
+    },
+    {
+      "title": "Parametric Equations",
+      "description": "Many shapes, even ones as simple as circles,\ncannot be represented as an equation where \\(y\\)\nis a function of \\(x\\). Consider, for example, the\npath a moon follows as it orbits around a planet,\nwhich simultaneously rotates around a sun.",
+      "parent_section": "Parametric Equations",
+      "parent_section_num": "6",
+      "position_in_section": 0,
+      "difficulty_level": 5,
+      "difficulty_tier": "hard",
+      "concepts": [
+        "cartesian",
+        "circle",
+        "graph",
+        "parametric",
+        "small",
+        "wheel"
+      ],
+      "defined_terms": [
+        "parametric"
+      ],
+      "sample_content": "Many shapes, even ones as simple as circles, cannot be represented as an equation where \\(y\\) is a function of \\(x\\). Consider, for example, the path a moon follows as it orbits around a planet, which simultaneously rotates around a sun. In some cases, polar equations provide a way to represent such a path. In others, we need a more versatile approach that allows us to represent both the \\(x\\) and \\(y\\) coordinates in terms of a third variable, or parameter. There is often no single parametric representation for a curve. In Example 1 we assumed the object was moving at a steady rate along a straight line. If we kept the assumption about the path (straight line) but did not assume the speed was constant, we might get a system like: \\[x(t) = -5 + 2t^2\\nonumber\\] \\[y(t) = 3 - t^2\\nonumber\\] This starts at (-5, 3) when \\(t = 0\\) and ends up at (3, -1) when \\(t = 2\\). If we graph the \\(x(t)\\) and \\(y(t)\\) function separately, we can see that those are no longer linear, but if we graph \\(x\\) vs. \\(y\\) we will see that we still get a straight-line path. Notice that here the parametric equations describe a shape for which \\(y\\) is not a function of \\(x\\). This is an example of why using parametric equations can be useful – since they can represent such a graph as a set of functions. This particular graph also appears to be a parabola where \\(x\\) is a function of \\(y\\), which we will soon verify. While creating a \\(t-x-y\\) table, plotting points and connecting the dots with a smooth curve usually works to give us a rough idea of what the graph of a system of parametric equations looks like, it's generally easier to use technology to create these tables and (simultaneously) much nicer-looking graphs. Exercise \\(\\PageIndex{1}\\) Sketch a graph of \\(\\begin{array} {rcl} {x(t)} &= & {4\\cos(3t)} \\\\ {y(t)} &= & {3\\sin(2t)} \\end{array}\\). This is an example of a Lissajous figure. Answer Converting from Parametric to Cartesian In some cases, it is possible to eliminate the parameter \\",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/08%3A_Further_Applications_of_Trigonometry/8.06%3A_Parametric_Equations",
+      "depth": 6,
+      "id": "ch8_s6_t1"
+    }
+  ],
+  "edges": [
+    {
+      "strength": 2,
+      "source": "ch8_s1_t1",
+      "evidence": "adjacent in section 8.1",
+      "target": "ch8_s1_t2"
+    },
+    {
+      "strength": 1,
+      "source": "ch8_s1_t2",
+      "evidence": "section 8.1 → 8.2",
+      "target": "ch8_s2_t1"
+    },
+    {
+      "strength": 1,
+      "source": "ch8_s2_t1",
+      "evidence": "section 8.2 → 8.3",
+      "target": "ch8_s3_t1"
+    },
+    {
+      "strength": 4,
+      "source": "ch8_s3_t1",
+      "evidence": "complex",
+      "target": "ch8_s4_t1"
+    },
+    {
+      "strength": 4,
+      "source": "ch8_s3_t1",
+      "evidence": "polar",
+      "target": "ch8_s5_t1"
+    },
+    {
+      "strength": 4,
+      "source": "ch8_s3_t1",
+      "evidence": "polar",
+      "target": "ch8_s6_t1"
+    },
+    {
+      "strength": 4,
+      "source": "ch8_s4_t1",
+      "evidence": "vector",
+      "target": "ch8_s5_t1"
+    },
+    {
+      "strength": 1,
+      "source": "ch8_s5_t1",
+      "evidence": "section 8.5 → 8.6",
+      "target": "ch8_s6_t1"
+    }
+  ]
+}

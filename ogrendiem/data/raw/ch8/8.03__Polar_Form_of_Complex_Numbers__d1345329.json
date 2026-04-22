@@ -1,0 +1,105 @@
+{
+  "url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/08%3A_Further_Applications_of_Trigonometry/8.03%3A_Polar_Form_of_Complex_Numbers",
+  "title": "8.3: Polar Form of Complex Numbers",
+  "chapter": "8",
+  "section": "3",
+  "body_text": "From previous classes, you may have encountered “imaginary numbers” – the square roots of negative numbers – and, more generally, complex numbers which are the sum of a real number and an imaginary number. While these are useful for expressing the solutions to quadratic equations, they have much richer applications in electrical engineering, signal analysis, and other fields. Most of these more advanced applications rely on properties that arise from looking at complex numbers from the perspective of polar coordinates. We will begin with a review of the definition of complex numbers. A complex number is the sum of a real number and an imaginary number. Plotting a complex number We can plot real numbers on a number line. For example, if we wanted to show the number 3, we plot a point: To plot a complex number like \\(3 − 4i\\), we need more than just a number line since there are two components to the number. To p lot this number, we need two number lines, crossed to form a complex plane. COMPLEX PLANE In the complex plane , the horizontal axis is the real axis and the vertical axis is the imaginary axis. Arithmetic on Complex Numbers Before we dive into the more complicated uses of complex numbers, let’s make sure we remember the basic arithmetic involved. To add or subtract complex numbers, we simply add the like terms, combining the real parts and combining the imaginary parts. Exercise \\(\\PageIndex{1}\\) Subtract \\(2 + 5i\\) from \\(3 - 4i\\). Answer \\[(3 - 4i) - (2 + 5i) = 1 - 9i\\nonumber\\] We can also multiply and divide complex numbers. Exercise \\(\\PageIndex{2}\\) Multiply \\(3 - 4i\\) and \\(2 + 3i\\). Answer \\[(3 - 4i) (2 + 3i) = 18 + i\\nonumber\\] With the interpretation of complex numbers as points in a plane, which can be related to the Cartesian coordinate system, you might be starting to guess our next step – to refer to this point not by its horizontal and vertical components, but using its polar location, given by the distance from the origin and an angle. Polar Form of Complex Numbers Remember, because the complex plane is analogous to the Cartesian plane that we can think of a complex number \\(z = x + yi\\) as analogous to the Cartesian point (\\(x\\), \\(y\\)) and recall how we converted from (\\(x\\), \\(y\\)) to polar (\\(r\\), \\(\\theta\\)) coordinates in the last section. Bringing in all of our old rules we remember the following: \\[\\cos(\\theta) = \\dfrac{x}{r}\\quad x = r\\cos(\\theta)\\nonumber\\] \\[\\sin(\\theta) = \\dfrac{y}{r}\\quad y = r\\sin(\\theta)\\nonumber\\] \\[\\tan(\\theta) = \\dfrac{y}{x}\\quad x^2 + y^2 = r^2\\nonumber\\] With this in mind, we can write \\(z = x + yi = r\\cos(\\theta) + ir \\sin(\\theta)\\). In the \\(18^{\\text{th}}\\) century, Leonhard Euler demonstrated a relationship between exponential and trigonometric functions that allows the use of complex numbers to greatly simplify some trigonometric calculations. While the proof is beyond the scope of this class, you will likely see it in a later calculus class. Exercise \\(\\PageIndex{3}\\) Write \\(\\sqrt{3} + i\\) in polar form. Answer \\(\\sqrt{3} + i\\) would correspond with the point \\((\\sqrt{3}, 1)\\) in the first quadrant. \\[r = \\sqrt{\\sqrt{3}^2 + 1^2} = \\sqrt{4} = 2\\nonumber\\] \\[\\sin(\\theta) = \\dfrac{1}{2}\\text{, so }\\theta = \\dfrac{\\pi}{6}\\nonumber\\] \\[\\sqrt{3} + i\\text{ in polar form is }2e^{i\\pi/6}\\nonumber\\] The polar form of a complex number provides a powerful way to compute powers and roots of complex numbers by using exponent rules you learned in algebra. To compute a power of a complex number, we: 1) Convert to polar form 2) Raise to the power, using exponent rules to simplify 3) Convert back to \\(a + bi\\) form, if needed The result of the process can be summarized by DeMoivre’s Theorem. This is a shorthand to using exponent rules. DEMOIVRE'S THEOREM If \\[z = r(\\cos(\\theta) + i\\sin(\\theta))\\], then for any integer, \\[z^n = r^n (\\cos(n\\theta) + i\\sin(n \\theta))\\] We omit the proof, but note we can easily verify it holds in one case using Example 12: \\[(-4 + 4i)^6 = (4\\sqrt{2})^6 (\\cos(6 \\cdot \\dfrac{3\\pi}{4} + i\\sin(6 \\cdot \\dfrac{3\\pi}{4})) = 32768 (\\cos(\\dfrac{9\\pi}{2}) + i\\sin(\\dfrac{9\\pi}{2})) = 32768i\\nonumber\\] Exercise \\(\\PageIndex{4}\\) Evaluate \\((\\sqrt{3} + i)^6\\) using polar form. Answer \\[(\\sqrt{3} + i)^6 = (2e^{i\\pi/6})^6 = 2^6 e^{i\\pi} = 64 \\cos(\\pi) + i64\\sin(\\pi) = -64\\nonumber\\] You may remember that equations like \\(x^2 = 4\\) have two solutions, 2 and -2 in this case, though the square root 4 only gives one of those solutions. Likewise, the square root we found in Example 11 is only one of two complex numbers whose square is \\(9i\\). Similarly, the equation \\(z^3 = 8\\) would have three solutions where only one is given by the cube root. In this case, however, only one of those solutions, \\(z = 2\\), is a real value. To find the others, we can use the fact that complex numbers have multiple representations in polar form. Important Topics of This Section Complex numbers Imaginary numbers Plotting points in the complex coordinate system Basic operations with complex numbers Euler’s Formula DeMoivre’s Theorem Finding complex solutions to equations",
+  "definitions": [
+    {
+      "kind": "boxed",
+      "text": "Definition: IMAGINARY NUMBER The most basic complex number is \\(i\\), defined to be \\(i = \\sqrt{-1}\\), commonly called an imaginary number . Any real multiple of \\(i\\) is also an imaginary number."
+    },
+    {
+      "kind": "boxed",
+      "text": "Definition: COMPLEX NUMBER A complex number is a number \\(z = a + bi\\), where \\(a\\) and \\(b\\) are real numbers \\(a\\) is the real part of the complex number \\(b\\) is the imaginary part of the complex number \\[i = \\sqrt{-1}\\nonumber\\]"
+    },
+    {
+      "kind": "boxed",
+      "text": "Definition: POLAR FORM OF A COMPLEX NUMBER AND EULER'S FORMULA The polar form of a complex number is \\[z = r\\cos(\\theta) + ir\\sin(\\theta)\\] An alternate form, which will be the primary one used, is \\(z = re^{i\\theta}\\) Euler's Formula states \\[re^{i\\theta} = r\\cos(\\theta) + ir\\sin(\\theta)\\] Similar to plotting a point in the polar coordinate system we need \\(r\\) and \\(\\theta\\) to find the polar form of a complex number."
+    },
+    {
+      "kind": "inline",
+      "text": "Definition: IMAGINARY NUMBER"
+    },
+    {
+      "kind": "inline",
+      "text": "Definition: COMPLEX NUMBER"
+    },
+    {
+      "kind": "inline",
+      "text": "Definition: POLAR FORM OF A COMPLEX NUMBER AND EULER'S FORMULA"
+    }
+  ],
+  "examples": [
+    {
+      "text": "Example \\(\\PageIndex{1}\\) Simplify \\(\\sqrt{-9}\\). Solution We can separate \\(\\sqrt{-9}\\) as \\(\\sqrt{9}\\)\\(\\sqrt{-1}\\). We can take the square root of 9, and write the square root of -1 as \\(i\\). \\[\\sqrt{-9} = \\sqrt{9}\\sqrt{-1} = 3i\\nonumber\\]"
+    },
+    {
+      "text": "Example \\(\\PageIndex{2}\\) Plot the number \\(3 − 4i\\) on the complex plane. Solution The real part of this number is 3, and the imaginary part is - 4. To plot this, we draw a point 3 units to the right of the origin in the horizontal direction and 4 units down in the vertical direction. Because this is analogous to the Cartesian coordinate system for plotting points, we can think about plotting our complex number \\(z = a + bi\\) as if we were plotting the point (\\(a\\), \\(b\\)) in Cartesian coordinates. Sometimes people write complex numbers as \\(z = x + yi\\) to highlight this relation."
+    },
+    {
+      "text": "Example \\(\\PageIndex{3}\\) Add \\(3 - 4i\\) and \\(2 + 5i\\). Solution Adding \\((3 - 4i) + (2 + 5i)\\), we add the real [arts and the imaginary parts \\[3 + 2 - 4i + 5i\\nonumber\\] \\[5 + i\\nonumber\\]"
+    },
+    {
+      "text": "Example \\(\\PageIndex{4}\\) Multiply: \\(4(2 + 5i)\\). Solution To multiply the complex number by a real number, we simply distribute as we would when multiplying polynomials. \\[4 (2 + 5i)\\nonumber\\]Distribute \\[= 4 \\cdot 2 + 4 \\cdot 5i\\nonumber\\]Simplify \\[= 8 + 20i\\nonumber\\]"
+    },
+    {
+      "text": "Example \\(\\PageIndex{5}\\) Multiply: \\(2 - 3i)(1 + 4i)\\). Solution To multiply two complex numbers, we expand the product as we would with polynomials (the process commonly called FOIL – “first outer inner last”). \\[(2 - 3i)(1 + 4i)\\nonumber\\]Expand \\[= 2 + 8i - 3i - 12i^2\\nonumber\\] Since \\(i = \\sqrt{-1}\\), \\(i^2 = -1\\) \\[= 2 + 8i - 3i - 12(-1)\\nonumber\\] Simplify \\[= 14 + 5i\\nonumber\\]"
+    },
+    {
+      "text": "Example \\(\\PageIndex{6}\\) Divide \\(\\dfrac{(2 + 5i)}{(4 - i)}\\). Solution To divide two complex numbers, we have to devise a way to write this as a complex number with a real part and an imaginary part. We start this process by eliminating the complex number in the denominator. To do this, we multiply the numerator and denominator by a special complex number so that the result in the denominator is a real number. The number we need to multiply by is called the complex conjugate , in which the sign of the imaginary part is changed. Here, \\(4 + i\\) is the complex conjugate of \\(4 – i\\). Of course, obeying our algebraic rules, we must multiply by \\(4 + i\\) on both the top and bottom. \\[\\dfrac{(2 + 5i)}{(4 - i)} \\cdot \\dfrac{(4 + i)}{(4 + i)}\\nonumber\\] In the numerator, \\[(2 + 4i)(4 + i)\\nonumber\\]Expand \\[= 8 + 20i + 2i + 5i^2\\nonumber\\]Since \\(i = \\sqrt{-1}\\), \\(i^2 = -1\\) \\[= 8 + 20i + 2i + 5(-1)\\nonumber\\]Simplify \\[= 3 + 22i\\nonumber\\] Multiplying the denominator \\[(4 - i) ( 4 + i)\\nonumber\\]Expand \\[(16 - 4i + 4i - i^2)\\nonumber\\]Since \\(i = \\sqrt{-1}\\), \\(i^2 = -1\\) \\[(16 - (-1))\\nonumber\\] \\[=17\\nonumber\\] Combining this we get \\[\\dfrac{3 + 22i}{17} = \\dfrac{3}{17} + \\dfrac{22i}{17}\\nonumber\\]"
+    },
+    {
+      "text": "Example \\(\\PageIndex{7}\\) Express the complex number \\(4i\\) using polar coordinates. Solution On the complex plane, the number \\(4i\\) is a distance of 4 from the origin at an angle of \\(\\dfrac{\\pi}{2}\\), so \\(4i = 4\\cos(\\dfrac{pi}{2}) + i 4\\sin(\\dfrac{\\pi}{2})\\) Note that the real part of this complex number is 0."
+    },
+    {
+      "text": "Example \\(\\PageIndex{8}\\) Find the polar form of the complex number -8. Solution Treating this is a complex number, we can write it as \\(-8 + 0i\\). Plotted in the complex plane, the number -8 is on the negative horizontal axis, a distance of 8 from the origin at an angle of \\(\\pi\\) from the positive horizontal axis. The polar form of the number -8 is \\(8e^{i\\pi}\\) Plugging \\(r = 8\\) and \\(\\theta = \\pi\\) back into Euler's formula, we have: \\[8e^{i\\pi} = 8\\cos(\\pi) + 8i\\sin(\\pi) = -8 + 0i = -8\\nonumber\\]as desired."
+    },
+    {
+      "text": "Example \\(\\PageIndex{9}\\) Find the polar form of \\(-4 + 4i\\). Solution On the complex plane, this complex number would correspond to the point (-4, 4) on a Cartesian plane. We can find the distance \\(r\\) and angle \\(\\theta\\) as we did in the last section. \\[r^2 = x^2 + y^2\\nonumber\\] \\[r^2 = (-4)^2 + 4^2\\nonumber\\] \\[r = \\sqrt{32} = 4\\sqrt{2}\\nonumber\\] To find \\(\\theta\\), we can use \\(\\cos(\\theta) = \\dfrac{x}{r}\\) \\[\\cos(\\theta) = \\dfrac{-4}{4\\sqrt{2}} = -\\dfrac{\\sqrt{2}}{2}\\nonumber\\] This is one of known cosine values, and since the point is in the second quadrant, we can conclude that \\(\\theta = \\dfrac{3\\pi}{4}\\). The polar form of this complex number is \\(4\\sqrt{2}e^{\\dfrac{3\\pi}{4} i}\\)"
+    },
+    {
+      "text": "Example \\(\\PageIndex{10}\\) Find the polar form of \\(-3 -5i\\). Solution On the complex plane, this complex number would correspond to the point (-3, -5) on a Cartesian plane. First, we find \\(r\\). \\[r^2 = x^2 + y^2\\nonumber\\] \\[r^2 = (-3)^2 + (-5)^2\\nonumber\\] \\[r = \\sqrt{34}\\nonumber\\] To find \\(\\theta\\), we might use \\(\\tan(\\theta) = \\dfrac{y}{x}\\) \\[\\tan(\\theta) = \\dfrac{-5}{-3}\\nonumber\\] \\[\\theta = \\tan^{-1} (\\dfrac{5}{3}) = 1.0304\\nonumber\\] This angle is in the wrong quadrant, so we need to find a second solution. For tangent, we can find that by adding \\(\\pi\\). \\[\\theta = 1.0304 + \\pi = 4.1720\\nonumber\\] The polar form of this complex number is \\(\\sqrt{34}e^{4.1720i}\\)."
+    },
+    {
+      "text": "Example \\(\\PageIndex{11}\\) Write \\(3e^{\\dfrac{\\pi}{6}i}\\) in complex \\(a + bi\\) form. Solution \\[3e^{\\dfrac{\\pi}{6}i} = 3\\cos(\\dfrac{\\pi}{6}) + i3\\sin(\\dfrac{\\pi}{6})\\nonumber\\]Evaluate the trig functions \\[= 3 \\cdot \\dfrac{\\sqrt{3}}{2} + i 3 \\cdot \\dfrac{1}{2}\\nonumber\\]Simplify \\[= \\dfrac{3\\sqrt{3}}{2} + i\\dfrac{3}{2}\\nonumber\\]"
+    },
+    {
+      "text": "Example \\(\\PageIndex{12}\\) Evaluate \\((-4 + 4i)^6\\). Solution While we could multiply this number by itself five times, that would be very tedious. To compute this more efficiently, we can utilize the polar form of the complex number. In an earlier example, we found that \\(-4 + 4i = 4\\sqrt{2}e^{\\dfrac{3\\pi}{4}i}\\). Using this, \\[(-4 + 4i)^6\\nonumber\\]Writing the complex number in polar form \\[= (4\\sqrt{2} e^{\\dfrac{3\\pi}{4}i})^6\\nonumber\\]Utilize the exponent rule \\((ab)^m = a^m b^m\\) \\[= (4\\sqrt{2})^6 (e^{\\dfrac{3\\pi}{4}i})^6\\nonumber\\]On the second factor, use the rule \\((a^m)^n = a^{mn}\\) \\[= (4\\sqrt{2})^6 e^{\\dfrac{3\\pi}{4}i \\cdot 6}\\nonumber\\]Simplify \\[= 32768e^{\\dfrac{2\\pi}{2}i}\\nonumber\\] At this point, we have found the power as a complex number in polar form. If we want the answer in standard \\(a + bi\\) form, we can utilize Euler’s formula. \\[32768e^{\\dfrac{9\\pi}{2}i} = 32768 \\cos (\\dfrac{9\\pi}{2}) + i 32768\\sin(\\dfrac{9\\pi}{2})\\nonumber\\] Since \\(\\dfrac{9\\pi}{2}\\) is coterminal with \\(\\dfrac{\\pi}{2}\\), we can use our special angle knowledge to evaluate the sine and cosine. \\[32768 \\cos (\\dfrac{9\\pi}{2}) + i32768 \\sin (\\dfrac{9\\pi}{2}) = 32768(0) + i32768(1) = 32768i\\nonumber\\] We have found that \\(-4 + 4i)^6 = 32768i\\)."
+    },
+    {
+      "text": "Example \\(\\PageIndex{13}\\) Evaluate \\(\\sqrt{9i}\\). Solution To evaluate the square root of a complex number, we can first note that the square root is the same as having an exponent of \\(\\dfrac{1}{2}\\): \\[\\sqrt{9i} = (9i)^{1/2}\\nonumber\\] To evaluate the power, we first write the complex number in polar form. Since \\(9i\\) has no real part, we know that this value would be plotted along the vertical axis, a distance of 9 from the origin at an angle of \\(\\dfrac{\\pi}{2}\\). This gives the polar form: \\(9i = 9e^{\\dfrac{\\pi}{2}i}\\). \\[\\sqrt{9i} = (9i)^{1/2}\\nonumber\\]Use the polar form \\[= (9e^{\\dfrac{\\pi}{2}i})^{1/2}\\nonumber\\]Use exponent rules to simplify \\[= 9^{1/2} (e^{\\dfrac{\\pi}{2}i})^{1/2}\\nonumber\\] \\[= 9^{1/2} e^{\\dfrac{\\pi}{2} i \\cdot \\dfrac{1}{2}}\\nonumber\\]Simplify \\[= 3e^{\\dfrac{\\pi}{4}i}\\nonumber\\]Rewrite using Euler's formula if desired \\[= 3\\cos(\\dfrac{\\pi}{4}) + i3\\sin(\\dfrac{\\pi}{4})\\nonumber\\]Evaluate the sine and cosine \\[= 3\\dfrac{\\sqrt{2}}{2} + i3\\dfrac{\\sqrt{2}}{2}\\nonumber\\] Using the polar form, we were able to find a square root of a complex number. \\[\\sqrt{9i} = \\dfrac{3\\sqrt{2}}{2} + \\dfrac{3\\sqrt{2}}{2}i\\nonumber\\] Alternatively, using DeMoivre's Theorem we could write \\[(9e^{\\dfrac{\\pi}{2}i})^{1/2} = 9^{1/2} (\\cos(\\dfrac{1}{2} \\cdot \\dfrac{\\pi}{2} + i\\sin(\\dfrac{1}{2} \\cdot \\dfrac{\\pi}{2})) = 3(\\cos(\\dfrac{\\pi}{4}) + i\\sin(\\dfrac{\\pi}{4})\\nonumber\\] and simplify"
+    },
+    {
+      "text": "Example \\(\\PageIndex{14}\\) Find all complex solutions to \\(z^3 = 8\\). Solution Since we are trying to solve \\(z^3 = 8\\), we can solve for \\(z\\) is \\(z = 8^{1/3}\\). Certainly one of these solutions is the basic cube root, giving \\(z = 2\\). To find others, we can turn to the polar representation of 8. Since 8 is a real number, is would sit in the complex plane on the horizontal axis at an angle of 0, giving the polar form \\(8e^{0i}\\). Taking the 1/3 power of this gives the real solution: \\[(8e^{0i})^{1/3} = 8^{1/3} (e^{0i})^{1/3} = 2e^{0} = 2\\cos(0) + i2 \\sin (0) = 2\\nonumber\\] However, since the angle \\(2\\pi\\) is coterminal with the angle of 0, we could also represent the number 8 as \\(8e^{2\\pi i}\\). Taking the 1/3 power of this gives a first complex solution: \\[(8e^{2\\pi i})^{1/3}=8^{1/3}(e^{2\\pi i})^{1/3}=2e^{\\frac{2\\pi }{3}i}=2\\cos\\left(\\frac{2\\pi }{3} \\right)+i2\\sin\\left(\\frac{2\\pi }{3}\\right)=2\\left(-\\frac{1}{2}\\right)+i2\\left(\\frac{\\sqrt{3}}{2}\\right)=-1+\\sqrt{3}i\\nonumber\\] For the third root, we use the angle of \\(4\\pi\\), which is also coterminal with an angle of 0. \\[(8e^{4\\pi i})^{1/3}=8^{1/3}(e^{4\\pi i})^{1/3}=2e^{\\frac{4\\pi }{3}i}=2\\cos\\left(\\frac{4\\pi }{3} \\right)+i2\\sin\\left(\\frac{4\\pi }{3}\\right)=2\\left(-\\frac{1}{2}\\right)+i2\\left(-\\frac{\\sqrt{3}}{2}\\right)=-1-\\sqrt{3}i\\nonumber\\] Altogether, we found all three complex solutions to \\(z^3 = 8\\), \\(z =2\\), \\(-1 + \\sqrt{3}i\\), \\(-1 - \\sqrt{3} i\\) Graphed, these three numbers would be equally spaced on a circle about the origin at a radius of 2."
+    }
+  ],
+  "internal_links": [
+    {
+      "text": "Precalculus & Trigonometry",
+      "url": "https://math.libretexts.org/Bookshelves/Precalculus"
+    },
+    {
+      "text": "Precalculus - An Investigation of Functions (Lippman and Rasmussen)",
+      "url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)"
+    },
+    {
+      "text": "8: Further Applications of Trigonometry",
+      "url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/08%3A_Further_Applications_of_Trigonometry"
+    },
+    {
+      "text": "8.3: Polar Form of Complex Numbers",
+      "url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/08%3A_Further_Applications_of_Trigonometry/8.03%3A_Polar_Form_of_Complex_Numbers"
+    },
+    {
+      "text": "8.2.1: Polar Coordinates (Exercises)",
+      "url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/08%3A_Further_Applications_of_Trigonometry/8.02%3A_Polar_Coordinates/8.2.01%3A_Polar_Coordinates_(Exercises)"
+    },
+    {
+      "text": "8.3.1: Polar Form of Complex Numbers (Exercise)",
+      "url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/08%3A_Further_Applications_of_Trigonometry/8.03%3A_Polar_Form_of_Complex_Numbers/8.3.01%3A_Polar_Form_of_Complex_Numbers_(Exercise)"
+    }
+  ],
+  "subsections": [],
+  "char_count": 5105
+}

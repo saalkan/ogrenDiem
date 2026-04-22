@@ -1,0 +1,276 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "title": "Compound Interest",
+      "description": "In the bank certificate of deposit (CD) example\nearlier in the section, we encountered compound\ninterest. Typically bank accounts and other\nsavings instruments in which earnings are\nreinvested, such as mutual funds and retirement\naccounts, utilize compound interest.",
+      "parent_section": "Exponential Functions",
+      "parent_section_num": "1",
+      "position_in_section": 0,
+      "difficulty_level": 1,
+      "difficulty_tier": "easy",
+      "concepts": [
+        "compound",
+        "compounding",
+        "original",
+        "percentage",
+        "value year",
+        "year"
+      ],
+      "defined_terms": [
+        "compound"
+      ],
+      "sample_content": "In the bank certificate of deposit (CD) example earlier in the section, we encountered compound interest. Typically bank accounts and other savings instruments in which earnings are reinvested, such as mutual funds and retirement accounts, utilize compound interest. The term \\(compounding\\) comes from the behavior that interest is earned not on the original value, but on the accumulated value of the account. In the example from earlier, the interest was compounded monthly, so we took the annual interest rate, usually called the nominal rate or annual percentage rate (APR) and divided by 12, the number of compounds in a year, to find the monthly interest. The exponent was then measured in months. Generalizing this, we can form a general formula for compound interest. If the APR is written in decimal form as \\(r\\), and there are \\(k\\) compounding periods per year, then the interest per compounding period will be \\(r/k\\). Likewise, if we are interested in the value after \\(t\\) years, then there will be \\(kt\\) compounding periods in that time. Exercise \\(\\PageIndex{5}\\) Recalculate example 2 from above with quarterly compounding. 24 months = 2 years. \\(1000\\left(1+\\dfrac{.012}{4} \\right)^{4(2)}\\)= $1024.25 Because of compounding throughout the year, with compound interest the actual increase in a year is more than the annual percentage rate. If $1,000 were invested at 10%, the table below shows the value after 1 year at different compounding frequencies: Frequency Value after 1 year Annually $1100 Semiannually $1102.50 Quarterly $1103.81 Monthly $1104.71 Daily $1105.16 If we were to compute the actual percentage increase for the daily compounding, there was an increase of $105.16 from an original amount of $1,000, for a percentage increase of \\(\\dfrac{105.16}{1000} =0.10516\\)= 10.516% increase. This quantity is called the annual percentage yield (APY) . Notice that given any starting amount, the amount after 1 year would be \\(A(1)=a\\left(1+\\dfrac{r}{k} \\right)^{k}\\). To",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/04%3A_Exponential_and_Logarithmic_Functions/4.01%3A_Exponential_Functions",
+      "depth": 0,
+      "id": "ch4_s1_t1"
+    },
+    {
+      "title": "A Limit to Compounding",
+      "description": "As we saw earlier, the amount we earn increases as\nwe increase the compounding frequency. The table,\nthough, shows that the increase from annual to\nsemi-annual compounding is larger than the\nincrease from monthly to daily compounding.",
+      "parent_section": "Exponential Functions",
+      "parent_section_num": "1",
+      "position_in_section": 1,
+      "difficulty_level": 1,
+      "difficulty_tier": "easy",
+      "concepts": [
+        "annual",
+        "compounding",
+        "continuous",
+        "growth",
+        "growth rate",
+        "rate"
+      ],
+      "defined_terms": [
+        "continuous"
+      ],
+      "sample_content": "As we saw earlier, the amount we earn increases as we increase the compounding frequency. The table, though, shows that the increase from annual to semi-annual compounding is larger than the increase from monthly to daily compounding. This might lead us to believe that although increasing the frequency of compounding will increase our result, there is an upper limit to this process. To see this, let us examine the value of $1 invested at 100% interest for 1 year. Frequency Value Annual $2 Quarterly $2.441406 Monthly $2.613035 Daily $2.714567 Hourly $2.718127 Once per minute $2.718279 Once per second $2.718282 These values do indeed appear to be approaching an upper limit. This value ends up being so important that it gets represented by its own letter, much like how \\(\\pi\\) represents a number. Because \\(e\\) is often used as the base of an exponential, most scientific and graphing calculators have a button that can calculate powers of \\(e\\), usually labeled \\({e}^{x}\\). Some computer software instead defines a function \\(exp(x)\\), where \\(exp(x) = {e}^{x}\\). Because \\(e\\) arises when the time between compounds becomes very small, \\(e\\) allows us to define continuous growth and allows us to define a new toolkit function, \\(f(x)=e^{x}\\). This type of equation is commonly used when describing quantities that change more or less continuously, like chemical reactions, growth of large populations, and radioactive decay. Exercise \\(\\PageIndex{6}\\) Interpret the following: \\(S(t)=20e^{0.12t}\\) if \\(S(t)\\) represents the growth of a substance in grams, and time is measured in days. An initial substance weighing 20g is growing at a continuous rate of 12% per day. Continuous growth is also often applied to compound interest, allowing us to talk about continuous compounding. Notice that this value is slightly larger than the amount generated by daily compounding in the table computed earlier. The continuous growth rate is like the nominal growth rate (or APR) – it reflects the ",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/04%3A_Exponential_and_Logarithmic_Functions/4.01%3A_Exponential_Functions",
+      "depth": 1,
+      "id": "ch4_s1_t2"
+    },
+    {
+      "title": "Graphs of Exponential Functions",
+      "description": "Like with linear functions, the graph of an\nexponential function is determined by the values\nfor the parameters in the function’s formula. To\nget a sense for the behavior of exponentials, let\nus begin by looking more closely at the function\n\\(f(x)=2^{x}\\).",
+      "parent_section": "Graphs of Exponential Functions",
+      "parent_section_num": "2",
+      "position_in_section": 0,
+      "difficulty_level": 2,
+      "difficulty_tier": "easy",
+      "concepts": [
+        "factor",
+        "graph",
+        "graphs",
+        "horizontal",
+        "infty",
+        "infty infty"
+      ],
+      "defined_terms": [],
+      "sample_content": "Like with linear functions, the graph of an exponential function is determined by the values for the parameters in the function’s formula. To get a sense for the behavior of exponentials, let us begin by looking more closely at the function \\(f(x)=2^{x}\\). Listing a table of values for this function: \\(x\\) -3 -2 -1 0 1 2 3 \\(f(x)\\) \\(\\dfrac{1}{8}\\) \\(\\dfrac{1}{4}\\) \\(\\dfrac{1}{2}\\) 1 2 4 8 Notice that: 1. This function is positive for all values of \\(x\\). 2. As \\(x\\) increases, the function grows faster and faster (the rate of change increases). 3. As \\(x\\) decreases, the function values grow smaller, approaching zero. 4. This is an example of exponential growth. Looking at the function \\(g(x)=\\left(\\dfrac{1}{2} \\right)^{x}\\) \\(x\\) -3 -2 -1 0 1 2 3 \\(g(x)\\) 8 4 2 1 \\(\\dfrac{1}{2}\\) \\(\\dfrac{1}{4}\\) \\(\\dfrac{1}{8}\\) Note this function is also positive for all values of \\(x\\), but in this case grows as \\(x\\) decreases, and decreases towards zero as \\(x\\) increases. This is an example of exponential decay. You may notice from the table that this function appears to be the horizontal reflection of the \\(f(x)=2^{x}\\) table. This is in fact the case: \\(f(-x)=2^{-x} =(2^{-1} )^{x} =\\left(\\dfrac{1}{2} \\right)^{x} =g(x) \\nonumber\\) Looking at the graphs also confirms this relationship. Consider a function of the form \\(f(x)=ab^{x}\\). Since \\(a\\), which we called the initial value in the last section, is the function value at an input of zero, \\(a\\) will give us the vertical intercept of the graph. From the graphs above, we can see that an exponential graph will have a horizontal asymptote on one side of the graph, and can either increase or decrease, depending upon the growth factor. This horizontal asymptote will also help us determine the long run behavior and is easy to determine from the graph. The graph will grow when the growth rate is positive, which will make the growth factor \\(b\\) larger than one. When it’s negative, the growth factor will be less than one. graphic",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/04%3A_Exponential_and_Logarithmic_Functions/4.02%3A_Graphs_of_Exponential_Functions",
+      "depth": 2,
+      "id": "ch4_s2_t1"
+    },
+    {
+      "title": "Logarithmic Functions",
+      "description": "A population of 50 flies is expected to double\nevery week, leading to a function of the form\n\\(f(x)=50(2)^{x}\\), where x represents the number\nof weeks that have passed. When will this\npopulation reach 500?",
+      "parent_section": "Logarithmic Functions",
+      "parent_section_num": "3",
+      "position_in_section": 0,
+      "difficulty_level": 3,
+      "difficulty_tier": "medium",
+      "concepts": [
+        "common",
+        "growth",
+        "inverse",
+        "left right",
+        "log",
+        "log left",
+        "logarithm",
+        "logarithmic"
+      ],
+      "defined_terms": [
+        "logarithm",
+        "common"
+      ],
+      "sample_content": "A population of 50 flies is expected to double every week, leading to a function of the form \\(f(x)=50(2)^{x}\\), where x represents the number of weeks that have passed. When will this population reach 500? Trying to solve this problem leads to: \\[500=50(2)^{x}\\nonumber\\] Dividing both sides by 50 to isolate the exponential \\[10=2^{x}\\nonumber\\] While we have set up exponential models and used them to make predictions, you may have noticed that solving exponential equations has not yet been mentioned. The reason is simple: none of the algebraic tools discussed so far are sufficient to solve exponential equations. Consider the equation \\(2^{x} =10\\) above. We know that \\(2^{3} =8\\) and \\(2^{4} =16\\), so it is clear that \\(x\\) must be some value between 3 and 4 since \\(g(x)=2^{x}\\) is increasing. We could use technology to create a table of values or graph to better estimate the solution. From the graph, we could better estimate the solution to be around 3.3. This result is still fairly unsatisfactory, and since the exponential function is one-to-one, it would be great to have an inverse function. None of the functions we have already discussed would serve as an inverse function and so we must introduce a new function, named log as the inverse of an exponential function. Since exponential functions have different bases, we will define corresponding logarithms of different bases as well. Since the logarithm and exponential are inverses, it follows that: properties of logs: inverse properties \\[\\log _{b} \\left(b^{x} \\right)=x\\] \\[b^{\\log _{b} x} =x\\] Recall from the definition of an inverse function that if \\(f(a)=c\\), then \\(f^{-1} (c)=a\\). Applying this to the exponential and logarithmic functions, we can convert between a logarithmic equation and its equivalent exponential. logarithm equivalent to an exponential The statement \\(b^{a} =c\\) is equivalent to the statement \\(\\log _{b} (c)=a\\). Alternatively, we could show this by starting with the exponential function\\(c",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/04%3A_Exponential_and_Logarithmic_Functions/4.03%3A_Logarithmic_Functions",
+      "depth": 3,
+      "id": "ch4_s3_t1"
+    },
+    {
+      "title": "Logarithmic Properties",
+      "description": "In the previous section, we derived two important\nproperties of logarithms, which allowed us to\nsolve some basic exponential and logarithmic\nequations. properties of logs Inverse Properties:\n\\[\\log _{b} \\left(b^{x} \\right)=x\\] \\[b^{\\log _{b}\nx} =x\\] Exponential Property: \\[\\log _",
+      "parent_section": "Logarithmic Properties",
+      "parent_section_num": "4",
+      "position_in_section": 0,
+      "difficulty_level": 3,
+      "difficulty_tier": "medium",
+      "concepts": [
+        "left right",
+        "log",
+        "log left",
+        "nonumber",
+        "properties",
+        "right log"
+      ],
+      "defined_terms": [],
+      "sample_content": "In the previous section, we derived two important properties of logarithms, which allowed us to solve some basic exponential and logarithmic equations. properties of logs Inverse Properties: \\[\\log _{b} \\left(b^{x} \\right)=x\\] \\[b^{\\log _{b} x} =x\\] Exponential Property: \\[\\log _{b} \\left(A^{r} \\right)=r\\log _{b} \\left(A\\right)\\] Change of Base: \\[\\log _{b} \\left(A\\right)=\\dfrac{\\log _{c} (A)}{\\log _{c} (b)}\\] While these properties allow us to solve a large number of problems, they are not sufficient to solve all problems involving exponential and logarithmic equations. properties of logs Sum of Logs Property: \\[\\log _{b} \\left(A\\right)+\\log _{b} \\left(C\\right)=\\log _{b} (AC)\\] Difference of Logs Property: \\[\\log _{b} \\left(A\\right)-\\log _{b} \\left(C\\right)=\\log _{b} \\left(\\dfrac{A}{C} \\right) \\] It’s just as important to know what properties logarithms do not satisfy as to memorize the valid properties listed above. In particular, the logarithm is not a linear function, which means that it does not distribute: \\[\\log A + B \\ne \\log A + \\log B. \\label{distr1}\\] To help in this process we offer a proof of Equation \\ref{distr1} to help solidify our new rules and show how they follow from properties you’ve already seen. Proof Let \\(a=\\log _{b} \\left(A\\right)\\) and \\(c=\\log _{b} \\left(C\\right)\\). By definition of the logarithm, \\(b^{a} =A\\) and \\(b^{c} =C\\). Using these expressions, \\[AC=b^{a} b^{c} \\nonumber\\] Using exponent rules on the right, \\[AC=b^{a+c} \\nonumber\\] Taking the log of both sides, and utilizing the inverse property of logs, \\[\\log _{b} \\left(AC\\right)=\\log _{b} \\left(b^{a+c} \\right)=a+c \\nonumber\\] Replacing \\(a\\) and \\(c\\) with their definition establishes the result \\[\\log _{b} \\left(AC\\right)=\\log _{b} A+\\log _{b} C \\nonumber\\] The proof for the difference property is very similar. With these properties, we can rewrite expressions involving multiple logs as a single log, or break an expression involving a single log into expressions involving mult",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/04%3A_Exponential_and_Logarithmic_Functions/4.04%3A_Logarithmic_Properties",
+      "depth": 4,
+      "id": "ch4_s4_t1"
+    },
+    {
+      "title": "Graphs of Logarithmic Functions",
+      "description": "Recall that the exponential function\n\\(f(x)=2^{x}\\) produces this table of values \\(x\\)\n-3 -2 -1 0 1 2 3 \\(f(x)\\) \\(\\dfrac{1}{8}\\)\n\\(\\dfrac{1}{4}\\) \\(\\dfrac{1}{2}\\) 1 2 4 8 Since\nthe logarithmic function is an inverse of the\nexponential, \\(g(x)=\\log _{2} (x)\\) produces the\ntable",
+      "parent_section": "Graphs of Logarithmic Functions",
+      "parent_section_num": "5",
+      "position_in_section": 0,
+      "difficulty_level": 4,
+      "difficulty_tier": "hard",
+      "concepts": [
+        "domain",
+        "graph",
+        "infty",
+        "left left",
+        "log",
+        "vertical"
+      ],
+      "defined_terms": [],
+      "sample_content": "Recall that the exponential function \\(f(x)=2^{x}\\) produces this table of values \\(x\\) -3 -2 -1 0 1 2 3 \\(f(x)\\) \\(\\dfrac{1}{8}\\) \\(\\dfrac{1}{4}\\) \\(\\dfrac{1}{2}\\) 1 2 4 8 Since the logarithmic function is an inverse of the exponential, \\(g(x)=\\log _{2} (x)\\) produces the table of values \\(x\\) \\(\\dfrac{1}{8}\\) \\(\\dfrac{1}{4}\\) \\(\\dfrac{1}{2}\\) 1 2 4 8 \\(g(x)\\) -3 -2 -1 0 1 2 3 In this second table, notice that 1. As the input increases, the output increases. 2. As input increases, the output increases more slowly. 3. Since the exponential function only outputs positive values, the logarithm can only accept positive values as inputs, so the domain of the log function is \\((0,\\infty )\\). 4. Since the exponential function can accept all real numbers as inputs, the logarithm can output any real number, so the range is all real numbers or \\((-\\infty ,\\infty )\\). Sketching the graph, notice that as the input approaches zero from the right, the output of the function grows very large in the negative direction, indicating a vertical asymptote at \\(x = 0\\). In symbolic notation we write as \\(x \\to 0^{+} ,f(x) \\to -\\infty\\), and as\\(x \\to \\infty ,f(x) \\to \\infty\\) Graphical Features of the Logarithm Graphically, in the function \\(g(x)=\\log _{b} (x)\\) The graph has a horizontal intercept at (1, 0) The graph has a vertical asymptote at \\(x = 0\\) The graph is increasing and concave down The domain of the function is \\(x > 0\\), or \\((0,\\infty )\\) The range of the function is all real numbers, or \\((-\\infty ,\\infty )\\) When sketching a general logarithm with base \\(b\\), it can be helpful to remember that the graph will pass through the points (1, 0) and (\\(b\\), 1). To get a feeling for how the base affects the shape of the graph, examine the graphs below. Notice that the larger the base, the slower the graph grows. For example, the common log graph, while it grows without bound, it does so very slowly. For example, to reach an output of 8, the input must be 100,000,000. Another i",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/04%3A_Exponential_and_Logarithmic_Functions/4.05%3A_Graphs_of_Logarithmic_Functions",
+      "depth": 5,
+      "id": "ch4_s5_t1"
+    },
+    {
+      "title": "Exponential and Logarithmic Models",
+      "description": "While we have explored some basic applications of\nexponential and logarithmic functions, in this\nsection we explore some important applications in\nmore depth. Radioactive Decay In an earlier\nsection, we discussed radioactive decay – the idea\nthat radioactive isotopes change over",
+      "parent_section": "Exponential and Logarithmic Models",
+      "parent_section_num": "6",
+      "position_in_section": 0,
+      "difficulty_level": 4,
+      "difficulty_tier": "hard",
+      "concepts": [
+        "decay",
+        "dfrac",
+        "doubling",
+        "half",
+        "log",
+        "magnitude",
+        "orders",
+        "scale",
+        "sound"
+      ],
+      "defined_terms": [
+        "half",
+        "doubling",
+        "orders"
+      ],
+      "sample_content": "While we have explored some basic applications of exponential and logarithmic functions, in this section we explore some important applications in more depth. Radioactive Decay In an earlier section, we discussed radioactive decay – the idea that radioactive isotopes change over time. One of the common terms associated with radioactive decay is half-life. Given the basic exponential growth/decay equation \\(h(t)=ab^{t}\\), half-life can be found by solving for when half the original amount remains; by solving \\(\\dfrac{1}{2} a=a(b)^{t}\\), or more simply \\(\\dfrac{1}{2} =b^{t}\\). Notice how the initial amount is irrelevant when solving for half-life. Exercise \\(\\PageIndex{1}\\) Chlorine-36 is eliminated from the body with a biological half-life of 10 days (www.ead.anl.gov/pub/doc/chlorine.pdf). Find the daily decay rate. Answer \\(r = \\sqrt[10]{\\dfrac{1}{2}} - 1 \\approx -0.067\\) or 6.7% is the daily rate of decay. Exercise \\(\\PageIndex{2}\\) In Example 2, we learned that Cesium-137 has a half-life of about 30 years. If you begin with 200 mg of cesium-137, will it take more or less than 230 years until only 1 milligram remains? Answer Less than 230 years, 229.3157 to be exact. Doubling Time For decaying quantities, we asked how long it takes for half the substance to decay. For growing quantities we might ask how long it takes for the quantity to double. Given the basic exponential growth equation \\(h(t)=ab^{t}\\), doubling time can be found by solving for when the original quantity has doubled; by solving \\(2a=a(b)^{x}\\), or more simply \\(2=b^{x}\\). Like with decay, the initial amount is irrelevant when solving for doubling time. Exercise \\(\\PageIndex{3}\\) If tuition at a college is increasing by 6.6% each year, how many years will it take for tuition to double? Answer Solving \\(a (1 + 0.066)^t = 2a\\), it will take \\(t = \\dfrac{log(2)}{log(1.066)} \\approx 10.845\\) years, or approximately 11 years, for tuition to double. Newton’s Law of Cooling When a hot object is left in su",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/04%3A_Exponential_and_Logarithmic_Functions/4.06%3A_Exponential_and_Logarithmic_Models",
+      "depth": 6,
+      "id": "ch4_s6_t1"
+    },
+    {
+      "title": "Fitting Exponential Models to Data",
+      "description": "In the previous section, we saw number lines using\nlogarithmic scales. It is also common to see two\ndimensional graphs with one or both axes using a\nlogarithmic scale.",
+      "parent_section": "Fitting Exponential Models to Data",
+      "parent_section_num": "7",
+      "position_in_section": 0,
+      "difficulty_level": 5,
+      "difficulty_tier": "hard",
+      "concepts": [
+        "data",
+        "left right",
+        "linear",
+        "log",
+        "log left",
+        "scale",
+        "semi-log"
+      ],
+      "defined_terms": [
+        "semi-log"
+      ],
+      "sample_content": "In the previous section, we saw number lines using logarithmic scales. It is also common to see two dimensional graphs with one or both axes using a logarithmic scale. One common use of a logarithmic scale on the vertical axis is to graph quantities that are changing exponentially, since it helps reveal relative differences. This is commonly used in stock charts, since values historically have grown exponentially over time. Both stock charts below show the Dow Jones Industrial Average, from 1928 to 2010. Both charts have a linear horizontal scale, but the first graph has a linear vertical scale, while the second has a logarithmic vertical scale. The first scale is the one we are more familiar with, and shows what appears to be a strong exponential trend, at least up until the year 2000. The second graph above, in which one axis uses a linear scale and the other axis uses a logarithmic scale, is an example of a semi-log graph. Notice that on this semi-log scale, values from the exponential function appear linear. We can show this behavior is expected by utilizing logarithmic properties. For the function \\(f(x)=ab^{x}\\), finding log(\\(f(x)\\)) gives \\[\\log \\left(f(x)\\right)=\\log \\left(ab^{x} \\right)\\nonumber\\] Utilizing the sum property of logs, \\[\\log \\left(f(x)\\right)=\\log \\left(a\\right)+\\log \\left(b^{x} \\right)\\nonumber\\] Now utilizing the exponent property, \\[\\log \\left(f(x)\\right)=\\log \\left(a\\right)+x\\log \\left(b\\right)\\nonumber\\] This relationship is linear, with log( a ) as the vertical intercept, and log( b ) as the slope. This relationship can also be utilized in reverse. Exercise \\(\\PageIndex{1}\\) An exponential graph is plotted on a semi-log graph below. Find a formula for the exponential function \\(g(x)\\) that generated this graph. Answer \\[g(x) = 10^{2 - 0.5x} = 10^2 (10^{-0.5})^{x},\\quad f(x) = 100 (0.3162)^x\\nonumber\\] Fitting Exponential Functions to Data Some technology options provide dedicated functions for finding exponential functions that fit dat",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/04%3A_Exponential_and_Logarithmic_Functions/4.07%3A_Fitting_Exponential_Models_to_Data",
+      "depth": 7,
+      "id": "ch4_s7_t1"
+    }
+  ],
+  "edges": [
+    {
+      "strength": 4,
+      "source": "ch4_s1_t1",
+      "evidence": "compound",
+      "target": "ch4_s1_t2"
+    },
+    {
+      "strength": 4,
+      "source": "ch4_s1_t2",
+      "evidence": "continuous",
+      "target": "ch4_s3_t1"
+    },
+    {
+      "strength": 4,
+      "source": "ch4_s1_t2",
+      "evidence": "continuous",
+      "target": "ch4_s6_t1"
+    },
+    {
+      "strength": 1,
+      "source": "ch4_s1_t2",
+      "evidence": "section 4.1 → 4.2",
+      "target": "ch4_s2_t1"
+    },
+    {
+      "strength": 1,
+      "source": "ch4_s2_t1",
+      "evidence": "section 4.2 → 4.3",
+      "target": "ch4_s3_t1"
+    },
+    {
+      "strength": 4,
+      "source": "ch4_s3_t1",
+      "evidence": "logarithm",
+      "target": "ch4_s4_t1"
+    },
+    {
+      "strength": 4,
+      "source": "ch4_s3_t1",
+      "evidence": "logarithm",
+      "target": "ch4_s5_t1"
+    },
+    {
+      "strength": 4,
+      "source": "ch4_s3_t1",
+      "evidence": "logarithm",
+      "target": "ch4_s6_t1"
+    },
+    {
+      "strength": 4,
+      "source": "ch4_s3_t1",
+      "evidence": "common",
+      "target": "ch4_s7_t1"
+    },
+    {
+      "strength": 1,
+      "source": "ch4_s4_t1",
+      "evidence": "section 4.4 → 4.5",
+      "target": "ch4_s5_t1"
+    },
+    {
+      "strength": 1,
+      "source": "ch4_s5_t1",
+      "evidence": "section 4.5 → 4.6",
+      "target": "ch4_s6_t1"
+    },
+    {
+      "strength": 1,
+      "source": "ch4_s6_t1",
+      "evidence": "section 4.6 → 4.7",
+      "target": "ch4_s7_t1"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/03%3A_Polynomial_and_Rational_Functions./3.01%3A_Power_Functions",
+  "title": "3.1: Power Functions",
+  "chapter": "3",
+  "section": "1",
+  "body_text": "A square is cut out of cardboard, with each side having length \\(L\\). If we wanted to write a function for the area of the square, with \\(L\\) as the input and the area as output, you may recall that the area of a rectangle can be found by multiplying the length times the width. Since our shape is a square, the length & the width are the same, giving the formula: \\[A(L)=L\\cdot L=L^{2}\\] Likewise, if we wanted a function for the volume of a cube with each side having some length \\(L\\), you may recall volume of a rectangular box can be found by multiplying length by width by height, which are all equal for a cube, giving the formula: \\[V(L)=L\\cdot L\\cdot L=L^{3}\\] These two functions are examples of power functions , functions that are some power of the variable. Exercise \\(\\PageIndex{1}\\) What point(s) do the toolkit power functions have in common? Answer (0, 0) and (1, 1) are common to all power functions. Characteristics of Power Functions Shown to the right are the graphs of \\(f(x)=x^{2}\\), \\(f(x)=x^{4}\\), and \\(f(x)=x^{6}\\), all even whole number powers. Notice that all these graphs have a fairly similar shape, very similar to the quadratic toolkit, but as the power increases the graphs flatten somewhat near the origin, and become steeper away from the origin. To describe the behavior as numbers become larger and larger, we use the idea of infinity. The symbol for positive infinity is \\(\\infty\\), and \\(-\\infty\\) for negative infinity. When we say that “\\(x\\) approaches infinity”, which can be symbolically written as \\(x \\to \\infty\\), we are describing a behavior – we are saying that \\(x\\) is getting large in the positive direction. With the even power functions, as the \\(x\\) becomes large in either the positive or negative direction, the output values become very large positive numbers. Equivalently, we could describe this by saying that as \\(x\\) approaches positive or negative infinity, the \\(f(x)\\) values approach positive infinity. In symbolic form, we could write: as \\(x \\to \\pm \\infty\\), \\(f(x) \\to \\infty\\). Shown here are the graphs of \\(f(x)=x^{3}\\), \\(f(x)=x^{5}\\), and \\(f(x)=x^{7}\\), all odd whole number powers. Notice all these graphs look similar to the cubic toolkit, but again as the power increases the graphs flatten near the origin and become steeper away from the origin. For these odd power functions, as \\(x\\) approaches negative infinity, \\(f(x)\\) approaches negative infinity. As \\(x\\) approaches positive infinity, \\(f(x)\\) approaches positive infinity. In symbolic form we write: as \\(x \\to - \\infty\\), \\(f(x) \\to - \\infty\\) and as \\(x \\to \\infty\\), \\(f(x) \\to \\infty\\). Exercise \\(\\PageIndex{2}\\) Describe in words and symbols the long run behavior of \\(f(x)=-x^{4}\\) Answer As \\(x\\) approaches positive and negative infinity, \\(f(x)\\) approaches negative infinity: as \\(x \\to \\pm \\infty\\), \\(f(x) \\to -\\infty\\) because of the vertical flip. Treatment of the rational and radical forms of power functions will be saved for later. Polynomials An oil pipeline bursts in the Gulf of Mexico, causing an oil slick in a roughly circular shape. The slick is currently 24 miles in radius, but that radius is increasing by 8 miles each week. If we wanted to write a formula for the area covered by the oil slick, we could do so by composing two functions together. The first is a formula for the radius, \\(r\\), of the spill, which depends on the number of weeks, w , that have passed. Hopefully you recognized that this relationship is linear: \\[r(w)=24+8w\\nonumber\\] We can combine this with the formula for the area, \\(A\\), of a circle: \\[A(r)=\\pi r^{2}\\nonumber \\] Composing these functions gives a formula for the area in terms of weeks: \\[A(w)=A(r(w))=A(24+8w)=\\pi (24+8w)^{2}\\nonumber \\] Multiplying this out gives the formula \\[A(w)=576\\pi +384\\pi w+64\\pi w^{2}\\nonumber \\] This formula is an example of a polynomial . A polynomial is simply the sum of terms each consisting of a vertically stretched or compressed power function with non-negative whole number power. Exercise \\(\\PageIndex{3}\\) Given the function\\(f(x)=0.2(x-2)(x+1)(x-5)\\) use your algebra skills to write the function in standard polynomial form (as a sum of terms) and determine the leading term, degree, and long run behavior of the function. Answer The leading term is \\(0.2x^{3}\\), so it is a degree 3 polynomial.As \\(x\\) approaches infinity (or gets very large in the positive direction) \\(f(x)\\) approaches infinity; as \\(x\\) approaches negative infinity (or gets very large in the negative direction) \\(f(x)\\) approaches negative infinity. (Basically the long run behavior is the same as the cubic function). Short Run Behavior Characteristics of the graph such as vertical and horizontal intercepts and the places the graph changes direction are part of the short run behavior of the polynomial. Like with all functions, the vertical intercept is where the graph crosses the vertical axis, and occurs when the input value is zero. Since a polynomial is a function, there can only be one vertical intercept, which occurs at the point \\((0, a_{0})\\). The horizontal intercepts occur at the input values that correspond with an output value of zero. It is possible to have more than one horizontal intercept. Horizontal intercepts are also called zeros , or roots of the function. Notice that the polynomial in the previous example, which would be degree three if multiplied out, had three horizontal intercepts and two turning points – places where the graph changes direction. We will now make a general statement without justifying it – the reasons will become clear later in this chapter. intercepts and turning points of polynomials A polynomial of degree \\(n\\) will have: At most \\(n\\) horizontal intercepts. An odd degree polynomial will always have at least one. At most \\(n - 1\\) turning points Exercise \\(\\PageIndex{4}\\) Given the function\\(f(x) = 0.2(x-2)(x+1)(x-5)\\), determine the short run behavior. Answer Horizontal intercepts are (2, 0) (-1, 0) and (5, 0), the vertical intercept is (0, 2) and there are 2 turns in the graph. Important Topics of this Section Power Functions Polynomials Coefficients Leading coefficient Term Leading Term Degree of a polynomial Long run behavior Short run behavior",
+  "definitions": [
+    {
+      "kind": "boxed",
+      "text": "Definition: Power Function A power function is a function that can be represented in the form \\[f(x)=x^{p}\\] Where the base is a variable and the exponent, \\(p\\), is a number."
+    },
+    {
+      "kind": "boxed",
+      "text": "Definition: long run behavior The behavior of the graph of a function as the input takes on large negative values,\\(x \\to - \\infty\\), and large positive values, \\(x \\to \\infty\\), is referred to as the long run behavior of the function."
+    },
+    {
+      "kind": "boxed",
+      "text": "terminology of polynomial functions A polynomial is function that can be written as \\[f(x)=a_{0} +a_{1} x+a_{2} x^{2} +\\cdots +a_{n} x^{n} \\label{poly1}\\] Each of the \\(a_{i}\\) constants are called coefficients and can be positive, negative, or zero, and be whole numbers, decimals, or fractions. A term of the polynomial is any one piece of the sum, that is any \\(a_{i} x^{i}\\). Each individual term is a transformed power function. The degree of the polynomial is the highest power of the variable that occurs in the polynomial. The leading term is the term containing the highest power of the variable: the term with the highest degree. The leading coefficient is the coefficient of the leading term. Because of the definition of the “leading” term we often rearrange Equation \\ref{poly1} so that the powers are descending. \\[f(x)=a_{n} x^{n} +.....+a_{2} x^{2} +a_{1} x+a_{0} \\label{poly2}\\]"
+    },
+    {
+      "kind": "boxed",
+      "text": "Definition: long run behavior of polynomials For any polynomial, the long run behavior of the polynomial will match the long run behavior of the leading term."
+    },
+    {
+      "kind": "inline",
+      "text": "Definition: Power Function"
+    },
+    {
+      "kind": "inline",
+      "text": "Definition: long run behavior"
+    },
+    {
+      "kind": "inline",
+      "text": "Definition: long run behavior of polynomials"
+    }
+  ],
+  "examples": [
+    {
+      "text": "Example \\(\\PageIndex{1}\\) Which of our toolkit functions are power functions? (This chapter is part of Precalculus: An Investigation of Functions © Lippman & Rasmussen 2017, and contains content remixed with permission from College Algebra © Stitz & Zeager 2013. This material is licensed under a Creative Commons CC-BY-SA license.) Solutions The constant and identity functions are power functions, since they can be written as \\(f(x)=x^{0}\\) and \\(f(x)=x^{1}\\) respectively. The quadratic and cubic functions are both power functions with whole number powers: \\(f(x)=x^{2}\\) and \\(f(x)=x^{3}\\). The reciprocal and reciprocal squared functions are both power functions with negative whole number powers since they can be written as \\(f(x)=x^{-1}\\)and \\(f(x)=x^{-2}\\). The square and cube root functions are both power functions with fractional powers since they can be written as \\(f(x) = x^{\\dfrac{1}{2}}\\) or \\(f(x) = x^{\\dfrac{1}{3}}\\)"
+    },
+    {
+      "text": "Example \\(\\PageIndex{2}\\) Describe the long run behavior of the graph of \\(f(x)=x^{8}\\). Solution Since \\(f(x)=x^{8}\\) has a whole, even power, we would expect this function to behave somewhat like the quadratic function. As the input gets large positive or negative, we would expect the output to grow without bound in the positive direction. In symbolic form, as \\(x \\to \\pm \\infty\\), \\(f(x) \\to \\infty\\)."
+    },
+    {
+      "text": "Example \\(\\PageIndex{3}\\) Describe the long run behavior of the graph of \\(f(x)=-x^{9}\\) Solution Since this function has a whole odd power, we would expect it to behave somewhat like the cubic function. The negative in front of the \\(x^{9}\\) will cause a vertical reflection, so as the inputs grow large positive, the outputs will grow large in the negative direction, and as the inputs grow large negative, the outputs will grow large in the positive direction. In symbolic form, for the long run behavior we would write: as \\(x \\to \\infty\\), \\(f(x)\\to - \\infty\\)and as \\(x\\to - \\infty\\), \\(f(x) \\to \\infty\\). You may use words or symbols to describe the long run behavior of these functions."
+    },
+    {
+      "text": "Example \\(\\PageIndex{4}\\) Identify the degree, leading term, and leading coefficient of these polynomials: \\(f(x)=3+2x^{2} -4x^{3}\\) \\(g(t)=5t^{5} -2t^{3} +7t\\) \\(h(p)=6p-p^{3} -2\\) Solution For the function \\(f(x)\\), the degree is 3, the highest power on \\(x\\). The leading term is the term containing that power, \\(-4x^{3}\\). The leading coefficient is the coefficient of that term, -4. For \\(g(t)\\), the degree is 5, the leading term is \\(5t^{5}\\), and the leading coefficient is 5. For \\(h(p)\\), the degree is 3, the leading term is \\(-p^{3}\\), so the leading coefficient is -1."
+    },
+    {
+      "text": "Example \\(\\PageIndex{5}\\) What can we determine about the long run behavior and degree of the equation for the polynomial graphed here? Solution Since the output grows large and positive as the inputs grow large and positive, we describe the long run behavior symbolically by writing: as \\(x \\to \\infty\\), \\(f(x) \\to \\infty\\). Similarly, as \\(x \\to -\\infty\\), \\(f(x) \\to -\\infty\\). In words, we could say that as \\(x\\) values approach infinity, the function values approach infinity, and as \\(x\\) values approach negative infinity the function values approach negative infinity. We can tell this graph has the shape of an odd degree power function which has not been reflected, so the degree of the polynomial creating this graph must be odd, and the leading coefficient would be positive."
+    },
+    {
+      "text": "Example \\(\\PageIndex{6}\\) Given the polynomial function \\(f(x)=(x-2)(x+1)(x-4)\\), written in factored form for your convenience, determine the vertical and horizontal intercepts. Solution The vertical intercept occurs when the input is zero. \\[f(0)=(0-2)(0+1)(0-4)=8\\nonumber \\] The graph crosses the vertical axis at the point (0, 8). The horizontal intercepts occur when the output is zero. \\[0=(x-2)(x+1)(x-4)\\nonumber \\] when \\(x\\) = 2, -1, or 4. \\(f(x)\\) has zeros, or roots, at \\(x\\) = 2, -1, and 4. The graph crosses the horizontal axis at the points (2, 0), (-1, 0), and (4, 0)"
+    },
+    {
+      "text": "Example \\(\\PageIndex{7}\\) What can we conclude about the graph of the polynomial shown here? Solution Based on the long run behavior, with the graph becoming large positive on both ends of the graph, we can determine that this is the graph of an even degree polynomial. The graph has 2 horizontal intercepts, suggesting a degree of 2 or greater, and 3 turning points, suggesting a degree of 4 or greater. Based on this, it would be reasonable to conclude that the degree is even and at least 4, so it is probably a fourth degree polynomial."
+    }
+  ],
+  "internal_links": [
+    {
+      "text": "Precalculus & Trigonometry",
+      "url": "https://math.libretexts.org/Bookshelves/Precalculus"
+    },
+    {
+      "text": "Precalculus - An Investigation of Functions (Lippman and Rasmussen)",
+      "url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)"
+    },
+    {
+      "text": "3: Polynomial and Rational Functions.",
+      "url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/03%3A_Polynomial_and_Rational_Functions."
+    },
+    {
+      "text": "3.1: Power Functions",
+      "url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/03%3A_Polynomial_and_Rational_Functions./3.01%3A_Power_Functions"
+    },
+    {
+      "text": "3.1E: Power Functions (Exercises)",
+      "url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/03%3A_Polynomial_and_Rational_Functions./3.01%3A_Power_Functions/3.1E%3A_Power_Functions_(Exercises)"
+    }
+  ],
+  "subsections": [
+    {
+      "heading": "Characteristics of Power Functions",
+      "level": "h2",
+      "body_text": "Shown to the right are the graphs of \\(f(x)=x^{2}\\), \\(f(x)=x^{4}\\), and \\(f(x)=x^{6}\\), all even whole number powers. Notice that all these graphs have a fairly similar shape, very similar to the quadratic toolkit, but as the power increases the graphs flatten somewhat near the origin, and become steeper away from the origin. To describe the behavior as numbers become larger and larger, we use the idea of infinity. The symbol for positive infinity is \\(\\infty\\), and \\(-\\infty\\) for negative infinity. When we say that “\\(x\\) approaches infinity”, which can be symbolically written as \\(x \\to \\infty\\), we are describing a behavior – we are saying that \\(x\\) is getting large in the positive direction. With the even power functions, as the \\(x\\) becomes large in either the positive or negative direction, the output values become very large positive numbers. Equivalently, we could describe this by saying that as \\(x\\) approaches positive or negative infinity, the \\(f(x)\\) values approach positive infinity. In symbolic form, we could write: as \\(x \\to \\pm \\infty\\), \\(f(x) \\to \\infty\\). Shown here are the graphs of \\(f(x)=x^{3}\\), \\(f(x)=x^{5}\\), and \\(f(x)=x^{7}\\), all odd whole number powers. Notice all these graphs look similar to the cubic toolkit, but again as the power increases the graphs flatten near the origin and become steeper away from the origin. For these odd power functions, as \\(x\\) approaches negative infinity, \\(f(x)\\) approaches negative infinity. As \\(x\\) approaches positive infinity, \\(f(x)\\) approaches positive infinity. In symbolic form we write: as \\(x \\to - \\infty\\), \\(f(x) \\to - \\infty\\) and as \\(x \\to \\infty\\), \\(f(x) \\to \\infty\\). Exercise \\(\\PageIndex{2}\\) Describe in words and symbols the long run behavior of \\(f(x)=-x^{4}\\) As \\(x\\) approaches positive and negative infinity, \\(f(x)\\) approaches negative infinity: as \\(x \\to \\pm \\infty\\), \\(f(x) \\to -\\infty\\) because of the vertical flip. Treatment of the rational and radical forms of power functions will be saved for later.",
+      "definitions": [
+        {
+          "kind": "boxed",
+          "text": "Definition: long run behavior The behavior of the graph of a function as the input takes on large negative values,\\(x \\to - \\infty\\), and large positive values, \\(x \\to \\infty\\), is referred to as the long run behavior of the function."
+        }
+      ],
+      "examples": [
+        {
+          "text": "Example \\(\\PageIndex{2}\\) Describe the long run behavior of the graph of \\(f(x)=x^{8}\\). Solution Since \\(f(x)=x^{8}\\) has a whole, even power, we would expect this function to behave somewhat like the quadratic function. As the input gets large positive or negative, we would expect the output to grow without bound in the positive direction. In symbolic form, as \\(x \\to \\pm \\infty\\), \\(f(x) \\to \\infty\\)."
+        },
+        {
+          "text": "Example \\(\\PageIndex{3}\\) Describe the long run behavior of the graph of \\(f(x)=-x^{9}\\) Solution Since this function has a whole odd power, we would expect it to behave somewhat like the cubic function. The negative in front of the \\(x^{9}\\) will cause a vertical reflection, so as the inputs grow large positive, the outputs will grow large in the negative direction, and as the inputs grow large negative, the outputs will grow large in the positive direction. In symbolic form, for the long run behavior we would write: as \\(x \\to \\infty\\), \\(f(x)\\to - \\infty\\)and as \\(x\\to - \\infty\\), \\(f(x) \\to \\infty\\). You may use words or symbols to describe the long run behavior of these functions."
+        }
+      ]
+    },
+    {
+      "heading": "Polynomials",
+      "level": "h2",
+      "body_text": "An oil pipeline bursts in the Gulf of Mexico, causing an oil slick in a roughly circular shape. The slick is currently 24 miles in radius, but that radius is increasing by 8 miles each week. If we wanted to write a formula for the area covered by the oil slick, we could do so by composing two functions together. The first is a formula for the radius, \\(r\\), of the spill, which depends on the number of weeks, w , that have passed. Hopefully you recognized that this relationship is linear: \\[r(w)=24+8w\\nonumber\\] We can combine this with the formula for the area, \\(A\\), of a circle: \\[A(r)=\\pi r^{2}\\nonumber \\] Composing these functions gives a formula for the area in terms of weeks: \\[A(w)=A(r(w))=A(24+8w)=\\pi (24+8w)^{2}\\nonumber \\] Multiplying this out gives the formula \\[A(w)=576\\pi +384\\pi w+64\\pi w^{2}\\nonumber \\] This formula is an example of a polynomial . A polynomial is simply the sum of terms each consisting of a vertically stretched or compressed power function with non-negative whole number power. Exercise \\(\\PageIndex{3}\\) Given the function\\(f(x)=0.2(x-2)(x+1)(x-5)\\) use your algebra skills to write the function in standard polynomial form (as a sum of terms) and determine the leading term, degree, and long run behavior of the function. The leading term is \\(0.2x^{3}\\), so it is a degree 3 polynomial.As \\(x\\) approaches infinity (or gets very large in the positive direction) \\(f(x)\\) approaches infinity; as \\(x\\) approaches negative infinity (or gets very large in the negative direction) \\(f(x)\\) approaches negative infinity. (Basically the long run behavior is the same as the cubic function).",
+      "definitions": [
+        {
+          "kind": "boxed",
+          "text": "terminology of polynomial functions A polynomial is function that can be written as \\[f(x)=a_{0} +a_{1} x+a_{2} x^{2} +\\cdots +a_{n} x^{n} \\label{poly1}\\] Each of the \\(a_{i}\\) constants are called coefficients and can be positive, negative, or zero, and be whole numbers, decimals, or fractions. A term of the polynomial is any one piece of the sum, that is any \\(a_{i} x^{i}\\). Each individual term is a transformed power function. The degree of the polynomial is the highest power of the variable that occurs in the polynomial. The leading term is the term containing the highest power of the variable: the term with the highest degree. The leading coefficient is the coefficient of the leading term. Because of the definition of the “leading” term we often rearrange Equation \\ref{poly1} so that the powers are descending. \\[f(x)=a_{n} x^{n} +.....+a_{2} x^{2} +a_{1} x+a_{0} \\label{poly2}\\]"
+        },
+        {
+          "kind": "boxed",
+          "text": "Definition: long run behavior of polynomials For any polynomial, the long run behavior of the polynomial will match the long run behavior of the leading term."
+        }
+      ],
+      "examples": [
+        {
+          "text": "Example \\(\\PageIndex{4}\\) Identify the degree, leading term, and leading coefficient of these polynomials: \\(f(x)=3+2x^{2} -4x^{3}\\) \\(g(t)=5t^{5} -2t^{3} +7t\\) \\(h(p)=6p-p^{3} -2\\) Solution For the function \\(f(x)\\), the degree is 3, the highest power on \\(x\\). The leading term is the term containing that power, \\(-4x^{3}\\). The leading coefficient is the coefficient of that term, -4. For \\(g(t)\\), the degree is 5, the leading term is \\(5t^{5}\\), and the leading coefficient is 5. For \\(h(p)\\), the degree is 3, the leading term is \\(-p^{3}\\), so the leading coefficient is -1."
+        },
+        {
+          "text": "Example \\(\\PageIndex{5}\\) What can we determine about the long run behavior and degree of the equation for the polynomial graphed here? Solution Since the output grows large and positive as the inputs grow large and positive, we describe the long run behavior symbolically by writing: as \\(x \\to \\infty\\), \\(f(x) \\to \\infty\\). Similarly, as \\(x \\to -\\infty\\), \\(f(x) \\to -\\infty\\). In words, we could say that as \\(x\\) values approach infinity, the function values approach infinity, and as \\(x\\) values approach negative infinity the function values approach negative infinity. We can tell this graph has the shape of an odd degree power function which has not been reflected, so the degree of the polynomial creating this graph must be odd, and the leading coefficient would be positive."
+        }
+      ]
+    },
+    {
+      "heading": "Short Run Behavior",
+      "level": "h2",
+      "body_text": "Characteristics of the graph such as vertical and horizontal intercepts and the places the graph changes direction are part of the short run behavior of the polynomial. Like with all functions, the vertical intercept is where the graph crosses the vertical axis, and occurs when the input value is zero. Since a polynomial is a function, there can only be one vertical intercept, which occurs at the point \\((0, a_{0})\\). The horizontal intercepts occur at the input values that correspond with an output value of zero. It is possible to have more than one horizontal intercept. Horizontal intercepts are also called zeros , or roots of the function. Notice that the polynomial in the previous example, which would be degree three if multiplied out, had three horizontal intercepts and two turning points – places where the graph changes direction. We will now make a general statement without justifying it – the reasons will become clear later in this chapter. intercepts and turning points of polynomials A polynomial of degree \\(n\\) will have: At most \\(n\\) horizontal intercepts. An odd degree polynomial will always have at least one. At most \\(n - 1\\) turning points At most \\(n\\) horizontal intercepts. An odd degree polynomial will always have at least one. At most \\(n - 1\\) turning points Exercise \\(\\PageIndex{4}\\) Given the function\\(f(x) = 0.2(x-2)(x+1)(x-5)\\), determine the short run behavior. Horizontal intercepts are (2, 0) (-1, 0) and (5, 0), the vertical intercept is (0, 2) and there are 2 turns in the graph.",
+      "definitions": [],
+      "examples": [
+        {
+          "text": "Example \\(\\PageIndex{6}\\) Given the polynomial function \\(f(x)=(x-2)(x+1)(x-4)\\), written in factored form for your convenience, determine the vertical and horizontal intercepts. Solution The vertical intercept occurs when the input is zero. \\[f(0)=(0-2)(0+1)(0-4)=8\\nonumber \\] The graph crosses the vertical axis at the point (0, 8). The horizontal intercepts occur when the output is zero. \\[0=(x-2)(x+1)(x-4)\\nonumber \\] when \\(x\\) = 2, -1, or 4. \\(f(x)\\) has zeros, or roots, at \\(x\\) = 2, -1, and 4. The graph crosses the horizontal axis at the points (2, 0), (-1, 0), and (4, 0)"
+        },
+        {
+          "text": "Example \\(\\PageIndex{7}\\) What can we conclude about the graph of the polynomial shown here? Solution Based on the long run behavior, with the graph becoming large positive on both ends of the graph, we can determine that this is the graph of an even degree polynomial. The graph has 2 horizontal intercepts, suggesting a degree of 2 or greater, and 3 turning points, suggesting a degree of 4 or greater. Based on this, it would be reasonable to conclude that the degree is even and at least 4, so it is probably a fourth degree polynomial."
+        }
+      ]
+    }
+  ],
+  "char_count": 6250
+}

@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 800px;
+                 background-color: #111;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#6ab04c", "font": {"color": "#74b9ff"}, "id": "ch2_s1_t1", "label": "Linear Functions", "shape": "dot", "title": "\u003cb\u003eLinear Functions\u003c/b\u003e\u003cbr\u003e\u00a7 1 \u00b7 difficulty 2 (easy)\u003cbr\u003e\u003ci\u003eAs you hop into a taxicab in Las Vegas, the meter\u003cbr\u003ewill immediately read $3.50; this is the \u201cdrop\u201d\u003cbr\u003echarge made when the taximeter is activated. After\u003cbr\u003ethat initial fee, the taximeter will add $2.76 for\u003cbr\u003eeach mile the taxi drives (Nevada Taxicab\u003cbr\u003eAuthority, retrieved May 8, 2017.\u003c/i\u003e"}, {"color": "#f0932b", "font": {"color": "#74b9ff"}, "id": "ch2_s2_t1", "label": "Graphs of Linear Functions", "shape": "dot", "title": "\u003cb\u003eGraphs of Linear Functions\u003c/b\u003e\u003cbr\u003e\u00a7 2 \u00b7 difficulty 3 (medium)\u003cbr\u003e\u003ci\u003eWhen we are working with a new function, it is\u003cbr\u003euseful to know as much as we can about the\u003cbr\u003efunction: its graph, where the function is zero,\u003cbr\u003eand any other special behaviors of the function.\u003cbr\u003eWe will begin this exploration of linear functions\u003cbr\u003ewith a look at graphs.\u003c/i\u003e"}, {"color": "#f0932b", "font": {"color": "#74b9ff"}, "id": "ch2_s3_t1", "label": "Modeling with Linear Functions", "shape": "dot", "title": "\u003cb\u003eModeling with Linear Functions\u003c/b\u003e\u003cbr\u003e\u00a7 3 \u00b7 difficulty 3 (medium)\u003cbr\u003e\u003ci\u003eWhen modeling scenarios with a linear function and\u003cbr\u003esolving problems involving quantities changing\u003cbr\u003elinearly, we typically follow the same problem\u003cbr\u003esolving strategies that we would use for any type\u003cbr\u003eof function: Problem Solving Strategy Identify\u003cbr\u003echanging quantities, and then carefull\u003c/i\u003e"}, {"color": "#eb4d4b", "font": {"color": "#74b9ff"}, "id": "ch2_s4_t1", "label": "Fitting Linear Models to Data", "shape": "dot", "title": "\u003cb\u003eFitting Linear Models to Data\u003c/b\u003e\u003cbr\u003e\u00a7 4 \u00b7 difficulty 4 (hard)\u003cbr\u003e\u003ci\u003eIn the real world, rarely do things follow trends\u003cbr\u003eperfectly. When we expect the trend to behave\u003cbr\u003elinearly, or when inspection suggests the trend is\u003cbr\u003ebehaving linearly, it is often desirable to find\u003cbr\u003ean equation to approximate the data.\u003c/i\u003e"}, {"color": "#eb4d4b", "font": {"color": "#74b9ff"}, "id": "ch2_s5_t1", "label": "Absolute Value Functions", "shape": "dot", "title": "\u003cb\u003eAbsolute Value Functions\u003c/b\u003e\u003cbr\u003e\u00a7 5 \u00b7 difficulty 5 (hard)\u003cbr\u003e\u003ci\u003eSo far in this chapter we have been studying the\u003cbr\u003ebehavior of linear functions. The Absolute Value\u003cbr\u003eFunction is a piecewise-defined function made up\u003cbr\u003eof two linear functions.\u003c/i\u003e"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "from": "ch2_s1_t1", "title": "term-definition (linear)", "to": "ch2_s2_t1", "value": 4}, {"arrows": "to", "from": "ch2_s1_t1", "title": "term-definition (linear)", "to": "ch2_s3_t1", "value": 4}, {"arrows": "to", "from": "ch2_s1_t1", "title": "term-definition (linear)", "to": "ch2_s4_t1", "value": 4}, {"arrows": "to", "from": "ch2_s1_t1", "title": "term-definition (linear)", "to": "ch2_s5_t1", "value": 4}, {"arrows": "to", "from": "ch2_s2_t1", "title": "term-definition (finding)", "to": "ch2_s3_t1", "value": 4}, {"arrows": "to", "from": "ch2_s2_t1", "title": "term-definition (finding)", "to": "ch2_s4_t1", "value": 4}, {"arrows": "to", "from": "ch2_s2_t1", "title": "term-definition (finding)", "to": "ch2_s5_t1", "value": 4}, {"arrows": "to", "from": "ch2_s3_t1", "title": "structural-chap (section 2.3 \u2192 2.4)", "to": "ch2_s4_t1", "value": 1}, {"arrows": "to", "from": "ch2_s4_t1", "title": "structural-chap (section 2.4 \u2192 2.5)", "to": "ch2_s5_t1", "value": 1}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

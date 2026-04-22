@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 800px;
+                 background-color: #111;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#6ab04c", "font": {"color": "#74b9ff"}, "id": "ch9_s1_t1", "label": "Ellipses Centered at the Origin", "shape": "dot", "title": "\u003cb\u003eEllipses Centered at the Origin\u003c/b\u003e\u003cbr\u003e\u00a7 1 \u00b7 difficulty 2 (easy)\u003cbr\u003e\u003ci\u003eFrom the definition above we can find an equation\u003cbr\u003efor an ellipse. We will find it for a ellipse\u003cbr\u003ecentered at the origin \\(C\\left( {0,0} \\right)\\)\u003cbr\u003ewith foci at \\({F_1}\\left( {c,0} \\right)\\) and\u003cbr\u003e\\({F_2}\\left( { - c,0} \\right)\\) where \\(c \u003e 0\\).\u003c/i\u003e"}, {"color": "#6ab04c", "font": {"color": "#74b9ff"}, "id": "ch9_s1_t2", "label": "Ellipses Not Centered at the Origin", "shape": "dot", "title": "\u003cb\u003eEllipses Not Centered at the Origin\u003c/b\u003e\u003cbr\u003e\u00a7 1 \u00b7 difficulty 1 (easy)\u003cbr\u003e\u003ci\u003eNot all ellipses are centered at the origin. The\u003cbr\u003egraph of such an ellipse is a shift of the graph\u003cbr\u003ecentered at the origin, so the standard equation\u003cbr\u003efor one centered at (\\(h\\), \\(k\\)) is slightly\u003cbr\u003edifferent.\u003c/i\u003e"}, {"color": "#6ab04c", "font": {"color": "#74b9ff"}, "id": "ch9_s1_t3", "label": "Bridges with Semielliptical Arches", "shape": "dot", "title": "\u003cb\u003eBridges with Semielliptical Arches\u003c/b\u003e\u003cbr\u003e\u00a7 1 \u00b7 difficulty 1 (easy)\u003cbr\u003e\u003ci\u003eArches have been used to build bridges for\u003cbr\u003ecenturies, like in the Skerton Bridge in England\u003cbr\u003ewhich uses five semielliptical arches for support.\u003cbr\u003eSemielliptical arches can have engineering\u003cbr\u003ebenefits such as allowing for longer spans between\u003cbr\u003esupports.\u003c/i\u003e"}, {"color": "#6ab04c", "font": {"color": "#74b9ff"}, "id": "ch9_s1_t4", "label": "Ellipse Foci", "shape": "dot", "title": "\u003cb\u003eEllipse Foci\u003c/b\u003e\u003cbr\u003e\u00a7 1 \u00b7 difficulty 1 (easy)\u003cbr\u003e\u003ci\u003eThe location of the foci can play a key role in\u003cbr\u003eellipse application problems. Standing on a focus\u003cbr\u003ein a whispering gallery allows you to hear someone\u003cbr\u003ewhispering at the other focus.\u003c/i\u003e"}, {"color": "#6ab04c", "font": {"color": "#74b9ff"}, "id": "ch9_s1_t5", "label": "Planetary Orbits", "shape": "dot", "title": "\u003cb\u003ePlanetary Orbits\u003c/b\u003e\u003cbr\u003e\u00a7 1 \u00b7 difficulty 1 (easy)\u003cbr\u003e\u003ci\u003eIt was long thought that planetary orbits around\u003cbr\u003ethe sun were circular. Around 1600, Johannes\u003cbr\u003eKepler discovered they were really elliptical\u003cbr\u003e(Technically, they\u2019re approximately elliptical.\u003c/i\u003e"}, {"color": "#f0932b", "font": {"color": "#74b9ff"}, "id": "ch9_s2_t1", "label": "Hyperbolas Centered at the Origin", "shape": "dot", "title": "\u003cb\u003eHyperbolas Centered at the Origin\u003c/b\u003e\u003cbr\u003e\u00a7 2 \u00b7 difficulty 3 (medium)\u003cbr\u003e\u003ci\u003eFrom the definition above we can find an equation\u003cbr\u003eof a hyperbola. We will find it for a hyperbola\u003cbr\u003ecentered at the origin \\(C\\left( 0,0 \\right)\\)\u003cbr\u003eopening horizontally with foci at \\[F_1\\left( c,0\u003cbr\u003e\\right)\\text{ and }F_2\\left( - c,0 \\right)\\text{\u003cbr\u003ewhere }c \u003e 0\\nonumber\\] Suppose \\(Q\\\u003c/i\u003e"}, {"color": "#6ab04c", "font": {"color": "#74b9ff"}, "id": "ch9_s2_t2", "label": "Hyperbolas Not Centered at the Origin", "shape": "dot", "title": "\u003cb\u003eHyperbolas Not Centered at the Origin\u003c/b\u003e\u003cbr\u003e\u00a7 2 \u00b7 difficulty 2 (easy)\u003cbr\u003e\u003ci\u003eNot all hyperbolas are centered at the origin. The\u003cbr\u003estandard equation for one centered at (\\(h\\),\u003cbr\u003e\\(k\\)) is slightly different.\u003c/i\u003e"}, {"color": "#6ab04c", "font": {"color": "#74b9ff"}, "id": "ch9_s2_t3", "label": "Hyperbola Foci", "shape": "dot", "title": "\u003cb\u003eHyperbola Foci\u003c/b\u003e\u003cbr\u003e\u00a7 2 \u00b7 difficulty 2 (easy)\u003cbr\u003e\u003ci\u003eThe location of the foci can play a key role in\u003cbr\u003ehyperbola application problems. To find them, we\u003cbr\u003eneed to find the length from the center to the\u003cbr\u003efoci, \\(c\\), using the equation \\(b^2 = c^2 -\u003cbr\u003ea^2\\).\u003c/i\u003e"}, {"color": "#6ab04c", "font": {"color": "#74b9ff"}, "id": "ch9_s2_t4", "label": "LORAN", "shape": "dot", "title": "\u003cb\u003eLORAN\u003c/b\u003e\u003cbr\u003e\u00a7 2 \u00b7 difficulty 2 (easy)\u003cbr\u003e\u003ci\u003eBefore GPS, the Long Range Navigation (LORAN)\u003cbr\u003esystem was used to determine a ship\u2019s location.\u003cbr\u003eTwo radio stations A and B simultaneously sent out\u003cbr\u003ea signal to a ship.\u003c/i\u003e"}, {"color": "#eb4d4b", "font": {"color": "#74b9ff"}, "id": "ch9_s3_t1", "label": "Equations for Parabolas with Vertex at the Origin", "shape": "dot", "title": "\u003cb\u003eEquations for Parabolas with Vertex at the Origin\u003c/b\u003e\u003cbr\u003e\u00a7 3 \u00b7 difficulty 4 (hard)\u003cbr\u003e\u003ci\u003eFrom the definition above we can find an equation\u003cbr\u003eof a parabola. We will find it for a parabola with\u003cbr\u003evertex at the origin, \\(C\\left( 0,0 \\right)\\),\u003cbr\u003eopening upward with focus at \\(F\\left( 0,p\u003cbr\u003e\\right)\\) and directrix at \\(y = - p\\).\u003c/i\u003e"}, {"color": "#f0932b", "font": {"color": "#74b9ff"}, "id": "ch9_s3_t2", "label": "Applications of Parabolas", "shape": "dot", "title": "\u003cb\u003eApplications of Parabolas\u003c/b\u003e\u003cbr\u003e\u00a7 3 \u00b7 difficulty 3 (medium)\u003cbr\u003e\u003ci\u003eIn an earlier section, we learned that ellipses\u003cbr\u003ehave a special property that a ray emanating from\u003cbr\u003eone focus will be reflected back to the other\u003cbr\u003efocus, the property that enables the whispering\u003cbr\u003echamber to work. Parabolas also have a special\u003cbr\u003eproperty, that any ray emanating from the\u003c/i\u003e"}, {"color": "#f0932b", "font": {"color": "#74b9ff"}, "id": "ch9_s3_t3", "label": "Non-Linear Systems of Equations", "shape": "dot", "title": "\u003cb\u003eNon-Linear Systems of Equations\u003c/b\u003e\u003cbr\u003e\u00a7 3 \u00b7 difficulty 3 (medium)\u003cbr\u003e\u003ci\u003eIn many applications, it is necessary to solve for\u003cbr\u003ethe intersection of two curves. Many of the\u003cbr\u003etechniques you may have used before to solve\u003cbr\u003esystems of linear equations will work for\u003cbr\u003enon-linear equations as well, particularly\u003cbr\u003esubstitution.\u003c/i\u003e"}, {"color": "#eb4d4b", "font": {"color": "#74b9ff"}, "id": "ch9_s4_t1", "label": "Conics in Polar Coordinates", "shape": "dot", "title": "\u003cb\u003eConics in Polar Coordinates\u003c/b\u003e\u003cbr\u003e\u00a7 4 \u00b7 difficulty 5 (hard)\u003cbr\u003e\u003ci\u003eIn the preceding sections, we defined each conic\u003cbr\u003ein a different way, but each involved the distance\u003cbr\u003ebetween a point on the curve and the focus. In the\u003cbr\u003eprevious section, the parabola was defined using\u003cbr\u003ethe focus and a line called the directrix .\u003c/i\u003e"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "from": "ch9_s1_t1", "title": "term-definition (equation)", "to": "ch9_s1_t2", "value": 4}, {"arrows": "to", "from": "ch9_s1_t1", "title": "term-definition (equation)", "to": "ch9_s1_t4", "value": 4}, {"arrows": "to", "from": "ch9_s1_t1", "title": "term-definition (equation)", "to": "ch9_s2_t1", "value": 4}, {"arrows": "to", "from": "ch9_s1_t1", "title": "term-definition (equation)", "to": "ch9_s2_t2", "value": 4}, {"arrows": "to", "from": "ch9_s1_t1", "title": "term-definition (equation)", "to": "ch9_s2_t3", "value": 4}, {"arrows": "to", "from": "ch9_s1_t1", "title": "term-definition (equation)", "to": "ch9_s2_t4", "value": 4}, {"arrows": "to", "from": "ch9_s1_t1", "title": "term-definition (equation)", "to": "ch9_s3_t1", "value": 4}, {"arrows": "to", "from": "ch9_s1_t1", "title": "term-definition (equation)", "to": "ch9_s3_t2", "value": 4}, {"arrows": "to", "from": "ch9_s1_t1", "title": "term-definition (equation)", "to": "ch9_s3_t3", "value": 4}, {"arrows": "to", "from": "ch9_s1_t1", "title": "term-definition (equation)", "to": "ch9_s4_t1", "value": 4}, {"arrows": "to", "from": "ch9_s1_t2", "title": "structural-sec (adjacent in section 9.1)", "to": "ch9_s1_t3", "value": 2}, {"arrows": "to", "from": "ch9_s1_t3", "title": "structural-sec (adjacent in section 9.1)", "to": "ch9_s1_t4", "value": 2}, {"arrows": "to", "from": "ch9_s1_t4", "title": "structural-sec (adjacent in section 9.1)", "to": "ch9_s1_t5", "value": 2}, {"arrows": "to", "from": "ch9_s1_t5", "title": "structural-chap (section 9.1 \u2192 9.2)", "to": "ch9_s2_t1", "value": 1}, {"arrows": "to", "from": "ch9_s2_t1", "title": "structural-sec (adjacent in section 9.2)", "to": "ch9_s2_t2", "value": 2}, {"arrows": "to", "from": "ch9_s2_t2", "title": "structural-sec (adjacent in section 9.2)", "to": "ch9_s2_t3", "value": 2}, {"arrows": "to", "from": "ch9_s2_t3", "title": "structural-sec (adjacent in section 9.2)", "to": "ch9_s2_t4", "value": 2}, {"arrows": "to", "from": "ch9_s2_t4", "title": "structural-chap (section 9.2 \u2192 9.3)", "to": "ch9_s3_t1", "value": 1}, {"arrows": "to", "from": "ch9_s3_t1", "title": "structural-sec (adjacent in section 9.3)", "to": "ch9_s3_t2", "value": 2}, {"arrows": "to", "from": "ch9_s3_t2", "title": "structural-sec (adjacent in section 9.3)", "to": "ch9_s3_t3", "value": 2}, {"arrows": "to", "from": "ch9_s3_t3", "title": "structural-chap (section 9.3 \u2192 9.4)", "to": "ch9_s4_t1", "value": 1}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

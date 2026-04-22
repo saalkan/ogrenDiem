@@ -1,0 +1,477 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "title": "Characteristics of Power Functions",
+      "description": "Shown to the right are the graphs of\n\\(f(x)=x^{2}\\), \\(f(x)=x^{4}\\), and\n\\(f(x)=x^{6}\\), all even whole number powers.\nNotice that all these graphs have a fairly similar\nshape, very similar to the quadratic toolkit, but\nas the power increases the graphs flatten somewhat\nnear the",
+      "parent_section": "Power Functions",
+      "parent_section_num": "1",
+      "position_in_section": 0,
+      "difficulty_level": 1,
+      "difficulty_tier": "easy",
+      "concepts": [
+        "approaches",
+        "graphs",
+        "infinity",
+        "infty",
+        "long",
+        "negative infinity",
+        "positive"
+      ],
+      "defined_terms": [
+        "long"
+      ],
+      "sample_content": "Shown to the right are the graphs of \\(f(x)=x^{2}\\), \\(f(x)=x^{4}\\), and \\(f(x)=x^{6}\\), all even whole number powers. Notice that all these graphs have a fairly similar shape, very similar to the quadratic toolkit, but as the power increases the graphs flatten somewhat near the origin, and become steeper away from the origin. To describe the behavior as numbers become larger and larger, we use the idea of infinity. The symbol for positive infinity is \\(\\infty\\), and \\(-\\infty\\) for negative infinity. When we say that “\\(x\\) approaches infinity”, which can be symbolically written as \\(x \\to \\infty\\), we are describing a behavior – we are saying that \\(x\\) is getting large in the positive direction. With the even power functions, as the \\(x\\) becomes large in either the positive or negative direction, the output values become very large positive numbers. Equivalently, we could describe this by saying that as \\(x\\) approaches positive or negative infinity, the \\(f(x)\\) values approach positive infinity. In symbolic form, we could write: as \\(x \\to \\pm \\infty\\), \\(f(x) \\to \\infty\\). Shown here are the graphs of \\(f(x)=x^{3}\\), \\(f(x)=x^{5}\\), and \\(f(x)=x^{7}\\), all odd whole number powers. Notice all these graphs look similar to the cubic toolkit, but again as the power increases the graphs flatten near the origin and become steeper away from the origin. For these odd power functions, as \\(x\\) approaches negative infinity, \\(f(x)\\) approaches negative infinity. As \\(x\\) approaches positive infinity, \\(f(x)\\) approaches positive infinity. In symbolic form we write: as \\(x \\to - \\infty\\), \\(f(x) \\to - \\infty\\) and as \\(x \\to \\infty\\), \\(f(x) \\to \\infty\\). Exercise \\(\\PageIndex{2}\\) Describe in words and symbols the long run behavior of \\(f(x)=-x^{4}\\) As \\(x\\) approaches positive and negative infinity, \\(f(x)\\) approaches negative infinity: as \\(x \\to \\pm \\infty\\), \\(f(x) \\to -\\infty\\) because of the vertical flip. Treatment of the rational and radical forms of power fu",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/03%3A_Polynomial_and_Rational_Functions./3.01%3A_Power_Functions",
+      "depth": 0,
+      "id": "ch3_s1_t1"
+    },
+    {
+      "title": "Polynomials",
+      "description": "An oil pipeline bursts in the Gulf of Mexico,\ncausing an oil slick in a roughly circular shape.\nThe slick is currently 24 miles in radius, but\nthat radius is increasing by 8 miles each week.",
+      "parent_section": "Power Functions",
+      "parent_section_num": "1",
+      "position_in_section": 1,
+      "difficulty_level": 1,
+      "difficulty_tier": "easy",
+      "concepts": [
+        "area",
+        "formula",
+        "formula area",
+        "infinity",
+        "long",
+        "oil",
+        "slick"
+      ],
+      "defined_terms": [
+        "long"
+      ],
+      "sample_content": "An oil pipeline bursts in the Gulf of Mexico, causing an oil slick in a roughly circular shape. The slick is currently 24 miles in radius, but that radius is increasing by 8 miles each week. If we wanted to write a formula for the area covered by the oil slick, we could do so by composing two functions together. The first is a formula for the radius, \\(r\\), of the spill, which depends on the number of weeks, w , that have passed. Hopefully you recognized that this relationship is linear: \\[r(w)=24+8w\\nonumber\\] We can combine this with the formula for the area, \\(A\\), of a circle: \\[A(r)=\\pi r^{2}\\nonumber \\] Composing these functions gives a formula for the area in terms of weeks: \\[A(w)=A(r(w))=A(24+8w)=\\pi (24+8w)^{2}\\nonumber \\] Multiplying this out gives the formula \\[A(w)=576\\pi +384\\pi w+64\\pi w^{2}\\nonumber \\] This formula is an example of a polynomial . A polynomial is simply the sum of terms each consisting of a vertically stretched or compressed power function with non-negative whole number power. Exercise \\(\\PageIndex{3}\\) Given the function\\(f(x)=0.2(x-2)(x+1)(x-5)\\) use your algebra skills to write the function in standard polynomial form (as a sum of terms) and determine the leading term, degree, and long run behavior of the function. The leading term is \\(0.2x^{3}\\), so it is a degree 3 polynomial.As \\(x\\) approaches infinity (or gets very large in the positive direction) \\(f(x)\\) approaches infinity; as \\(x\\) approaches negative infinity (or gets very large in the negative direction) \\(f(x)\\) approaches negative infinity. (Basically the long run behavior is the same as the cubic function).",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/03%3A_Polynomial_and_Rational_Functions./3.01%3A_Power_Functions",
+      "depth": 1,
+      "id": "ch3_s1_t2"
+    },
+    {
+      "title": "Short Run Behavior",
+      "description": "Characteristics of the graph such as vertical and\nhorizontal intercepts and the places the graph\nchanges direction are part of the short run\nbehavior of the polynomial. Like with all\nfunctions, the vertical intercept is where the\ngraph crosses the vertical axis, and occurs when t",
+      "parent_section": "Power Functions",
+      "parent_section_num": "1",
+      "position_in_section": 2,
+      "difficulty_level": 1,
+      "difficulty_tier": "easy",
+      "concepts": [
+        "horizontal",
+        "horizontal intercepts",
+        "intercepts",
+        "points",
+        "turning",
+        "turning points"
+      ],
+      "defined_terms": [],
+      "sample_content": "Characteristics of the graph such as vertical and horizontal intercepts and the places the graph changes direction are part of the short run behavior of the polynomial. Like with all functions, the vertical intercept is where the graph crosses the vertical axis, and occurs when the input value is zero. Since a polynomial is a function, there can only be one vertical intercept, which occurs at the point \\((0, a_{0})\\). The horizontal intercepts occur at the input values that correspond with an output value of zero. It is possible to have more than one horizontal intercept. Horizontal intercepts are also called zeros , or roots of the function. Notice that the polynomial in the previous example, which would be degree three if multiplied out, had three horizontal intercepts and two turning points – places where the graph changes direction. We will now make a general statement without justifying it – the reasons will become clear later in this chapter. intercepts and turning points of polynomials A polynomial of degree \\(n\\) will have: At most \\(n\\) horizontal intercepts. An odd degree polynomial will always have at least one. At most \\(n - 1\\) turning points At most \\(n\\) horizontal intercepts. An odd degree polynomial will always have at least one. At most \\(n - 1\\) turning points Exercise \\(\\PageIndex{4}\\) Given the function\\(f(x) = 0.2(x-2)(x+1)(x-5)\\), determine the short run behavior. Horizontal intercepts are (2, 0) (-1, 0) and (5, 0), the vertical intercept is (0, 2) and there are 2 turns in the graph.",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/03%3A_Polynomial_and_Rational_Functions./3.01%3A_Power_Functions",
+      "depth": 2,
+      "id": "ch3_s1_t3"
+    },
+    {
+      "title": "Short run Behavior: Vertex",
+      "description": "We now explore the interesting features of the\ngraphs of quadratics. In addition to intercepts,\nquadratics have an interesting feature where they\nchange direction, called the vertex .",
+      "parent_section": "Quadratic Functions",
+      "parent_section_num": "2",
+      "position_in_section": 0,
+      "difficulty_level": 2,
+      "difficulty_tier": "easy",
+      "concepts": [
+        "form",
+        "quadratic",
+        "standard",
+        "standard form",
+        "transformation form",
+        "vertex"
+      ],
+      "defined_terms": [],
+      "sample_content": "We now explore the interesting features of the graphs of quadratics. In addition to intercepts, quadratics have an interesting feature where they change direction, called the vertex . You probably noticed that all quadratics are related to transformations of the basic quadratic function \\(f(x)=x^{2}\\). Notice that the horizontal and vertical shifts of the basic quadratic determine the location of the vertex of the parabola; the vertex is unaffected by stretches and compressions. Exercise \\(\\PageIndex{1}\\) A coordinate grid has been superimposed over the quadratic path of a basketball(From http://blog.mrmeyer.com/?p=4778 , © Dan Meyer, CC-BY). Find an equation for the path of the ball. Does he make the basket? The path passes through the origin with vertex at (-4, 7). \\[h(x) = -\\dfrac{7}{16}(x + 4)^2 + 7\\nonumber\\] To make the shot, \\(h(-7.5)\\) would need to be about 4. \\(h(-7.5) \\approx 1.64\\); he doesn't make it. forms of quadratic function The standard form of a quadratic function is \\[f(x)=ax^{2} +bx+c \\label{standard}\\] The transformation form of a quadratic function is \\[f(x)=a(x-h)^{2} +k \\label{trans}\\] The vertex of the quadratic function is located at (\\(h\\), \\(k\\)), where \\(h\\) and \\(k\\) are the numbers in the transformation form of the function. Because the vertex appears in the transformation form, it is often called the vertex form . In the previous example, we saw that it is possible to rewrite a quadratic function given in transformation form and rewrite it in standard form by expanding the formula. It would be useful to reverse this process since the transformation form reveals the vertex. Expanding out the general transformation form of a quadratic gives: \\[\\begin{array}{l} {f(x)=a(x-h)^{2} +k=a(x-h)(x-h)+k} \\\\ {f(x)=a(x^{2} -2xh+h^{2} )+k=ax^{2} -2ahx+ah^{2} +k} \\end{array}\\nonumber \\] This should be equal to the standard form of the quadratic: \\[ax^{2} -2ahx+ah^{2} +k=ax^{2} +bx+c\\nonumber \\] The second degree terms are already equal. For the line",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/03%3A_Polynomial_and_Rational_Functions./3.02%3A_Quadratic_Functions",
+      "depth": 3,
+      "id": "ch3_s2_t1"
+    },
+    {
+      "title": "Short run Behavior: Intercepts",
+      "description": "As with any function, we can find the vertical\nintercepts of a quadratic by evaluating the\nfunction at an input of zero, and we can find the\nhorizontal intercepts by solving for when the\noutput will be zero. Notice that depending upon\nthe location of the graph, we might have zero",
+      "parent_section": "Quadratic Functions",
+      "parent_section_num": "2",
+      "position_in_section": 1,
+      "difficulty_level": 2,
+      "difficulty_tier": "easy",
+      "concepts": [
+        "dfrac",
+        "dfrac dfrac",
+        "horizontal",
+        "horizontal intercepts",
+        "intercepts",
+        "nonumber"
+      ],
+      "defined_terms": [],
+      "sample_content": "As with any function, we can find the vertical intercepts of a quadratic by evaluating the function at an input of zero, and we can find the horizontal intercepts by solving for when the output will be zero. Notice that depending upon the location of the graph, we might have zero, one, or two horizontal intercepts. Zero horizontal intercepts one horizontal intercept two horizontal intercepts Notice that in the standard form of a quadratic, the constant term c reveals the vertical intercept of the graph. Exercise \\(\\PageIndex{3}\\) In Try it Now problem 2 we found the standard & transformation form for the function \\(g(x)=13+x^{2} -6x\\). Now find the Vertical & Horizontal intercepts (if any). Vertical intercept at (0, 13), No horizontal intercepts since the vertex is above the \\(x\\)-axis and the graph opens upwards. The process in the last example is done commonly enough that sometimes people find it easier to solve the problem once in general and remember the formula for the result, rather than repeating the process each time. Based on our previous work we showed that any quadratic in standard form can be written into transformation form as: \\[f(x)=a(x+\\dfrac{b}{2a} )^{2} +c-\\dfrac{b^{2} }{4a}\\] Solving for the horizontal intercepts using this general equation gives: \\[0=a(x+\\dfrac{b}{2a} )^{2} +c-\\dfrac{b^{2} }{4a}\\nonumber\\] start to solve for \\(x\\) by moving the constants to the other side \\[\\dfrac{b^{2} }{4a} -c=a(x+\\dfrac{b}{2a} )^{2}\\nonumber \\] divide both sides by \\(a\\) \\[\\dfrac{b^{2} }{4a^{2} } -\\dfrac{c}{a} = (x+\\dfrac{b}{2a})^{2}\\nonumber \\] find a common denominator to combine fractions \\[\\dfrac{b^{2} }{4a^{2} } -\\dfrac{4ac}{4a^{2} } =\\left(x+\\dfrac{b}{2a} \\right)^{2}\\nonumber \\] combine the fractions on the left side of the equation \\[\\dfrac{b^{2} -4ac}{4a^{2} } =\\left(x+\\dfrac{b}{2a} \\right)^{2}\\nonumber \\] take the square root of both sides \\[\\pm \\sqrt{\\dfrac{b^{2} -4ac}{4a^{2} } } =x+\\dfrac{b}{2a}\\nonumber\\] subtract \\(b/2a\\) from both sides \\[-\\dfrac",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/03%3A_Polynomial_and_Rational_Functions./3.02%3A_Quadratic_Functions",
+      "depth": 4,
+      "id": "ch3_s2_t2"
+    },
+    {
+      "title": "Short run Behavior: Intercepts",
+      "description": "As with any function, the vertical intercept can\nbe found by evaluating the function at an input of\nzero. Since this is evaluation, it is relatively\neasy to do it for a polynomial of any degree.",
+      "parent_section": "Graphs of Polynomial Functions",
+      "parent_section_num": "3",
+      "position_in_section": 0,
+      "difficulty_level": 2,
+      "difficulty_tier": "easy",
+      "concepts": [
+        "factored",
+        "intercepts",
+        "left right",
+        "polynomial",
+        "polynomial given",
+        "using known"
+      ],
+      "defined_terms": [],
+      "sample_content": "As with any function, the vertical intercept can be found by evaluating the function at an input of zero. Since this is evaluation, it is relatively easy to do it for a polynomial of any degree. To find horizontal intercepts, we need to solve for when the output will be zero. For general polynomials, this can be a challenging prospect. While quadratics can be solved using the relatively simple quadratic formula, the corresponding formulas for cubic and 4\\({}^{th}\\) degree polynomials are not simple enough to remember, and formulas do not exist for general higher-degree polynomials. Consequently, we will limit ourselves to three cases: The polynomial can be factored using known methods: greatest common factor and trinomial factoring. The polynomial is given in factored form. Technology is used to determine the intercepts. The polynomial can be factored using known methods: greatest common factor and trinomial factoring. The polynomial is given in factored form. Technology is used to determine the intercepts. Other techniques for finding the intercepts of general polynomials will be explored in the next section. Exercise \\(\\PageIndex{1}\\) Find the vertical and horizontal intercepts of the function\\(f(t)=t^{4} -4t^{2}\\). Vertical intercept (0, 0). \\(0=t^{4} -4t^{2}\\) factors as \\(0=t^{2} \\left(t^{2} -4\\right)=t^{2} \\left(t-2\\right)\\left(t+2\\right)\\) Horizontal intercepts (0, 0), (-2, 0), (2, 0).",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/03%3A_Polynomial_and_Rational_Functions./3.03%3A_Graphs_of_Polynomial_Functions",
+      "depth": 5,
+      "id": "ch3_s3_t1"
+    },
+    {
+      "title": "Graphical Behavior at Intercepts",
+      "description": "If we graph the function \\(f(x)=(x+3)(x-2)^{2}\n(x+1)^{3}\\), notice that the behavior at each of\nthe horizontal intercepts is different. At the\nhorizontal intercept x = -3, coming from the\n\\((x+3)\\) factor of the polynomial, the graph\npasses directly through the horizontal interce",
+      "parent_section": "Graphs of Polynomial Functions",
+      "parent_section_num": "3",
+      "position_in_section": 1,
+      "difficulty_level": 3,
+      "difficulty_tier": "medium",
+      "concepts": [
+        "factor",
+        "horizontal",
+        "infty",
+        "intercept",
+        "multiplicity",
+        "zero multiplicity"
+      ],
+      "defined_terms": [],
+      "sample_content": "If we graph the function \\(f(x)=(x+3)(x-2)^{2} (x+1)^{3}\\), notice that the behavior at each of the horizontal intercepts is different. At the horizontal intercept x = -3, coming from the \\((x+3)\\) factor of the polynomial, the graph passes directly through the horizontal intercept. The factor \\((x+3)\\) is linear (has a power of 1), so the behavior near the intercept is like that of a line - it passes directly through the intercept. We call this a single zero, since the zero corresponds to a single factor of the function. At the horizontal intercept \\(x = 2\\), coming from the \\((x-2)^{2}\\) factor of the polynomial, the graph touches the axis at the intercept and changes direction. The factor is quadratic (degree 2), so the behavior near the intercept is like that of a quadratic – it bounces off the horizontal axis at the intercept. Since \\((x-2)^{2} =(x-2)(x-2)\\), the factor is repeated twice, so we call this a double zero. We could also say the zero has multiplicity 2. At the horizontal intercept \\(x = -1\\), coming from the \\((x+1)^{3}\\) factor of the polynomial, the graph passes through the axis at the intercept, but flattens out a bit first. This factor is cubic (degree 3), so the behavior near the intercept is like that of a cubic, with the same “S” type shape near the intercept that the toolkit \\(x^{3}\\) has. We call this a triple zero. We could also say the zero has multiplicity 3. By utilizing these behaviors, we can sketch a reasonable graph of a factored polynomial function without needing technology. graphical behavior of polynomials at horizontal intercepts If a polynomial contains a factor of the form \\((x-h)^{p}\\), the behavior near the horizontal intercept \\(h\\) is determined by the power on the factor. \\(p = 1\\) \\(p = 2\\) \\(p = 3\\) Single Zero Multiplicity 1 Double Zero Multiplicity 2 Triple Zero Multiplicity 3 For higher even powers 4,6,8 etc. … the graph will still bounce off the horizontal axis but the graph will appear flatter with each increasing",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/03%3A_Polynomial_and_Rational_Functions./3.03%3A_Graphs_of_Polynomial_Functions",
+      "depth": 6,
+      "id": "ch3_s3_t2"
+    },
+    {
+      "title": "Solving Polynomial Inequalities",
+      "description": "One application of our ability to find intercepts\nand sketch a graph of polynomials is the ability\nto solve polynomial inequalities. It is a very\ncommon question to ask when a function will be\npositive and negative.",
+      "parent_section": "Graphs of Polynomial Functions",
+      "parent_section_num": "3",
+      "position_in_section": 2,
+      "difficulty_level": 2,
+      "difficulty_tier": "easy",
+      "concepts": [
+        "ability",
+        "function positive",
+        "inequalities",
+        "polynomial inequalities",
+        "solve",
+        "solve polynomial"
+      ],
+      "defined_terms": [],
+      "sample_content": "One application of our ability to find intercepts and sketch a graph of polynomials is the ability to solve polynomial inequalities. It is a very common question to ask when a function will be positive and negative. We can solve polynomial inequalities by either utilizing the graph, or by using test values. We could have also determined on which intervals the function was positive by sketching a graph of the function. We illustrate that technique in the next example",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/03%3A_Polynomial_and_Rational_Functions./3.03%3A_Graphs_of_Polynomial_Functions",
+      "depth": 7,
+      "id": "ch3_s3_t3"
+    },
+    {
+      "title": "Writing Equations using Intercepts",
+      "description": "Since a polynomial function written in factored\nform will have a horizontal intercept where each\nfactor is equal to zero, we can form a function\nthat will pass through a set of horizontal\nintercepts by introducing a corresponding set of\nfactors. factored form of polynomials If a",
+      "parent_section": "Graphs of Polynomial Functions",
+      "parent_section_num": "3",
+      "position_in_section": 3,
+      "difficulty_level": 2,
+      "difficulty_tier": "easy",
+      "concepts": [
+        "factored",
+        "factored form",
+        "form",
+        "horizontal",
+        "written factored",
+        "zero"
+      ],
+      "defined_terms": [],
+      "sample_content": "Since a polynomial function written in factored form will have a horizontal intercept where each factor is equal to zero, we can form a function that will pass through a set of horizontal intercepts by introducing a corresponding set of factors. factored form of polynomials If a polynomial has horizontal intercepts at \\(x=x_{1} ,x_{2} , ... ,x_{n}\\), then the polynomial can be written in the factored form \\[f(x)=a(x-x_{1} )^{p_{1} } (x-x_{2} )^{p_{2} } \\cdots (x-x_{n} )^{p_{n} }\\] where the powers \\(p_i\\) on each factor can be determined by the behavior of the graph at the corresponding intercept, and the stretch factor a can be determined given a value of the function other than the horizontal intercept. Exercise \\(\\PageIndex{3}\\) Given the graph, write a formula for the function shown. Double zero at \\(x= - 1\\), triple zero at \\(x = 2\\). Single zero at \\(x = 4\\). \\(f(x) = a(x - 2)^{3} (x+1)^{2} (x-4)\\). Substituting (0,-4) and solving for \\(a\\), \\(f(x) = -\\dfrac{1}{8} (x-2)^{3} (x+1)^{2} (x-4)\\)",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/03%3A_Polynomial_and_Rational_Functions./3.03%3A_Graphs_of_Polynomial_Functions",
+      "depth": 8,
+      "id": "ch3_s3_t4"
+    },
+    {
+      "title": "Estimating Extrema",
+      "description": "With quadratics, we were able to algebraically\nfind the maximum or minimum value of the function\nby finding the vertex. For general polynomials,\nfinding these turning points is not possible\nwithout more advanced techniques from calculus.",
+      "parent_section": "Graphs of Polynomial Functions",
+      "parent_section_num": "3",
+      "position_in_section": 4,
+      "difficulty_level": 2,
+      "difficulty_tier": "easy",
+      "concepts": [
+        "algebraically",
+        "approximately",
+        "approximately point",
+        "maximum",
+        "minimum",
+        "occurs approximately"
+      ],
+      "defined_terms": [],
+      "sample_content": "With quadratics, we were able to algebraically find the maximum or minimum value of the function by finding the vertex. For general polynomials, finding these turning points is not possible without more advanced techniques from calculus. Even then, finding where extrema occur can still be algebraically challenging. For now, we will estimate the locations of turning points using technology to generate a graph. Exercise \\(\\PageIndex{4}\\) Use technology to find the maximum and minimum values on the interval [-1, 4] of the function \\(f(x)=-0.2(x-2)^{3} (x+1)^{2} (x-4)\\). The minimum occurs at approximately the point (0, -6.5), and the maximum occurs at approximately the point (3.5, 7).",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/03%3A_Polynomial_and_Rational_Functions./3.03%3A_Graphs_of_Polynomial_Functions",
+      "depth": 9,
+      "id": "ch3_s3_t5"
+    },
+    {
+      "title": "Factor Theorem and Remainder Theorem",
+      "description": "In the last section, we limited ourselves to\nfinding the intercepts, or zeros, of polynomials\nthat factored simply, or we turned to technology.\nIn this section, we will look at algebraic\ntechniques for finding the zeros of polynomials\nlike \\(h(t)=t^{3} +4t^{2} +t-6\\).",
+      "parent_section": "Factor Theorem and Remainder Theorem",
+      "parent_section_num": "4",
+      "position_in_section": 0,
+      "difficulty_level": 3,
+      "difficulty_tier": "medium",
+      "concepts": [
+        "division",
+        "divisor",
+        "polynomial",
+        "quotient",
+        "remainder",
+        "x-c"
+      ],
+      "defined_terms": [],
+      "sample_content": "In the last section, we limited ourselves to finding the intercepts, or zeros, of polynomials that factored simply, or we turned to technology. In this section, we will look at algebraic techniques for finding the zeros of polynomials like \\(h(t)=t^{3} +4t^{2} +t-6\\). Long Division In the last section we saw that we could write a polynomial as a product of factors, each corresponding to a horizontal intercept. If we knew that \\(x = 2\\) was an intercept of the polynomial \\(x^3 + 4x^2 - 5x - 14\\), we might guess that the polynomial could be factored as \\(x^{3} +4x^{2} -5x-14=(x-2)\\) (something). To find that \"something,\" we can use polynomial division. This gives us a way to find the intercepts of this polynomial. Exercise \\(\\PageIndex{1}\\) Divide \\(2x^{3} -7x+3\\) by \\(x+3\\) using long division. Answer The Factor and Remainder Theorems When we divide a polynomial, \\(p(x)\\) by some divisor polynomial \\(d(x)\\), we will get a quotient polynomial \\(q(x)\\) and possibly a remainder \\(r(x)\\). In other words, \\[p(x)=d(x)q(x)+r(x)\\] Because of the division, the remainder will either be zero, or a polynomial of lower degree than d(x). Because of this, if we divide a polynomial by a term of the form \\(x-c\\), then the remainder will be zero or a constant. If \\(p(x)=(x-c)q(x)+r\\), then \\(p(c)=(c-c)q(c)+r=0+r=r\\), which establishes the Remainder Theorem. The Remainder Theorem If \\(p(x)\\) is a polynomial of degree 1 or greater and c is a real number, then when p(x) is divided by \\(x-c\\), the remainder is \\(p(c)\\). If \\(x-c\\) is a factor of the polynomial \\(p\\), then \\(p(x)=(x-c)q(x)\\) for some polynomial \\(q\\). Then \\(p(c)=(c-c)q(c)=0\\), showing \\(c\\) is a zero of the polynomial. This shouldn’t surprise us - we already knew that if the polynomial factors it reveals the roots. If \\(p(c)=0\\), then the remainder theorem tells us that if p is divided by \\(x-c\\), then the remainder will be zero, which means \\(x-c\\) is a factor of \\(p\\). the factor theorem If \\(p(x)\\) is a nonzero polynom",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/03%3A_Polynomial_and_Rational_Functions./3.04%3A_Factor_Theorem_and_Remainder_Theorem",
+      "depth": 10,
+      "id": "ch3_s4_t1"
+    },
+    {
+      "title": "Real Zeros of Polynomials",
+      "description": "In the last section, we saw how to determine if a\nreal number was a zero of a polynomial. In this\nsection, we will learn how to find good candidates\nto test using synthetic division.",
+      "parent_section": "Real Zeros of Polynomials",
+      "parent_section_num": "5",
+      "position_in_section": 0,
+      "difficulty_level": 3,
+      "difficulty_tier": "medium",
+      "concepts": [
+        "dfrac",
+        "list",
+        "real",
+        "real zeros",
+        "zeros",
+        "zeros polynomial"
+      ],
+      "defined_terms": [],
+      "sample_content": "In the last section, we saw how to determine if a real number was a zero of a polynomial. In this section, we will learn how to find good candidates to test using synthetic division. In the days before graphing technology was commonplace, mathematicians discovered a lot of clever tricks for determining the likely locations of zeros. Technology has provided a much simpler approach to narrow down potential candidates, but it is not always sufficient by itself. For example, the function shown to the right does not have any clear intercepts. There are two results that can help us identify where the zeros of a polynomial are. The first gives us an interval on which all the real zeros of a polynomial can be found. Knowing this bound can be very helpful when using a graphing calculator, since we can use it to set the display bounds. This helps avoid missing a zero because it is graphed outside of the viewing window. Exercise \\(\\PageIndex{1}\\) Determine an interval which contains all the real zeros of \\(f(x)=3x^{3} -12x^{2} +6x-8\\). Answer The maximum coefficient in absolute value is 12. Cauchy’s Bound for all real zeros is \\[\\left[-\\dfrac{12}{\\left|3\\right|} -1,\\quad \\dfrac{12}{\\left|3\\right|} +1\\right]=[-5,5]\\nonumber \\] Now that we know where we can find the real zeros, we still need a list of possible real zeros. The Rational Roots Theorem provides us a list of potential integer and rational zeros. rational roots theorem Given a polynomial \\[f(x)=a_{n} x^{n} +a_{n-1} x^{n-1} +\\cdots +a_{1} x+a_{0}\\] with integer coefficients, if \\(r\\) is a rational zero of \\(f\\), then \\(r\\) is of the form \\(r=\\pm \\dfrac{p}{q}\\), where \\(p\\) is a factor of the constant term \\(a_{0}\\), and \\(q\\) is a factor of the leading coefficient, \\(a_{n}\\). This gives us a list of numbers to try in our synthetic division, which is a nicer place to start than simply guessing. If none of the numbers in the list are zeros, then either the polynomial has no real zeros at all, or all the real zeros are ir",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/03%3A_Polynomial_and_Rational_Functions./3.05%3A_Real_Zeros_of_Polynomials",
+      "depth": 11,
+      "id": "ch3_s5_t1"
+    },
+    {
+      "title": "Arithmetic on Complex Numbers",
+      "description": "Before we dive into the more complicated uses of\ncomplex numbers, let’s make sure we remember the\nbasic arithmetic involved. To add or subtract\ncomplex numbers, we simply add the like terms,\ncombining the real parts and combining the\nimaginary parts.",
+      "parent_section": "Complex Zeros",
+      "parent_section_num": "6",
+      "position_in_section": 0,
+      "difficulty_level": 4,
+      "difficulty_tier": "hard",
+      "concepts": [
+        "add",
+        "complex",
+        "complex numbers",
+        "multiply",
+        "numbers",
+        "parts"
+      ],
+      "defined_terms": [
+        "complex"
+      ],
+      "sample_content": "Before we dive into the more complicated uses of complex numbers, let’s make sure we remember the basic arithmetic involved. To add or subtract complex numbers, we simply add the like terms, combining the real parts and combining the imaginary parts. Exercise \\(\\PageIndex{1}\\) Subtract \\(2+5i\\) from \\(3-4i\\). \\[(3-4i)-(2+5i)=1-9i \\nonumber\\] We can also multiply and divide complex numbers. Exercise \\(\\PageIndex{2}\\) Multiply \\(3-4i\\) and \\(2+3i\\). \\[(3-4i)(2+3i)=18+i\\nonumber\\] In the last example, we used the conjugate of a complex number",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/03%3A_Polynomial_and_Rational_Functions./3.06%3A_Complex_Zeros",
+      "depth": 12,
+      "id": "ch3_s6_t1"
+    },
+    {
+      "title": "Complex Zeros of Polynomials",
+      "description": "Complex numbers allow us a way to write solutions\nto quadratic equations that do not have real\nsolutions. Exercise \\(\\PageIndex{3}\\) Find the\nzeros of \\(f(x)=2x^{2} +3x+4\\).",
+      "parent_section": "Complex Zeros",
+      "parent_section_num": "6",
+      "position_in_section": 1,
+      "difficulty_level": 4,
+      "difficulty_tier": "hard",
+      "concepts": [
+        "complex",
+        "dfrac",
+        "left right",
+        "real",
+        "theorem",
+        "zeros"
+      ],
+      "defined_terms": [],
+      "sample_content": "Complex numbers allow us a way to write solutions to quadratic equations that do not have real solutions. Exercise \\(\\PageIndex{3}\\) Find the zeros of \\(f(x)=2x^{2} +3x+4\\). \\[x=\\dfrac{-3\\pm \\sqrt{(3)^{2} -4(2)(4)} }{2(2)} =\\dfrac{-3\\pm \\sqrt{-23} }{4} =\\dfrac{-3\\pm i\\sqrt{23} }{4} =\\dfrac{-3}{4} \\pm \\dfrac{\\sqrt{23} }{4} i \\nonumber\\] Two things are important to note. First, the zeros \\(1+2i\\) and \\(1-2i\\) are complex conjugates. This will always be the case when we find non-real zeros to a quadratic function with real coefficients. Second, we could write \\[f(x)=x^{2} -2x+5=\\left(x-\\left(1+2i\\right)\\right)\\left(x-\\left(1-2i\\right)\\right) \\nonumber\\] if we really wanted to, so the Factor and Remainder Theorems hold. How do we know if a general polynomial has any complex zeros? We have seen examples of polynomials with no real zeros; can there be polynomials with no zeros at all? The answer to that last question, which comes from the Fundamental Theorem of Algebra, is \"No.\" Theorem: Fundamental theorem of algebra A non-constant polynomial \\(f\\) with real or complex coefficients will have at least one real or complex zero. This theorem is an example of an \"existence\" theorem in mathematics. It guarantees the existence of at least one zero, but provides no algorithm to use for finding it. Now suppose we have a polynomial \\(f(x)\\) of degree \\(n\\). The Fundamental Theorem of Algebra guarantees at least one zero \\(z_{1}\\), then the Factor Theorem guarantees that \\(f\\) can be factored as \\(f(x)=\\left(x - z_{1} \\right)q_{1} (x)\\), where the quotient \\(q_{1} (x)\\) will be of degree \\(n - 1\\). If this function is non-constant, than the Fundamental Theorem of Algebra applies to it, and we can find another zero. This can be repeated \\(n\\) times. Theorem: complex factorization theorem If \\(f\\) is a polynomial \\(f\\) with real or complex coefficients with degree \\(n \\ge 1\\), then \\(f\\) has exactly \\(n\\) real or complex zeros, counting multiplicities. If \\(z_{1} ,z_{2} ,\\ldots ,z_{",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/03%3A_Polynomial_and_Rational_Functions./3.06%3A_Complex_Zeros",
+      "depth": 13,
+      "id": "ch3_s6_t2"
+    },
+    {
+      "title": "Rational Functions",
+      "description": "In the previous sections, we have built\npolynomials based on the positive whole number\npower functions. In this section, we explore\nfunctions based on power functions with negative\ninteger powers, called rational functions.",
+      "parent_section": "Rational Functions",
+      "parent_section_num": "7",
+      "position_in_section": 0,
+      "difficulty_level": 4,
+      "difficulty_tier": "hard",
+      "concepts": [
+        "asymptote",
+        "asymptotes",
+        "denominator",
+        "function",
+        "numerator",
+        "vertical"
+      ],
+      "defined_terms": [],
+      "sample_content": "In the previous sections, we have built polynomials based on the positive whole number power functions. In this section, we explore functions based on power functions with negative integer powers, called rational functions. While this type of relationship can be written using the negative exponent, it is more common to see it written as a fraction. This particular example is one of an inversely proportional relationship – where one quantity is a constant divided by the other quantity, like \\(y=\\dfrac{5}{x}\\). Notice that this is a transformation of the reciprocal toolkit function, \\(f(x)=\\dfrac{1}{x}\\) Several natural phenomena, such as gravitational force and volume of sound, behave in a manner inversely proportional to the square of another quantity. For example, the volume, \\(V\\), of a sound heard at a distance \\(d\\) from the source would be related by \\(V=\\dfrac{k}{d^{2} }\\) for some constant value \\(k\\). These functions are transformations of the reciprocal squared toolkit function \\(f(x)=\\dfrac{1}{x^{2} }\\). We have seen the graphs of the basic reciprocal function and the squared reciprocal function from our study of toolkit functions. These graphs have several important features. \\(f(x) = \\dfrac{1}{x}\\) \\(f(x) = \\dfrac{1}{x^2}\\) Let’s begin by looking at the reciprocal function, \\(f(x)=\\dfrac{1}{x}\\). As you well know, dividing by zero is not allowed and therefore zero is not in the domain, and so the function is undefined at an input of zero. Short run behavior: As the input values approach zero from the left side (taking on very small, negative values), the function values become very large in the negative direction (in other words, they approach negative infinity). We write: as\\(x\\to 0^{-}\\), \\(f(x)\\to -\\infty\\). As we approach zero from the right side (small, positive input values), the function values become very large in the positive direction (approaching infinity). We write: as\\(x\\to 0^{+}\\),\\(f(x)\\to \\infty\\). This behavior creates a vertical asympto",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/03%3A_Polynomial_and_Rational_Functions./3.07%3A_Rational_Functions",
+      "depth": 14,
+      "id": "ch3_s7_t1"
+    },
+    {
+      "title": "Inverses and Radical Functions",
+      "description": "In this section, we will explore the inverses of\npolynomial and rational functions, and in\nparticular the radical functions that arise in the\nprocess. The previous example illustrated two\nimportant things: When finding the inverse of a\nquadratic, we have to limit ourselves to a d",
+      "parent_section": "Inverses and Radical Functions",
+      "parent_section_num": "8",
+      "position_in_section": 0,
+      "difficulty_level": 4,
+      "difficulty_tier": "hard",
+      "concepts": [
+        "domain",
+        "functions",
+        "inverse",
+        "nonumber",
+        "radical",
+        "radical functions"
+      ],
+      "defined_terms": [],
+      "sample_content": "In this section, we will explore the inverses of polynomial and rational functions, and in particular the radical functions that arise in the process. The previous example illustrated two important things: When finding the inverse of a quadratic, we have to limit ourselves to a domain on which the function is one-to-one. The inverse of a quadratic function is a square root function. Both are toolkit functions and different types of power functions. Functions involving roots are often called radical functions . Exercise \\(\\PageIndex{1}\\) Find the inverse of the function \\(f(x)=x^{2} +1\\), on the domain \\(x \\ge 0\\). Answer \\[y=x^{2} +1\\nonumber\\] \\[y-1=x^{2}\\nonumber\\] \\[x=f^{-1} (y)=\\sqrt{y-1}\\nonumber\\] While it is not possible to find an inverse of most polynomial functions, some other basic polynomials are invertible. Notice that this inverse is also a transformation of a power function with a fractional power, \\(x^{1/3}\\). Exercise \\(\\PageIndex{2}\\) Which toolkit functions have inverse functions without restricting their domain? Answer identity, cubic, square root, cube root Besides being important as an inverse function, radical functions are common in important physical models. When radical functions are composed with other functions, determining domain can become more complicated. Like with finding inverses of quadratic functions, it is sometimes desirable to find the inverse of a rational function, particularly of rational functions that are the ratio of linear functions, such as our concentration examples. Exercise \\(\\PageIndex{3}\\) Find the inverse of the function \\(f(x)=\\dfrac{x+3}{x-2}\\). Answer \\[y=\\dfrac{x+3}{x-2}\\nonumber\\] \\[y(x-2)=x+3\\nonumber\\] \\[yx-2y=x+3\\nonumber\\] \\[yx-x=2y+3\\nonumber\\] \\[x(y-1)=2y+3\\nonumber\\] \\[f^{-1} (y)=\\dfrac{2y+3}{y-1}\\nonumber\\] Important Topics of this Section Imposing a coordinate system Finding an inverse function Restricting the domain Invertible toolkit functions Radical Functions Inverses of rational functions",
+      "source_url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/03%3A_Polynomial_and_Rational_Functions./3.08%3A_Inverses_and_Radical_Functions",
+      "depth": 15,
+      "id": "ch3_s8_t1"
+    }
+  ],
+  "edges": [
+    {
+      "strength": 4,
+      "source": "ch3_s1_t1",
+      "evidence": "long",
+      "target": "ch3_s1_t2"
+    },
+    {
+      "strength": 4,
+      "source": "ch3_s1_t1",
+      "evidence": "long",
+      "target": "ch3_s3_t2"
+    },
+    {
+      "strength": 4,
+      "source": "ch3_s1_t1",
+      "evidence": "long",
+      "target": "ch3_s4_t1"
+    },
+    {
+      "strength": 4,
+      "source": "ch3_s1_t1",
+      "evidence": "long",
+      "target": "ch3_s7_t1"
+    },
+    {
+      "strength": 2,
+      "source": "ch3_s1_t2",
+      "evidence": "adjacent in section 3.1",
+      "target": "ch3_s1_t3"
+    },
+    {
+      "strength": 1,
+      "source": "ch3_s1_t3",
+      "evidence": "section 3.1 → 3.2",
+      "target": "ch3_s2_t1"
+    },
+    {
+      "strength": 2,
+      "source": "ch3_s2_t1",
+      "evidence": "adjacent in section 3.2",
+      "target": "ch3_s2_t2"
+    },
+    {
+      "strength": 1,
+      "source": "ch3_s2_t2",
+      "evidence": "section 3.2 → 3.3",
+      "target": "ch3_s3_t1"
+    },
+    {
+      "strength": 2,
+      "source": "ch3_s3_t1",
+      "evidence": "adjacent in section 3.3",
+      "target": "ch3_s3_t2"
+    },
+    {
+      "strength": 2,
+      "source": "ch3_s3_t2",
+      "evidence": "adjacent in section 3.3",
+      "target": "ch3_s3_t3"
+    },
+    {
+      "strength": 2,
+      "source": "ch3_s3_t3",
+      "evidence": "adjacent in section 3.3",
+      "target": "ch3_s3_t4"
+    },
+    {
+      "strength": 2,
+      "source": "ch3_s3_t4",
+      "evidence": "adjacent in section 3.3",
+      "target": "ch3_s3_t5"
+    },
+    {
+      "strength": 1,
+      "source": "ch3_s3_t5",
+      "evidence": "section 3.3 → 3.4",
+      "target": "ch3_s4_t1"
+    },
+    {
+      "strength": 1,
+      "source": "ch3_s4_t1",
+      "evidence": "section 3.4 → 3.5",
+      "target": "ch3_s5_t1"
+    },
+    {
+      "strength": 1,
+      "source": "ch3_s5_t1",
+      "evidence": "section 3.5 → 3.6",
+      "target": "ch3_s6_t1"
+    },
+    {
+      "strength": 4,
+      "source": "ch3_s6_t1",
+      "evidence": "complex",
+      "target": "ch3_s6_t2"
+    },
+    {
+      "strength": 1,
+      "source": "ch3_s6_t2",
+      "evidence": "section 3.6 → 3.7",
+      "target": "ch3_s7_t1"
+    },
+    {
+      "strength": 1,
+      "source": "ch3_s7_t1",
+      "evidence": "section 3.7 → 3.8",
+      "target": "ch3_s8_t1"
+    }
+  ]
+}

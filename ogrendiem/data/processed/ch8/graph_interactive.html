@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 800px;
+                 background-color: #111;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#6ab04c", "font": {"color": "#74b9ff"}, "id": "ch8_s1_t1", "label": "Law of Sines", "shape": "dot", "title": "\u003cb\u003eLaw of Sines\u003c/b\u003e\u003cbr\u003e\u00a7 1 \u00b7 difficulty 2 (easy)\u003cbr\u003e\u003ci\u003eGiven an arbitrary non-right triangle, we can drop\u003cbr\u003ean altitude, which we temporarily label \\(h\\), to\u003cbr\u003ecreate two right triangles. Using the right\u003cbr\u003etriangle relationships, \\[\\sin (\\alpha ) =\u003cbr\u003e\\dfrac{h}{b}\\text{ and }\\sin (\\beta ) =\u003cbr\u003e\\dfrac{h}{a}\\nonumber\\] Solving both equations for\u003cbr\u003e\\\u003c/i\u003e"}, {"color": "#6ab04c", "font": {"color": "#74b9ff"}, "id": "ch8_s1_t2", "label": "Law of Cosines", "shape": "dot", "title": "\u003cb\u003eLaw of Cosines\u003c/b\u003e\u003cbr\u003e\u00a7 1 \u00b7 difficulty 2 (easy)\u003cbr\u003e\u003ci\u003eSuppose a boat leaves port, travels 10 miles,\u003cbr\u003eturns 20 degrees, and travels another 8 miles. How\u003cbr\u003efar from port is the boat?\u003c/i\u003e"}, {"color": "#6ab04c", "font": {"color": "#74b9ff"}, "id": "ch8_s2_t1", "label": "Polar Coordinates", "shape": "dot", "title": "\u003cb\u003ePolar Coordinates\u003c/b\u003e\u003cbr\u003e\u00a7 2 \u00b7 difficulty 2 (easy)\u003cbr\u003e\u003ci\u003eThe coordinate system we are most familiar with is\u003cbr\u003ecalled the Cartesian coordinate system, a\u003cbr\u003erectangular plane divided into four quadrants by\u003cbr\u003ehorizontal and vertical axes. In earlier chapters,\u003cbr\u003ewe often found the Cartesian coordinates of a\u003cbr\u003epoint on a circle at a given angle from t\u003c/i\u003e"}, {"color": "#f0932b", "font": {"color": "#74b9ff"}, "id": "ch8_s3_t1", "label": "Polar Form of Complex Numbers", "shape": "dot", "title": "\u003cb\u003ePolar Form of Complex Numbers\u003c/b\u003e\u003cbr\u003e\u00a7 3 \u00b7 difficulty 3 (medium)\u003cbr\u003e\u003ci\u003eFrom previous classes, you may have encountered\u003cbr\u003e\u201cimaginary numbers\u201d \u2013 the square roots of negative\u003cbr\u003enumbers \u2013 and, more generally, complex numbers\u003cbr\u003ewhich are the sum of a real number and an\u003cbr\u003eimaginary number. While these are useful for\u003cbr\u003eexpressing the solutions to quadratic equations\u003c/i\u003e"}, {"color": "#eb4d4b", "font": {"color": "#74b9ff"}, "id": "ch8_s4_t1", "label": "Vectors", "shape": "dot", "title": "\u003cb\u003eVectors\u003c/b\u003e\u003cbr\u003e\u00a7 4 \u00b7 difficulty 4 (hard)\u003cbr\u003e\u003ci\u003eA woman leaves home, walks 3 miles north, then 2\u003cbr\u003emiles southeast. How far is she from home, and in\u003cbr\u003ewhich direction would she need to walk to return\u003cbr\u003ehome?\u003c/i\u003e"}, {"color": "#eb4d4b", "font": {"color": "#74b9ff"}, "id": "ch8_s5_t1", "label": "Dot Product", "shape": "dot", "title": "\u003cb\u003eDot Product\u003c/b\u003e\u003cbr\u003e\u00a7 5 \u00b7 difficulty 4 (hard)\u003cbr\u003e\u003ci\u003eNow that we can add, subtract, and scale vectors,\u003cbr\u003eyou might be wondering whether we can multiply\u003cbr\u003evectors. It turns out there are two different ways\u003cbr\u003eto multiply vectors, one which results in a\u003cbr\u003enumber, and one which results in a vector.\u003c/i\u003e"}, {"color": "#eb4d4b", "font": {"color": "#74b9ff"}, "id": "ch8_s6_t1", "label": "Parametric Equations", "shape": "dot", "title": "\u003cb\u003eParametric Equations\u003c/b\u003e\u003cbr\u003e\u00a7 6 \u00b7 difficulty 5 (hard)\u003cbr\u003e\u003ci\u003eMany shapes, even ones as simple as circles,\u003cbr\u003ecannot be represented as an equation where \\(y\\)\u003cbr\u003eis a function of \\(x\\). Consider, for example, the\u003cbr\u003epath a moon follows as it orbits around a planet,\u003cbr\u003ewhich simultaneously rotates around a sun.\u003c/i\u003e"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "from": "ch8_s1_t1", "title": "structural-sec (adjacent in section 8.1)", "to": "ch8_s1_t2", "value": 2}, {"arrows": "to", "from": "ch8_s1_t2", "title": "structural-chap (section 8.1 \u2192 8.2)", "to": "ch8_s2_t1", "value": 1}, {"arrows": "to", "from": "ch8_s2_t1", "title": "structural-chap (section 8.2 \u2192 8.3)", "to": "ch8_s3_t1", "value": 1}, {"arrows": "to", "from": "ch8_s3_t1", "title": "term-definition (complex)", "to": "ch8_s4_t1", "value": 4}, {"arrows": "to", "from": "ch8_s3_t1", "title": "term-definition (polar)", "to": "ch8_s5_t1", "value": 4}, {"arrows": "to", "from": "ch8_s3_t1", "title": "term-definition (polar)", "to": "ch8_s6_t1", "value": 4}, {"arrows": "to", "from": "ch8_s4_t1", "title": "term-definition (vector)", "to": "ch8_s5_t1", "value": 4}, {"arrows": "to", "from": "ch8_s5_t1", "title": "structural-chap (section 8.5 \u2192 8.6)", "to": "ch8_s6_t1", "value": 1}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
