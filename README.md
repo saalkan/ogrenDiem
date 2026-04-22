@@ -11,9 +11,9 @@ The following were **not** copied from the original workspace:
 
 - `ogrendiem/.venv/` the Python virtual environment
   (regenerated from `requirements.lock.txt`; see below)
-- `ogrendiem-app/node_modules/` — npm dependencies
+- `ogrendiem-app/node_modules/` npm dependencies
   (regenerated with `npm install`)
-- `ogrendiem-app/.expo/` — Expo's local cache (regenerated on first run)
+- `ogrendiem-app/.expo/` Expo's local cache (regenerated on first run)
 - `**/__pycache__/`, `**/*.pyc`, `**/*.pyo` — Python bytecode caches
 - `**/bin/`, `**/obj/`, `**/dist/`, `**/build/`, `**/.next/`,
   `**/.turbo/` any build output directories
