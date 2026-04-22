@@ -5,34 +5,6 @@ without any generated or installed artifacts. To turn it back into a
 working development environment you only need two installers and a
 few minutes.
 
-## What was excluded
-
-The following were **not** copied from the original workspace:
-
-- `ogrendiem/.venv/` the Python virtual environment
-  (regenerated from `requirements.lock.txt`; see below)
-- `ogrendiem-app/node_modules/` npm dependencies
-  (regenerated with `npm install`)
-- `ogrendiem-app/.expo/` Expo's local cache (regenerated on first run)
-- `**/__pycache__/`, `**/*.pyc`, `**/*.pyo` Python bytecode caches
-- `**/bin/`, `**/obj/`, `**/dist/`, `**/build/`, `**/.next/`,
-  `**/.turbo/` any build output directories
-- `.git/` version control history (not part of the deliverable)
-
-Everything else (source code, bundled JSON assets, documentation,
-LaTeX reports, PDFs, scripts, the `precalc_db` graph database) is
-included verbatim.
-
-## What was added
-
-- `ogrendiem/requirements.lock.txt` a full `pip freeze` of the
-  original venv (93 packages, exact versions incl. the spaCy model URL).
-- `ogrendiem/setup_uv.ps1` / `setup_uv.sh` **fast-path** setup via
-  `uv` (downloads Python 3.12 on demand; no pre-installed Python needed).
-- `ogrendiem/setup_venv.ps1` / `setup_venv.sh` classic `venv` setup
-  (requires Python 3.12 pre-installed).
-- `README.md` this file.
-
 ## How to restore the Python venv
 
 Two paths, pick one:
