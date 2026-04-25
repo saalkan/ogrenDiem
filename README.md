@@ -68,7 +68,7 @@ interfaces (Wi-Fi, USB tether, and various virtual adapters). Expo
 guesses one for the QR code and often picks the wrong one. The env var
 tells it which IP to advertise.
 
-## Sanity check before scanning
+## Optional check before scanning QR
 
 Open the phone's browser and visit `http://LAPTOP_IP:8081`. If you see
 a Metro/Expo response, networking is good. If it times out, the
