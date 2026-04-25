@@ -25,7 +25,7 @@ npx expo install <package>
 (Use `npx expo install`, not `npm install` — it picks the version
 matching the Expo SDK.)
 
-## Connecting the phone — USB tethering (recommended)
+## Connecting the phone: USB tethering (recommended)
 
 Wi-Fi between phone and laptop works in theory but is fragile: routers
 with client isolation, guest networks, VPNs, and Windows tagging
@@ -36,9 +36,7 @@ all of that** and is the path that worked for us.
 2. On the phone: **Settings → Network & Internet → Hotspot & tethering
    → USB tethering → ON**. (iPhone: enable Personal Hotspot, then
    plug in.)
-3. Windows installs a virtual NIC named "Remote NDIS based Internet
-   Sharing Device" (Android) or "Apple Mobile Device Ethernet" (iPhone).
-4. Find that adapter's IPv4:
+3. Find that adapter's IPv4:
 
    ```cmd
    ipconfig
@@ -74,7 +72,7 @@ tells it which IP to advertise.
 
 Open the phone's browser and visit `http://LAPTOP_IP:8081`. If you see
 a Metro/Expo response, networking is good. If it times out, the
-firewall is blocking — set the tether network to Private (step 5
+firewall is blocking; set the tether network to Private (step 5
 above) or open the port:
 
 ```powershell
