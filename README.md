@@ -104,7 +104,7 @@ New-NetFirewallRule -DisplayName "Expo Metro 8081" -Direction Inbound `
 
 
 # Would you like to edit the app?
-# öğrenDiem: Portable Export
+## öğrenDiem: Portable Export
 
 This directory is a clean copy of the full `ogrenDiem` project
 without any generated or installed artifacts. To turn it back into a
