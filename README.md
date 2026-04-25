@@ -29,8 +29,8 @@ matching the Expo SDK.)
 
 Wi-Fi between phone and laptop works in theory but is fragile: routers
 with client isolation, guest networks, VPNs, and Windows tagging
-networks as "Public" all break it silently. **USB tethering bypasses
-all of that** and is the path that worked for us.
+networks as "Public" all break it silently. USB tethering bypasses
+all of that.
 
 1. Plug phone into laptop via USB.
 2. On the phone: **Settings → Network & Internet → Hotspot & tethering
@@ -60,8 +60,8 @@ npx expo start --clear
 ```
 
 Replace `LAPTOP_IP` with the actual address from `ipconfig` (no quotes,
-no spaces around `=`). The `--clear` flag wipes Metro's transform cache
-— always use it on the first start of a session.
+no spaces around `=`). The `--clear` flag wipes Metro's transform cache; 
+always use it on the first start of a session.
 
 The env var is critical: a Windows laptop usually has 3+ network
 interfaces (Wi-Fi, USB tether, and various virtual adapters). Expo
@@ -95,7 +95,7 @@ New-NetFirewallRule -DisplayName "Expo Metro 8081" -Direction Inbound `
 | Symptom | Cause | Fix |
 |---|---|---|
 | `Failed to download remote update` | Phone can't reach Metro | Check `REACT_NATIVE_PACKAGER_HOSTNAME` is the tether IP, not Wi-Fi. Browser-test `http://LAPTOP_IP:8081` from phone. |
-| `Packager is not running at http://X.X.X.X:8081` | QR has wrong IP for current network | Same as above — set the env var to the right interface. |
+| `Packager is not running at http://X.X.X.X:8081` | QR has wrong IP for current network | Same as above; set the env var to the right interface. |
 | `Cannot find module 'babel-preset-expo'` | Half-installed `node_modules` | `rmdir /s /q node_modules` + `del /q package-lock.json` + `npm install` |
 | `Unable to resolve "<package>"` from App.tsx | Package missing from `package.json` | `npx expo install <package>` |
 | `Project is incompatible with this version of Expo Go` | SDK mismatch | The repo is on SDK 54. Upgrade Expo Go from the Play Store, or downgrade the project: `npx expo install expo@<your-version>` then `npx expo install --fix` |
