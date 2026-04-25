@@ -99,7 +99,7 @@ export const QuestionCard: React.FC<Props> = ({ question, onResolved }) => {
         )}
         {resolved !== null && (
           <Text style={[styles.resolved, resolved ? styles.good : styles.bad]}>
-            {resolved ? 'Nice — collected!' : 'Noted — we will revisit.'}
+            {resolved ? 'Well done!' : 'Noted, we will revisit.'}
           </Text>
         )}
       </View>
