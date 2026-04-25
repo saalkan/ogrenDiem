@@ -52,7 +52,7 @@ all of that** and is the path that worked for us.
 
 ## Starting Metro
 
-In the terminal, in `ogrendiem-app/`:
+In cmd, in `ogrendiem-app/`:
 
 ```cmd
 set REACT_NATIVE_PACKAGER_HOSTNAME=LAPTOP_IP
