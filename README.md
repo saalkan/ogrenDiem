@@ -1,4 +1,110 @@
-# öğrenDiem: Portable Export
+## Prerequisites
+
+- **Node.js 20.x or 22.x** on the laptop (`node -v` to check).
+- **Expo Go** installed on the phone from the Play Store / App Store.
+- **A USB cable** that does data, not just power.
+- The phone and laptop near each other.
+
+## One-time setup
+
+Open a terminal in `ogrendiem-app/` and run:
+
+```cmd
+npm install
+```
+
+Three to five minutes. Installs the dependency tree from `package.json`.
+
+If you ever see `Unable to resolve "<package>"` later, that package is
+missing from `package.json`. Add it with:
+
+```cmd
+npx expo install <package>
+```
+
+(Use `npx expo install`, not `npm install` — it picks the version
+matching the Expo SDK.)
+
+## Connecting the phone: USB tethering (recommended)
+
+Wi-Fi between phone and laptop works in theory but is fragile: routers
+with client isolation, guest networks, VPNs, and Windows tagging
+networks as "Public" all break it silently. USB tethering bypasses
+all of that.
+
+1. Plug phone into laptop via USB.
+2. On the phone: **Settings → Network & Internet → Hotspot & tethering
+   → USB tethering → ON**. (iPhone: enable Personal Hotspot, then
+   plug in.)
+3. Find that adapter's IPv4:
+
+   ```cmd
+   ipconfig
+   ```
+
+   Look for the entry with the tether adapter's name. The IP will be
+   in `192.168.42.x`, `172.20.10.x`, or `10.x.x.x` depending on phone
+   model and carrier. Note the laptop-side address — call it `LAPTOP_IP`.
+
+5. **Tag the tether connection as Private** (Settings → Network &
+   Internet → click the tether connection → Network profile → Private).
+   This stops Windows Firewall from blocking inbound port 8081.
+
+## Starting Metro
+
+In cmd, in `ogrendiem-app/`:
+
+```cmd
+set REACT_NATIVE_PACKAGER_HOSTNAME=LAPTOP_IP
+npx expo start --clear
+```
+
+Replace `LAPTOP_IP` with the actual address from `ipconfig` (no quotes,
+no spaces around `=`). The `--clear` flag wipes Metro's transform cache; 
+always use it on the first start of a session.
+
+The env var is critical: a Windows laptop usually has 3+ network
+interfaces (Wi-Fi, USB tether, and various virtual adapters). Expo
+guesses one for the QR code and often picks the wrong one. The env var
+tells it which IP to advertise.
+
+## Optional check before scanning QR
+
+Open the phone's browser and visit `http://LAPTOP_IP:8081`. If you see
+a Metro/Expo response, networking is good. If it times out, the
+firewall is blocking; set the tether network to Private (step 5
+above) or open the port:
+
+```powershell
+New-NetFirewallRule -DisplayName "Expo Metro 8081" -Direction Inbound `
+  -Protocol TCP -LocalPort 8081 -Action Allow -Profile Any
+```
+
+(PowerShell as Administrator.)
+
+## Loading the app
+
+1. Open Expo Go on the phone.
+2. Scan the QR code shown in the terminal (or in the browser tab Expo
+   opens).
+3. First load takes 30–90 seconds (Metro bundles ~700 modules).
+4. App opens to the Garden tab. Pick an emoji to start.
+
+## Troubleshooting
+
+| Symptom | Cause | Fix |
+|---|---|---|
+| `Failed to download remote update` | Phone can't reach Metro | Check `REACT_NATIVE_PACKAGER_HOSTNAME` is the tether IP, not Wi-Fi. Browser-test `http://LAPTOP_IP:8081` from phone. |
+| `Packager is not running at http://X.X.X.X:8081` | QR has wrong IP for current network | Same as above; set the env var to the right interface. |
+| `Cannot find module 'babel-preset-expo'` | Half-installed `node_modules` | `rmdir /s /q node_modules` + `del /q package-lock.json` + `npm install` |
+| `Unable to resolve "<package>"` from App.tsx | Package missing from `package.json` | `npx expo install <package>` |
+| `Project is incompatible with this version of Expo Go` | SDK mismatch | The repo is on SDK 54. Upgrade Expo Go from the Play Store, or downgrade the project: `npx expo install expo@<your-version>` then `npx expo install --fix` |
+| Bundling hangs at "X modules" forever | Stale Metro cache | Ctrl+C, restart with `npx expo start --clear` |
+| Bundle starts then errors mid-way | Cancelled previous build left partial cache | Same — `--clear` |
+
+
+# Would you like to edit the app?
+## öğrenDiem: Portable Export
 
 This directory is a clean copy of the full `ogrenDiem` project
 without any generated or installed artifacts. To turn it back into a
