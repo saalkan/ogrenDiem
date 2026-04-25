@@ -10,6 +10,16 @@ Writes (into ../ogrendiem-app/assets/data/)
 topics.json     topics with emoji + garden_slot + cave_slot baked in
 graph.json      node-link with slimmer payload
 clusters.json   greedy-modularity clusters + short titles + colors
+                ^^^ NOTE: these clusters are *visualization-only*. They are
+                computed here, on the prereq DAG of the 55 in-scope topics,
+                purely to give the Cave view its chambers. They have NO
+                effect on the BKT engine, on prereq propagation, or on
+                "next recommended topic" selection — those all run on the
+                raw prereq edges in graph.json. If you delete clusters.json
+                and stub it with one big cluster, the engine behavior is
+                identical; only the Cave view changes shape. See the
+                comment block above the `communities(...)` call in `run()`
+                for more detail on why this re-clustering happens.
 questions.json  (passes through existing bundled questions if present, else writes empty)
 
 Run:
@@ -166,6 +176,31 @@ def run(scope: str) -> None:
     G = json_graph.node_link_graph(graph_src, edges="edges")
 
     # --- clusters (loose communities, largest first) ---
+    #
+    # IMPORTANT: this is the SECOND application of greedy modularity in the
+    # pipeline, and it is purely cosmetic.
+    #
+    # First application (elsewhere): greedy modularity is run on the
+    # *chapter* graph to decide which textbook chapters bundle together
+    # well — that is what produced the scope groups like `g1-3-8-9` that
+    # the user picks from. By the time we get into this function, the
+    # 55 topics in `G` are already the result of that choice.
+    #
+    # Second application (here): we run greedy modularity AGAIN, this time
+    # on the prereq DAG of those 55 in-scope topics, to split them into
+    # sub-communities. Each community becomes one chamber in the Cave
+    # view in the React Native app — that is the only thing it is used for.
+    #
+    # These sub-clusters do NOT influence:
+    #   - the BKT mastery posterior
+    #   - noisy-AND prereq propagation
+    #   - which topic is "next recommended" (frontier selection in
+    #     ogrendiem-app/src/engine/local.ts uses raw prereq edges only)
+    #   - the Garden tree view (which groups by chapter, not by cluster)
+    #
+    # If you replace `comms` below with `[set(G.nodes())]` (one big cluster
+    # containing every topic), the engine and Garden behave identically;
+    # only the Cave collapses to a single chamber.
     UG = parallelism.loose_subgraph(G)
     comms = sorted(parallelism.communities(UG), key=len, reverse=True)
     comms = [set(c) for c in comms]

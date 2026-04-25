@@ -25,6 +25,11 @@ interface ClustersFile {
 export const topics: Topic[] = (topicsJson as unknown as TopicsFile).topics;
 export const meta = (topicsJson as unknown as TopicsFile).meta;
 export const graph: GraphFile = graphJson as unknown as GraphFile;
+// `clusters` are visualization-only: they group topics into chambers for
+// the Cave view. They are computed in the Python pipeline by running
+// greedy modularity a second time on the in-scope prereq DAG. The BKT
+// engine and frontier selection (see src/engine/local.ts) ignore them
+// entirely and operate on the raw prereq edges in `graph` instead.
 export const clusters: Cluster[] = (clustersJson as unknown as ClustersFile).clusters;
 export const questions: Question[] = questionsJson as unknown as Question[];
 

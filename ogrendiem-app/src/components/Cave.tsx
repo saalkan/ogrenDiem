@@ -5,6 +5,14 @@
  * (x,y ∈ [0,1]) from a Python-side spring layout. Edges between same-cluster
  * topics are drawn as dim curves (the "cave tunnels"). Each topic is an
  * animal/crystal emoji node that behaves identically to tree nodes.
+ *
+ * NOTE on clusters: the chamber groupings used here come from a *second*
+ * application of greedy modularity in the Python pipeline (see
+ * `ogrendiem/graph/export_mobile.py`). They exist purely to give the Cave
+ * a chamber-based layout — they are not pedagogical units. Mastering all
+ * topics in one chamber does NOT unlock the next chamber, and the
+ * "next recommended topic" can hop between chambers freely as the prereq
+ * frontier advances. The clustering is cosmetic for this view only.
  */
 import React, { useMemo } from 'react';
 import { View, Text, StyleSheet, useWindowDimensions } from 'react-native';
